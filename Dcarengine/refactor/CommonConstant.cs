@@ -1,0 +1,108 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Dcarengine.refactor
+{
+
+    /// <summary>
+    /// 静态变量存储
+    /// </summary>
+    class CommonConstant
+    {
+        /// <summary>
+        /// 串口连接
+        /// </summary>
+        public static String ECUCONNECT = "串口已连接！";
+
+
+        /// <summary>
+        /// 串口断开
+        /// </summary>
+        public static String UNECUCONNECT = "串口已断开！";
+
+
+        /// <summary>
+        /// hashTable  数据
+        /// </summary>
+        public static Hashtable EcuVersionMap = new Hashtable();
+
+
+        public static String EolReadPrefix = "35";
+
+        public static String EolWritePrefix = "34";
+
+        public static String EolSuffix = "00";
+
+
+        /// <summary>
+        /// 发送数据数据模式
+        /// </summary>
+        public static Hashtable EcuModeSendMap = new Hashtable();
+
+        /// <summary>
+        /// 数据解密后的发送命令
+        /// </summary>
+        public static Hashtable EcuModeSendSecondeMap = new Hashtable();
+
+
+        /// <summary>
+        /// mode 
+        /// </summary>
+        public static String mode;
+
+
+
+        public static byte[]  _1081Mode= { 11,22,33,44 } ;
+        public static byte[]  _1084Mode = { 11, 22, 33, 44 };
+        public static byte[]  _1086Mode = { 244, 239, 116, 147};
+        public static byte[]  _1087Mode = { 244, 239, 116, 147 };
+
+
+
+        // public static 
+
+        static CommonConstant(){
+
+            EcuVersionMap.Add("P1287740", "ECU13AdRess740");
+
+            EcuVersionMap.Add("P1287750", "ECU13AdRess750");
+
+            EcuVersionMap.Add("P1287760", "ECU13AdRess760");
+
+            EcuVersionMap.Add("P1287770", "ECU13AdRess770");
+
+            EcuVersionMap.Add("P1287780", "ECU13AdRess780");
+
+            EcuVersionMap.Add("P1287790", "ECU13AdRess790");
+
+            ///sendMapMode
+            ///
+            EcuModeSendMap.Add("1084", "2705");
+            EcuModeSendMap.Add("1085", "2707");
+            EcuModeSendMap.Add("1086", "2709");
+            EcuModeSendMap.Add("1087", "270B");
+
+            EcuModeSendMap.Add("1090", "2711");
+            EcuModeSendMap.Add("1091", "2713");
+            EcuModeSendMap.Add("1092", "2715");
+            EcuModeSendMap.Add("1093", "2717");
+
+            //second send map
+            EcuModeSendSecondeMap.Add("1084", "2706");
+            EcuModeSendSecondeMap.Add("1085", "2708");
+            EcuModeSendSecondeMap.Add("1086", "270A");
+            EcuModeSendSecondeMap.Add("1087", "270C");
+
+            EcuModeSendSecondeMap.Add("1090", "2712");        
+            EcuModeSendSecondeMap.Add("1091", "2714");
+            EcuModeSendSecondeMap.Add("1092", "2716");
+
+
+        }
+
+
+    }
+}

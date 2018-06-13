@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{571EE02E-D653-4E64-BBD5-676AD44E9EF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dcarengine</RootNamespace>
+    <AssemblyName>Dcarengine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.BGV2ActiveXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.BGV2ActiveXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FlashControlV71.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTIVEXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.ACTIVEXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.BGV2ActiveXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.BGV2ActiveXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.COMAdmin, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.COMAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.COMSVCSLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.COMSVCSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSScriptControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.MSScriptControl.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.108.0\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessData\CarDBAccessDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarDBAccessDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="entity\TpCmdEntity.cs" />
+    <Compile Include="Function_Class\13IdFDataWork.cs" />
+    <Compile Include="Function_Class\C9Dtc.cs" />
+    <Compile Include="Function_Class\DebugMode.cs" />
+    <Compile Include="Function_Class\EcuConnectionFRe.cs" />
+    <Compile Include="Function_Class\EcuConnectionF.cs" />
+    <Compile Include="Function_Class\EcuVersion.cs" />
+    <Compile Include="Function_Class\EolFunction.cs" />
+    <Compile Include="Function_Class\SingleDtcFunction.cs" />
+    <Compile Include="Function_Class\standClass.cs" />
+    <Compile Include="interfaces\DtcReadInterface.cs" />
+    <Compile Include="interfaces\IdReadInterface.cs" />
+    <Compile Include="interfaces\ITripInterface.cs" />
+    <Compile Include="refactor\CommonAutoRest.cs" />
+    <Compile Include="refactor\CommonCmd.cs" />
+    <Compile Include="refactor\CommonConstant.cs" />
+    <Compile Include="refactor\ControInvoke.cs" />
+    <Compile Include="refactor\EcuFlagSetting.cs" />
+    <Compile Include="refactor\GobalLock.cs" />
+    <Compile Include="Function_Class\StringToSendBytes.cs" />
+    <Compile Include="refactor\FunctionThreadPool.cs" />
+    <Compile Include="Function_Class\TpFunction.cs" />
+    <Compile Include="Function_Class\Tp_KeyMethodFuntion.cs" />
+    <Compile Include="Function_Class\_13DtcCodeF.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="refactor\GobalSerialPort.cs" />
+    <Compile Include="refactor\MeasureTimer.cs" />
+    <Compile Include="common\StringUtil.cs" />
+    <Compile Include="refactor\ModeKeyMap.cs" />
+    <Compile Include="service\C13dtcRead.cs" />
+    <Compile Include="service\C13IdRead.cs" />
+    <Compile Include="SQLData\AccessDbClass.cs" />
+    <Compile Include="SQLData\AsposeExcelTools.cs" />
+    <Compile Include="SQLData\MyMeans.cs" />
+    <Compile Include="SQLData\SaveFileFunction.cs" />
+    <Compile Include="test\serialTest.cs" />
+    <Compile Include="UIForm\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\DebugForm.Designer.cs">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROMWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROMWrite.Designer.cs">
+      <DependentUpon>EEPROMWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\AllTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\AllTrip.Designer.cs">
+      <DependentUpon>AllTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\AllOil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\AllOil.Designer.cs">
+      <DependentUpon>AllOil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EcuCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EcuCount.Designer.cs">
+      <DependentUpon>EcuCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EcuTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EcuTime.Designer.cs">
+      <DependentUpon>EcuTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EngineAllTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\EngineAllTime.Designer.cs">
+      <DependentUpon>EngineAllTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\HighCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\HighCount.Designer.cs">
+      <DependentUpon>HighCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\TripRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EEPROM\TripRecord.Designer.cs">
+      <DependentUpon>TripRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE.Designer.cs">
+      <DependentUpon>EOLFORMWRITE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\MainF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\MainF.Designer.cs">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\standindex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\standindex.Designer.cs">
+      <DependentUpon>standindex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\测量.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\测量.designer.cs">
+      <DependentUpon>测量.cs</DependentUpon>
+    </Compile>
+    <Compile Include="util\StringUtils.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UIForm\DebugForm.resx">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROMWrite.resx">
+      <DependentUpon>EEPROMWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\AllTrip.resx">
+      <DependentUpon>AllTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\AllOil.resx">
+      <DependentUpon>AllOil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\EcuCount.resx">
+      <DependentUpon>EcuCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\EcuTime.resx">
+      <DependentUpon>EcuTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\EngineAllTime.resx">
+      <DependentUpon>EngineAllTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\HighCount.resx">
+      <DependentUpon>HighCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EEPROM\TripRecord.resx">
+      <DependentUpon>TripRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOLFORMWRITE.resx">
+      <DependentUpon>EOLFORMWRITE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\MainF.resx">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\standindex.resx">
+      <DependentUpon>standindex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\测量.resx">
+      <DependentUpon>测量.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AcessData\CarDBAccessDataSet.xsc">
+      <DependentUpon>CarDBAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AcessData\CarDBAccessDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CarDBAccessDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcessData\CarDBAccessDataSet.xss">
+      <DependentUpon>CarDBAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcessData\CarDBAccess.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Icon1.ico" />
+    <Content Include="Resource\11.png" />
+    <Content Include="Resource\12.png" />
+    <Content Include="Resource\16.png" />
+    <Content Include="Resource\21.png" />
+    <Content Include="Resource\32.PNG" />
+    <Content Include="Resource\3942006.png" />
+    <Content Include="Resource\3942007.png" />
+    <Content Include="Resource\612.png" />
+    <Content Include="Resource\617.png" />
+    <Content Include="Resource\delete.png" />
+    <Content Include="Resource\main_1.jpg" />
+    <Content Include="Resource\tool_kit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="serialPort\" />
+    <Folder Include="UIForms\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

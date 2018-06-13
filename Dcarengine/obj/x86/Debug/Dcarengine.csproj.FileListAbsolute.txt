@@ -1,0 +1,100 @@
+F:\users\Windowns code\Dcarengine\Dcarengine\bin\Debug\Dcarengine.exe
+F:\users\Windowns code\Dcarengine\Dcarengine\bin\Debug\Dcarengine.pdb
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.exe
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+F:\users\Windowns code\Dcarengine\Dcarengine\bin\Debug\Dcarengine.exe.config
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.exe.licenses
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+F:\users\Windowns code\Dcarengine\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+F:\users\Windowns code\Dcarengine\Dcarengine\obj\x86\Debug\Dcarengine.csproj.ResolveComReference.cache
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\Dcarengine.exe.config
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.csproj.ResolveComReference.cache
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.exe
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\Dcarengine.exe
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\Dcarengine.pdb
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\Aspose.Cells.dll
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\AxInterop.BGV2ActiveXLib.dll
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\bin\Debug\ExcelHandler.dll
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.exe.licenses
+D:\串口程序调试的资料\c9\Dcarengine(C9)\Dcarengine\obj\x86\Debug\Dcarengine.c9测量.resources
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.exe
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+D:\Dcarengine_20140523\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+D:\Dcarengine_20140523\Dcarengine\bin\Debug\Dcarengine.exe.config
+D:\Dcarengine_20140523\Dcarengine\bin\Debug\Dcarengine.exe
+D:\Dcarengine_20140523\Dcarengine\bin\Debug\Dcarengine.pdb
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.c9测量.resources
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+D:\Dcarengine_20140523\Dcarengine\obj\x86\Debug\Dcarengine.csproj.GenerateResource.Cache
+D:\Dcarengine_20140623\Dcarengine\bin\Debug\Dcarengine.exe.config
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.exe
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+D:\Dcarengine_20140623\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+D:\Dcarengine_20140623\Dcarengine\bin\Debug\Dcarengine.exe
+D:\Dcarengine_20140623\Dcarengine\bin\Debug\Dcarengine.pdb
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.c9测量.resources
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+D:\Dcarengine_20140623\Dcarengine\obj\x86\Debug\Dcarengine.csproj.GenerateResource.Cache
+D:\Dcarengine_20140709\Dcarengine\bin\Debug\Dcarengine.exe.config
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.exe
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+D:\Dcarengine_20140709\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+D:\Dcarengine_20140709\Dcarengine\bin\Debug\Dcarengine.exe
+D:\Dcarengine_20140709\Dcarengine\bin\Debug\Dcarengine.pdb
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.c9测量.resources
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+D:\Dcarengine_20140709\Dcarengine\obj\x86\Debug\Dcarengine.csproj.GenerateResource.Cache
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.Properties.Resources.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.MainF.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.测量.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csproj.GenerateResource.Cache
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csproj.CoreCompileInputs.cache
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.exe
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\AcessData\CarDBAccess.mdb
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\Dcarengine.exe.config
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\Dcarengine.exe
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\Dcarengine.pdb
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\Newtonsoft.Json.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\Newtonsoft.Json.xml
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\log4net.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\log4net.xml
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.DebugForm.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\EntityFramework.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\EntityFramework.SqlServer.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\System.Data.SQLite.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\System.Data.SQLite.EF6.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\System.Data.SQLite.Linq.dll
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\EntityFramework.xml
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\EntityFramework.SqlServer.xml
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\System.Data.SQLite.xml
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\bin\Debug\System.Data.SQLite.dll.config
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROMWrite.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.AllTrip.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.AllOil.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.EcuCount.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.EcuTime.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.EngineAllTime.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.HighCount.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.TripRecord.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.standindex.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EOLFORMWRITE.resources
