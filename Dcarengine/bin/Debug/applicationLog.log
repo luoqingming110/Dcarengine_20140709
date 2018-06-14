@@ -22577,3 +22577,356 @@ FF FF FF FF FF FF FF FF
 
 > ;workTime:219 count:0
 [2018-06-13 00:00:51,156]  18 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287770
+[2018-06-13 22:38:34,278]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-13 22:59:45,201]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-13 23:00:28,548]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-13 23:13:19,044]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-13 23:24:34,872]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-06-13 23:24:43,634]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:24:43
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:24:44,891]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:24:44
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:24:45,531]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:24:45
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:24:46,843]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:24:46
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:24:50,834]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:24:50
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:24:55,134]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-06-13 23:24:55,143]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 端口被关闭。
+[2018-06-13 23:24:55,155]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2CF004
+
+[2018-06-13 23:24:55,162]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 端口被关闭。
+[2018-06-13 23:25:54,599]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:54
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:55,547]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:55
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:56,163]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:56
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:56,355]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:56
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:56,675]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:56
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:57,084]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:57
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:57,491]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:57
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:57,875]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:57
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:58,211]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:58
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:58,587]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:58
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:58,955]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:58
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:59,344]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:59
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:25:59,963]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:25:59
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:26:02,010]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:26:02
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 993
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:26:02,459]  1 -- INFO  -- Dcarengine.Program [Application_ThreadException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/13 星期三 23:26:02
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.测量.测量不保存_Click(Object sender, EventArgs e) 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\UIForm\测量.cs:行号 767
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+[2018-06-13 23:26:03,599]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-13 23:29:47,963]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。

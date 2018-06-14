@@ -88,6 +88,8 @@ namespace Dcarengine
             {
                 dataGridViewEditF = new DataGridViewEdit(DataGridView);
                 NoDatadataGridViewEditF = new DataGridViewEdit(NoDtaDataGridView);
+               // this.选择时间.SelectedValue = "200";
+                this.选择时间.Text = "200";
 
                 con = new OleDbConnection(cont);
                 num = new string[40];
@@ -762,6 +764,12 @@ namespace Dcarengine
         private void 测量不保存_Click(object sender, EventArgs e)
         {
             SaveMFlage = false;
+            String time = this.选择时间.Text.ToString();
+            if (time != null && time != "")
+            {
+                CountTime = Convert.ToInt32(time);
+            }
+
             if (!EcuConnectionF.ECULINKStatus1)
             {
                 MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -971,7 +979,7 @@ namespace Dcarengine
                 //设置定时任务
                 GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
                 GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
-                MeasureTimer measureTimer = new MeasureTimer(200);
+                MeasureTimer measureTimer = new MeasureTimer(CountTime);
             }
             catch (Exception e) {
                 log.Info("double measure is error : " + e.Message);
@@ -982,6 +990,12 @@ namespace Dcarengine
         private void 测量保存_Click(object sender, EventArgs e)
         {
             SaveMFlage = true;
+            String time = this.选择时间.Text.ToString();
+            if (time !=null && time!="") {
+                CountTime = Convert.ToInt32(time);             
+            }
+            //MessageBox.Show(time);
+
             if (!EcuConnectionF.ECULINKStatus1)
             {
                 MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);

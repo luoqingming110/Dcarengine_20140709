@@ -36,6 +36,7 @@ namespace Dcarengine
             {
                 string str = GetExceptionMsg(ex, string.Empty);
                 MessageBox.Show(str, "系统错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
             }
 
         }
