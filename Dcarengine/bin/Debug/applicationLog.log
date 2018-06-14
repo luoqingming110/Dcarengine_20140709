@@ -22930,3 +22930,6 @@ FF FF FF FF FF FF FF FF
 
 [2018-06-13 23:26:03,599]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
 [2018-06-13 23:29:47,963]  1 -- INFO  -- Dcarengine.测量 [Dispose] -- from dispose exception :未将对象引用设置到对象的实例。
+[2018-06-14 11:46:11,519]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 11:49:56,686]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 11:50:04,427]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  

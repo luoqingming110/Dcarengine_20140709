@@ -1,4 +1,7 @@
-﻿namespace Dcarengine.UIForm
+﻿using System;
+using System.Windows;
+
+namespace Dcarengine.UIForm
 {
     partial class MainF
     {
@@ -16,8 +19,22 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+              
             }
             base.Dispose(disposing);
+            //Application.
+        }
+
+
+        /// <summary>
+        /// application exit from
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_FormClosing(object sender, EventArgs e)
+        {
+            log.Info("application is  exit  ");
+            System.Environment.Exit(0);            
         }
 
         #region Windows Form Designer generated code
@@ -64,6 +81,9 @@
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            ///
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+
             // 
             // menuStrip1
             // 
