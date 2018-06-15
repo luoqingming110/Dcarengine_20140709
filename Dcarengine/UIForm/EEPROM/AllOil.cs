@@ -82,7 +82,8 @@ namespace Dcarengine.UIForm.EEPROM
             }
             catch (Exception e)
             { }
-            return finalresult;
+            //数据值/2
+            return finalresult / 2;
         }
 
 
@@ -106,7 +107,7 @@ namespace Dcarengine.UIForm.EEPROM
         private void button1_Click(object sender, EventArgs e)
         {
             String writeValue = this.textBox1.Text.Trim();
-            int count = Convert.ToInt32(writeValue) ;
+            int count = Convert.ToInt32(writeValue) * 2 ;
             String all = Convert.ToString(count, 16).PadLeft(8,'0');
             String cmd = "3b0171" + StringUtil.Reverse(all);
             byte[] cmdSend = StringToSendBytes.bytesToSend(cmd + "\n");
