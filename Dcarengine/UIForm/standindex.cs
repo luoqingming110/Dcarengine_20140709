@@ -148,106 +148,110 @@ namespace Dcarengine.UIForm
         public  void show(String result213,String result214 ,String result215,String result02141,String result210240)
         {
 
-            String xinhao = result213.Substring(8 + 35*2 , 28);
-            String xinhaoTex = StringUtil.StringToASCII(xinhao);
-            log.Info(xinhaoTex);
-            this.Invoke((EventHandler)delegate { this.textBox1.Text = xinhaoTex; });
-           
+            try
+            {
+                String xinhao = result213.Substring(8 + 35 * 2, 28);
+                String xinhaoTex = StringUtil.StringToASCII(xinhao);
+                log.Info(xinhaoTex);
+                this.Invoke((EventHandler)delegate { this.textBox1.Text = xinhaoTex; });
 
-            ///序列号
-            String xuliehao = result214.Substring(8 + 20 * 2, 30);
-            String xuliehaoTex = StringUtil.StringToASCII(xuliehao);
-            log.Info(xuliehaoTex);
-            this.Invoke((EventHandler)delegate { this.textBox2.Text = xuliehaoTex; });
+                ///序列号
+                String xuliehao = result214.Substring(8 + 20 * 2, 30);
+                String xuliehaoTex = StringUtil.StringToASCII(xuliehao);
+                log.Info(xuliehaoTex);
+                this.Invoke((EventHandler)delegate { this.textBox2.Text = xuliehaoTex; });
 
-            ///零件号
-            String lingjianhao = result214.Substring(8 + 66 * 2, 30);
-            String lingjianhaoTex = StringUtil.StringToASCII(lingjianhao);
-            this.Invoke((EventHandler)delegate { this.textBox3.Text = lingjianhaoTex; });
-            log.Info(lingjianhaoTex);
+                ///零件号
+                String lingjianhao = result214.Substring(8 + 66 * 2, 30);
+                String lingjianhaoTex = StringUtil.StringToASCII(lingjianhao);
+                this.Invoke((EventHandler)delegate { this.textBox3.Text = lingjianhaoTex; });
+                log.Info(lingjianhaoTex);
 
-            ///dis
-            String Dis号 = result213.Substring(8 + 85 * 2, 20);
-            String Dis号Tex = StringUtil.StringToASCII(Dis号);
-            this.Invoke((EventHandler)delegate { this.textBox4.Text = Dis号Tex; });
-            log.Info(lingjianhaoTex);
-
-
-            ///CALID 标识
-            String calid号 = result02141.Substring(6 + 0 * 2, 32);
-            String calid号Tex = StringUtil.StringToASCII(calid号);
-            this.Invoke((EventHandler)delegate { this.textBox5.Text = calid号Tex; });
-            log.Info(calid号);
+                ///dis
+                String Dis号 = result213.Substring(8 + 85 * 2, 20);
+                String Dis号Tex = StringUtil.StringToASCII(Dis号);
+                this.Invoke((EventHandler)delegate { this.textBox4.Text = Dis号Tex; });
+                log.Info(lingjianhaoTex);
 
 
-            ///sfheol
-            String SFHEOL号 = result213.Substring(8 + 0 * 2, 8);
-            //String SFHEOL号Tex = StringUtil.StringToASCII(SFHEOL号);
-            this.Invoke((EventHandler)delegate { this.textBox6.Text = SFHEOL号; });
-            log.Info(SFHEOL号);
+                ///CALID 标识
+                String calid号 = result02141.Substring(6 + 0 * 2, 32);
+                String calid号Tex = StringUtil.StringToASCII(calid号);
+                this.Invoke((EventHandler)delegate { this.textBox5.Text = calid号Tex; });
+                log.Info(calid号);
 
 
-            ///
-            String SFH售后诊断工具号 = result214.Substring(8 + 89 * 2, 12);
-            String SFH售后诊断工具号Tex = StringUtil.StringToASCII(SFH售后诊断工具号);
-            this.Invoke((EventHandler)delegate { this.textBox7.Text = SFH售后诊断工具号Tex; });
-
-            ///
-            String SFH售后诊断工具测试时间 = result214.Substring(8 + 96 * 2, 8);
-            //String SFH售后诊断工具测试时间Tex = StringUtil.StringToASCII(SFH售后诊断工具测试时间);
-            this.Invoke((EventHandler)delegate { this.textBox8.Text = SFH售后诊断工具测试时间; });
-
-            ///
-            String SIHEOL刷写时间 = result213.Substring(8 + 0*2, 8);
-            //String SIHEOL刷写时间Tex = StringUtil.StringToASCII(SIHEOL刷写时间);
-            this.Invoke((EventHandler)delegate { this.textBox17.Text = SIHEOL刷写时间; });
-            
-
-            ///
-            String SIH售后诊断工具号 = result214.Substring(8 + 89 * 2, 12);
-            String SIH售后诊断工具号Tex = StringUtil.StringToASCII(SIH售后诊断工具号);
-            this.Invoke((EventHandler)delegate { this.textBox9.Text = SIH售后诊断工具号Tex; });
+                ///sfheol
+                String SFHEOL号 = result213.Substring(8 + 0 * 2, 8);
+                //String SFHEOL号Tex = StringUtil.StringToASCII(SFHEOL号);
+                this.Invoke((EventHandler)delegate { this.textBox6.Text = SFHEOL号; });
+                log.Info(SFHEOL号);
 
 
-            ///
-            String SIH售后诊断工具测试时间 = result213.Substring(8 + 95 * 2, 10);
-            //String SIH售后诊断工具号Tex = StringUtil.StringToASCII(SIH售后诊断工具测试时间);
-            this.Invoke((EventHandler)delegate { this.textBox10.Text = SIH售后诊断工具测试时间; });
+                ///
+                String SFH售后诊断工具号 = result214.Substring(8 + 89 * 2, 12);
+                String SFH售后诊断工具号Tex = StringUtil.StringToASCII(SFH售后诊断工具号);
+                this.Invoke((EventHandler)delegate { this.textBox7.Text = SFH售后诊断工具号Tex; });
 
-            ///
-            String 其他客户EOL工具号 = result213.Substring(8 + 80 * 2, 10);
-            String 其他客户EOL工具号Tex = StringUtil.StringToASCII(其他客户EOL工具号);
-            this.Invoke((EventHandler)delegate { this.textBox11.Text = 其他客户EOL工具号Tex; });
+                ///
+                String SFH售后诊断工具测试时间 = result214.Substring(8 + 96 * 2, 8);
+                //String SFH售后诊断工具测试时间Tex = StringUtil.StringToASCII(SFH售后诊断工具测试时间);
+                this.Invoke((EventHandler)delegate { this.textBox8.Text = SFH售后诊断工具测试时间; });
 
-            ///
-            String 其他客户EOL刷写时间 = result215.Substring(8 + 86 * 2, 8);
-            //String 其他客户EOL刷写时间Tex = StringUtil.StringToASCII(其他客户EOL刷写时间);
-            this.Invoke((EventHandler)delegate { this.textBox12.Text = 其他客户EOL刷写时间; });
+                ///
+                String SIHEOL刷写时间 = result213.Substring(8 + 0 * 2, 8);
+                //String SIHEOL刷写时间Tex = StringUtil.StringToASCII(SIHEOL刷写时间);
+                this.Invoke((EventHandler)delegate { this.textBox17.Text = SIHEOL刷写时间; });
 
-            ///
-            String 其他客户售后诊断工具号 = result215.Substring(8 + 90 * 2, 10);
-            String 其他客户售后诊断工具号Tex = StringUtil.StringToASCII(其他客户售后诊断工具号);
-            this.Invoke((EventHandler)delegate { this.textBox13.Text = 其他客户售后诊断工具号Tex; });
 
-            ///
-            String 其他客户售后诊断工具测试时间 = result215.Substring(8 + 96 * 2, 8);
-            // String 其他客户售后诊断工具测试时间Tex = StringUtil.StringToASCII(其他客户售后诊断工具测试时间);
-            this.Invoke((EventHandler)delegate { this.textBox14.Text = 其他客户售后诊断工具测试时间; });
+                ///
+                String SIH售后诊断工具号 = result214.Substring(8 + 89 * 2, 12);
+                String SIH售后诊断工具号Tex = StringUtil.StringToASCII(SIH售后诊断工具号);
+                this.Invoke((EventHandler)delegate { this.textBox9.Text = SIH售后诊断工具号Tex; });
 
-            String 车辆VAN = result213.Substring(8 + 51 * 2, 18);
-            String 车辆VANTex = StringUtil.StringToASCII(车辆VAN);
-            this.Invoke((EventHandler)delegate { this.textBox15.Text = 车辆VANTex; });
 
-            ///VIN 标识
-            String  VIN = result02141.Substring(6 + 0 * 2, 32);
-            String  VINTEXT = StringUtil.StringToASCII(VIN);
-            this.Invoke((EventHandler)delegate { this.textBox16.Text = VINTEXT; });
-            log.Info(calid号);
+                ///
+                String SIH售后诊断工具测试时间 = result213.Substring(8 + 95 * 2, 10);
+                //String SIH售后诊断工具号Tex = StringUtil.StringToASCII(SIH售后诊断工具测试时间);
+                this.Invoke((EventHandler)delegate { this.textBox10.Text = SIH售后诊断工具测试时间; });
+
+                ///
+                String 其他客户EOL工具号 = result213.Substring(8 + 80 * 2, 10);
+                String 其他客户EOL工具号Tex = StringUtil.StringToASCII(其他客户EOL工具号);
+                this.Invoke((EventHandler)delegate { this.textBox11.Text = 其他客户EOL工具号Tex; });
+
+                ///
+                String 其他客户EOL刷写时间 = result215.Substring(8 + 86 * 2, 8);
+                //String 其他客户EOL刷写时间Tex = StringUtil.StringToASCII(其他客户EOL刷写时间);
+                this.Invoke((EventHandler)delegate { this.textBox12.Text = 其他客户EOL刷写时间; });
+
+                ///
+                String 其他客户售后诊断工具号 = result215.Substring(8 + 90 * 2, 10);
+                String 其他客户售后诊断工具号Tex = StringUtil.StringToASCII(其他客户售后诊断工具号);
+                this.Invoke((EventHandler)delegate { this.textBox13.Text = 其他客户售后诊断工具号Tex; });
+
+                ///
+                String 其他客户售后诊断工具测试时间 = result215.Substring(8 + 96 * 2, 8);
+                // String 其他客户售后诊断工具测试时间Tex = StringUtil.StringToASCII(其他客户售后诊断工具测试时间);
+                this.Invoke((EventHandler)delegate { this.textBox14.Text = 其他客户售后诊断工具测试时间; });
+
+                String 车辆VAN = result213.Substring(8 + 51 * 2, 18);
+                String 车辆VANTex = StringUtil.StringToASCII(车辆VAN);
+                this.Invoke((EventHandler)delegate { this.textBox15.Text = 车辆VANTex; });
+
+                ///VIN 标识
+                String VIN = result210240.Substring(6 + 0 * 2, 32);
+                String VINTEXT = StringUtil.StringToASCII(VIN);
+                this.Invoke((EventHandler)delegate { this.textBox16.Text = VINTEXT; });
+                log.Info(calid号);
+            }
+            catch {
+
+            }
+
+
 
         }
-
-
-
 
     }
 }

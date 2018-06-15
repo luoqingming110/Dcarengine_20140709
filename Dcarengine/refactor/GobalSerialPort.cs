@@ -225,14 +225,16 @@ namespace Dcarengine.serialPort
         /// </summary>
         public static void WriteByMessage(byte[] buffer, int offset, int count)
         {
+            //直接返回数据格式
+            if (gobalserialPort.IsOpen == false) {
+                return;
+            }
             try
             {
-
                 log.Info("write  message  to buffer : " + StringToSendBytes.ByteToString(buffer));
                 gobalserialPort.Write(buffer, offset, count);
                 //进入线程等待
                 CommonAutoRest.MEvent.WaitOne();
-
                 Interlocked.Increment(ref CommonAutoRest.AutoResetCount);
                //++;
             }

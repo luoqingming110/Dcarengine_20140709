@@ -12,6 +12,8 @@ namespace Dcarengine.UIForm
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -24,6 +26,10 @@ namespace Dcarengine.UIForm
             }
             base.Dispose(disposing);
 
+            if (EcuConnectionF.ECULINKStatus == false)
+            {
+                return;
+            }
             try
             {
 
@@ -33,7 +39,7 @@ namespace Dcarengine.UIForm
 
                 GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
 
-                Thread.Sleep(9000);
+                Thread.Sleep(1000);
 
                 MainF.ShowBoxTex("串口已断开");
 

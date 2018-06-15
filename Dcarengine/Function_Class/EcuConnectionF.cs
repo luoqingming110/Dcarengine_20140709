@@ -143,6 +143,11 @@ namespace Dcarengine.Function_Class
         /// </summary>
         public void ConnectEucByWait()
         {
+            if (GobalSerialPort.SerialPort.IsOpen == false) {
+
+                return;
+            }
+
             ClearSendAndRecive();
 
             String backEndString = null;

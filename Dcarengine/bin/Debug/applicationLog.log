@@ -22933,3 +22933,62 @@ FF FF FF FF FF FF FF FF
 [2018-06-14 11:46:11,519]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
 [2018-06-14 11:49:56,686]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
 [2018-06-14 11:50:04,427]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 21:54:32,660]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-06-14 21:54:32,738]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 21:54:32,754]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-06-14 21:54:32,754]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 21:54:32,769]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1101
+
+[2018-06-14 21:54:32,769]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 21:54:41,894]  6 -- INFO  -- Dcarengine.Program [CurrentDomain_UnhandledException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/14 星期四 21:54:41
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.Function_Class.EcuConnectionF.ClearSendAndRecive() 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\Function_Class\EcuConnectionF.cs:行号 246
+   在 Dcarengine.Function_Class.EcuConnectionF.ConnectEucByWait() 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\Function_Class\EcuConnectionF.cs:行号 146
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+[2018-06-14 21:54:47,255]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-06-14 21:54:47,302]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 21:54:47,317]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-06-14 21:54:47,333]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 21:54:47,348]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1101
+
+[2018-06-14 21:54:47,364]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 22:10:36,941]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 22:15:54,889]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 22:16:09,360]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 22:20:02,259]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-06-14 22:20:02,292]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 22:20:02,309]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-06-14 22:20:02,316]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 22:20:02,324]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1101
+
+[2018-06-14 22:20:02,332]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write message is error : 未将对象引用设置到对象的实例。
+[2018-06-14 22:20:03,353]  6 -- INFO  -- Dcarengine.Program [CurrentDomain_UnhandledException] -- thi si system ****************************异常文本****************************
+【出现时间】：2018/6/14 星期四 22:20:03
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 Dcarengine.Function_Class.EcuConnectionF.ClearSendAndRecive() 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\Function_Class\EcuConnectionF.cs:行号 246
+   在 Dcarengine.Function_Class.EcuConnectionF.ConnectEucByWait() 位置 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\Function_Class\EcuConnectionF.cs:行号 146
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+[2018-06-14 22:27:08,236]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-14 22:28:53,219]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-06-15 10:22:36,124]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  

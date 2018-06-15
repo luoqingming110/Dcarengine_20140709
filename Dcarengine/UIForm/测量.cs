@@ -799,7 +799,7 @@ namespace Dcarengine
             else
             {
                 //时间 和传递的行数；
-                CountTime = 200;
+               // CountTime = 200;
                 TotalTime = 0;
                 MeasureTimer.TimeDispose();
 
@@ -1038,7 +1038,7 @@ namespace Dcarengine
             {
 
                 //时间和传递的行数；
-                CountTime = 200;
+               // CountTime = 200;
                 TotalTime = 0;             
                 measureflag = true;
 

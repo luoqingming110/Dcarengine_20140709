@@ -664,8 +664,8 @@ namespace Dcarengine.Function_Class
                 MyMeans.InsertTrip("", "", _1Dimensional_Maps_toStr[5][0], _1Dimensional_Maps_toStr[5][1], _1Dimensional_Maps_toStr[5][2], _1Dimensional_Maps_toStr[5][3], "", "", "", "");
                 //// 2wei  shuju///////////////////////////////////////////////////////////////////////////////////
                 MyMeans.InsertTrip("2 - Dimensional Maps", "", "", "", "", "", "", "", "", "");
-                MyMeans.InsertTrip("", " x: Eng_nAvrg  /  y: CoEng_rTrq  [rpm]   发动机平均转速 ", "", "", "", "", "", "", "", "");
-                MyMeans.InsertTrip("", "当前扭矩与最大扭矩的比率", "700 ~ 900 ", "900 ~ 1100", "1100 ~ 1300", "1300 ~ 1500", "", "", "", "");
+                MyMeans.InsertTrip("", " x: Eng_nAvrg[rpm] /  y: CoEng_rTrq[%]    发动机平均转速 ", "", "", "", "", "", "", "", "");
+                MyMeans.InsertTrip("", "当前扭矩与最大扭矩的比率", "500 ~ 1000 ", "1000 ~ 1500", "1500 ~ 2000", "2000 ~ 2500", "", "", "", "");
                 MyMeans.InsertTrip("", "94.9707 ~ 114.9658 %", _68_Dimensional_Maps_toStr[2][0], _68_Dimensional_Maps_toStr[2][1], _68_Dimensional_Maps_toStr[2][2], _68_Dimensional_Maps_toStr[2][3], "", "", "", "");
                 MyMeans.InsertTrip("", "74.9756 ~ 94.9707 %", _68_Dimensional_Maps_toStr[1][0], _68_Dimensional_Maps_toStr[1][1], _68_Dimensional_Maps_toStr[1][2], _68_Dimensional_Maps_toStr[1][3], "", "", "", "");
                 MyMeans.InsertTrip("", "54.9805 ~ 74.9756  %", _68_Dimensional_Maps_toStr[0][0], _68_Dimensional_Maps_toStr[0][1], _68_Dimensional_Maps_toStr[0][2], _68_Dimensional_Maps_toStr[0][3], "", "", "", "");
@@ -673,26 +673,26 @@ namespace Dcarengine.Function_Class
                 MyMeans.InsertTrip("", "14.9984 ~ 34.9894   %", _68_Dimensional_Maps_toStr[4][0], _68_Dimensional_Maps_toStr[4][1], _68_Dimensional_Maps_toStr[4][2], _68_Dimensional_Maps_toStr[4][3], "", "", "", "");
                 MyMeans.InsertTrip("", "-4.9927 ~ 14.9984   %", _68_Dimensional_Maps_toStr[3][0], _68_Dimensional_Maps_toStr[3][1], _68_Dimensional_Maps_toStr[3][2], _68_Dimensional_Maps_toStr[3][3], "", "", "", "");
 
-                MyMeans.InsertTrip("", "x: VSSCD_v  /  y: CoEng_rTrq  [km/h]   车速	 ", "", "", "", "", "", "", "", "");
+                MyMeans.InsertTrip("", " x: VSSCD_v[km/h] / y: CoEng_rTrq[%]   车速	 ", "", "", "", "", "", "", "", "");
                 MyMeans.InsertTrip("", " 当前扭矩与最大扭矩的比率", "-5 ~ 30 ", "30 ~ 65", "65 ~ 100", "100 ~ 135", "", "", "", "");
                 MyMeans.InsertTrip("", "94.9707 ~ 114.9658 %", _68_Dimensional_Maps_toStr[8][0], _68_Dimensional_Maps_toStr[8][1], _68_Dimensional_Maps_toStr[8][2], _68_Dimensional_Maps_toStr[8][3], "", "", "", "");
-                MyMeans.InsertTrip("", " 74.9756 ~ 94.9707 %", _68_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
+                MyMeans.InsertTrip("", "74.9756 ~ 94.9707 %", _68_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
                 MyMeans.InsertTrip("", "54.9805 ~ 74.9756 %", _68_Dimensional_Maps_toStr[6][0], _68_Dimensional_Maps_toStr[6][1], _68_Dimensional_Maps_toStr[6][2], _68_Dimensional_Maps_toStr[6][3], "", "", "", "");
-                MyMeans.InsertTrip("", " 34.9894 ~ 54.9805 %", _69_Dimensional_Maps_toStr[2][0], _68_Dimensional_Maps_toStr[2][1], _68_Dimensional_Maps_toStr[2][2], _68_Dimensional_Maps_toStr[2][3], "", "", "", "");
-                MyMeans.InsertTrip("", " 14.9984 ~ 34.9894 %", _69_Dimensional_Maps_toStr[1][0], _68_Dimensional_Maps_toStr[1][1], _68_Dimensional_Maps_toStr[1][2], _68_Dimensional_Maps_toStr[1][3], "", "", "", "");
+                MyMeans.InsertTrip("", "34.9894 ~ 54.9805 %", _69_Dimensional_Maps_toStr[2][0], _68_Dimensional_Maps_toStr[2][1], _68_Dimensional_Maps_toStr[2][2], _68_Dimensional_Maps_toStr[2][3], "", "", "", "");
+                MyMeans.InsertTrip("", "14.9984 ~ 34.9894 %", _69_Dimensional_Maps_toStr[1][0], _68_Dimensional_Maps_toStr[1][1], _68_Dimensional_Maps_toStr[1][2], _68_Dimensional_Maps_toStr[1][3], "", "", "", "");
                 MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[0][0], _68_Dimensional_Maps_toStr[0][1], _68_Dimensional_Maps_toStr[0][2], _68_Dimensional_Maps_toStr[0][3], "", "", "", "");
 
-                MyMeans.InsertTrip("", "x: Eng_nAvrg  /  y: BPSCD_pOutVal  [rpm]   发动机平均转速", "", "", "", "", "", "", "", "");
-                MyMeans.InsertTrip("", " 增压压力传感器的输出值 ", "550 ~ 1000", "1000 ~ 1450", "1450 ~ 1900 ", " 1900 ~ 2350 ", "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[5][0], _68_Dimensional_Maps_toStr[5][1], _68_Dimensional_Maps_toStr[5][2], _68_Dimensional_Maps_toStr[5][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[4][0], _68_Dimensional_Maps_toStr[4][1], _68_Dimensional_Maps_toStr[4][2], _68_Dimensional_Maps_toStr[4][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[3][0], _68_Dimensional_Maps_toStr[3][1], _68_Dimensional_Maps_toStr[3][2], _68_Dimensional_Maps_toStr[3][3], "", "", "", "");
+                MyMeans.InsertTrip("", "x: Eng_nAvrg[rpm] / y: BPSCD_pOutVal[mbar]    发动机平均转速", "", "", "", "", "", "", "", "");
+                MyMeans.InsertTrip("", " 增压压力传感器的输出值 ", "500 ~ 1000", "1000 ~ 1500", "1500 ~ 2000 ", " 2000 ~ 2500 ", "", "", "", "");
+                MyMeans.InsertTrip("", "-75 ~ 115 %	", _69_Dimensional_Maps_toStr[5][0], _68_Dimensional_Maps_toStr[5][1], _68_Dimensional_Maps_toStr[5][2], _68_Dimensional_Maps_toStr[5][3], "", "", "", "");
+                MyMeans.InsertTrip("", "-35 ~ 75 %	", _69_Dimensional_Maps_toStr[4][0], _68_Dimensional_Maps_toStr[4][1], _68_Dimensional_Maps_toStr[4][2], _68_Dimensional_Maps_toStr[4][3], "", "", "", "");
+                MyMeans.InsertTrip("", "-5 ~ 35 %	", _69_Dimensional_Maps_toStr[3][0], _68_Dimensional_Maps_toStr[3][1], _68_Dimensional_Maps_toStr[3][2], _68_Dimensional_Maps_toStr[3][3], "", "", "", "");
 
-                MyMeans.InsertTrip("", "x: Eng_nAvrg  /  y: RailCD_pPeak  [rpm]   发动机平均转速", "", "", "", "", "", "", "", "");
-                MyMeans.InsertTrip("", " 持续10毫秒最大轨道压力 ", "550 ~ 1000", "1000 ~ 1450", "1450 ~ 1900 ", " 1900 ~ 2350 ", "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[8][0], _68_Dimensional_Maps_toStr[8][1], _68_Dimensional_Maps_toStr[8][2], _68_Dimensional_Maps_toStr[8][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-4.9927 ~ 14.9984 %	", _69_Dimensional_Maps_toStr[6][0], _68_Dimensional_Maps_toStr[6][1], _68_Dimensional_Maps_toStr[6][2], _68_Dimensional_Maps_toStr[6][3], "", "", "", "");
+                MyMeans.InsertTrip("", "x: Eng_nAvrg[rpm] / y: RailCD_pPeak[bar]      发动机平均转速", "", "", "", "", "", "", "", "");
+                MyMeans.InsertTrip("", " 持续10毫秒最大轨道压力 ", "500 ~ 1000", "1000 ~ 1500", "1500 ~ 2000 ", " 2000 ~ 2500 ", "", "", "", "");
+                MyMeans.InsertTrip("", "-75 ~ 115 %	", _69_Dimensional_Maps_toStr[8][0], _68_Dimensional_Maps_toStr[8][1], _68_Dimensional_Maps_toStr[8][2], _68_Dimensional_Maps_toStr[8][3], "", "", "", "");
+                MyMeans.InsertTrip("", "-35 ~ 75%	", _69_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
+                MyMeans.InsertTrip("", "-5 ~ 35 %	", _69_Dimensional_Maps_toStr[6][0], _68_Dimensional_Maps_toStr[6][1], _68_Dimensional_Maps_toStr[6][2], _68_Dimensional_Maps_toStr[6][3], "", "", "", "");
 
                 #endregion
                 //for (int x = 2; x < 5; x++)
