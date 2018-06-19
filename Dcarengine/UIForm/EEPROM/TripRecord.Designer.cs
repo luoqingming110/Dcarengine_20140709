@@ -41,6 +41,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox2
@@ -162,12 +163,23 @@
             this.label12.TabIndex = 50;
             this.label12.Text = "16C";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(450, 517);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 20);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "写入数据后请断电";
+            // 
             // TripRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(639, 559);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox9);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label5;
     }
 }
