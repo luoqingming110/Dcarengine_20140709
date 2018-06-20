@@ -261,7 +261,8 @@ namespace Dcarengine.UIForm
             if (EcuIsLinked)
             {
                 //线程处理
-                new Thread(_13dtcRead.CleardtcByByte).Start();
+                //new Thread(_13dtcRead.CleardtcByByte).Start();
+                _13dtcRead.CleardtcByByte();
             }
             else
             {

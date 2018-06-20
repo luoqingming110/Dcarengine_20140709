@@ -684,15 +684,15 @@ namespace Dcarengine.Function_Class
 
                 MyMeans.InsertTrip("", "x: Eng_nAvrg[rpm] / y: BPSCD_pOutVal[mbar]    发动机平均转速", "", "", "", "", "", "", "", "");
                 MyMeans.InsertTrip("", " 增压压力传感器的输出值 ", "500 ~ 1000", "1000 ~ 1500", "1500 ~ 2000 ", " 2000 ~ 2500 ", "", "", "", "");
-                MyMeans.InsertTrip("", "-75 ~ 115 %	", _69_Dimensional_Maps_toStr[5][0], _68_Dimensional_Maps_toStr[5][1], _68_Dimensional_Maps_toStr[5][2], _68_Dimensional_Maps_toStr[5][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-35 ~ 75 %	", _69_Dimensional_Maps_toStr[4][0], _68_Dimensional_Maps_toStr[4][1], _68_Dimensional_Maps_toStr[4][2], _68_Dimensional_Maps_toStr[4][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-5 ~ 35 %	", _69_Dimensional_Maps_toStr[3][0], _68_Dimensional_Maps_toStr[3][1], _68_Dimensional_Maps_toStr[3][2], _68_Dimensional_Maps_toStr[3][3], "", "", "", "");
+                MyMeans.InsertTrip("", "2500 ~ 3100	", _69_Dimensional_Maps_toStr[5][0], _68_Dimensional_Maps_toStr[5][1], _68_Dimensional_Maps_toStr[5][2], _68_Dimensional_Maps_toStr[5][3], "", "", "", "");
+                MyMeans.InsertTrip("", "2100 ~ 2500	", _69_Dimensional_Maps_toStr[4][0], _68_Dimensional_Maps_toStr[4][1], _68_Dimensional_Maps_toStr[4][2], _68_Dimensional_Maps_toStr[4][3], "", "", "", "");
+                MyMeans.InsertTrip("", "1600 ~ 2100	", _69_Dimensional_Maps_toStr[3][0], _68_Dimensional_Maps_toStr[3][1], _68_Dimensional_Maps_toStr[3][2], _68_Dimensional_Maps_toStr[3][3], "", "", "", "");
 
                 MyMeans.InsertTrip("", "x: Eng_nAvrg[rpm] / y: RailCD_pPeak[bar]      发动机平均转速", "", "", "", "", "", "", "", "");
                 MyMeans.InsertTrip("", " 持续10毫秒最大轨道压力 ", "500 ~ 1000", "1000 ~ 1500", "1500 ~ 2000 ", " 2000 ~ 2500 ", "", "", "", "");
-                MyMeans.InsertTrip("", "-75 ~ 115 %	", _69_Dimensional_Maps_toStr[8][0], _68_Dimensional_Maps_toStr[8][1], _68_Dimensional_Maps_toStr[8][2], _68_Dimensional_Maps_toStr[8][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-35 ~ 75%	", _69_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
-                MyMeans.InsertTrip("", "-5 ~ 35 %	", _69_Dimensional_Maps_toStr[6][0], _68_Dimensional_Maps_toStr[6][1], _68_Dimensional_Maps_toStr[6][2], _68_Dimensional_Maps_toStr[6][3], "", "", "", "");
+                MyMeans.InsertTrip("", "1200~ 1650	", _69_Dimensional_Maps_toStr[8][0], _68_Dimensional_Maps_toStr[8][1], _68_Dimensional_Maps_toStr[8][2], _68_Dimensional_Maps_toStr[8][3], "", "", "", "");
+                MyMeans.InsertTrip("", "650 ~ 1200	", _69_Dimensional_Maps_toStr[7][0], _68_Dimensional_Maps_toStr[7][1], _68_Dimensional_Maps_toStr[7][2], _68_Dimensional_Maps_toStr[7][3], "", "", "", "");
+                MyMeans.InsertTrip("", "100 ~ 650	", _69_Dimensional_Maps_toStr[6][0], _68_Dimensional_Maps_toStr[6][1], _68_Dimensional_Maps_toStr[6][2], _68_Dimensional_Maps_toStr[6][3], "", "", "", "");
 
                 #endregion
                 //for (int x = 2; x < 5; x++)

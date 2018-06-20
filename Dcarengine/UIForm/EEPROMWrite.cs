@@ -45,12 +45,10 @@ namespace Dcarengine.UIForm
                     else {
 
                         GobalSerialPort.WriteByMessage(CommonCmd.ATST00,0,CommonCmd.ATST00.Length);
-
                     }
                 }
                 catch {
                 }
-
             }
             else {
 

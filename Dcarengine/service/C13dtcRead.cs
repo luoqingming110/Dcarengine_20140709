@@ -160,8 +160,9 @@ namespace Dcarengine.service
             byte4[5] = 0x30;
             byte4[6] = 0x0D;
             byte4[7] = 0x0A;
+
             GobalSerialPort.WriteByMessage(CommonCmd.ATST00, 0, CommonCmd.ATST00.Length);
-           // Thread.Sleep(400);
+            Thread.Sleep(400);
             GobalSerialPort.WriteByMessage(byte4, 0, byte4.Length);
             Thread.Sleep(400);
             GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);

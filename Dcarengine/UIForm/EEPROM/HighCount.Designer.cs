@@ -183,7 +183,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(523, 591);
+            this.label9.Location = new System.Drawing.Point(523, 547);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(177, 20);
             this.label9.TabIndex = 34;
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 632);
+            this.ClientSize = new System.Drawing.Size(712, 586);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);

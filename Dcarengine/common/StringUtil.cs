@@ -492,10 +492,13 @@ namespace Dcarengine.refactor
 
                 int index = 0;
                 for (int i = 0; i < orginString.Length; i += 2)
-
                 {
 
-                    buff[index] = Convert.ToByte(orginString.Substring(i, 2), 16);
+                    byte indexValue = Convert.ToByte(orginString.Substring(i, 2), 16);
+                    if (indexValue < 128)
+                    {
+                        buff[index] = indexValue;
+                    }
                     ++index;
                 }
                 result = Encoding.Default.GetString(buff);

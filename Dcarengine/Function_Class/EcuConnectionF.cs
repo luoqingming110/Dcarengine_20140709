@@ -154,9 +154,11 @@ namespace Dcarengine.Function_Class
 
             CommonCmd.SendATE1();
            // GobalSerialPort.GobalSerialPortEnventChange();
-
+            //718 code
             GobalSerialPort.WriteByMessage(_AT2S, 0, _AT2S.Length);
             backEndString = GetSerialPortBackData();
+            CommonConstant.TL718CODE = backEndString;
+
             //foreach (string num in TL718NUM)
             //{
             //    if (backEndString.Contains(num))

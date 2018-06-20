@@ -159,6 +159,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CarDBAccessDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="common\DateUtil.cs" />
     <Compile Include="entity\TpCmdEntity.cs" />
     <Compile Include="Function_Class\13IdFDataWork.cs" />
     <Compile Include="Function_Class\C9Dtc.cs" />

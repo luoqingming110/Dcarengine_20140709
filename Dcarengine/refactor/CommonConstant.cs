@@ -54,6 +54,12 @@ namespace Dcarengine.refactor
         public static String mode;
 
 
+        /// <summary>
+        /// 芯片编号  数据
+        /// </summary>
+        public static String TL718CODE="00000000"; 
+
+
 
         public static byte[]  _1081Mode= { 11,22,33,44 } ;
         public static byte[]  _1084Mode = { 11, 22, 33, 44 };
