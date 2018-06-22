@@ -799,25 +799,25 @@ namespace Dcarengine
             else
             {
                 //时间 和传递的行数；
-               // CountTime = 200;
-                TotalTime = 0;
-                MeasureTimer.TimeDispose();
+                // CountTime = 200;
+                try
+                {
+                    TotalTime = 0;
+                    MeasureTimer.TimeDispose();
+                    GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
 
-                GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
+                    GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
+                    EcuConnectionF ecuConnectionF = new EcuConnectionF();
+                    ecuConnectionF.ConnectEuc();
+                    GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
+                    Thread.Sleep(1500);
+                    CommonAutoRest.MEvent.Set();
+                    this.单次测量.Text = "测试不保存";
+                    measureflag = true;
+                }
+                catch (Exception) {
 
-                GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
-
-
-                EcuConnectionF ecuConnectionF = new EcuConnectionF();
-
-                ecuConnectionF.ConnectEuc();
-                GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
-                Thread.Sleep(1500);
-                CommonAutoRest.MEvent.Set();
-                this.单次测量.Text = "测试不保存";
-                measureflag = true;
-
-
+                }
             }      
         }
 
@@ -1036,37 +1036,32 @@ namespace Dcarengine
             }
             else   //停止测量数据
             {
-
                 //时间和传递的行数；
-               // CountTime = 200;
-                TotalTime = 0;             
+                // CountTime = 200;
+                TotalTime = 0;
                 measureflag = true;
+                Thread t1;
+                try
+                {                  
+                    MeasureTimer.TimeDispose();
+                    GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
+                    GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
 
-                MeasureTimer.TimeDispose();
-
-                GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
-
-                GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
-
-                Thread t1 = new Thread(new ParameterizedThreadStart(SynOpenExeclWorkbook));
-                t1.Start(excelFilePath);
-
-               // new Thread(ClearDelay).Start();
-
-               // GobalSerialPort.WriteByMessage(CommonCmd.ATR, 0, CommonCmd.ATR.Length);
-                EcuConnectionF ecuConnectionF = new EcuConnectionF();
-                ecuConnectionF.ConnectEucByWait();
-
-                //  new Thread(ClearDelay).Start();               
-                GobalSerialPort.ClearSendAndRecive();
-                GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
-                Thread.Sleep(1500);
-
-               // Thread.Sleep(2000);
-
-                this.button7.Text = "测量保存";
-
-                return;
+                    t1 = new Thread(new ParameterizedThreadStart(SynOpenExeclWorkbook));
+                    t1.Start(excelFilePath);
+                    // GobalSerialPort.WriteByMessage(CommonCmd.ATR, 0, CommonCmd.ATR.Length);
+                    EcuConnectionF ecuConnectionF = new EcuConnectionF();
+                    ecuConnectionF.ConnectEucByWait();
+                    //new Thread(ClearDelay).Start();               
+                    GobalSerialPort.ClearSendAndRecive();
+                    GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
+                    Thread.Sleep(1500);
+                    this.button7.Text = "测量保存";
+                    return;
+                }
+                catch (Exception) {
+                    //t1.Abort();
+                }
             }
 
         }

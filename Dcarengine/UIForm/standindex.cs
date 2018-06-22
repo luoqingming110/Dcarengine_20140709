@@ -95,33 +95,33 @@ namespace Dcarengine.UIForm
                 show(result213, result214, result215, result210241, result210240);
 
                 //mode 1086
-                log.Info("ECUMODE  1086 " + " ");
-                CommonConstant.mode = "1086";
-                Tp_KeyMethodFuntion.Con();
-                GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                String backString = GobalSerialPort.ResultBackString;
-                if (!backString.Contains("86"))
-                {
-                    GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                    backString = GobalSerialPort.ResultBackString;
-                }
-                else
-                {
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATST00, 0, CommonCmd.ATST00.Length);
-                    //write 
-                    String tl718code = result214.Substring(8 + 89 * 2, 12);
-                    String time = result214.Substring(8 + 96 * 2, 8);
-                    result214.Replace(tl718code, "0000" + CommonConstant.TL718CODE);
-                    result214.Replace(time, DateUtil.getDate());
-                    String address = "3b0214" + result214.Substring(8, 200);
-                    byte[] cmdSend = StringToSendBytes.bytesToSend(address + "\n");
-                    GobalSerialPort.WriteByMessage(cmdSend, 0, cmdSend.Length);
-                    String result = GobalSerialPort.ResultBackString;
-                    //if () {
-                    //}
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
-                    GobalSerialPort.WriteByMessage(CommonCmd._1081,0,CommonCmd._1081.Length);
-                }
+                //log.Info("ECUMODE  1086 " + " ");
+                //CommonConstant.mode = "1086";
+                //Tp_KeyMethodFuntion.Con();
+                //GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
+                //String backString = GobalSerialPort.ResultBackString;
+                //if (!backString.Contains("86"))
+                //{
+                //    GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
+                //    backString = GobalSerialPort.ResultBackString;
+                //}
+                //else
+                //{
+                //    GobalSerialPort.WriteByMessage(CommonCmd.ATST00, 0, CommonCmd.ATST00.Length);
+                //    //write 
+                //    String tl718code = result214.Substring(8 + 89 * 2, 12);
+                //    String time = result214.Substring(8 + 96 * 2, 8);
+                //    result214.Replace(tl718code, "0000" + CommonConstant.TL718CODE);
+                //    result214.Replace(time, DateUtil.getDate());
+                //    String address = "3b0214" + result214.Substring(8, 200);
+                //    byte[] cmdSend = StringToSendBytes.bytesToSend(address + "\n");
+                //    GobalSerialPort.WriteByMessage(cmdSend, 0, cmdSend.Length);
+                //    String result = GobalSerialPort.ResultBackString;
+                //    //if () {
+                //    //}
+                //    GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
+                //    GobalSerialPort.WriteByMessage(CommonCmd._1081,0,CommonCmd._1081.Length);
+                //}
 
 
             }
