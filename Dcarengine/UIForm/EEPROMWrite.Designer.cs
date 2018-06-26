@@ -37,19 +37,19 @@ namespace Dcarengine.UIForm
 
                 GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
 
-                GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                //GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
 
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
 
-                MainF.ShowBoxTex("串口已断开");
+                //MainF.ShowBoxTex("串口已断开");
 
-                EcuConnectionF.ECULINKStatus1 = false;
+                //EcuConnectionF.ECULINKStatus1 = false;
 
-                EcuConnectionF connectecu = new EcuConnectionF();
+                //EcuConnectionF connectecu = new EcuConnectionF();
 
-                Thread tWorkingThread = new Thread((connectecu.ConnectEucByWait));
+                //Thread tWorkingThread = new Thread((connectecu.ConnectEucByWait));
 
-                tWorkingThread.Start();
+                //tWorkingThread.Start();
 
             }
             catch {

@@ -101,7 +101,9 @@ namespace Dcarengine
                 if (EcuVersionF.EcuVsion != null)
                 {
                     EcuAddressTable = (String)CommonConstant.EcuVersionMap[EcuVersionF.EcuVsion];
+                   
                 }
+                //EcuAddressTable = "ECU13AdRess790";
                 if (EcuAddressTable != null)
                 {
                     con = new OleDbConnection(cont);
@@ -133,7 +135,6 @@ namespace Dcarengine
         {
            
         }
-
 
 
         /// <summary>
@@ -728,6 +729,7 @@ namespace Dcarengine
             newDataTable.Rows[0][0] = "time";
             newDataTable.Rows[1][0] = "时间间隔";
             newDataTable.Rows[2][0] = "s";
+            newDataTable.Rows.RemoveAt(4);   //移除地址位
             return newDataTable;
         }
 
@@ -752,7 +754,6 @@ namespace Dcarengine
             }
             else
             {
-
                 if (MeasureTimer.stateTimer != null)
                 {
                     MeasureTimer.stateTimer.Dispose();
@@ -807,16 +808,17 @@ namespace Dcarengine
                     GobalSerialPort.SerialPort.DataReceived -= new SerialDataReceivedEventHandler(measure_DataReceivedByMeasure);
 
                     GobalSerialPort.SerialPort.DataReceived += new SerialDataReceivedEventHandler(GobalSerialPort.SerialportMessage_DataReceived);
-                    EcuConnectionF ecuConnectionF = new EcuConnectionF();
-                    ecuConnectionF.ConnectEuc();
+                    //EcuConnectionF ecuConnectionF = new EcuConnectionF();
+                    //ecuConnectionF.ConnectEuc();
                     GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
                     Thread.Sleep(1500);
                     CommonAutoRest.MEvent.Set();
                     this.单次测量.Text = "测试不保存";
                     measureflag = true;
+                   // Application.Exit();
                 }
                 catch (Exception) {
-
+                    Application.Exit();
                 }
             }      
         }
@@ -989,6 +991,11 @@ namespace Dcarengine
        
         private void 测量保存_Click(object sender, EventArgs e)
         {
+
+            //DataTable SaveTable = DatagridviewTodatatble(dataGridView1);
+            //DataTable SaveTable2 = SwapDTCR(SaveTable);
+            //ResultDatatable = FinalDatatable(SaveTable2);
+
             SaveMFlage = true;
             String time = this.选择时间.Text.ToString();
             if (time !=null && time!="") {
@@ -1036,7 +1043,7 @@ namespace Dcarengine
             }
             else   //停止测量数据
             {
-                //时间和传递的行数；
+                // 时间和传递的行数；
                 // CountTime = 200;
                 TotalTime = 0;
                 measureflag = true;
@@ -1049,21 +1056,22 @@ namespace Dcarengine
 
                     t1 = new Thread(new ParameterizedThreadStart(SynOpenExeclWorkbook));
                     t1.Start(excelFilePath);
-                    // GobalSerialPort.WriteByMessage(CommonCmd.ATR, 0, CommonCmd.ATR.Length);
-                    EcuConnectionF ecuConnectionF = new EcuConnectionF();
-                    ecuConnectionF.ConnectEucByWait();
+                    //GobalSerialPort.WriteByMessage(CommonCmd.ATR, 0, CommonCmd.ATR.Length);
+                    //EcuConnectionF ecuConnectionF = new EcuConnectionF();
+                    //ecuConnectionF.ConnectEucByWait();
                     //new Thread(ClearDelay).Start();               
                     GobalSerialPort.ClearSendAndRecive();
                     GobalSerialPort.Write(CommonCmd.ClearCmd, 0, CommonCmd.ClearCmd.Length);
                     Thread.Sleep(1500);
                     this.button7.Text = "测量保存";
+                    //Application.Exit();   //application
                     return;
                 }
                 catch (Exception) {
                     //t1.Abort();
+                    Application.Exit();
                 }
             }
-
         }
 
      
@@ -1235,6 +1243,20 @@ namespace Dcarengine
         {
             this.Close();
         }
+
+
+
+        /// <summary>
+        /// 窗口关闭程序
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void  Deasure_FormClosed(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
 
     }
 }

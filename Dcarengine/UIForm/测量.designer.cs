@@ -88,6 +88,12 @@ namespace Dcarengine
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
+
+            //关闭窗口代码
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deasure_FormClosed);
+
+
+            
             // 
             // 单次测量
             // 
