@@ -1,4 +1,7 @@
-﻿namespace Dcarengine.UIForm
+﻿using Dcarengine.refactor;
+using Dcarengine.serialPort;
+
+namespace Dcarengine.UIForm
 {
     partial class DiagnosticTest
     {
@@ -16,6 +19,12 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+
+
+                GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
+
+                GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
+
             }
             base.Dispose(disposing);
         }
