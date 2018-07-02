@@ -56,6 +56,8 @@ namespace TestProject
         static void Main(string[] args)
         {
 
+            ff();
+
             Console.WriteLine(DateTime.Now.ToString("yyyyMMdd") );
 
             Console.WriteLine("10进制转" + Convert.ToInt64("0064",16) );
@@ -123,6 +125,21 @@ namespace TestProject
 
         }
 
+
+
+        static int a = 0;
+        public static void ff() {
+
+            Console.WriteLine("this is the ff: ff" );
+            a++;
+            if (a >10) {
+
+                return;
+            }
+
+            ff();
+          //  ff();
+        }
         /// <summary>
         /// StringtoAscII
         /// </summary>

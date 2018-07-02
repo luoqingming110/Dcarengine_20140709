@@ -58,11 +58,6 @@ namespace Dcarengine.UIForm
             this.行车记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.参数测量ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.转速测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.指示灯测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.高压电磁阀测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.轨压测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.断缸测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dUBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eEPROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -81,9 +76,6 @@ namespace Dcarengine.UIForm
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            ///
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-
             // 
             // menuStrip1
             // 
@@ -180,46 +172,10 @@ namespace Dcarengine.UIForm
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.转速测试ToolStripMenuItem,
-            this.指示灯测试ToolStripMenuItem,
-            this.高压电磁阀测试ToolStripMenuItem,
-            this.轨压测试ToolStripMenuItem,
-            this.断缸测试ToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 35);
             this.toolStripMenuItem1.Text = "主动诊断测试";
-            // 
-            // 转速测试ToolStripMenuItem
-            // 
-            this.转速测试ToolStripMenuItem.Name = "转速测试ToolStripMenuItem";
-            this.转速测试ToolStripMenuItem.ShowShortcutKeys = false;
-            this.转速测试ToolStripMenuItem.Size = new System.Drawing.Size(262, 36);
-            this.转速测试ToolStripMenuItem.Text = "转速测试";
-            // 
-            // 指示灯测试ToolStripMenuItem
-            // 
-            this.指示灯测试ToolStripMenuItem.Name = "指示灯测试ToolStripMenuItem";
-            this.指示灯测试ToolStripMenuItem.Size = new System.Drawing.Size(262, 36);
-            this.指示灯测试ToolStripMenuItem.Text = "指示灯测试";
-            // 
-            // 高压电磁阀测试ToolStripMenuItem
-            // 
-            this.高压电磁阀测试ToolStripMenuItem.Name = "高压电磁阀测试ToolStripMenuItem";
-            this.高压电磁阀测试ToolStripMenuItem.Size = new System.Drawing.Size(262, 36);
-            this.高压电磁阀测试ToolStripMenuItem.Text = "高压电磁阀测试";
-            // 
-            // 轨压测试ToolStripMenuItem
-            // 
-            this.轨压测试ToolStripMenuItem.Name = "轨压测试ToolStripMenuItem";
-            this.轨压测试ToolStripMenuItem.Size = new System.Drawing.Size(262, 36);
-            this.轨压测试ToolStripMenuItem.Text = "轨压测试";
-            // 
-            // 断缸测试ToolStripMenuItem
-            // 
-            this.断缸测试ToolStripMenuItem.Name = "断缸测试ToolStripMenuItem";
-            this.断缸测试ToolStripMenuItem.Size = new System.Drawing.Size(262, 36);
-            this.断缸测试ToolStripMenuItem.Text = "断缸测试";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // dUBUGToolStripMenuItem
             // 
@@ -370,6 +326,7 @@ namespace Dcarengine.UIForm
             this.MaximizeBox = false;
             this.Name = "MainF";
             this.Text = "MainF";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainF_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -396,11 +353,6 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.ToolStripMenuItem 行车记录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 参数测量ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 转速测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 指示灯测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 高压电磁阀测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 轨压测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 断缸测试ToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;

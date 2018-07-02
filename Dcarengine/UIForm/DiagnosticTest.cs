@@ -21,6 +21,7 @@ namespace Dcarengine.UIForm
         private void button1_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,8 +43,18 @@ namespace Dcarengine.UIForm
         }
 
 
+        /// <summary>
+        /// 
+        /// load 初始化86模式
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DiagnosticTest_Load(object sender, EventArgs e)
+        {
 
 
+
+        }
 
 
     }

@@ -397,6 +397,20 @@ namespace Dcarengine.UIForm
         {
 
         }
+
+
+        
+        //主动测试工具主界面
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            DiagnosticTest diagnostic = new DiagnosticTest();
+            diagnostic.Show();
+
+        }
+
+
+
     }
 
 }

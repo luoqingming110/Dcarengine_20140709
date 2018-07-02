@@ -22998,3 +22998,4 @@ FF FF FF FF FF FF FF FF
 [2018-06-26 15:40:14,186]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
 [2018-06-26 15:44:11,576]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
 [2018-06-26 15:45:19,350]  1 -- INFO  -- Dcarengine.测量 [.ctor] -- measure is error :Microsoft Jet 数据库引擎找不到输入表或查询 'P1287790'。 确定它是否存在，以及它的名称的拼写是否正确。
+[2018-06-27 15:55:57,682]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  

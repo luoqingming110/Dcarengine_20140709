@@ -132,6 +132,21 @@ namespace Dcarengine.refactor
         public static byte[] trip16c;
 
 
+        public static byte[] _331bfe;
+        public static byte[] _331bfd;
+        public static byte[] _331bce;
+        public static byte[] _331bcf;
+        public static byte[] _331b;
+
+        /// <summary>
+        /// compressionTest
+        /// </summary>
+        public static byte[] _CompressionTest;
+        public static byte[] _3318;
+
+        public static byte[] _HighPressureTest;
+        public static byte[] _3314;
+
 
 
         /// <summary>
@@ -216,6 +231,18 @@ namespace Dcarengine.refactor
 
             ATSH81_10_F1 = StringToSendBytes.bytesToSend("ATSH8110F1\n");
 
+            _331bfe = StringToSendBytes.bytesToSend("311B00000000000000FE00" + "\n");
+            _331bfd = StringToSendBytes.bytesToSend("311B00000000000000FD00" + "\n");
+            _331bce = StringToSendBytes.bytesToSend("311B00000000000000FE00" + "\n");
+            _331bcf = StringToSendBytes.bytesToSend("311B00000000000000FE00" + "\n");
+            _331b = StringToSendBytes.bytesToSend("331b\n");
+
+            _CompressionTest = StringToSendBytes.bytesToSend("31180000C8001401110222F667F334"+ "\n");
+            _3318 = StringToSendBytes.bytesToSend("3318\n");
+            //
+            _HighPressureTest = StringToSendBytes.bytesToSend("311400010030D40DAC11940DAC03E82CEC1F4006A407D00D480ED80AF0012C"+"\n");
+            _3314 = StringToSendBytes.bytesToSend("3314\n");
+           
 
         }
 
