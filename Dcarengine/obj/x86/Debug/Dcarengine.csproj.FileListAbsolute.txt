@@ -100,3 +100,9 @@ E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UI
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EOLFORMWRITE.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csprojResolveAssemblyReference.cache
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.DiagnosticTest.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForms.button.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForms.CustomControl1.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.CompressionTest.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.EngineBreake.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.HighPressureTest.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.RunupTest.resources

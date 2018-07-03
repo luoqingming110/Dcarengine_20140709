@@ -198,6 +198,18 @@
     <Compile Include="SQLData\MyMeans.cs" />
     <Compile Include="SQLData\SaveFileFunction.cs" />
     <Compile Include="test\serialTest.cs" />
+    <Compile Include="UIForms\button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIForms\button.Designer.cs">
+      <DependentUpon>button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIForms\CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\DebugForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +282,18 @@
     <Compile Include="UIForm\enginetest\EngineBreake.Designer.cs">
       <DependentUpon>EngineBreake.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\enginetest\HighPressureTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\enginetest\HighPressureTest.Designer.cs">
+      <DependentUpon>HighPressureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\enginetest\RunupTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\enginetest\RunupTest.Designer.cs">
+      <DependentUpon>RunupTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\EOLFORMWRITE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +329,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UIForms\button.resx">
+      <DependentUpon>button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\CustomControl1.resx">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForm\DebugForm.resx">
       <DependentUpon>DebugForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\enginetest\EngineBreake.resx">
       <DependentUpon>EngineBreake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\enginetest\HighPressureTest.resx">
+      <DependentUpon>HighPressureTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\enginetest\RunupTest.resx">
+      <DependentUpon>RunupTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOLFORMWRITE.resx">
       <DependentUpon>EOLFORMWRITE.cs</DependentUpon>
@@ -421,7 +457,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="serialPort\" />
-    <Folder Include="UIForms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets')" />

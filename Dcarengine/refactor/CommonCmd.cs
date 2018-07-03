@@ -147,6 +147,10 @@ namespace Dcarengine.refactor
         public static byte[] _HighPressureTest;
         public static byte[] _3314;
 
+        public static string _runUptestsuffix = "000005DC0640001817700BB8000002EE038E000002EE055501C7080000000000000000";
+        public static string _runUptestprefix= "3116";
+        public static byte[] _3316;
+
 
 
         /// <summary>
@@ -242,8 +246,8 @@ namespace Dcarengine.refactor
             //
             _HighPressureTest = StringToSendBytes.bytesToSend("311400010030D40DAC11940DAC03E82CEC1F4006A407D00D480ED80AF0012C"+"\n");
             _3314 = StringToSendBytes.bytesToSend("3314\n");
-           
 
+            _3316 = StringToSendBytes.bytesToSend("3316\n");
         }
 
 

@@ -42,6 +42,7 @@ namespace Dcarengine.UIForm.enginetest
                 if (comCount > 10)
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
+                    comCount = 0;
                     return;
                 }
                 if (!backString.Contains("71") && !backString.Contains("14"))
@@ -68,6 +69,7 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     String[] result = bakcString.Split('\r');
                     this.richTextBox1.Text = result[1];
+                    comCount = 0;
                     return;
                 }
                 readValue();

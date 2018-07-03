@@ -72,6 +72,7 @@
             this.Controls.Add(this.FE);
             this.Name = "CompressionTest";
             this.Text = "CompressionTest";
+            this.Load += new System.EventHandler(this.CompressionTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
