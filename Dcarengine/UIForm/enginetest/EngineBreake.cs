@@ -32,8 +32,10 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            this.FE.Text = "测试";
             WriteValefe();
             readValuefe();
+            this.FE.Text = "FE";
         }
 
 
@@ -47,8 +49,11 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
+            this.button2.Text = "测试";
             WriteValefd();
             readValuefe();
+            this.button2.Text = "FD";
+
         }
 
         /// <summary>
@@ -59,10 +64,10 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.button3.Text = "测试";
             WriteValece();
             readValuefe();
-
+            this.button3.Text = "CE";
         }
 
 
@@ -73,8 +78,10 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
+            this.button4.Text = "测试";
             WriteValecf();
             readValuefe();
+            this.button4.Text = "CF";
         }
 
 

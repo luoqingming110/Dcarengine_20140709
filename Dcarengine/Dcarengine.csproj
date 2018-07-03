@@ -210,6 +210,12 @@
     <Compile Include="UIForms\CustomControl1.Designer.cs">
       <DependentUpon>CustomControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForms\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIForms\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\DebugForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForms\CustomControl1.resx">
       <DependentUpon>CustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\DebugForm.resx">
       <DependentUpon>DebugForm.cs</DependentUpon>

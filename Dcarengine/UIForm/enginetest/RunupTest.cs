@@ -21,6 +21,8 @@ namespace Dcarengine.UIForm.enginetest
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Text = "测试中";
+
             if (this.checkBox1.Checked) {
 
                 String cmd = CommonCmd._runUptestprefix + "00" + CommonCmd._runUptestsuffix;
@@ -98,7 +100,8 @@ namespace Dcarengine.UIForm.enginetest
                 WriteVale(cmdbyte);
                 readValue();
             }
-            
+
+            this.button1.Text = "开始";
 
         }
 

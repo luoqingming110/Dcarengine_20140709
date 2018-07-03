@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Dcarengine.serialPort;
 using Dcarengine.refactor;
+using System.Threading;
 
 namespace Dcarengine.UIForm.enginetest
 {
@@ -27,8 +28,11 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void FE_Click(object sender, EventArgs e)
         {
+            this.FE.Text = "测试中";
             WriteVale();
             readValue();
+           // Thread.Sleep(10000);
+            this.FE.Text = "开始";
         }
 
 
@@ -72,7 +76,7 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     String[] result = bakcString.Split('\r');
                     this.richTextBox1.Text = result[1];
-                    comCount = 0;
+                    comCount = 0;                  
                     return;
                 }
                 readValue();
