@@ -10,6 +10,7 @@ namespace TestProject
 {
     class Program
     {
+
         private static ReaderWriterLockSlim cacheLock = new ReaderWriterLockSlim();
 
         private static ReaderWriterLock cacheLock1 = new ReaderWriterLock();
@@ -20,51 +21,40 @@ namespace TestProject
 
         delegate String GetString();
 
-
         static AutoResetEvent mThreadMessage = new AutoResetEvent(false);
 
-        static string Reverse1(string original)
-        {
-            char[] arr = original.ToCharArray();
-            Array.Reverse(arr);
-            return new string(arr);
-        }
+     //  private static String  backString="";
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        static string Reverse(String  origin) {
-
-            string[] sub = new string[origin.Length / 2];
-
-            string result = "" ;
-
-            for (int i=0;i<origin.Length/2 ;i++) {
-
-                sub[i] = origin.Substring(i*2,2);
-            }
-            for(int j=sub.Length-1; j>=0;j--){
-
-                result += sub[j];
-            }
-            return result;
-        }
 
 
         static void Main(string[] args)
         {
 
-            ff();
+            String backString = "311B00000000000000FD00 7F 31 22  >";
+
+            if (! (backString.Contains("71") && backString.Contains("1B")) )
+            {
+
+                Console.WriteLine("not  contains");
+
+            }
+
+            if (false && false) {
+
+                Console.WriteLine("");
+            }
+
+
+
+            //ff();
 
             Console.WriteLine(DateTime.Now.ToString("yyyyMMdd") );
 
             Console.WriteLine("10进制转" + Convert.ToInt64("0064",16) );
 
-            Console.WriteLine("16进制:" + Reverse("0000012c") );
+            //Console.WriteLine("16进制:" + Reverse("0000012c") );
 
-            Console.WriteLine("16进制:" + Reverse("2c010000"));
+            //Console.WriteLine("16进制:" + Reverse("2c010000"));
 
             String allList = Convert.ToString(300, 16).PadRight(8, '0');
 
@@ -120,7 +110,7 @@ namespace TestProject
             Console.WriteLine(all.Length + "    "+ entity );
             Console.WriteLine("xuelie:"+ xulie +"result:" + result);
             // string BackString = MainF.GetBackString;     //   "2709\r67 09 76 BB DD EE \r\n\r\n>"
-            String backString = "76BBDDEE";
+           // String backString = "76BBDDEE";
             UInt32 b = UInt32.Parse(backString, System.Globalization.NumberStyles.HexNumber);     //最后得到的 b 的值是 171。
 
         }

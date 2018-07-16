@@ -6,13 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CCWin;
 using Dcarengine.Function_Class;
 using Dcarengine.refactor;
 using Dcarengine.serialPort;
 
 namespace Dcarengine.UIForm.enginetest
 {
-    public partial class RunupTest : Form
+    public partial class RunupTest : CCSkinMain
     {
         public RunupTest()
         {
@@ -126,10 +127,15 @@ namespace Dcarengine.UIForm.enginetest
                     return;
 
                 }
-                if (!backString.Contains("71") && !backString.Contains("16"))
+                if ( backString.Contains("71") && backString.Contains("16"))
                 {
+                    MessageBox.Show("开始测试");
+                }
+                else {
+
                     WriteVale(cmd);
                 }
+
             }
             catch { }
         }
@@ -149,6 +155,7 @@ namespace Dcarengine.UIForm.enginetest
                     String[] result = bakcString.Split('\r');
                     this.richTextBox1.AppendText ( result[1] );
                     comCount = 0;
+                    MessageBox.Show("测试完成");
                     return;
                 }
                 readValue();
@@ -158,7 +165,9 @@ namespace Dcarengine.UIForm.enginetest
             }
         }
 
+        private void RunupTest_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

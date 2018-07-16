@@ -10,10 +10,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Dcarengine.UIForm.enginetest;
+using CCWin;
 
 namespace Dcarengine.UIForm
 {
-    public partial class DiagnosticTest : Form
+    public partial class DiagnosticTest : CCSkinMain
     {
 
         private static log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -94,6 +95,19 @@ namespace Dcarengine.UIForm
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DiagnosticSpeed diagnosticSpeed = new DiagnosticSpeed();
+            diagnosticSpeed.Show();
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            CylinderShut cylinderShut = new CylinderShut();
+            cylinderShut.Show();
+        
+        }
     }
 }

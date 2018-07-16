@@ -30,7 +30,7 @@
         {
             this.FE = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // FE
@@ -46,32 +46,34 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(235, 220);
+            this.richTextBox1.Location = new System.Drawing.Point(238, 232);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(495, 179);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
-            // label1
+            // textBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(185, 429);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(674, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "此项测试发动机需要处于怠速状态，开始测试后，请不要踩油门，刹车，离合板";
+            this.textBox1.Font = new System.Drawing.Font("新宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox1.Location = new System.Drawing.Point(649, 503);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(357, 100);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "此项测试启动前，发动机需要处于怠速，车辆静止；开始测试后，请不要踩油门、刹车及离合器踏板。测试成功完成后，发动机会停机，需要重新启动发动机";
             // 
             // HighPressureTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1008, 615);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);
             this.Name = "HighPressureTest";
             this.Text = "HighPressureTest";
+            this.Load += new System.EventHandler(this.HighPressureTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,6 +83,6 @@
 
         private System.Windows.Forms.Button FE;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

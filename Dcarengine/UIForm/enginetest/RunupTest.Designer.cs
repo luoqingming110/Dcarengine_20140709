@@ -30,24 +30,25 @@
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,6 +76,16 @@
             this.panel1.Size = new System.Drawing.Size(137, 243);
             this.panel1.TabIndex = 6;
             // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(23, 52);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 66);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "01缸";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button3);
@@ -83,6 +94,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(137, 243);
             this.panel2.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(23, 52);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(86, 66);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "02缸";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -103,6 +124,16 @@
             this.panel3.Size = new System.Drawing.Size(137, 243);
             this.panel3.TabIndex = 7;
             // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(23, 52);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(86, 66);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "03缸";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
@@ -121,6 +152,16 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(137, 243);
             this.panel5.TabIndex = 7;
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(23, 52);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(86, 66);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "04缸";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
@@ -141,6 +182,16 @@
             this.panel7.Size = new System.Drawing.Size(137, 243);
             this.panel7.TabIndex = 7;
             // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(23, 52);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(86, 66);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "05缸";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
@@ -159,6 +210,16 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(137, 243);
             this.panel8.TabIndex = 7;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(23, 52);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(86, 66);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "06缸";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
@@ -189,71 +250,23 @@
             this.richTextBox1.TabIndex = 9;
             this.richTextBox1.Text = "";
             // 
-            // button2
+            // label1
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(23, 52);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 66);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "01缸";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(23, 52);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 66);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "02缸";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(23, 52);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 66);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "03缸";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(23, 52);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(86, 66);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "04缸";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(23, 52);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(86, 66);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "05缸";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(23, 52);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 66);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "06缸";
-            this.button5.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(307, 672);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(848, 25);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "此项测试启动前，发动机需要处于怠速，车辆静止；开始测试后，请不要踩油门、刹车及离合器踏板";
             // 
             // RunupTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 666);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1168, 720);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel8);
@@ -264,6 +277,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "RunupTest";
             this.Text = "RunupTest";
+            this.Load += new System.EventHandler(this.RunupTest_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -277,6 +291,7 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -302,5 +317,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
     }
 }

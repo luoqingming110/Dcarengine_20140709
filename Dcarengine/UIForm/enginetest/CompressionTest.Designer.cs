@@ -36,7 +36,7 @@
             // FE
             // 
             this.FE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FE.Location = new System.Drawing.Point(327, 98);
+            this.FE.Location = new System.Drawing.Point(370, 86);
             this.FE.Name = "FE";
             this.FE.Size = new System.Drawing.Size(261, 103);
             this.FE.TabIndex = 1;
@@ -46,7 +46,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(227, 218);
+            this.richTextBox1.Location = new System.Drawing.Point(268, 219);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(481, 180);
             this.richTextBox1.TabIndex = 2;
@@ -55,18 +55,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(178, 417);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(240, 576);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(598, 19);
+            this.label1.Size = new System.Drawing.Size(791, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "此项需要在发动机为启动时进行测试，测试开始后，请拧动发动机钥匙";
+            this.label1.Text = "此项测试启动前，车辆静止，发动机未启动；开始测试后，请不要踩油门、刹车及离合器踏板";
             // 
             // CompressionTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 572);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1032, 610);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);

@@ -1,4 +1,5 @@
-﻿using Dcarengine.refactor;
+﻿using CCWin;
+using Dcarengine.refactor;
 using Dcarengine.serialPort;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.enginetest
 {
-    public partial class EngineBreake : Form
+    public partial class EngineBreake : CCSkinMain
     {
         public EngineBreake()
         {
@@ -35,7 +36,7 @@ namespace Dcarengine.UIForm.enginetest
             this.FE.Text = "测试";
             WriteValefe();
             readValuefe();
-            this.FE.Text = "FE";
+            this.FE.Text = "发动机制动开 排气制动关";
         }
 
 
@@ -52,7 +53,7 @@ namespace Dcarengine.UIForm.enginetest
             this.button2.Text = "测试";
             WriteValefd();
             readValuefe();
-            this.button2.Text = "FD";
+            this.button2.Text = "发动机制动关 排气制动关";
 
         }
 
@@ -67,7 +68,7 @@ namespace Dcarengine.UIForm.enginetest
             this.button3.Text = "测试";
             WriteValece();
             readValuefe();
-            this.button3.Text = "CE";
+            this.button3.Text = "发动机制动开 排气制动开";
         }
 
 
@@ -81,7 +82,7 @@ namespace Dcarengine.UIForm.enginetest
             this.button4.Text = "测试";
             WriteValecf();
             readValuefe();
-            this.button4.Text = "CF";
+            this.button4.Text = "发动机制动关 排气制动开";
         }
 
 
@@ -103,8 +104,11 @@ namespace Dcarengine.UIForm.enginetest
                     comCount = 0;
                     return;
                 }
-                if (!backString.Contains("71") && !backString.Contains("1B"))
+                if ( (backString.Contains("71") && backString.Contains("1B")))
                 {
+                    MessageBox.Show("开始测试");
+                }
+                else {
                     WriteValefe();
                 }
             }
@@ -127,6 +131,7 @@ namespace Dcarengine.UIForm.enginetest
                     String[] result = bakcString.Split('\r');
                     this.richTextBox5.Text = result[1];
                     comCount = 0;
+                    MessageBox.Show("测试完成");
                     return;
                 }
                 readValuefe();
@@ -156,8 +161,12 @@ namespace Dcarengine.UIForm.enginetest
                     comCount = 0;
                     return;
                 }
-                if (!backString.Contains("71") && !backString.Contains("1B"))
+                if ((backString.Contains("71") && backString.Contains("1B")))
                 {
+                    MessageBox.Show("开始测试");
+                }
+                else {
+
                     WriteValefd();
                 }
             }
@@ -182,8 +191,13 @@ namespace Dcarengine.UIForm.enginetest
                     comCount = 0;
                     return;
                 }
-                if (!backString.Contains("71") && !backString.Contains("1B"))
+                if ( (backString.Contains("71") && backString.Contains("1B")))
                 {
+                    // WriteValecf();
+                    MessageBox.Show("开始测试");
+                }
+                else {
+
                     WriteValecf();
                 }
             }
@@ -207,11 +221,16 @@ namespace Dcarengine.UIForm.enginetest
                     this.richTextBox3.Text = "测试失败 请重试";
                     comCount = 0;
                     return;
+                } 
+                if ( (backString.Contains("71") && backString.Contains("1B")))
+                {
+                    MessageBox.Show("开始测试");
                 }
-                if (!backString.Contains("71") && !backString.Contains("1B"))
+                else
                 {
                     WriteValece();
                 }
+
             }
             catch { }
         }

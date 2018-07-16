@@ -9,10 +9,11 @@ using System.Windows.Forms;
 using Dcarengine.serialPort;
 using Dcarengine.refactor;
 using System.Threading;
+using CCWin;
 
 namespace Dcarengine.UIForm.enginetest
 {
-    public partial class CompressionTest : Form
+    public partial class CompressionTest : CCSkinMain
     {
         /// <summary>
         /// compressionTest
@@ -53,10 +54,14 @@ namespace Dcarengine.UIForm.enginetest
                     comCount = 0;
                     return;
                 }
-                if (!backString.Contains("71") && !backString.Contains("18"))
+                if (backString.Contains("71") && backString.Contains("18"))
                 {
+                    MessageBox.Show("开始测试");
+                }
+                else {
                     WriteVale();
                 }
+
             }
             catch {}
         }
@@ -76,7 +81,8 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     String[] result = bakcString.Split('\r');
                     this.richTextBox1.Text = result[1];
-                    comCount = 0;                  
+                    comCount = 0;
+                    MessageBox.Show("测试完成");
                     return;
                 }
                 readValue();

@@ -151,6 +151,18 @@ namespace Dcarengine.refactor
         public static string _runUptestprefix= "3116";
         public static byte[] _3316;
 
+        //speed
+        public static String speedprefix = "311A0100";
+        public static String speedsuffix = "012C00020010";
+        public static byte[] _speed;
+        public static byte[] _331A;
+
+        //shut 
+        public static String shutprefix = "311500";
+        public static byte[] _3315;
+        //public static String speedsuffix = "012C00020010";
+        //public static byte[] _speed;
+        //public static byte[] _331A;
 
 
         /// <summary>
@@ -248,6 +260,11 @@ namespace Dcarengine.refactor
             _3314 = StringToSendBytes.bytesToSend("3314\n");
 
             _3316 = StringToSendBytes.bytesToSend("3316\n");
+
+            _331A = StringToSendBytes.bytesToSend("331A\n");
+
+            _3315 = StringToSendBytes.bytesToSend("3315\n");
+
         }
 
 
