@@ -38,9 +38,9 @@ namespace Dcarengine.UIForm.enginetest
                 }
                 long start = long.Parse(startValue);
                 long end = long.Parse(endtValue);
-                if (end > start) {
+                if (end < start) {
 
-                    MessageBox.Show("结束速度比开始速度");
+                    MessageBox.Show("结束速度需要大于开始速度");
                     return;
                 }
                 // 开始速度
