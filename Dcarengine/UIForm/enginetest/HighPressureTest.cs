@@ -21,7 +21,7 @@ namespace Dcarengine.UIForm.enginetest
 
         private void FE_Click(object sender, EventArgs e)
         {
-            this.FE.Text = "测试";
+            this.FE.Text = "测试中";
             WriteVale();
             readValue();
             this.FE.Text = "开始";

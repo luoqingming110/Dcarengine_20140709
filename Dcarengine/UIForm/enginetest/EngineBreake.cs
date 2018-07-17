@@ -33,7 +33,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            this.FE.Text = "测试";
+            this.FE.Text = "测试中";
             WriteValefe();
             readValuefe();
             this.FE.Text = "发动机制动开 排气制动关";
@@ -50,7 +50,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            this.button2.Text = "测试";
+            this.button2.Text = "测试中";
             WriteValefd();
             readValuefe();
             this.button2.Text = "发动机制动关 排气制动关";
@@ -65,7 +65,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
-            this.button3.Text = "测试";
+            this.button3.Text = "测试中";
             WriteValece();
             readValuefe();
             this.button3.Text = "发动机制动开 排气制动开";
@@ -79,7 +79,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
-            this.button4.Text = "测试";
+            this.button4.Text = "测试中";
             WriteValecf();
             readValuefe();
             this.button4.Text = "发动机制动关 排气制动开";
