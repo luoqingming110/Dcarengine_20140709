@@ -126,8 +126,10 @@ namespace Dcarengine.UIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
-            this.ClientSize = new System.Drawing.Size(973, 581);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(966, 574);
+            this.ControlBoxActive = System.Drawing.Color.Empty;
+            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

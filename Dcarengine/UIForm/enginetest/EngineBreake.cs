@@ -127,7 +127,7 @@ namespace Dcarengine.UIForm.enginetest
                 String bakcString = GobalSerialPort.ResultBackString;
                 if (bakcString.Contains("7F"))
                 {
-
+                    this.richTextBox5.Text = bakcString;
                     MessageBox.Show("测试终止");
                     return;
                 }

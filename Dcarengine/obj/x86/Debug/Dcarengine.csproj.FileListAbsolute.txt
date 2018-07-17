@@ -106,6 +106,5 @@ E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UI
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.HighPressureTest.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.RunupTest.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForms.UserControl1.resources
-E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csprojResolveAssemblyReference.cache
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.CylinderShut.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.DiagnosticSpeed.resources

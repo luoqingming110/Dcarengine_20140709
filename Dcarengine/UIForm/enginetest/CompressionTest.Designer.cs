@@ -55,10 +55,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(240, 576);
+            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(237, 571);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(791, 25);
+            this.label1.Size = new System.Drawing.Size(788, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "此项测试启动前，车辆静止，发动机未启动；开始测试后，请不要踩油门、刹车及离合器踏板";
             // 
@@ -66,9 +66,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(1032, 610);
+            this.ControlBoxActive = System.Drawing.Color.Empty;
+            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);

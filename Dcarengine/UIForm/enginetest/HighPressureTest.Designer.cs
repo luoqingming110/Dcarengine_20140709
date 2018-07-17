@@ -55,10 +55,10 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(649, 503);
+            this.textBox1.Location = new System.Drawing.Point(638, 486);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 100);
+            this.textBox1.Size = new System.Drawing.Size(363, 108);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "此项测试启动前，发动机需要处于怠速，车辆静止；开始测试后，请不要踩油门、刹车及离合器踏板。测试成功完成后，发动机会停机，需要重新启动发动机";
             // 
@@ -66,9 +66,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(1008, 615);
+            this.ControlBoxActive = System.Drawing.Color.Empty;
+            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);
