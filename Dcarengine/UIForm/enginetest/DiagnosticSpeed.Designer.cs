@@ -55,7 +55,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(380, 128);
             this.button1.TabIndex = 12;
-            this.button1.Text = "开始测试";
+            this.button1.Text = "开始";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(1127, 708);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

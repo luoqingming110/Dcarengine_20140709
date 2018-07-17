@@ -33,6 +33,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Text = "测试中";
 
             if (this.checkBox1.Checked)
             {
@@ -111,10 +112,8 @@ namespace Dcarengine.UIForm.enginetest
 
                 WriteVale(cmdbyte);
                 readValue();
-
-
             }
-
+            this.button1.Text = "开始";
 
         }
 

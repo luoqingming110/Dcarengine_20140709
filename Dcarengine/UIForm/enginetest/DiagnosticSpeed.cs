@@ -27,6 +27,7 @@ namespace Dcarengine.UIForm.enginetest
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Text = "测试中";
             try
             {
                 String startValue = this.richTextBox1.Text;
@@ -47,19 +48,15 @@ namespace Dcarengine.UIForm.enginetest
                String  startValue16 = Convert.ToString(start * 2, 16).PadLeft(4,'0');
                // 结束速度
                String  endtValue16 = Convert.ToString(end * 2, 16).PadLeft(4,'0');
-
                String speedValue = CommonCmd.speedprefix + startValue16 + endtValue16 + CommonCmd.speedsuffix + "\n";
 
                byte[] speedValueByte = StringToSendBytes.bytesToSend(startValue);
-
-                WriteVale(speedValueByte);
-                readValue();
-
+               WriteVale(speedValueByte);
+               readValue();
             }
             catch (Exception ) {
-
             }
-
+            this.button1.Text = "开始";
         }
 
 
