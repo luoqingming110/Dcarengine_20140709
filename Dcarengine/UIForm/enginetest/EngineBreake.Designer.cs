@@ -143,7 +143,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.FE);
             this.Name = "EngineBreake";
-            this.Text = "EngineBreake";
+            this.Text = "EngineBreake Test";
             this.Load += new System.EventHandler(this.EngineBreake_Load);
             this.ResumeLayout(false);
 

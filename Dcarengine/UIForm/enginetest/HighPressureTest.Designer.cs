@@ -72,7 +72,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);
             this.Name = "HighPressureTest";
-            this.Text = "HighPressureTest";
+            this.Text = "High Pressure Test";
             this.Load += new System.EventHandler(this.HighPressureTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

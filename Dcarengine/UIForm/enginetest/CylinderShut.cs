@@ -1,4 +1,8 @@
-﻿using System;
+﻿using CCWin;
+using Dcarengine.Function_Class;
+using Dcarengine.refactor;
+using Dcarengine.serialPort;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,30 +10,37 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CCWin;
-using Dcarengine.Function_Class;
-using Dcarengine.refactor;
-using Dcarengine.serialPort;
 
 namespace Dcarengine.UIForm.enginetest
 {
-    public partial class RunupTest : CCSkinMain
+    public partial class CylinderShut : CCSkinMain
     {
-        public RunupTest()
+        public CylinderShut()
         {
             InitializeComponent();
         }
 
+        private void CylinderShut_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        /// <summary>
+        /// 测试开始
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            this.button1.Text = "测试中";
 
-            if (this.checkBox1.Checked) {
+            if (this.checkBox1.Checked)
+            {
 
-                String cmd = CommonCmd._runUptestprefix + "00" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "00" + "FFFFFFFFFF";
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
-
+          
                 WriteVale(cmdbyte);
                 readValue();
 
@@ -38,7 +49,7 @@ namespace Dcarengine.UIForm.enginetest
             if (this.checkBox2.Checked)
             {
 
-                String cmd = CommonCmd._runUptestprefix + "01" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FF" + "00" + "FFFFFFFF";
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
@@ -50,7 +61,7 @@ namespace Dcarengine.UIForm.enginetest
             if (this.checkBox3.Checked)
             {
 
-                String cmd = CommonCmd._runUptestprefix + "02" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FFFF00FFFFFF" ;
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
@@ -61,7 +72,7 @@ namespace Dcarengine.UIForm.enginetest
 
             if (this.checkBox5.Checked)
             {
-                String cmd = CommonCmd._runUptestprefix + "03" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FFFFFF00FFFF" ;
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
@@ -73,7 +84,7 @@ namespace Dcarengine.UIForm.enginetest
             if (this.checkBox7.Checked)
             {
 
-                String cmd = CommonCmd._runUptestprefix + "04" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FFFFFFFF00FF" ;
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
@@ -84,7 +95,7 @@ namespace Dcarengine.UIForm.enginetest
 
             if (this.checkBox8.Checked)
             {
-                String cmd = CommonCmd._runUptestprefix + "05" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FFFFFFFFFF00";
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
@@ -94,15 +105,16 @@ namespace Dcarengine.UIForm.enginetest
             }
             else {
 
-                String cmd = CommonCmd._runUptestprefix + "FF" + CommonCmd._runUptestsuffix;
+                String cmd = CommonCmd.shutprefix + "FFFFFFFFFFFF";
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
                 WriteVale(cmdbyte);
                 readValue();
+
+
             }
 
-            this.button1.Text = "开始";
 
         }
 
@@ -112,7 +124,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteVale(byte []   cmd)
+        public void WriteVale(byte[] cmd)
         {
 
             try
@@ -127,11 +139,12 @@ namespace Dcarengine.UIForm.enginetest
                     return;
 
                 }
-                if ( backString.Contains("71") && backString.Contains("16"))
+                if (backString.Contains("71") && backString.Contains("16"))
                 {
                     MessageBox.Show("开始测试");
                 }
-                else {
+                else
+                {
 
                     WriteVale(cmd);
                 }
@@ -147,18 +160,18 @@ namespace Dcarengine.UIForm.enginetest
         {
             try
             {
-                GobalSerialPort.WriteByMessage(CommonCmd._3316, 0, CommonCmd._3316.Length);
+                GobalSerialPort.WriteByMessage(CommonCmd._3315, 0, CommonCmd._3315.Length);
                 String bakcString = GobalSerialPort.ResultBackString;
                 if (bakcString.Contains("7F"))
                 {
                     MessageBox.Show("测试终止");
                     return;
                 }
-                if (bakcString.Contains("73") && bakcString.Contains("16")
+                if (bakcString.Contains("73") && bakcString.Contains("15")
                      && bakcString.Contains("02"))
                 {
                     String[] result = bakcString.Split('\r');
-                    this.richTextBox1.AppendText ( result[1] );
+                    this.richTextBox1.AppendText(result[1]);
                     comCount = 0;
                     MessageBox.Show("测试完成");
                     return;
@@ -170,9 +183,10 @@ namespace Dcarengine.UIForm.enginetest
             }
         }
 
-        private void RunupTest_Load(object sender, EventArgs e)
-        {
 
-        }
+
+
+
+
     }
 }

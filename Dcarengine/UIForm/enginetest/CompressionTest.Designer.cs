@@ -72,7 +72,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.FE);
             this.Name = "CompressionTest";
-            this.Text = "CompressionTest";
+            this.Text = "Compression Test";
             this.Load += new System.EventHandler(this.CompressionTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

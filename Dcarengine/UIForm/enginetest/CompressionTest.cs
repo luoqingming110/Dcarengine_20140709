@@ -76,6 +76,11 @@ namespace Dcarengine.UIForm.enginetest
             {
                 GobalSerialPort.WriteByMessage(CommonCmd._3318, 0, CommonCmd._3318.Length);
                 String bakcString = GobalSerialPort.ResultBackString;
+                if (bakcString.Contains("7F")) {
+
+                    MessageBox.Show("测试终止");
+                    return;
+                }
                 if (bakcString.Contains("73") && bakcString.Contains("18")
                      && bakcString.Contains("02"))
                 {
