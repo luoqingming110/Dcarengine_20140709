@@ -34,9 +34,12 @@ namespace Dcarengine.UIForm.enginetest
         private void button1_Click(object sender, EventArgs e)
         {
             this.FE.Text = "测试中";
-            WriteValefe();
-            readValuefe();
+            if (WriteValefe())
+            {
+                readValuefe();
+            }
             this.FE.Text = "发动机制动开 排气制动关";
+
         }
 
 
@@ -51,8 +54,10 @@ namespace Dcarengine.UIForm.enginetest
         private void button2_Click(object sender, EventArgs e)
         {
             this.button2.Text = "测试中";
-            WriteValefd();
-            readValuefe();
+            if (WriteValefd())
+            {
+                readValuefe();
+            }
             this.button2.Text = "发动机制动关 排气制动关";
 
         }
@@ -66,8 +71,11 @@ namespace Dcarengine.UIForm.enginetest
         private void button3_Click(object sender, EventArgs e)
         {
             this.button3.Text = "测试中";
-            WriteValece();
-            readValuefe();
+
+            if (WriteValece())
+            {
+                readValuefe();
+            }
             this.button3.Text = "发动机制动开 排气制动开";
         }
 
@@ -80,8 +88,10 @@ namespace Dcarengine.UIForm.enginetest
         private void button4_Click(object sender, EventArgs e)
         {
             this.button4.Text = "测试中";
-            WriteValecf();
-            readValuefe();
+            if (WriteValecf())
+            {
+                readValuefe();
+            }
             this.button4.Text = "发动机制动关 排气制动开";
         }
 
@@ -90,7 +100,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteValefe()
+        public bool  WriteValefe()
         {
             
             try
@@ -102,17 +112,26 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                    //throw new Exception();
+                    return false;
                 }
                 if ( (backString.Contains("71") && backString.Contains("1B")))
+
                 {
+                    
                     MessageBox.Show("开始测试");
+                    return true;
+
                 }
                 else {
                     WriteValefe();
                 }
             }
-            catch { }
+            catch {
+
+               // throw new Exception();
+            }
+            return false;
         }
 
 
@@ -153,7 +172,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteValefd()
+        public bool WriteValefd()
         {
 
             try
@@ -165,11 +184,14 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox2.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                    //throw new Exception();
+                    return false;
                 }
                 if ((backString.Contains("71") && backString.Contains("1B")))
                 {
+                   
                     MessageBox.Show("开始测试");
+                    return true;
                 }
                 else {
 
@@ -177,6 +199,7 @@ namespace Dcarengine.UIForm.enginetest
                 }
             }
             catch { }
+            return false;
         }
 
 
@@ -184,7 +207,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteValecf()
+        public bool WriteValecf()
         {
             try
             {
@@ -195,12 +218,15 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox4.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                   // throw new Exception();
+                    return false;
                 }
                 if ( (backString.Contains("71") && backString.Contains("1B")))
                 {
                     // WriteValecf();
+                   
                     MessageBox.Show("开始测试");
+                    return true;
                 }
                 else {
 
@@ -208,13 +234,14 @@ namespace Dcarengine.UIForm.enginetest
                 }
             }
             catch { }
+            return false;
         }
 
 
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteValece()
+        public bool WriteValece()
         {
 
             try
@@ -226,11 +253,14 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox3.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                    // throw new Exception();
+                    return false;
                 } 
                 if ( (backString.Contains("71") && backString.Contains("1B")))
                 {
+                   
                     MessageBox.Show("开始测试");
+                    return true;
                 }
                 else
                 {
@@ -239,6 +269,7 @@ namespace Dcarengine.UIForm.enginetest
 
             }
             catch { }
+            return false;
         }
 
 

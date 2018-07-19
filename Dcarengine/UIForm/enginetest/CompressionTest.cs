@@ -30,8 +30,10 @@ namespace Dcarengine.UIForm.enginetest
         private void FE_Click(object sender, EventArgs e)
         {
             this.FE.Text = "测试中";
-            WriteVale();
-            readValue();
+            if (WriteVale())
+            {
+                readValue();
+            }
            // Thread.Sleep(10000);
             this.FE.Text = "开始";
         }
@@ -42,7 +44,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteVale() {
+        public bool WriteVale() {
             try
             {
                 comCount++;
@@ -52,11 +54,13 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                    //throw new Exception();
+                    return false;
                 }
                 if (backString.Contains("71") && backString.Contains("18"))
                 {
                     MessageBox.Show("开始测试");
+                    return true;
                 }
                 else {
                     WriteVale();
@@ -64,6 +68,7 @@ namespace Dcarengine.UIForm.enginetest
 
             }
             catch {}
+            return false;
         }
 
 

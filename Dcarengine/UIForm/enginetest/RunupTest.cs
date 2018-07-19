@@ -29,9 +29,10 @@ namespace Dcarengine.UIForm.enginetest
                 String cmd = CommonCmd._runUptestprefix + "00" + CommonCmd._runUptestsuffix;
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
-
-                WriteVale(cmdbyte);
-                readValue();
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
 
             }
 
@@ -42,9 +43,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
-
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
             }
 
             if (this.checkBox3.Checked)
@@ -54,9 +56,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
-
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
             }
 
             if (this.checkBox5.Checked)
@@ -65,8 +68,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
 
             }
 
@@ -77,8 +82,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
 
             }
 
@@ -88,9 +95,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
-
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
             }
             else {
 
@@ -98,8 +106,10 @@ namespace Dcarengine.UIForm.enginetest
                 byte[] cmdbyte = StringToSendBytes.bytesToSend(cmd + "\n");
                 //serialPort.GobalSerialPort.WriteByMessage(cmdbyte,0,cmdbyte.Length);
 
-                WriteVale(cmdbyte);
-                readValue();
+                if (WriteVale(cmdbyte))
+                {
+                    readValue();
+                }
             }
 
             this.button1.Text = "开始";
@@ -112,7 +122,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteVale(byte []   cmd)
+        public bool  WriteVale(byte []   cmd)
         {
 
             try
@@ -124,12 +134,14 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
-
+                   // throw new Exception();
+                    return false; 
+                
                 }
                 if ( backString.Contains("71") && backString.Contains("16"))
                 {
                     MessageBox.Show("开始测试");
+                    return true;
                 }
                 else {
 
@@ -138,6 +150,7 @@ namespace Dcarengine.UIForm.enginetest
 
             }
             catch { }
+            return false;
         }
 
         /// <summary>

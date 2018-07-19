@@ -51,8 +51,12 @@ namespace Dcarengine.UIForm.enginetest
                String speedValue = CommonCmd.speedprefix + startValue16 + endtValue16 + CommonCmd.speedsuffix + "\n";
 
                byte[] speedValueByte = StringToSendBytes.bytesToSend(startValue);
-               WriteVale(speedValueByte);
-               readValue();
+
+                if (WriteVale(speedValueByte))
+                {
+                    readValue();
+                }
+
             }
             catch (Exception ) {
             }
@@ -68,7 +72,7 @@ namespace Dcarengine.UIForm.enginetest
         /// <summary>
         /// 写数据
         /// </summary>
-        public void WriteVale(byte []  speed)
+        public  bool  WriteVale(byte []  speed)
         {
 
             try
@@ -80,12 +84,13 @@ namespace Dcarengine.UIForm.enginetest
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
                     comCount = 0;
-                    return;
+                   // throw new Exception();
+                    return false;
                 }
                 if (backString.Contains("71") && backString.Contains("1A"))
                 {
                     MessageBox.Show("开始测试");
-                    return;
+                    return true;
                 }
                 else
                 {
@@ -94,6 +99,7 @@ namespace Dcarengine.UIForm.enginetest
                 }
             }
             catch { }
+            return false; 
         }
 
         /// <summary>
