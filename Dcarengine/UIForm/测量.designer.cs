@@ -67,14 +67,6 @@ namespace Dcarengine
             this.label1 = new System.Windows.Forms.Label();
             this.选择时间 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.选择输出项 = new System.Windows.Forms.Label();
-            this.插入 = new System.Windows.Forms.Button();
-            this.测量参数 = new System.Windows.Forms.ComboBox();
-            this.eCU13AdRessBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,17 +75,19 @@ namespace Dcarengine
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.选择输出项 = new System.Windows.Forms.Label();
+            this.插入 = new System.Windows.Forms.Button();
+            this.测量参数 = new System.Windows.Forms.ComboBox();
+            this.eCU13AdRessBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eCU13AdRessBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-
-            //关闭窗口代码
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deasure_FormClosed);
-
-
-            
             // 
             // 单次测量
             // 
@@ -164,11 +158,9 @@ namespace Dcarengine
             // 
             this.选择时间.FormattingEnabled = true;
             this.选择时间.Items.AddRange(new object[] {
-            "100",
             "200",
             "500",
-            "1000",
-            "2000"});
+            "1000"});
             this.选择时间.Location = new System.Drawing.Point(184, 623);
             this.选择时间.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.选择时间.Name = "选择时间";
@@ -194,6 +186,54 @@ namespace Dcarengine
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(607, 459);
             this.dataGridView1.TabIndex = 18;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "测量参数";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "描述";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "单位";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 70;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "测量值";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 140;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.Name = "Column5";
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Column6";
+            this.Column6.Name = "Column6";
+            this.Column6.Visible = false;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Name = "Column7";
+            this.Column7.Visible = false;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.Name = "Column8";
+            this.Column8.Visible = false;
             // 
             // 选择输出项
             // 
@@ -274,54 +314,6 @@ namespace Dcarengine
             this.panel2.Size = new System.Drawing.Size(144, 445);
             this.panel2.TabIndex = 34;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "测量参数";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "描述";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "单位";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 70;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "测量值";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 140;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.Name = "Column5";
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.Name = "Column6";
-            this.Column6.Visible = false;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Name = "Column7";
-            this.Column7.Visible = false;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            this.Column8.Visible = false;
-            // 
             // 测量
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -344,6 +336,7 @@ namespace Dcarengine
             this.Name = "测量";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "参数测量";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deasure_FormClosed);
             this.Load += new System.EventHandler(this.测量_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eCU13AdRessBindingSource)).EndInit();
