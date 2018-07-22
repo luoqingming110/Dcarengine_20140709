@@ -16,6 +16,7 @@ namespace Dcarengine.service
     /// </summary>
     class C13IdRead : IDReadInterface
     {
+        private static log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         //这里是ecu13的数据，具体含义不懂     
         //这个是ID命令的字符串    ...
@@ -251,9 +252,10 @@ namespace Dcarengine.service
             MyMeans.InsertAccess("89", "客户字符串1", "ASCII/10", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[2]);
 
             _13IdFDataWork.InsertAcessF_10(ECUstringtochangeASCII[3]);       //8a
+            log.Info("13id 1a8a :" + _13IdFDataWork.WorkOutData);
             MyMeans.InsertAccess("8A", "ECU软件系统号", "ASCII/100", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[3]);
 
-            _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[4]);       //8c
+            _13IdFDataWork.InsertAcessF_1A8C(ECUstringtochangeASCII[4]);       //8c
             MyMeans.InsertAccess("8C", "SCD协议版本", "Unsigned/1", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[4]);
 
             _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[5]);       //8e

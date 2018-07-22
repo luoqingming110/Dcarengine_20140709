@@ -81,6 +81,41 @@ namespace Dcarengine.Function_Class
             }
         }
 
+        /// <summary>
+        ///  1A8C 解析数据
+        /// </summary>
+        /// <param name="ID"></param>
+        public static void InsertAcessF_1A8C(string ID)
+        {
+
+            try
+            {
+                string changeStr = ID;
+                StringBuilder charTOstring = new StringBuilder();
+                string[] A = changeStr.Split('\r');
+                if (A[1] != null && !(A[1].Contains("NO")) && !(A[1].Contains("\r")))
+                {
+
+                    changeStr = A[1].Substring(5, A[1].Length - 5);
+                    WorkOutData = changeStr;
+                }
+                else
+                {
+                    WorkOutData = A[1];
+                }
+                
+            }
+            catch (Exception e)
+            {
+
+                log.Info("this Id work is error,id is :" + ID + "\n" + e.Message);
+                return;
+            }
+
+            //最后数据清理
+            workOutData.Replace("\0", "0");
+        }
+
 
         /// <summary>
         /// 数据解析
@@ -116,7 +151,7 @@ namespace Dcarengine.Function_Class
                                 {
                                     int code = Convert.ToInt32(key, 16);      //将16进制字符串转换成其ASCII码（实际是Unicode码）
                                     char c = (char)code;                      //取得这个Unicode码表示的char（强制转换就行）
-                                    MainF.EcuIDCodeToStrFin = charTOstring.Append(c.ToString()).ToString();   //输出。
+                                    WorkOutData = charTOstring.Append(c.ToString()).ToString();   //输出。
                                 }
                                 catch (FormatException)
                                 {
@@ -127,12 +162,12 @@ namespace Dcarengine.Function_Class
                     }
                     else
                     {
-                        MainF.EcuIDCodeToStrFin = A[1];
+                        WorkOutData = A[1];
                     }
                 }
                 else
                 {
-                    MainF.EcuIDCodeToStrFin = A[1];
+                    WorkOutData = A[1];
                 }
             }
             catch (Exception e)
@@ -140,8 +175,11 @@ namespace Dcarengine.Function_Class
                 log.Info("this Id work is error,id is :" + ID + "\n" + e.Message);
                 return;
             }
+
+            //最后数据清理
+            workOutData = workOutData.Replace("\0", "0");
         }
     }
 
-    }
+ }
 

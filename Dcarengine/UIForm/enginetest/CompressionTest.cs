@@ -50,7 +50,7 @@ namespace Dcarengine.UIForm.enginetest
                 comCount++;
                 GobalSerialPort.WriteByMessage(CommonCmd._CompressionTest, 0, CommonCmd._CompressionTest.Length);
                 String backString = GobalSerialPort.ResultBackString;
-                if (comCount > 10)
+                if (comCount > 5)
                 {
                     this.richTextBox1.Text = "测试失败 请重试";
                     comCount = 0;

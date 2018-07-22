@@ -165,12 +165,15 @@ namespace Dcarengine.service
             Thread.Sleep(400);
             GobalSerialPort.WriteByMessage(byte4, 0, byte4.Length);
             Thread.Sleep(400);
-            GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
             string backresult = GobalSerialPort.ResultBackString;
             if (backresult.Contains("54") && backresult.Contains("FF") && backresult.Contains("00"))
             {
                 MainF.ShowBoxTex("清除故障成功!");
+               // return; 
             }
+            MainF.ShowBoxTex("清除故障成功!");
+            GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
+
         }
 
 
