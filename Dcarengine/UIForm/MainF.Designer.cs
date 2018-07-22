@@ -325,7 +325,7 @@ namespace Dcarengine.UIForm
             this.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MaximizeBox = false;
             this.Name = "MainF";
-            this.Text = "MainF";
+            this.Text = "RB Tech";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainF_Load);
             this.menuStrip1.ResumeLayout(false);

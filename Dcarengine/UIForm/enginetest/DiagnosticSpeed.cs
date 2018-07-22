@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Dcarengine.UIForm.enginetest
 {
@@ -54,6 +55,7 @@ namespace Dcarengine.UIForm.enginetest
 
                 if (WriteVale(speedValueByte))
                 {
+                    Thread.Sleep(500); //延时半分钟
                     readValue();
                 }
 
