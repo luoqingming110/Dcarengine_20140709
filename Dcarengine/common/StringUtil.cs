@@ -502,6 +502,7 @@ namespace Dcarengine.refactor
                     ++index;
                 }
                 result = Encoding.Default.GetString(buff);
+                result = result.Replace("\0","");
             }
             catch (Exception e) {
 

@@ -336,7 +336,7 @@ namespace Dcarengine
             this.Name = "测量";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "参数测量";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deasure_FormClosed);
+           // this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Deasure_FormClosed);
             this.Load += new System.EventHandler(this.测量_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eCU13AdRessBindingSource)).EndInit();

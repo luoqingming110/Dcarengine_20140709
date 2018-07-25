@@ -172,7 +172,7 @@ namespace Dcarengine.UIForm.enginetest
                      && bakcString.Contains("02"))
                 {
                     String[] result = bakcString.Split('\r');
-                    this.richTextBox1.AppendText ( result[1] );
+                    this.richTextBox1.AppendText ("测试完成");
                     comCount = 0;
                     MessageBox.Show("测试完成");
                     return;

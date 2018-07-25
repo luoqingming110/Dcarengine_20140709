@@ -1251,10 +1251,10 @@ namespace Dcarengine
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void  Deasure_FormClosed(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void  Deasure_FormClosed(object sender, FormClosingEventArgs e)
+        //{
+        //    Application.Exit();
+        //}
 
 
 

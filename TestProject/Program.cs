@@ -31,21 +31,13 @@ namespace TestProject
         static void Main(string[] args)
         {
 
-            String backString = "311B00000000000000FD00 7F 31 22  >";
-
-            if (! (backString.Contains("71") && backString.Contains("1B")) )
-            {
-
-                Console.WriteLine("not  contains");
-
-            }
-
-            if (false && false) {
-
-                Console.WriteLine("");
-            }
+            String backString = "38000000004D786D75676530312E786137";
 
 
+            String  a= StringToASCII(backString);
+
+            Console.WriteLine( "this is the a" + a);
+          
 
             //ff();
 
@@ -131,6 +123,9 @@ namespace TestProject
             ff();
           //  ff();
         }
+
+
+
         /// <summary>
         /// StringtoAscII
         /// </summary>
@@ -141,21 +136,19 @@ namespace TestProject
             String result = "";
             try
             {
-
                 byte[] buff = new byte[orginString.Length / 2];
-
                 int index = 0;
                 for (int i = 0; i < orginString.Length; i += 2)
-
                 {
-
                     byte indexValue = Convert.ToByte(orginString.Substring(i, 2), 16);
-                    if (indexValue < 128) {
-                        buff[index] = indexValue; 
+                    if (indexValue < 128)
+                    {
+                        buff[index] = indexValue;
                     }
                     ++index;
                 }
                 result = Encoding.Default.GetString(buff);
+                result = result.Replace("\0","");
             }
             catch (Exception e)
             {
@@ -163,7 +156,6 @@ namespace TestProject
             }
             return result;
         }
-
 
 
 

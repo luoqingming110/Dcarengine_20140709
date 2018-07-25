@@ -89,16 +89,15 @@ namespace Dcarengine.UIForm
 
             String backString = GobalSerialPort.ResultBackString;
 
-            if (backString.Contains("10") && backString.Contains("78"))
-            {
+            //if (backString.Contains("10") && backString.Contains("78"))
+            //{
+            //    GobalSerialPort.WriteByMessage(CommonCmd.ATSTD6, 0, CommonCmd.ATSTD6.Length);
 
-                GobalSerialPort.WriteByMessage(CommonCmd.ATSTD6, 0, CommonCmd.ATSTD6.Length);
+            //    GobalSerialPort.WriteByMessage(CommonCmd._830300D610140A, 0, CommonCmd._830300D610140A.Length);
 
-                GobalSerialPort.WriteByMessage(CommonCmd._830300D610140A, 0, CommonCmd._830300D610140A.Length);
-
-                GobalSerialPort.WriteByMessage(CommonCmd.ATSW00, 0, CommonCmd.ATSW00.Length);
-            }
-             backString = GobalSerialPort.ResultBackString;
+            //    GobalSerialPort.WriteByMessage(CommonCmd.ATSW00, 0, CommonCmd.ATSW00.Length);
+            //}
+            //  backString = GobalSerialPort.ResultBackString;
             //释放
             this.richTextBox1.Invoke(maifText,backString);
             
