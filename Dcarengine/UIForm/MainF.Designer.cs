@@ -58,7 +58,6 @@ namespace Dcarengine.UIForm
             this.行车记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.参数测量ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dUBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eEPROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -85,7 +84,6 @@ namespace Dcarengine.UIForm
             this.设备选定ToolStripMenuItem,
             this.信息检测ToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.dUBUGToolStripMenuItem,
             this.eEPROMToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
@@ -176,13 +174,6 @@ namespace Dcarengine.UIForm
             this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 35);
             this.toolStripMenuItem1.Text = "主动诊断测试";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // dUBUGToolStripMenuItem
-            // 
-            this.dUBUGToolStripMenuItem.Name = "dUBUGToolStripMenuItem";
-            this.dUBUGToolStripMenuItem.Size = new System.Drawing.Size(113, 35);
-            this.dUBUGToolStripMenuItem.Text = "DUBUG";
-            this.dUBUGToolStripMenuItem.Click += new System.EventHandler(this.dUBUGToolStripMenuItem_Click);
             // 
             // eEPROMToolStripMenuItem
             // 
@@ -364,9 +355,8 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripMenuItem dUBUGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
-        public static System.Windows.Forms.Label EcuVeriosn;
+        public static  System.Windows.Forms.Label EcuVeriosn;
         public static System.Windows.Forms.TextBox showBox1;
     } 
 }
