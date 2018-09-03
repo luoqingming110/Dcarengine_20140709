@@ -292,25 +292,7 @@ namespace Dcarengine.UIForm
         {
 
             //EcuIsLinked = EcuConnectionF.ECULINKStatus1;
-            //if (EcuIsLinked)
-            //{
-            //    MessageBox.Show("串口已连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //else
-            //{
-            //    try
-            //    {
-            //        GobalSerialPort.initGobalSerialPort();
-            //        log.Info("串口是否被被打开：" + GobalSerialPort.SerialPort.IsOpen);
-            //        GobalSerialPort.SerialPort.Open();
-            //        ThreadEcuConnet();
-            //        //EolReadFunction
-            //    }
-            //    catch
-            //    {
-            //        showBox1.Text = "串口连接失败！";
-            //    }
-            //}
+       
 
             standindex standindex = new standindex();
             standindex.TopLevel = false;
@@ -391,6 +373,10 @@ namespace Dcarengine.UIForm
             EEPROMWrite eolWrite = new EEPROMWrite();
             eolWrite.Show();
 
+            //EOL测试数据
+            EOLFORMWRITE eol =new  EOLFORMWRITE();
+            eol.Show();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -410,7 +396,23 @@ namespace Dcarengine.UIForm
         }
 
 
+        /**
+         * EOL 写数据
+         */
+        private void eOLWRITEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+            EOLFORMWRITE eOLFORMWRITE = new EOLFORMWRITE();
+            eOLFORMWRITE.Show();
+        }
+
+        private void dEBUGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            DebugForm debugForm = new DebugForm();
+            debugForm.Show();
+
+        }
     }
 
 }

@@ -16,7 +16,7 @@
         "Entry"
         {
         "MsmKey" = "8:_15623AE2EB2098D531462A872C248B5D"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -28,7 +28,7 @@
         "Entry"
         {
         "MsmKey" = "8:_1ABEE8433BB4412CD9A43E4063D8036D"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,12 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_300A2972FB024628ADC0E7104D68436D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -58,25 +52,25 @@
         "Entry"
         {
         "MsmKey" = "8:_38F86E9E208EE23004071D19C811A8DF"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_397DD6E6D55D94762DF267B226A892EE"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_47CAE1C8DC8C2EDEBEBECCC9C9E22D1A"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_69716578C9154D9F444CB31B1B306268"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -99,8 +93,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7A5C6642CF4CFA4F580EA73CB16C2752"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -112,7 +112,7 @@
         "Entry"
         {
         "MsmKey" = "8:_8FC1D409E02E404E8D6693289FA165A1"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,31 +136,31 @@
         "Entry"
         {
         "MsmKey" = "8:_9E6722C00CE47B1D5EC2CAE68DBFF3AC"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9EB9958F493023617519290BF773AEA3"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9FA1E9F1D64F40DDE1B0B361F9F3A878"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_A2C52D5D431F09FC86614F180819771D"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B16120488D4E612ABCA57D8C2D90AF3F"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -178,7 +178,7 @@
         "Entry"
         {
         "MsmKey" = "8:_F34A6459756F7C2B15BEF86B6CBDE375"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,7 +190,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_238ABC2FCE9744008396AC4C0492507F"
+        "OwnerKey" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -285,7 +285,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\CAR1.msi"
+        "OutputFilename" = "8:output.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -306,7 +306,7 @@
                 {
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 和 x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.6.1"
                     }
                 }
@@ -317,7 +317,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\CAR1.msi"
+        "OutputFilename" = "8:output.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1027,7 +1027,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:荣博科技"
         "ProductCode" = "8:{BCD0C846-DD25-40F3-9C48-BA7FF72BF878}"
-        "PackageCode" = "8:{1F047CC6-EC4E-48FA-B66F-75A68EEDCCEF}"
+        "PackageCode" = "8:{0822A42B-34AA-4A6D-B53E-5A57815533D3}"
         "UpgradeCode" = "8:{D2FF290E-68F6-4C68-A83B-9342F844ED27}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -1147,7 +1147,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CB28B146D7CD4E908E266C151A4C00DA"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_071BAA937133430C9E2E46D5D718DF3B"
             {
             "Name" = "8:荣博科技"
             "Arguments" = "8:"
@@ -1155,7 +1155,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_238ABC2FCE9744008396AC4C0492507F"
+            "Target" = "8:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
             "Folder" = "8:_9DB5F163D3A3445ABC71D5C5654EF35F"
             "WorkingFolder" = "8:_CA678005D65849C59D798E3139BC26C2"
             "Icon" = "8:_C1F78A65C9CA426F9FD00BDC15E76E79"
@@ -1560,7 +1560,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_238ABC2FCE9744008396AC4C0492507F"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_753C8B1BE4FB4C65A2D5C1AD77F7FCBF"
             {
             "SourcePath" = "8:..\\Dcarengine\\obj\\x86\\Debug\\Dcarengine.exe"
             "TargetName" = "8:"

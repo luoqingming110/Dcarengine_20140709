@@ -273,7 +273,7 @@ namespace Dcarengine.UIForm
                 this.Invoke((EventHandler)delegate { this.textBox15.Text = 车辆VANTex; });
 
                 ///VIN 标识
-                String VIN = result210240.Substring(6 + 0 * 2, 32);
+                String VIN = result210240.Substring(6 + 0 * 2, 34);
                 String VINTEXT = StringUtil.StringToASCII(VIN);
                 this.Invoke((EventHandler)delegate { this.textBox16.Text = VINTEXT; });
                 log.Info(calid号);
