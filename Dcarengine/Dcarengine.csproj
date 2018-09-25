@@ -87,6 +87,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DevExpress.Utils.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="EASkins, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EASkins.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
@@ -160,6 +164,7 @@
       <DependentUpon>CarDBAccessDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="common\DateUtil.cs" />
+    <Compile Include="entity\EolAddress.cs" />
     <Compile Include="entity\TpCmdEntity.cs" />
     <Compile Include="Function_Class\13IdFDataWork.cs" />
     <Compile Include="Function_Class\C9Dtc.cs" />
@@ -174,6 +179,11 @@
     <Compile Include="interfaces\DtcReadInterface.cs" />
     <Compile Include="interfaces\IdReadInterface.cs" />
     <Compile Include="interfaces\ITripInterface.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="refactor\CommonAutoRest.cs" />
     <Compile Include="refactor\CommonCmd.cs" />
     <Compile Include="refactor\CommonConstant.cs" />
@@ -318,11 +328,59 @@
     <Compile Include="UIForm\EOLFORMWRITE.Designer.cs">
       <DependentUpon>EOLFORMWRITE.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\EOL\ABS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\ABS.Designer.cs">
+      <DependentUpon>ABS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\ARS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\ARS.Designer.cs">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\EOL\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UIForm\EOL\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\GPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\GPS.Designer.cs">
+      <DependentUpon>GPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\Retarder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\Retarder.Designer.cs">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\Speed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\Speed.Designer.cs">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\序列号.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\序列号.Designer.cs">
+      <DependentUpon>序列号.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\测试日期.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\测试日期.Designer.cs">
+      <DependentUpon>测试日期.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\配置日期.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\配置日期.Designer.cs">
+      <DependentUpon>配置日期.cs</DependentUpon>
     </Compile>
     <Compile Include="UIForm\MainF.cs">
       <SubType>Form</SubType>
@@ -345,14 +403,9 @@
     <Compile Include="util\StringUtils.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UIForms\button.resx">
       <DependentUpon>button.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,8 +466,32 @@
     <EmbeddedResource Include="UIForm\EOLFORMWRITE.resx">
       <DependentUpon>EOLFORMWRITE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\ABS.resx">
+      <DependentUpon>ABS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\ARS.resx">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOL\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\GPS.resx">
+      <DependentUpon>GPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\Retarder.resx">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\speed.resx">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\序列号.resx">
+      <DependentUpon>序列号.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\测试日期.resx">
+      <DependentUpon>测试日期.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\配置日期.resx">
+      <DependentUpon>配置日期.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\MainF.resx">
       <DependentUpon>MainF.cs</DependentUpon>
@@ -478,18 +555,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Icon1.ico" />
-    <Content Include="Resource\11.png" />
-    <Content Include="Resource\12.png" />
-    <Content Include="Resource\16.png" />
-    <Content Include="Resource\21.png" />
-    <Content Include="Resource\32.PNG" />
-    <Content Include="Resource\3942006.png" />
-    <Content Include="Resource\3942007.png" />
-    <Content Include="Resource\612.png" />
-    <Content Include="Resource\617.png" />
-    <Content Include="Resource\delete.png" />
-    <Content Include="Resource\main_1.jpg" />
-    <Content Include="Resource\tool_kit.png" />
+    <Content Include="SQLData\Resource\11.png" />
+    <Content Include="SQLData\Resource\12.png" />
+    <Content Include="SQLData\Resource\16.png" />
+    <Content Include="SQLData\Resource\21.png" />
+    <Content Include="SQLData\Resource\32.PNG" />
+    <Content Include="SQLData\Resource\3942006.png" />
+    <Content Include="SQLData\Resource\3942007.png" />
+    <Content Include="SQLData\Resource\612.png" />
+    <Content Include="SQLData\Resource\617.png" />
+    <Content Include="SQLData\Resource\delete.png" />
+    <Content Include="SQLData\Resource\main_1.jpg" />
+    <Content Include="SQLData\Resource\tool_kit.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="serialPort\" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dcarengine.entity;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,12 @@ namespace Dcarengine.refactor
         /// 发送数据数据模式
         /// </summary>
         public static Hashtable EcuModeSendMap = new Hashtable();
+
+
+        /// <summary>
+        /// 发送数据数据模式
+        /// </summary>
+        public static Hashtable  EolMap =  new Hashtable();
 
         /// <summary>
         /// 数据解密后的发送命令
@@ -105,6 +112,38 @@ namespace Dcarengine.refactor
             EcuModeSendSecondeMap.Add("1090", "2712");        
             EcuModeSendSecondeMap.Add("1091", "2714");
             EcuModeSendSecondeMap.Add("1092", "2716");
+
+            ///数据初始化
+            //EolAddress ABS_790 = new EolAddress();
+            //ABS_790.Active1 = "0";
+            //ABS_790.Label1 = "1";
+            //ABS_790.Disable1 = "";
+            //ABS_790.EOL_Area1 = "EOL3";
+            //ABS_790.Starting_Address1 = "024F80";
+            //ABS_790.Length1 = 4;
+            //ABS_790.Formmat1 = "";
+            //EolMap.Add("P1287790", ABS_790);
+
+            //EolAddress ARS_790 = new EolAddress();
+            //ARS_790.Active1 = "";
+            //ARS_790.Label1 = "";
+            //ARS_790.Disable1 = "";
+            //ARS_790.EOL_Area1 = "EOL3";
+            //ARS_790.Starting_Address1 = "024F80";
+            //ARS_790.Length1 = 4;
+            //ARS_790.Formmat1 = "";
+            //EolMap.Add("P1287790", ARS_790);
+            ////
+            //EolAddress RETARDER_790 = new EolAddress();
+            //ARS_790.Active1 = "";
+            //ARS_790.Label1 = "";
+            //ARS_790.Disable1 = "";
+            //ARS_790.EOL_Area1 = "EOL3";
+            //ARS_790.Starting_Address1 = "024F80";
+            //ARS_790.Length1 = 4;
+            //ARS_790.Formmat1 = "";
+            //EolMap.Add("P1287790", ARS_790);
+
 
 
         }

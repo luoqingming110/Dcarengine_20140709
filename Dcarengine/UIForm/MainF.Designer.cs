@@ -214,7 +214,7 @@ namespace Dcarengine.UIForm
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
+           // this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(116, 42);
@@ -223,7 +223,7 @@ namespace Dcarengine.UIForm
             // 
             // toolStripButton2
             // 
-            this.toolStripButton2.Image = global::Dcarengine.Properties.Resources._6121;
+           // this.toolStripButton2.Image = global::Dcarengine.Properties.Resources._6121;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(116, 42);

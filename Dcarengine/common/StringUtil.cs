@@ -552,6 +552,87 @@ namespace Dcarengine.refactor
         }
 
 
+        /// <summary>
+        /// reverse
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <returns></returns>
+        public static string hexTo2(String origin)
+        {
+            string result = "";
+            try
+            {
+                int num = Convert.ToInt32(origin, 16);
+                result = Convert.ToString(num, 2).PadLeft(32, '0');
+
+            }
+            catch (Exception)
+            {
+            }
+            return result;
+        }
+
+
+        /// <summary>
+        /// 16 进制转10进制
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <returns></returns>
+        public static int  hexTo10(String origin)
+        {
+            int result =0;
+            try
+            {
+                int num = Convert.ToInt32(origin, 16);
+                result = num;
+
+            }
+            catch (Exception)
+            {
+            }
+            return result;
+        }
+
+
+        /// <summary>
+        /// reverse
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <returns></returns>
+        public static string _2ToHex(String origin)
+        {
+            string result = "";
+            try
+            {
+                String ss = string.Format("{0:x}", Convert.ToInt32(origin, 2));
+                result = ss; 
+            }
+            catch (Exception)
+            {
+            }
+            return result;
+        }
+
+
+
+        /// <summary>
+        /// reverse
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <returns></returns>
+        public static string _10ToHex(int origin)
+        {
+            string result = "";
+            try
+            {
+                String ss = string.Format("{0:x}", origin);
+                result = ss;
+            }
+            catch (Exception)
+            {
+            }
+            return result;
+        }
 
 
 

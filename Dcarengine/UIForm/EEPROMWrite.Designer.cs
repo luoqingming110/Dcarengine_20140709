@@ -98,7 +98,7 @@ namespace Dcarengine.UIForm
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
+            //this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 24);

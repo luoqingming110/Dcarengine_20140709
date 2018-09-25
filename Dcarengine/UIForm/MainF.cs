@@ -21,6 +21,7 @@ using Newtonsoft.Json;
 using Dcarengine.refactor;
 using Dcarengine.service;
 using CCWin;
+using Dcarengine.UIForm.EOL;
 
 namespace Dcarengine.UIForm
 {
@@ -174,18 +175,17 @@ namespace Dcarengine.UIForm
 
         private void 行程记录_Click(object sender, EventArgs e)
         {
-            //if (EcuIsLinked)
-            //{               
+            if (EcuIsLinked)
+            {
                 showBox1.Text = "正在读取记录...";
                 TpRecord t = new TpRecord();
                 new Thread(t.ReadFtrip).Start();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-        }
+            }
+            else
+            {
+                MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+       }
 
 
         private void ReadEcuId_Click(object sender, EventArgs e)
@@ -374,8 +374,7 @@ namespace Dcarengine.UIForm
             eolWrite.Show();
 
             //EOL测试数据
-            EOLFORMWRITE eol =new  EOLFORMWRITE();
-            eol.Show();
+          
 
         }
 
@@ -402,8 +401,9 @@ namespace Dcarengine.UIForm
         private void eOLWRITEToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            EOLFORMWRITE eOLFORMWRITE = new EOLFORMWRITE();
-            eOLFORMWRITE.Show();
+            //EOLFORMWRITE eOLFORMWRITE = new EOLFORMWRITE();
+            EOLFORMWRITE eolF = new EOLFORMWRITE();
+            eolF.Show();
         }
 
         private void dEBUGToolStripMenuItem_Click(object sender, EventArgs e)

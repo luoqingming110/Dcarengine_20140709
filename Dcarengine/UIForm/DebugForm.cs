@@ -201,5 +201,7 @@ namespace Dcarengine.UIForm
             this.richTextBox1.Invoke(maifText, backString);
 
         }
+
+
     }
 }

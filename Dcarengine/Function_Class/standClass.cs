@@ -17,9 +17,12 @@ namespace Dcarengine.Function_Class
         /// <summary>
         /// writefunction
         /// </summary>
-        public static void writeFunction() {
+        public static void  String() {
 
+            // Convert.ToString("2", 2);
 
+            int num = Convert.ToInt32("01000100", 16);
+            String s = Convert.ToString(num, 2).PadLeft(32, '0');
         }
 
 

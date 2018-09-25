@@ -45,7 +45,7 @@ namespace Dcarengine.UIForm.EOL
             if (address == null) {
                 address = "35 02 91 62 00 00 00 11";
             }
-            String backValue = EolFunction.readFunction(address,10);
+            String backValue = EolFunction.readFunction(address,10,CommonCmd._808002);
             this.textBox3.Text = backValue;
 
         }
@@ -58,8 +58,8 @@ namespace Dcarengine.UIForm.EOL
                 return;
             }
             // address
-            String address = this.textBox2.Text.TrimEnd();
-            String value  =  this.textBox3.Text.TrimEnd();
+            String address = this.textBox5.Text.TrimEnd();
+            String value  =  this.textBox1.Text.TrimEnd();
 
             // 地址收场
             if (address == null)
@@ -67,8 +67,8 @@ namespace Dcarengine.UIForm.EOL
                 address = "34024E9E00000002";
                 value = "361122";
             }
-           EolFunction.writeFunction(address, 10,value);
-          //  this.textBox3.Text = backValue;
+           String ok =   EolFunction.writeFunction(address, 10,value,CommonCmd._808102);
+           this.textBox4.Text = ok;
 
 
 

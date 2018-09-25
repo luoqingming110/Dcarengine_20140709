@@ -31,7 +31,7 @@ namespace Dcarengine.refactor
             Ecu790ModeKeyMap.Add("1085", 4109333651);
             Ecu790ModeKeyMap.Add("1086", 4109333651);
             Ecu790ModeKeyMap.Add("1087", 2832623225);
-            Ecu790ModeKeyMap.Add("1090", 2292663446);
+            Ecu790ModeKeyMap.Add("1090", 2493232599);
             Ecu790ModeKeyMap.Add("1091", 2323879783);
             Ecu790ModeKeyMap.Add("1092", 2832623225);
             Ecu790ModeKeyMap.Add("1093", 882402761);
@@ -42,7 +42,8 @@ namespace Dcarengine.refactor
             Ecu780ModeKeyMap.Add("1085", 4109333651);
             Ecu780ModeKeyMap.Add("1086", 4109333651);
             Ecu780ModeKeyMap.Add("1087", 4109333651);
-
+            //2292663446
+            //2493232599
             Ecu780ModeKeyMap.Add("1090", 2493232599);
             Ecu780ModeKeyMap.Add("1091", 2474633425);
             Ecu780ModeKeyMap.Add("1092", 3498280648);

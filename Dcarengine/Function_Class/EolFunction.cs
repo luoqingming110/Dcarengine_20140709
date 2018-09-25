@@ -28,7 +28,7 @@ namespace Dcarengine.Function_Class
         /// <summary>
         /// read 
         /// </summary>
-        public static String readFunction(String  address , int lenght) {
+        public static String readFunction(String  address , int lenght, byte[] eol) {
 
             try
             {
@@ -42,23 +42,23 @@ namespace Dcarengine.Function_Class
                 // GobalSerialPort.WriteByMessage(DebugMode.startMode84, 0, DebugMode.startMode84.Length);
 
                 GobalSerialPort.WriteByMessage(CommonCmd._109214, 0, CommonCmd._109214.Length);            
-                backString = GobalSerialPort.ResultBackString;
-                if (backString!=null) {
-
-                }
-                GobalSerialPort.WriteByMessage(CommonCmd._808002,0,CommonCmd._808002.Length);
+                backString = GobalSerialPort.ResultBackString;              
+                //EOL区域数据地址
+                GobalSerialPort.WriteByMessage(eol, 0, eol.Length);
+                
                 backString = GobalSerialPort.ResultBackString;
                 //
                 //   address = "024E9E";   
                 address = address.Replace(" ","");
-                byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
+               // byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
             
-                //byte[] addressbyte = AddressReadConvert(address,2);
+                byte[] addressbyte = AddressReadConvert(address , lenght);
                 GobalSerialPort.WriteByMessage(addressbyte,0, addressbyte.Length);
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
-                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD,0,CommonCmd.ATBD.Length);
-                //backString = GobalSerialPort.ResultBackString;
+                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                Thread.Sleep(200);
+                backString = GobalSerialPort.ResultBackString;
                 //36
                 if ( backString.Contains("FF") ) {
 
@@ -81,7 +81,7 @@ namespace Dcarengine.Function_Class
                 //GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
                 return _BackResult;
             }
-            catch (Exception e) {
+            catch (Exception ) {
             }
             return null;
 
@@ -90,12 +90,10 @@ namespace Dcarengine.Function_Class
         /// <summary>
         /// write
         /// </summary>
-        public static  void writeFunction(String address, int lenght,String value)
+        public static  String  writeFunction(String address, int lenght,String value,byte[] eol)
         {
-
             try
             {
-
                 CommonConstant.mode = "1092";
                 Tp_KeyMethodFuntion.Con();
 
@@ -111,65 +109,33 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(CommonCmd._109214, 0, CommonCmd._109214.Length);
                 backString = GobalSerialPort.ResultBackString;
                 //日期模式
-                byte[] databyte = StringToSendBytes.bytesToSend("80 81 02 31 32 33 34 35 36 17 03 E2\n");
-                GobalSerialPort.WriteByMessage(databyte, 0, databyte.Length);
+                //byte[] databyte = StringToSendBytes.bytesToSend("80 81 02 31 32 33 34 35 36 17 03 E2\n");
+                GobalSerialPort.WriteByMessage(eol, 0, eol.Length);
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
                 //34 模式
                 // address = "024E9E";
-                // byte[] addressbyte = AddressWriteConvert(address, 2);
-                address = address.Replace(" ","");
-                byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
+                address = address.Replace(" ", "");
+                byte[] addressbyte = AddressWriteConvert(address, 2);
+               // address = address.Replace(" ","");
+               // byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
                 GobalSerialPort.WriteByMessage(addressbyte, 0, addressbyte.Length);
-                Thread.Sleep(200);
+                Thread.Sleep(1000);
                 backString = GobalSerialPort.ResultBackString;
-                //36 写入数据
-                //String valueWrite = "36" + value;
+                //36 写入数据  value 为16进制
+                String valueWrite = "36" + value;
                 //valueWrite = "362222" + "\n";
-                value = value.Replace(" ","");          
+                value = valueWrite.Replace(" ","");          
                 byte[] byteValueWrite = StringToSendBytes.bytesToSend(value + "\n");
-                GobalSerialPort.WriteByMessage(byteValueWrite, 0, byteValueWrite.Length);
-                Thread.Sleep(200);
-                backString = GobalSerialPort.ResultBackString;  
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(200);
-                backString = GobalSerialPort.ResultBackString;
                 //commoncmd
-                if (!backString.Contains("76"))
-                {
-                    GobalSerialPort.WriteByMessage(byteValueWrite, 0, byteValueWrite.Length);
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                    backString = GobalSerialPort.ResultBackString;
-
-                }
-                if (!backString.Contains("76"))
-                {
-                    GobalSerialPort.WriteByMessage(byteValueWrite, 0, byteValueWrite.Length);
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                    backString = GobalSerialPort.ResultBackString;
-
-                }
-                if (!backString.Contains("76"))
-                {
-                    GobalSerialPort.WriteByMessage(byteValueWrite, 0, byteValueWrite.Length);
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                    backString = GobalSerialPort.ResultBackString;
-                }
-                //76
-                if (backString.Contains("76"))
-                {
-                    GobalSerialPort.WriteByMessage(CommonCmd._37, 0, CommonCmd._37.Length);
-                   // Thread.Sleep(1000);
-                  //  GobalSerialPort.WriteByMessage(CommonCmd._3180, 0, CommonCmd._3180.Length);
-
-                  //  GobalSerialPort.WriteByMessage(CommonCmd._3380, 0, CommonCmd._3380.Length);
-                }
-                
-                EcuEnd();
+                writeF(byteValueWrite);          
+                GobalSerialPort.WriteByMessage(CommonCmd._3180, 0, CommonCmd._3180.Length);
+                GobalSerialPort.WriteByMessage(CommonCmd._3380, 0, CommonCmd._3380.Length);         
+                return "OK";                
+               // EcuEnd();
             }
-            catch {
-
-            }
+            catch {}
+            return "NO OK";
         }
 
         /// <summary>
@@ -220,6 +186,66 @@ namespace Dcarengine.Function_Class
 
 
             return null;
+        }
+
+
+
+        /**
+         * 34
+         */
+        public static void writeF_34(byte[] _write)
+        {
+            int i = 5;
+            while (i > 0)
+            {
+                GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
+                Thread.Sleep(500);
+                backString = GobalSerialPort.ResultBackString;
+                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                Thread.Sleep(200);
+                backString = GobalSerialPort.ResultBackString;
+                if (!backString.Contains("76"))
+                {
+
+                    writeF(_write);
+                }
+                else
+                {
+
+                    break;
+                }
+                i--;
+            }
+            // return null;
+        }
+
+
+        /**
+         * 36 数据
+         * 
+         * **/
+        public  static void  writeF(byte[]  _write) {
+
+            int i = 5;
+            while (i > 0) {
+                GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
+                Thread.Sleep(500);
+                backString = GobalSerialPort.ResultBackString;
+                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                Thread.Sleep(200);
+                backString = GobalSerialPort.ResultBackString;
+                if (!backString.Contains("76"))
+                {
+
+                    writeF(_write);
+                }
+                else {
+
+                    break;
+                }
+                i--;
+            }
+           // return null;
         }
 
 

@@ -57,12 +57,20 @@ namespace Dcarengine.refactor
 
         public static byte[] _109214;
 
+        //
         public static byte[] _808002;
-
         public static byte[] _808001;
+        public static byte[] _808000;
+        public static byte[] _808003;
+
+        //
+        public static byte[] _808100;
+        public static byte[] _808101;
+        public static byte[] _808102;
+        public static byte[] _808103;
+
 
         public static byte[] ATSH81_10_F1;
-
         /**
          * ATBD
          * 
@@ -226,12 +234,22 @@ namespace Dcarengine.refactor
             ATSW30 = StringToSendBytes.bytesToSend("ATSW30\n");
             //8303
             _830300D600140A = StringToSendBytes.bytesToSend("830300D600140A\n");
-
             _109214 = StringToSendBytes.bytesToSend("109214\n");
 
-            _808002 = StringToSendBytes.bytesToSend("808002\n");
 
+            ///
+            _808002 = StringToSendBytes.bytesToSend("808002\n");
             _808001 = StringToSendBytes.bytesToSend("808001\n");
+            _808003 = StringToSendBytes.bytesToSend("808003\n");
+            _808000 = StringToSendBytes.bytesToSend("808000\n");
+
+            ///数据列表
+            _808100 = StringToSendBytes.bytesToSend("80 81 00 31 32 33 34 35 36 17 03 E2\n");
+            _808101 = StringToSendBytes.bytesToSend("80 81 01 31 32 33 34 35 36 17 03 E2\n");
+            _808102 = StringToSendBytes.bytesToSend("80 81 02 31 32 33 34 35 36 17 03 E2\n");
+            _808103 = StringToSendBytes.bytesToSend("80 81 03 31 32 33 34 35 36 17 03 E2\n");
+
+
 
             ATBD = StringToSendBytes.bytesToSend("ATBD\n");
 

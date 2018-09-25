@@ -25,86 +25,50 @@ namespace TestProject
 
      //  private static String  backString="";
 
-       
- 
-
         static void Main(string[] args)
         {
 
-            String backString = "38000000004D786D75676530312E786137";
+
+            //   Convert.ToString("01000100", System.Globalization.NumberStyles.HexNumber);
+            int num = Convert.ToInt32("01000100", 16);
+            String s = Convert.ToString(num,2).PadLeft(32,'0');
+            String sta = s.Substring(7, 1);
+
+            String staprefix = s.Substring(0, 1 - 0);
+            String stasuffix = s.Substring(1 + 1, s.Length - 2);
 
 
-            String  a= StringToASCII(backString);
-
-            Console.WriteLine( "this is the a" + a);
-          
-
-            //ff();
-
-            Console.WriteLine(DateTime.Now.ToString("yyyyMMdd") );
-
-            Console.WriteLine("10进制转" + Convert.ToInt64("0064",16) );
-
-            //Console.WriteLine("16进制:" + Reverse("0000012c") );
-
-            //Console.WriteLine("16进制:" + Reverse("2c010000"));
-
-            String allList = Convert.ToString(300, 16).PadRight(8, '0');
-
-            Console.WriteLine("16进制:"+ allList);
-
-          
-
-            String all = "67104C18A17C4CD1802BCF8ECC2A4E54202020203030303030303030303233393536332020202020353830313437393331343030303030303233393536332D46324330303030303538303234323733373820202020202020202020202020202020202020";
-
-            String   code  = all.Substring(89 * 2, 12);
-
-            Console.WriteLine(all.Replace(code,"100000000000"));
+            String ss=  string.Format("{0:x}", 100);
 
 
-            Console.WriteLine(all.Substring(0, 8));
+            Console.WriteLine("pre:"+staprefix + "suf:" + stasuffix);
 
-            String entity = all.Substring(8 + 35 * 2, 28);
-
-            String xulie = all.Substring(8 + 0 * 2, 8);
-
-            String ll = all.Substring(1, 2);
-
-            Console.WriteLine("ll:" + ll);
-
-            all = "610240915F020000000000000000000000000000";
-            entity = all.Substring(6 + 0 * 2, 32);
-
-     
+            Console.WriteLine(ss);
 
 
 
+            Console.WriteLine(s);
+            Console.WriteLine(sta);
 
-            Console.WriteLine("this is ascii: " + StringToASCII(entity) );
+            // 2323879783
+            ////90
+            String sbyteone3 = Convert.ToString(148, 16).PadLeft(2, '0');
+            String sbytetwo3 = Convert.ToString(155, 16).PadLeft(2, '0');
+            String sbytethree3 = Convert.ToString(181, 16).PadLeft(2, '0');
+            String sbytefour3 = Convert.ToString(215, 16).PadLeft(2, '0');
+
+            //String sbyteone3 = Convert.ToString(136, 16).PadLeft(2, '0');
+            //String sbytetwo3 = Convert.ToString(167, 16).PadLeft(2, '0');
+            //String sbytethree3 = Convert.ToString(68, 16).PadLeft(2, '0');
+            //String sbytefour3 = Convert.ToString(150, 16).PadLeft(2, '0');
+
+            String final3 = sbyteone3 + sbytetwo3 + sbytethree3 + sbytefour3;
+           
+            UInt32 x = UInt32.Parse(final3, System.Globalization.NumberStyles.HexNumber);   //最后得到的 b 的值是 171。
+
+            Console.WriteLine("84: " + "s" + "10进制:" + x);
 
 
-            byte[] ba = System.Text.ASCIIEncoding.Default.GetBytes(entity);
-
-            StringBuilder S = new StringBuilder();
-
-            byte[] buff = new byte[all.Length / 2];
-
-            int index = 0;
-            for (int i = 0; i < xulie.Length; i += 2)
-
-            {
-
-                buff[index] = Convert.ToByte(xulie.Substring(i, 2), 16);
-
-                ++index;
-
-            }
-            string result = Encoding.Default.GetString(buff);
-            Console.WriteLine(all.Length + "    "+ entity );
-            Console.WriteLine("xuelie:"+ xulie +"result:" + result);
-            // string BackString = MainF.GetBackString;     //   "2709\r67 09 76 BB DD EE \r\n\r\n>"
-           // String backString = "76BBDDEE";
-            UInt32 b = UInt32.Parse(backString, System.Globalization.NumberStyles.HexNumber);     //最后得到的 b 的值是 171。
 
         }
 
@@ -150,7 +114,7 @@ namespace TestProject
                 result = Encoding.Default.GetString(buff);
                 result = result.Replace("\0","");
             }
-            catch (Exception e)
+            catch (Exception )
             {
 
             }
@@ -229,6 +193,8 @@ namespace TestProject
             string b = new string(c);
             return b;
         }
+
+
         /**/
         /// <summary>
         /// 16进制字符串转换为二进制数组
