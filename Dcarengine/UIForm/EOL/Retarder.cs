@@ -53,11 +53,11 @@ namespace Dcarengine.UIForm.EOL
                 String sta = status.Substring(1, 1);
                 if (sta.Equals("0"))
                 {
-                    this.emi_RichTextBox1.Text = "激活";
+                    this.emi_RichTextBox1.Text = "未激活";
                 }
                 else
                 {
-                    this.emi_RichTextBox1.Text = "未激活";
+                    this.emi_RichTextBox1.Text = "激活";
                 }
             }
             catch (Exception)
@@ -78,7 +78,7 @@ namespace Dcarengine.UIForm.EOL
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
                 String staprefix = status.Substring(0, 3 - 0);
-                String stasuffix = status.Substring(3 + 1, length - 4);
+                String stasuffix = status.Substring(3 + 1, status.Length - 4);
                 String stafinal = "";
 
                 if (text.Equals(NOTACTIVE))
@@ -90,6 +90,7 @@ namespace Dcarengine.UIForm.EOL
                 {
                     stafinal = staprefix + "1" + stasuffix;
                 }
+                stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
                 //final
                 EolFunction.writeFunction(address, length, StringUtil._2ToHex(stafinal), CommonCmd._808101);
             }

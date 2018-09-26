@@ -400,19 +400,28 @@ namespace Dcarengine.UIForm
          */
         private void eOLWRITEToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+            //
+            if (!StringUtil.IsStringEmpty(EcuVersionF.EcuVsion) &&EcuVersionF.EcuVsion.Equals("P1287790"))
+            {
+                EOLFORMWRITE790 eolF = new EOLFORMWRITE790();
+                eolF.Show();
+            }
+            else {
 
-            //EOLFORMWRITE eOLFORMWRITE = new EOLFORMWRITE();
-            EOLFORMWRITE eolF = new EOLFORMWRITE();
-            eolF.Show();
+                EOLFORMWRITE eolF = new EOLFORMWRITE();
+                eolF.Show();
+            }
         }
+
 
         private void dEBUGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             DebugForm debugForm = new DebugForm();
             debugForm.Show();
-
         }
+
+
     }
 
 }

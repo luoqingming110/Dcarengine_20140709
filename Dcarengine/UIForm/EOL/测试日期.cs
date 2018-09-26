@@ -78,7 +78,7 @@ namespace Dcarengine.UIForm.EOL
                 //String stasuffix = status.Substring(3 + 1, length - 4);
                 //String stafinal = "";
                 //final
-                EolFunction.writeFunction(address, length, text, CommonCmd._808101);
+                EolFunction.writeFunction(address, length, text.PadLeft(6,'0'), CommonCmd._808101);
             }
             catch (Exception)
             {

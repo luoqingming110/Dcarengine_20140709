@@ -57,6 +57,8 @@ namespace Dcarengine.refactor
 
         public static byte[] _109214;
 
+        public static byte[] _1090;
+
         //
         public static byte[] _808002;
         public static byte[] _808001;
@@ -235,7 +237,7 @@ namespace Dcarengine.refactor
             //8303
             _830300D600140A = StringToSendBytes.bytesToSend("830300D600140A\n");
             _109214 = StringToSendBytes.bytesToSend("109214\n");
-
+            _1090 = StringToSendBytes.bytesToSend("1090\n");
 
             ///
             _808002 = StringToSendBytes.bytesToSend("808002\n");

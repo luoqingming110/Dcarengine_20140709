@@ -322,6 +322,54 @@
     <Compile Include="UIForm\enginetest\RunupTest.Designer.cs">
       <DependentUpon>RunupTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\eol790\ABS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\ABS.Designer.cs">
+      <DependentUpon>ABS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\ARS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\ARS.Designer.cs">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\Retarder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\Retarder.Designer.cs">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\Speed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\Speed.Designer.cs">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\序列号.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\序列号.Designer.cs">
+      <DependentUpon>序列号.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\测试日期.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\测试日期.Designer.cs">
+      <DependentUpon>测试日期.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\配置日期.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\配置日期.Designer.cs">
+      <DependentUpon>配置日期.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE790.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE790.Designer.cs">
+      <DependentUpon>EOLFORMWRITE790.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\EOLFORMWRITE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -462,6 +510,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\enginetest\RunupTest.resx">
       <DependentUpon>RunupTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\ABS.resx">
+      <DependentUpon>ABS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\ARS.resx">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\Retarder.resx">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\Speed.resx">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\序列号.resx">
+      <DependentUpon>序列号.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\测试日期.resx">
+      <DependentUpon>测试日期.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\配置日期.resx">
+      <DependentUpon>配置日期.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOLFORMWRITE790.resx">
+      <DependentUpon>EOLFORMWRITE790.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOLFORMWRITE.resx">
       <DependentUpon>EOLFORMWRITE.cs</DependentUpon>

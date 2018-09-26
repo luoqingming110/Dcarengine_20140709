@@ -56,6 +56,7 @@
             this.ami_ComboBox1.Size = new System.Drawing.Size(229, 26);
             this.ami_ComboBox1.StartIndex = 0;
             this.ami_ComboBox1.TabIndex = 25;
+            this.ami_ComboBox1.SelectedIndexChanged += new System.EventHandler(this.ami_ComboBox1_SelectedIndexChanged);
             // 
             // ami_Button_22
             // 
@@ -82,6 +83,7 @@
             this.ami_Label2.Size = new System.Drawing.Size(92, 25);
             this.ami_Label2.TabIndex = 23;
             this.ami_Label2.Text = "改变状态";
+            this.ami_Label2.Click += new System.EventHandler(this.ami_Label2_Click);
             // 
             // ami_Label1
             // 
@@ -94,6 +96,7 @@
             this.ami_Label1.Size = new System.Drawing.Size(92, 25);
             this.ami_Label1.TabIndex = 22;
             this.ami_Label1.Text = "当前状态";
+            this.ami_Label1.Click += new System.EventHandler(this.ami_Label1_Click);
             // 
             // materialLabel1
             // 
@@ -107,6 +110,7 @@
             this.materialLabel1.Size = new System.Drawing.Size(85, 23);
             this.materialLabel1.TabIndex = 21;
             this.materialLabel1.Text = "ARS状态";
+            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // emi_RichTextBox1
             // 
@@ -120,6 +124,7 @@
             this.emi_RichTextBox1.Size = new System.Drawing.Size(232, 51);
             this.emi_RichTextBox1.TabIndex = 20;
             this.emi_RichTextBox1.WordWrap = true;
+            this.emi_RichTextBox1.TextChanged += new System.EventHandler(this.emi_RichTextBox1_TextChanged);
             // 
             // ARS
             // 

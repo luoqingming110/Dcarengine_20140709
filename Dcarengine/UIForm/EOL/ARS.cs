@@ -53,11 +53,11 @@ namespace Dcarengine.UIForm.EOL
                 String sta = status.Substring(0, 1);
                 if (sta.Equals("0"))
                 {
-                    this.emi_RichTextBox1.Text = "激活";
+                    this.emi_RichTextBox1.Text = "未激活";
                 }
                 else
                 {
-                    this.emi_RichTextBox1.Text = "未激活";
+                    this.emi_RichTextBox1.Text = "激活";
                 }
             }
             catch (Exception)
@@ -84,7 +84,7 @@ namespace Dcarengine.UIForm.EOL
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
                 String staprefix = status.Substring(0, 1 - 0);
-                String stasuffix = status.Substring(1, length - 1);
+                String stasuffix = status.Substring(1, status.Length - 1);
                 String stafinal = "";
 
                 if (text.Equals(NOTACTIVE))
@@ -96,12 +96,36 @@ namespace Dcarengine.UIForm.EOL
                 {
                     stafinal =  "1" + stasuffix;
                 }
+                stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
                 //final
                 EolFunction.writeFunction(address, length, StringUtil._2ToHex(stafinal), CommonCmd._808101);
             }
             catch (Exception) { }
         }
 
+        private void ami_ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void ami_Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ami_Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emi_RichTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

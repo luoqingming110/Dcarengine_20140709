@@ -34,14 +34,14 @@ namespace Dcarengine.Function_Class
             {
                 String   _BackResult = "";
 
-                CommonConstant.mode = "1092";
+                CommonConstant.mode = "1090";
                 Tp_KeyMethodFuntion.Con();
 
                 GobalSerialPort.WriteByMessage(CommonCmd.ATSTFF, 0, CommonCmd.ATSTFF.Length);
                 GobalSerialPort.WriteByMessage(CommonCmd.ATSW19, 0, CommonCmd.ATSW19.Length);              
                 // GobalSerialPort.WriteByMessage(DebugMode.startMode84, 0, DebugMode.startMode84.Length);
 
-                GobalSerialPort.WriteByMessage(CommonCmd._109214, 0, CommonCmd._109214.Length);            
+                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);            
                 backString = GobalSerialPort.ResultBackString;              
                 //EOL区域数据地址
                 GobalSerialPort.WriteByMessage(eol, 0, eol.Length);
@@ -94,7 +94,7 @@ namespace Dcarengine.Function_Class
         {
             try
             {
-                CommonConstant.mode = "1092";
+                CommonConstant.mode = "1090";
                 Tp_KeyMethodFuntion.Con();
 
                 byte[] ATSTFE = StringToSendBytes.bytesToSend( "ATSTFE\n");
@@ -106,7 +106,7 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(CommonCmd._830300D600140A, 0, CommonCmd._830300D600140A.Length);
                 backString = GobalSerialPort.ResultBackString;
                 //1092模式
-                GobalSerialPort.WriteByMessage(CommonCmd._109214, 0, CommonCmd._109214.Length);
+                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
                 backString = GobalSerialPort.ResultBackString;
                 //日期模式
                 //byte[] databyte = StringToSendBytes.bytesToSend("80 81 02 31 32 33 34 35 36 17 03 E2\n");
@@ -116,7 +116,7 @@ namespace Dcarengine.Function_Class
                 //34 模式
                 // address = "024E9E";
                 address = address.Replace(" ", "");
-                byte[] addressbyte = AddressWriteConvert(address, 2);
+                byte[] addressbyte = AddressWriteConvert(address, lenght);
                // address = address.Replace(" ","");
                // byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
                 GobalSerialPort.WriteByMessage(addressbyte, 0, addressbyte.Length);

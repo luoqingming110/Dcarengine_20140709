@@ -91,7 +91,8 @@ namespace Dcarengine.UIForm.EOL
                 //String stasuffix = status.Substring(3 + 1, length - 4);
                 //String stafinal = "";
                 //final
-                EolFunction.writeFunction(address, length, StringUtil._10ToHex(value), CommonCmd._808101);
+                String speed = StringUtil._10ToHex(value).PadLeft(4, '0');
+                EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
             }
             catch (Exception) {
             }
