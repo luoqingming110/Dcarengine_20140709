@@ -34,6 +34,14 @@ namespace TestProject
             String s = Convert.ToString(num,2).PadLeft(32,'0');
             String sta = s.Substring(7, 1);
 
+            String finalValue = "1027";
+
+            String finalValueOne = finalValue.Substring(0, 2);
+            String finalValueTwo = finalValue.Substring(2, 2);
+            finalValue = finalValueTwo + finalValueOne;
+
+            Console.WriteLine("fianlValue: " + finalValue);
+
             String staprefix = s.Substring(0, 1 - 0);
             String stasuffix = s.Substring(1 + 1, s.Length - 2);
 

@@ -48,30 +48,32 @@ namespace Dcarengine.refactor
         /// 发送数据数据模式
         /// </summary>
         public static Hashtable  EolMap =  new Hashtable();
-
         /// <summary>
         /// 数据解密后的发送命令
         /// </summary>
         public static Hashtable EcuModeSendSecondeMap = new Hashtable();
-
-
         /// <summary>
         /// mode 
         /// </summary>
         public static String mode;
-
-
         /// <summary>
         /// 芯片编号  数据
         /// </summary>
-        public static String TL718CODE="00000000"; 
-
-
+        public static String TL718CODE="00000000";
 
         public static byte[]  _1081Mode= { 11,22,33,44 } ;
         public static byte[]  _1084Mode = { 11, 22, 33, 44 };
         public static byte[]  _1086Mode = { 244, 239, 116, 147};
         public static byte[]  _1087Mode = { 244, 239, 116, 147 };
+
+
+        /// <summary>
+        /// 初始化是否90模式
+        /// </summary>
+        public static String  EolWrireEndText = "数据读写完毕，请断电";
+        public static Boolean is90Mode = false;
+
+
 
 
 

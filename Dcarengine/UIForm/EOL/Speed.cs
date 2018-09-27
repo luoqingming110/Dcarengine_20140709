@@ -45,6 +45,11 @@ namespace Dcarengine.UIForm.EOL
             {
                 return;
             }
+            read();
+         
+        }
+
+        public void read() {
 
             String value = EolFunction.readFunction(address, length, CommonCmd._808001);
             //初始化数据
@@ -52,17 +57,24 @@ namespace Dcarengine.UIForm.EOL
             {
                 String[] valueList = value.Split('\r');
                 //finalValue              
-                String finalValue = valueList[1].Replace(" ","");
-                int  status = StringUtil.hexTo10(finalValue) * 100;
-                this.emi_RichTextBox1.Text = status.ToString();             
-                resultValue = finalValue;              
+                String finalValue = valueList[1].Replace(" ", "");
+                ///高低位判断
+                String finalValueOne = finalValue.Substring(0, 2);
+                String finalValueTwo = finalValue.Substring(2, 2);
+                finalValue = finalValueTwo + finalValueOne;
+                int status = StringUtil.hexTo10(finalValue) / 100;
+                this.emi_RichTextBox1.Text = status.ToString();
+                resultValue = finalValue;
             }
             catch (Exception)
             {
             }
+
         }
 
-       
+
+
+
 
 
         /// <summary>
@@ -84,7 +96,7 @@ namespace Dcarengine.UIForm.EOL
                 {
                     return;
                 }
-                int value = Int32.Parse(text)/100;
+                int value = Int32.Parse(text)*100;
                 // String sta = resultValue.Substring(1, 1);
                 // MessageBox.Show(text);
                 //String staprefix = status.Substring(0, 3 - 0);
@@ -93,9 +105,13 @@ namespace Dcarengine.UIForm.EOL
                 //final
                 String speed = StringUtil._10ToHex(value).PadLeft(4, '0');
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
+                read();
+                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
             }
             catch (Exception) {
             }
+
+
         }
 
 

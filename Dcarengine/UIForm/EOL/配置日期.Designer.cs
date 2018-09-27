@@ -35,6 +35,7 @@
             this.materialLabel1 = new EASkins.Controls.MaterialLabel();
             this.ami_Button_21 = new EASkins.Ami_Button_2();
             this.emi_RichTextBox1 = new EASkins.Emi_RichTextBox();
+            this.materialLabel2 = new EASkins.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // ami_Button_22
@@ -128,11 +129,24 @@
             this.emi_RichTextBox1.TabIndex = 19;
             this.emi_RichTextBox1.WordWrap = true;
             // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(900, 607);
+            this.materialLabel2.MouseState = EASkins.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(0, 23);
+            this.materialLabel2.TabIndex = 30;
+            // 
             // 配置日期
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 712);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.ami_Button_22);
             this.Controls.Add(this.emi_RichTextBox2);
             this.Controls.Add(this.ami_Label2);
@@ -157,5 +171,6 @@
         private EASkins.Controls.MaterialLabel materialLabel1;
         private EASkins.Ami_Button_2 ami_Button_21;
         private EASkins.Emi_RichTextBox emi_RichTextBox1;
+        private EASkins.Controls.MaterialLabel materialLabel2;
     }
 }

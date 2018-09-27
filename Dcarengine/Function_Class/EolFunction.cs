@@ -34,8 +34,8 @@ namespace Dcarengine.Function_Class
             {
                 String   _BackResult = "";
 
-                CommonConstant.mode = "1090";
-                Tp_KeyMethodFuntion.Con();
+                //CommonConstant.mode = "1090";
+                //Tp_KeyMethodFuntion.Con();
 
                 GobalSerialPort.WriteByMessage(CommonCmd.ATSTFF, 0, CommonCmd.ATSTFF.Length);
                 GobalSerialPort.WriteByMessage(CommonCmd.ATSW19, 0, CommonCmd.ATSW19.Length);              
@@ -94,8 +94,8 @@ namespace Dcarengine.Function_Class
         {
             try
             {
-                CommonConstant.mode = "1090";
-                Tp_KeyMethodFuntion.Con();
+                //CommonConstant.mode = "1090";
+                //Tp_KeyMethodFuntion.Con();
 
                 byte[] ATSTFE = StringToSendBytes.bytesToSend( "ATSTFE\n");
                 GobalSerialPort.WriteByMessage(ATSTFE, 0, ATSTFE.Length);
@@ -198,6 +198,7 @@ namespace Dcarengine.Function_Class
             int i = 5;
             while (i > 0)
             {
+                i--;
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                 Thread.Sleep(500);
                 backString = GobalSerialPort.ResultBackString;
@@ -214,7 +215,7 @@ namespace Dcarengine.Function_Class
 
                     break;
                 }
-                i--;
+               
             }
             // return null;
         }
@@ -228,24 +229,30 @@ namespace Dcarengine.Function_Class
 
             int i = 5;
             while (i > 0) {
-                GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
-                Thread.Sleep(500);
-                backString = GobalSerialPort.ResultBackString;
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(200);
-                backString = GobalSerialPort.ResultBackString;
-                if (!backString.Contains("76"))
-                {
 
-                    writeF(_write);
-                }
-                else {
-
-                    break;
-                }
                 i--;
+                try
+                {
+                    GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
+                    Thread.Sleep(500);
+                    backString = GobalSerialPort.ResultBackString;
+                    GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                    Thread.Sleep(200);
+                    backString = GobalSerialPort.ResultBackString;
+                    if (backString.Contains("76") ||
+                        (backString.Contains("7F")&&backString.Contains("36")&&backString.Contains("40")) )
+                    {
+                        break; 
+                    }
+                    else 
+                    {
+                        writeF(_write);                     
+                    }
+                }
+                catch (Exception) {
+                }                   
             }
-           // return null;
+
         }
 
 

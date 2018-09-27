@@ -34,8 +34,15 @@ namespace Dcarengine.UIForm.EOL
 
                 return;
             }
+            read();          
+        }
 
-            String value = EolFunction.readFunction(address, length,CommonCmd._808001);
+        /// <summary>
+        /// read
+        /// </summary>
+        public void read() {
+
+            String value = EolFunction.readFunction(address, length, CommonCmd._808001);
             //初始化数据
             try
             {
@@ -99,6 +106,14 @@ namespace Dcarengine.UIForm.EOL
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
                 //final
                 EolFunction.writeFunction(address, length, StringUtil._2ToHex(stafinal), CommonCmd._808101);
+
+                //String value = EolFunction.readFunction(address, length, CommonCmd._808001);
+
+                read();
+
+
+                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+
             }
             catch (Exception) { }
         }

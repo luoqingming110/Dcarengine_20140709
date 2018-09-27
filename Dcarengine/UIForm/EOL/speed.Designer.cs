@@ -37,6 +37,7 @@
             this.ami_Button_22 = new EASkins.Ami_Button_2();
             this.ami_Label3 = new EASkins.Ami_Label();
             this.ami_Label4 = new EASkins.Ami_Label();
+            this.materialLabel2 = new EASkins.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // emi_RichTextBox1
@@ -154,11 +155,24 @@
             this.ami_Label4.TabIndex = 11;
             this.ami_Label4.Text = "KM/s";
             // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(791, 547);
+            this.materialLabel2.MouseState = EASkins.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(0, 23);
+            this.materialLabel2.TabIndex = 29;
+            // 
             // Speed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 677);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.ami_Label4);
             this.Controls.Add(this.ami_Label3);
             this.Controls.Add(this.ami_Button_22);
@@ -188,5 +202,6 @@
         private EASkins.Ami_Button_2 ami_Button_22;
         private EASkins.Ami_Label ami_Label3;
         private EASkins.Ami_Label ami_Label4;
+        private EASkins.Controls.MaterialLabel materialLabel2;
     }
 }

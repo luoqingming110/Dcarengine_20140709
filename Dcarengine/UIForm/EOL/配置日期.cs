@@ -40,6 +40,11 @@ namespace Dcarengine.UIForm.EOL
                 return;
             }
 
+            read();
+        }
+
+        public void read() {
+
             String value = EolFunction.readFunction(address, length, CommonCmd._808000);
             //初始化数据
             try
@@ -54,7 +59,9 @@ namespace Dcarengine.UIForm.EOL
             catch (Exception)
             {
             }
+
         }
+
 
         private void ami_Button_22_Click(object sender, EventArgs e)
         {
@@ -78,6 +85,10 @@ namespace Dcarengine.UIForm.EOL
                 //String stafinal = "";
                 //final
                 EolFunction.writeFunction(address, length, text.PadLeft(6,'0'), CommonCmd._808101);
+                read();
+                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+            
+
             }
             catch (Exception)
             {

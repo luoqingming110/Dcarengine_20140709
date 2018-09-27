@@ -10,15 +10,33 @@ using System.Windows.Forms;
 
 using Dcarengine.Function_Class;
 using Dcarengine.UIForm.EOL;
+using Dcarengine.refactor;
+using Dcarengine.serialPort;
 
 namespace Dcarengine.UIForm
 {
     public partial class EOLFORMWRITE : Form
     {
+
+
         public EOLFORMWRITE()
         {
             InitializeComponent();
+            if (!CommonConstant.is90Mode)
+            {
+
+
+                this.emi_Button_21.Text = "进入模式";
+            }
+            else {
+
+                this.emi_Button_21.Text = "退出模式";
+
+            }
+
         }
+
+
 
         private void EOLFORMWRITE_Load(object sender, EventArgs e)
         {
@@ -176,8 +194,30 @@ namespace Dcarengine.UIForm
 
         }
 
+        private void emi_Button_21_Click(object sender, EventArgs e)
+        {
+            if (EcuConnectionF.ECULINKStatus == false)
+            {
+                return;
+            }
+            //
+            if (!CommonConstant.is90Mode)
+            {
+                CommonConstant.mode = "1090";
+                Tp_KeyMethodFuntion.Con();
+                this.emi_Button_21.Text = "退出";
+                CommonConstant.is90Mode = true;
+            }
+            else {
+
+                GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                this.emi_Button_21.Text = "进入模式";
+                CommonConstant.is90Mode = false;
+            }
 
 
+        }
 
+        
     }
 }

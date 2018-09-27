@@ -42,17 +42,28 @@ namespace Dcarengine.UIForm.EOL
         {
             if (EcuConnectionF.ECULINKStatus == false)
             {
-
                 return;
             }
+            read();
+        }
 
-            String value = EolFunction.readFunction(address, length,CommonCmd._808001);
+        private void ami_Button_21_Click(object sender, EventArgs e)
+        {
+            read();
+        }
+
+        /// <summary>
+        /// read 函数封装
+        /// </summary>
+        public void read() {
+
+            String value = EolFunction.readFunction(address, length, CommonCmd._808001);
             //初始化数据
             try
             {
                 String[] valueList = value.Split('\r');
                 //finalValue
-                String finalValue = valueList[1].Replace(" ", "");
+                String finalValue = valueList[1];
                 String status = StringUtil.hexTo2(finalValue);
                 resultValue = finalValue;
                 if (StringUtil.IsStringEmpty(status))
@@ -64,49 +75,16 @@ namespace Dcarengine.UIForm.EOL
                 String sta = status.Substring(1, 1);
                 if (sta.Equals("0"))
                 {
-                    this.emi_RichTextBox1.Text = "未激活";
+                    this.emi_RichTextBox1.Text = "激活";
                 }
                 else
                 {
-                    this.emi_RichTextBox1.Text = "激活";
+                    this.emi_RichTextBox1.Text = "未激活";
                 }
             }
             catch (Exception)
             {
             }
-
-        }
-
-        private void ami_Button_21_Click(object sender, EventArgs e)
-        {
-            
-            String value = EolFunction.readFunction(address, length,CommonCmd._808001);
-            //初始化数据
-            try
-            {
-                String[] valueList = value.Split('\r');
-                //finalValue
-                String finalValue = valueList[1];
-                String status = StringUtil.hexTo2(finalValue);
-                resultValue = finalValue;
-                if (StringUtil.IsStringEmpty(status)) {
-
-                    this.emi_RichTextBox1.Text = "读取失败";
-                    return;
-                }
-                String sta = status.Substring(1,1);
-                if (sta.Equals("0"))
-                {
-                    this.emi_RichTextBox1.Text = "激活";
-                }
-                else
-                {
-                    this.emi_RichTextBox1.Text = "未激活";
-                }
-            }
-            catch (Exception ) {
-            }
-
         }
 
 
@@ -146,11 +124,14 @@ namespace Dcarengine.UIForm.EOL
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8,'0');
                 //final
                 EolFunction.writeFunction(address, length, stafinal, CommonCmd._808101);
+
+                read();
+
+                this.ami_Label2.Text = CommonConstant.EolWrireEndText; 
+
             }
             catch (Exception) {
             }
-
-
         }
 
 

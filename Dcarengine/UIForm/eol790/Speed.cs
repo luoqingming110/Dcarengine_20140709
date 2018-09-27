@@ -39,6 +39,11 @@ namespace Dcarengine.UIForm.eol790
                 return;
             }
 
+            read();
+        }
+
+        public void read() {
+
             String value = EolFunction.readFunction(address, length, CommonCmd._808001);
             //初始化数据
             try
@@ -46,14 +51,20 @@ namespace Dcarengine.UIForm.eol790
                 String[] valueList = value.Split('\r');
                 //finalValue              
                 String finalValue = valueList[1].Replace(" ", "");
-                int status = StringUtil.hexTo10(finalValue) * 100;
+                String finalValueOne = finalValue.Substring(0, 2);
+                String finalValueTwo = finalValue.Substring(2, 2);
+                finalValue = finalValueTwo + finalValueOne;
+                int status = StringUtil.hexTo10(finalValue) / 100;
                 this.emi_RichTextBox1.Text = status.ToString();
                 resultValue = finalValue;
             }
             catch (Exception)
             {
             }
+
         }
+
+
 
         private void ami_Button_22_Click(object sender, EventArgs e)
         {
@@ -69,15 +80,25 @@ namespace Dcarengine.UIForm.eol790
                 {
                     return;
                 }
-                int value = Int32.Parse(text) / 100;
+                int value = Int32.Parse(text) * 100;
                 // String sta = resultValue.Substring(1, 1);
                 // MessageBox.Show(text);
                 //String staprefix = status.Substring(0, 3 - 0);
                 //String stasuffix = status.Substring(3 + 1, length - 4);
                 //String stafinal = "";
                 //final
-                String speed = StringUtil._10ToHex(value).PadLeft(4,'0'); 
+                String speed = StringUtil._10ToHex(value).PadLeft(4,'0');
+                if (speed.Length > 4) {
+
+                    return;
+                }
+
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
+
+                read();
+
+                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+
             }
             catch (Exception)
             {

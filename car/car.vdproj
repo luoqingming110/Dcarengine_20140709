@@ -16,7 +16,7 @@
         "Entry"
         {
         "MsmKey" = "8:_117A951BD8F449A6F60B683BD57BCB31"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -28,7 +28,7 @@
         "Entry"
         {
         "MsmKey" = "8:_3228A5E9FBC68C4F64CDE2B2ACC0B104"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,13 +46,19 @@
         "Entry"
         {
         "MsmKey" = "8:_32CC30EFB73FE3CF5530B0CBFBBA33CC"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_38373F32571445ED857E42C7C2394E55"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_54CA195384C617FF1CDCB6573652A25C"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_5641A42701C5E158DB9EF26F67970A92"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -82,13 +88,13 @@
         "Entry"
         {
         "MsmKey" = "8:_64AA7B63338CD8A6145B7C82F160DE57"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_6ACD35AF2E81241CA34CD8BB5C6FAB6D"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -111,26 +117,32 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_86A854365A2EAB768DFDA09B0330493A"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_893AA626D83F4AB19816BD26824ABD68"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_8AE0266E85D1BF832D5283908CEBA555"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_8AF5D2066FB997D1503B0D17827B9EFD"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +160,7 @@
         "Entry"
         {
         "MsmKey" = "8:_BC61EDC457EEDDC0D0F8AEF89E36D116"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -159,26 +171,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F4C4A13EA2DF1F481F5827ABE329483A"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_F5890308D13C033D4B8E4C30F835F65D"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_FC197974A668E25A99CF2E8B33B0A5E9"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,7 +196,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D83EA27DE2804AADA4D69F683A9C5853"
+        "OwnerKey" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -301,6 +307,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -317,6 +339,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -457,6 +495,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_38373F32571445ED857E42C7C2394E55"
+            {
+            "SourcePath" = "8:C:\\Users\\Administrator\\Desktop\\UI\\rulers.ico"
+            "TargetName" = "8:rulers.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_CC2FA57D62E0460FAC0988B2019C89F1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_54CA195384C617FF1CDCB6573652A25C"
@@ -1132,6 +1190,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CB8C02CAA91F43D8B34063A081051AE6"
+            {
+            "Name" = "8:荣博科技"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
+            "Folder" = "8:_CC2FA57D62E0460FAC0988B2019C89F1"
+            "WorkingFolder" = "8:_C211504DBBD048C8A106DFC84D56FD04"
+            "Icon" = "8:_38373F32571445ED857E42C7C2394E55"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -1531,7 +1603,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D83EA27DE2804AADA4D69F683A9C5853"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_75D9400CD90D4BF4A43F9A20D3B5F1E8"
             {
             "SourcePath" = "8:..\\Dcarengine\\obj\\x86\\Debug\\Dcarengine.exe"
             "TargetName" = "8:"
