@@ -41,7 +41,7 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(CommonCmd.ATSW19, 0, CommonCmd.ATSW19.Length);              
                 // GobalSerialPort.WriteByMessage(DebugMode.startMode84, 0, DebugMode.startMode84.Length);
 
-                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);            
+              //  GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);            
                 backString = GobalSerialPort.ResultBackString;              
                 //EOL区域数据地址
                 GobalSerialPort.WriteByMessage(eol, 0, eol.Length);
@@ -106,8 +106,8 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(CommonCmd._830300D600140A, 0, CommonCmd._830300D600140A.Length);
                 backString = GobalSerialPort.ResultBackString;
                 //1092模式
-                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
-                backString = GobalSerialPort.ResultBackString;
+              //  GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
+              //  backString = GobalSerialPort.ResultBackString;
                 //日期模式
                 //byte[] databyte = StringToSendBytes.bytesToSend("80 81 02 31 32 33 34 35 36 17 03 E2\n");
                 GobalSerialPort.WriteByMessage(eol, 0, eol.Length);
@@ -119,9 +119,10 @@ namespace Dcarengine.Function_Class
                 byte[] addressbyte = AddressWriteConvert(address, lenght);
                // address = address.Replace(" ","");
                // byte[] addressbyte = StringToSendBytes.bytesToSend(address + "\n");
-                GobalSerialPort.WriteByMessage(addressbyte, 0, addressbyte.Length);
-                Thread.Sleep(1000);
-                backString = GobalSerialPort.ResultBackString;
+               // GobalSerialPort.WriteByMessage(addressbyte, 0, addressbyte.Length);
+                writeF_34(addressbyte);
+               // Thread.Sleep(1000);
+                //backString = GobalSerialPort.ResultBackString;
                 //36 写入数据  value 为16进制
                 String valueWrite = "36" + value;
                 //valueWrite = "362222" + "\n";
@@ -190,47 +191,51 @@ namespace Dcarengine.Function_Class
 
 
 
+
+        private static int _34count= 2; 
         /**
          * 34
          */
         public static void writeF_34(byte[] _write)
         {
-            int i = 5;
-            while (i > 0)
+            
+            while (_34count > 0)
             {
-                i--;
+                _34count--;
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                 Thread.Sleep(500);
                 backString = GobalSerialPort.ResultBackString;
                 GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
-                if (!backString.Contains("76"))
+                if (!backString.Contains("74") || backString.Contains("NO"))
                 {
-
                     writeF(_write);
                 }
-                else
+                else if(backString.Contains("74"))
                 {
-
-                    break;
-                }
-               
+                    _34count = 2;
+                    break;                 
+                }         
             }
             // return null;
         }
 
 
+
         /**
-         * 36 数据
+         * count
+        */
+        /**
+        * 36 数据
          * 
-         * **/
+       **/
+        public  static int workCount = 4;
         public  static void  writeF(byte[]  _write) {
 
-            int i = 5;
-            while (i > 0) {
+            while (workCount > 0) {
 
-                i--;
+                workCount --;
                 try
                 {
                     GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
@@ -242,6 +247,7 @@ namespace Dcarengine.Function_Class
                     if (backString.Contains("76") ||
                         (backString.Contains("7F")&&backString.Contains("36")&&backString.Contains("40")) )
                     {
+                        workCount = 4;
                         break; 
                     }
                     else 
@@ -252,7 +258,6 @@ namespace Dcarengine.Function_Class
                 catch (Exception) {
                 }                   
             }
-
         }
 
 

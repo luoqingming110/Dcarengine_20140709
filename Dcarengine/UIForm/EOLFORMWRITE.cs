@@ -205,6 +205,8 @@ namespace Dcarengine.UIForm
             {
                 CommonConstant.mode = "1090";
                 Tp_KeyMethodFuntion.Con();
+                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
+                String backString = GobalSerialPort.ResultBackString;
                 this.emi_Button_21.Text = "退出";
                 CommonConstant.is90Mode = true;
             }

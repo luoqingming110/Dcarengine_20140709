@@ -104,6 +104,14 @@ namespace Dcarengine.UIForm.EOL
                 //String stafinal = "";
                 //final
                 String speed = StringUtil._10ToHex(value).PadLeft(4, '0');
+                if (speed.Length > 4)
+                {
+                    return;
+                }
+                String finalValueOne = speed.Substring(0, 2);
+                String finalValueTwo = speed.Substring(2, 2);
+                speed = finalValueTwo + finalValueOne;
+
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
                 read();
                 this.ami_Label2.Text = CommonConstant.EolWrireEndText;

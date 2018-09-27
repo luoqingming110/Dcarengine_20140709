@@ -92,8 +92,11 @@ namespace Dcarengine.UIForm.eol790
 
                     return;
                 }
+                String finalValueOne = speed.Substring(0, 2);
+                String finalValueTwo = speed.Substring(2, 2);
+                speed = finalValueTwo + finalValueOne;
 
-                EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
+                EolFunction.writeFunction(address, length, speed, CommonCmd._808102);
 
                 read();
 
