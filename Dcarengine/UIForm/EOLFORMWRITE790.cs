@@ -185,8 +185,10 @@ namespace Dcarengine.UIForm
             else
             {
                 GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                EcuConnectionF.ECULINKStatus = false;
                 this.emi_Button_21.Text = "进入模式";
                 CommonConstant.is90Mode = false;
+
             }
 
 

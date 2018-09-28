@@ -82,11 +82,11 @@ namespace Dcarengine.UIForm.eol790
                 //String stasuffix = status.Substring(3 + 1, length - 4);
                 //String stafinal = "";
                 //final
-                EolFunction.writeFunction(address, length, text, CommonCmd._808002);
+                EolFunction.writeFunction(address, length, text.PadLeft(6,'0'), CommonCmd._808102);
 
                 read();
 
-                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+                this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }
             catch (Exception)

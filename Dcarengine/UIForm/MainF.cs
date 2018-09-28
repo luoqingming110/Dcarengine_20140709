@@ -80,7 +80,6 @@ namespace Dcarengine.UIForm
                     log.Info("串口是否被被打开：" + GobalSerialPort.SerialPort.IsOpen);
                     GobalSerialPort.SerialPort.Open();
                     ThreadEcuConnet();
-
                 }
                 catch
                 {

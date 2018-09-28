@@ -100,7 +100,7 @@ namespace Dcarengine.UIForm.eol790
 
                 read();
 
-                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+                this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }
             catch (Exception)

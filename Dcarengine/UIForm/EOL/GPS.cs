@@ -100,9 +100,9 @@ namespace Dcarengine.UIForm.EOL
                 }
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
                 //final
-                EolFunction.writeFunction(address, length, StringUtil._2ToHex(stafinal), CommonCmd._808101);
+                EolFunction.writeFunction(address, length, stafinal, CommonCmd._808101);
                 read();
-                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+                this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }
             catch (Exception) { }

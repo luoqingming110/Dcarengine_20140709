@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.EOL
@@ -49,6 +50,10 @@ namespace Dcarengine.UIForm.EOL
                 String[] valueList = value.Split('\r');
                 //finalValue
                 String finalValue = valueList[1].Replace(" ", "");
+                if (finalValue.Length!=8) {
+                    this.emi_RichTextBox1.Text = "读取失败";
+
+                }
                 String status = StringUtil.hexTo2(finalValue);
                 resultValue = finalValue;
                 if (StringUtil.IsStringEmpty(status))
@@ -86,7 +91,7 @@ namespace Dcarengine.UIForm.EOL
             }
             try
             {
-                String text = this.ami_ComboBox1.Text;
+                String text = this.ami_ComboBox1.Text.Trim();
                 String status = StringUtil.hexTo2(resultValue);
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
@@ -103,16 +108,17 @@ namespace Dcarengine.UIForm.EOL
                 {
                     stafinal =  "1" + stasuffix;
                 }
+
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
                 //final
-                EolFunction.writeFunction(address, length, StringUtil._2ToHex(stafinal), CommonCmd._808101);
+                EolFunction.writeFunction(address, length, stafinal, CommonCmd._808101);
 
                 //String value = EolFunction.readFunction(address, length, CommonCmd._808001);
+                //Thread.Sleep(5000);
 
                 read();
 
-
-                this.ami_Label2.Text = CommonConstant.EolWrireEndText;
+                this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }
             catch (Exception) { }

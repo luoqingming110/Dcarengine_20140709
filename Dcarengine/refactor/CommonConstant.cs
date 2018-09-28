@@ -70,7 +70,7 @@ namespace Dcarengine.refactor
         /// <summary>
         /// 初始化是否90模式
         /// </summary>
-        public static String  EolWrireEndText = "数据读写完毕，请断电";
+        public static String  EolWrireEndText = "写完毕 请断电";
         public static Boolean is90Mode = false;
 
 

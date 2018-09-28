@@ -102,7 +102,7 @@ namespace Dcarengine.UIForm.EOL
 
             try
             {
-                String text = this.ami_ComboBox1.Text;
+                String text = this.ami_ComboBox1.Text.Trim();
                 String status = StringUtil.hexTo2(resultValue);
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
@@ -127,7 +127,7 @@ namespace Dcarengine.UIForm.EOL
 
                 read();
 
-                this.ami_Label2.Text = CommonConstant.EolWrireEndText; 
+                this.materialLabel2.Text = CommonConstant.EolWrireEndText; 
 
             }
             catch (Exception) {
