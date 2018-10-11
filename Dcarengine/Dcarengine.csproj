@@ -346,6 +346,12 @@
     <Compile Include="UIForm\eol790\Speed.Designer.cs">
       <DependentUpon>Speed.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\eol790\VIN790.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\VIN790.Designer.cs">
+      <DependentUpon>VIN790.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\eol790\序列号.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -411,6 +417,12 @@
     </Compile>
     <Compile Include="UIForm\EOL\Speed.Designer.cs">
       <DependentUpon>Speed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOL\VIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOL\VIN.Designer.cs">
+      <DependentUpon>VIN.cs</DependentUpon>
     </Compile>
     <Compile Include="UIForm\EOL\序列号.cs">
       <SubType>Form</SubType>
@@ -523,6 +535,9 @@
     <EmbeddedResource Include="UIForm\eol790\Speed.resx">
       <DependentUpon>Speed.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\VIN790.resx">
+      <DependentUpon>VIN790.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForm\eol790\序列号.resx">
       <DependentUpon>序列号.cs</DependentUpon>
     </EmbeddedResource>
@@ -555,6 +570,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOL\speed.resx">
       <DependentUpon>Speed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOL\VIN.resx">
+      <DependentUpon>VIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOL\序列号.resx">
       <DependentUpon>序列号.cs</DependentUpon>

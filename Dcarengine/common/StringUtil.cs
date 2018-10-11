@@ -634,6 +634,30 @@ namespace Dcarengine.refactor
             return result;
         }
 
+        /// <summary>
+        /// asciiToHex
+        /// </summary>
+        /// <returns></returns>
+        public static String AsciiToHexString(String   origin) {
+
+          //  string ASCIIstr2 = null;
+            string hexList = null;
+            try
+            {
+                byte[] array = System.Text.Encoding.ASCII.GetBytes(origin);  //数组array为对应的ASCII数组    
+              
+                for (int i = 0; i < array.Length; i++)
+                {
+                    int value = Convert.ToInt32(array[i]);
+                    String hexValue = string.Format("{0:x}", value);
+                    hexList += hexValue;
+                }
+            }
+            catch (Exception) {
+            }
+            return hexList;
+        }
+
 
 
     }

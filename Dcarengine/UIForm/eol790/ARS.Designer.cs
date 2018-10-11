@@ -107,7 +107,7 @@
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(85, 23);
             this.materialLabel1.TabIndex = 27;
-            this.materialLabel1.Text = "ARS状态";
+            this.materialLabel1.Text = "ASR状态";
             // 
             // emi_RichTextBox1
             // 
@@ -147,7 +147,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.emi_RichTextBox1);
             this.Name = "ARS";
-            this.Text = "ARS790";
+            this.Text = "ASR790";
             this.Load += new System.EventHandler(this.ARS790_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

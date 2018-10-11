@@ -50,6 +50,13 @@ namespace Dcarengine.UIForm.EOL
                 String[] valueList = value.Split('\r');
                 //finalValue
                 String finalValue = valueList[1].Replace(" ", "");
+                //高低位
+                String finalValueOne = finalValue.Substring(0, 2);
+                String finalValueTwo = finalValue.Substring(2, 2);
+                String finalValueThree = finalValue.Substring(4, 2);
+                String finalValueFour = finalValue.Substring(6, 2);
+                finalValue = finalValueFour + finalValueThree + finalValueTwo + finalValueOne;
+
                 if (finalValue.Length!=8) {
                     this.emi_RichTextBox1.Text = "读取失败";
 
@@ -62,7 +69,7 @@ namespace Dcarengine.UIForm.EOL
                     this.emi_RichTextBox1.Text = "读取失败";
                     return;
                 }
-                String sta = status.Substring(0, 1);
+                String sta = status.Substring(31, 1);
                 if (sta.Equals("0"))
                 {
                     this.emi_RichTextBox1.Text = "未激活";
@@ -95,21 +102,27 @@ namespace Dcarengine.UIForm.EOL
                 String status = StringUtil.hexTo2(resultValue);
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
-                String staprefix = status.Substring(0, 1 - 0);
-                String stasuffix = status.Substring(1, status.Length - 1);
+                String staprefix = status.Substring(0, 31);
+                String stasuffix = status.Substring(0, 31);
                 String stafinal = "";
 
                 if (text.Equals(NOTACTIVE))
                 {
-                    // resultValue =  ;
-                    stafinal =  "0" + stasuffix;
+                    stafinal = stasuffix + "0" ;
                 }
                 else if (text.Equals(ACTIVE))
                 {
-                    stafinal =  "1" + stasuffix;
+                    stafinal = stasuffix + "1" ;
                 }
 
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8, '0');
+                //高低位
+                String finalValueOne = stafinal.Substring(0, 2);
+                String finalValueTwo = stafinal.Substring(2, 2);
+                String finalValueThree = stafinal.Substring(4, 2);
+                String finalValueFour = stafinal.Substring(6, 2);
+                stafinal = finalValueFour + finalValueThree + finalValueTwo + finalValueOne;
+
                 //final
                 EolFunction.writeFunction(address, length, stafinal, CommonCmd._808101);
 

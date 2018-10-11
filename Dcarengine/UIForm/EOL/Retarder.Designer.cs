@@ -107,7 +107,7 @@
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(70, 23);
             this.materialLabel1.TabIndex = 21;
-            this.materialLabel1.Text = "缓存器";
+            this.materialLabel1.Text = "缓速器";
             // 
             // emi_RichTextBox1
             // 

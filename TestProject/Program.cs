@@ -28,11 +28,27 @@ namespace TestProject
         static void Main(string[] args)
         {
 
+           
+            string str2 = "SessionN";
+            byte[] array = System.Text.Encoding.ASCII.GetBytes(str2);  //数组array为对应的ASCII数组    
+            string ASCIIstr2 = null;
+            string hexList = "";
+            for (int i = 0; i < array.Length; i++)
+            {
+                int  value = Convert.ToInt32(array[i]);
+                String hexValue = string.Format("{0:x}", value);
+                hexList += hexValue;
+            }
+
+            Console.WriteLine(ASCIIstr2 + "length:"+str2.Length + "length0:" + hexList +"..."+ hexList.Length);
 
             //   Convert.ToString("01000100", System.Globalization.NumberStyles.HexNumber);
-            int num = Convert.ToInt32("01000100", 16);
+            // int num = Convert.ToInt32("01000100", 16);
+            int num = Convert.ToInt32("00000000", 16);
             String s = Convert.ToString(num,2).PadLeft(32,'0');
-            String sta = s.Substring(7, 1);
+            String sta = s.Substring(31, 1);
+
+            Console.WriteLine("this is sta :" + sta);
 
             String finalValue = "1027";
 

@@ -332,13 +332,20 @@ namespace Dcarengine.Function_Class
                     GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                     Thread.Sleep(200);
                     backString = GobalSerialPort.ResultBackString;
+                    if (backString.Contains("76")
+                       || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("40"))
+                       || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("78")))
+                    {
+                        Thread.Sleep(200);
+                        break;
+                    }
                     GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
                     Thread.Sleep(300);
                     backString = GobalSerialPort.ResultBackString;
                     log.Info("eol atbd return :" + backString);
                     if (backString.Contains("76") 
                         ||(backString.Contains("7F")&&backString.Contains("36")&&backString.Contains("40"))
-                        || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("78")))
+                        || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("78")) )
                     {
                         Thread.Sleep(200);
                         break; 
@@ -366,7 +373,7 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
-                if (backString.Contains("77") ) {
+                if (backString.Contains("77")) {
 
                     Thread.Sleep(100);
                     break;
@@ -436,32 +443,27 @@ namespace Dcarengine.Function_Class
             {
                 _3380count--;
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
-                Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
                 if (backString.Contains("80"))
                 {
-
-                    Thread.Sleep(100);
                     break;
                 }
                 GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
                 Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
-                if ((backString.Contains("80") ||
-                    backString.Contains("7F") && backString.Contains("33") && backString.Contains("23")) )                  
+                if (backString.Contains("80") ||
+                    (backString.Contains("7F") && backString.Contains("33") && backString.Contains("23"))) 
                 {
-                    writeF_3380(_write);                 
+                    writeF_3380(_write);
                 }
                 else
                 {
-                    Thread.Sleep(100);
                     break;
                 }
             }
 
+
         }
-
-
 
     }
 }

@@ -53,9 +53,11 @@ namespace Dcarengine.UIForm.eol790
                 String[] valueList = value.Split('\r');
                 //finalValue              
                 String finalValue = valueList[1].Replace(" ", "");
-                this.emi_RichTextBox1.Text = finalValue;
 
-                //resultValue = finalValue;
+                String status = StringUtil.StringToASCII(finalValue);
+
+                this.emi_RichTextBox1.Text = status;
+
             }
             catch (Exception)
             {
@@ -73,18 +75,13 @@ namespace Dcarengine.UIForm.eol790
             try
             {
                 String text = this.emi_RichTextBox2.Text;
-                if (StringUtil.IsStringEmpty(text))
+                if (StringUtil.IsStringEmpty(text)&& text.Length!=17)
                 {
                     return;
-                }
-                //int value = Int32.Parse(text) / 100;
-                // String sta = resultValue.Substring(1, 1);
-                // MessageBox.Show(text);
-                //String staprefix = status.Substring(0, 3 - 0);
-                //String stasuffix = status.Substring(3 + 1, length - 4);
-                //String stafinal = "";
-                //final
-                EolFunction.writeFunction(address, length, text.PadLeft(34,'0'), CommonCmd._808102);
+                }    
+                String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
+
+                EolFunction.writeFunction(address, length, asciiToWrite, CommonCmd._808102);
 
                 read();
 

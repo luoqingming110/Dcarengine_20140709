@@ -63,16 +63,22 @@ namespace Dcarengine.UIForm.EOL
             {
                 String[] valueList = value.Split('\r');
                 //finalValue
-                String finalValue = valueList[1];
+                String finalValue = valueList[1].Replace(" ", "");
+                //高低位
+                String finalValueOne = finalValue.Substring(0, 2);
+                String finalValueTwo = finalValue.Substring(2, 2);
+                String finalValueThree = finalValue.Substring(4, 2);
+                String finalValueFour = finalValue.Substring(6, 2);
+                finalValue = finalValueFour + finalValueThree + finalValueTwo + finalValueOne;
+
                 String status = StringUtil.hexTo2(finalValue);
                 resultValue = finalValue;
                 if (StringUtil.IsStringEmpty(status))
                 {
-
                     this.emi_RichTextBox1.Text = "读取失败";
                     return;
                 }
-                String sta = status.Substring(1, 1);
+                String sta = status.Substring(30, 1);
                 if (sta.Equals("0"))
                 {
                     this.emi_RichTextBox1.Text = "激活";
@@ -106,8 +112,8 @@ namespace Dcarengine.UIForm.EOL
                 String status = StringUtil.hexTo2(resultValue);
                 // String sta = resultValue.Substring(1, 1);
                 //MessageBox.Show(text);
-                String staprefix = status.Substring(0, 1 - 0);
-                String stasuffix = status.Substring(1 + 1, status.Length - 2);
+                String staprefix = status.Substring(0, 30);
+                String stasuffix = status.Substring(31, 1);
                 String stafinal = "";
 
                 if (text.Equals(NOTACTIVE))
@@ -122,16 +128,21 @@ namespace Dcarengine.UIForm.EOL
                     stafinal = staprefix + "1" + stasuffix;
                 }
                 stafinal = StringUtil._2ToHex(stafinal).PadLeft(8,'0');
+                //高低位
+                String finalValueOne = stafinal.Substring(0, 2);
+                String finalValueTwo = stafinal.Substring(2, 2);
+                String finalValueThree = stafinal.Substring(4, 2);
+                String finalValueFour = stafinal.Substring(6, 2);
+                stafinal = finalValueFour + finalValueThree + finalValueTwo + finalValueOne;
                 //final
                 EolFunction.writeFunction(address, length, stafinal, CommonCmd._808101);
 
                 read();
-
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText; 
-
             }
             catch (Exception) {
             }
+
         }
 
 
