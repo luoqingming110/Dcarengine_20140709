@@ -5865,3 +5865,937 @@ FF FF FF FF FF FF FF FF
 
 > ;workTime:3 count:0
 [2018-09-29 01:45:41,152]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:15:49,035]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:15:49,269]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:15:49,269]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:15:52,411]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:15:54,458]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:16:15,132]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:16:15,319]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:16:15,335]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:16:19,165]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:16:20,632]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:16:24,673]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:16:24,874]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:16:24,889]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:16:30,386]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:16:30,574]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:16:32,029]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:18:12,132]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:18:12,335]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:18:12,335]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:18:14,163]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:18:14,382]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:18:15,632]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:22:48,895]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:22:49,301]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:22:49,301]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:22:49,332]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:22:49,379]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : AT@S
+
+[2018-10-11 23:22:49,395]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@SCodeNumb:13103641
+
+> ;workTime:16 count:0
+[2018-10-11 23:22:49,395]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSP5
+
+[2018-10-11 23:22:49,410]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:22:49,426]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:22:49,426]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:0 count:0
+[2018-10-11 23:22:49,442]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSW19
+
+[2018-10-11 23:22:49,442]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSW19OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:22:49,457]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSH8110F1
+
+[2018-10-11 23:22:49,457]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:22:49,473]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:22:49,973]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 
+
+> ;workTime:500 count:0
+[2018-10-11 23:22:49,973]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2018-10-11 23:22:50,004]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A94
+
+[2018-10-11 23:22:50,239]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 37 37 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:235 count:0
+[2018-10-11 23:22:50,270]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287770
+[2018-10-11 23:22:50,270]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210213
+
+[2018-10-11 23:22:50,895]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021367 61 02 13 20 17 02 09 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 43 45 36 31 31 42 2A 4C 30 30 30 20 20 56 30 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 33 30 35 38 33 39 20 20 20 20 20 
+
+> ;workTime:391 count:0
+[2018-10-11 23:22:50,895]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210214
+
+[2018-10-11 23:22:51,317]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021467 61 02 14 53 07 7B 99 5D 59 49 C4 92 F4 7A 45 76 05 B4 0D 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:407 count:0
+[2018-10-11 23:22:51,317]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210215
+
+[2018-10-11 23:22:51,739]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021567 61 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:391 count:0
+[2018-10-11 23:22:51,739]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210241
+
+[2018-10-11 23:22:51,989]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 46 32 43 43 45 36 31 31 42 2A 4C 20 20 20 20 20 
+
+> ;workTime:250 count:0
+[2018-10-11 23:22:51,989]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210240
+
+[2018-10-11 23:22:52,254]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:250 count:0
+[2018-10-11 23:22:52,254]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- F2CCE611B*L000
+[2018-10-11 23:22:52,254]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:22:52,270]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:22:52,270]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:22:52,270]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:22:52,270]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 20170209
+[2018-10-11 23:22:52,286]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:22:55,817]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2711
+
+[2018-10-11 23:22:56,114]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 271167 11 EB F5 FA FD 
+
+> ;workTime:203 count:0
+[2018-10-11 23:22:56,114]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2712259084a6
+
+[2018-10-11 23:22:56,348]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 2712259084a667 12 34 
+
+> ;workTime:219 count:0
+[2018-10-11 23:22:56,676]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1090
+
+[2018-10-11 23:22:56,879]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 10907F 10 78 
+
+> ;workTime:187 count:0
+[2018-10-11 23:23:02,286]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 350237CE00000011
+
+[2018-10-11 23:23:02,583]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 350237CE00000011FF 
+
+> ;workTime:235 count:0
+[2018-10-11 23:23:02,802]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 36
+
+[2018-10-11 23:23:03,020]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 364C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:203 count:0
+[2018-10-11 23:23:03,239]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:23:03,630]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 374C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 2A 30 30 DA 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 E0 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 01 77 
+
+> ;workTime:375 count:0
+[2018-10-11 23:23:19,380]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:23:19,599]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108110 12 
+
+> ;workTime:188 count:0
+[2018-10-11 23:23:19,599]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:23:19,630]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:16 count:0
+[2018-10-11 23:23:23,255]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:24:05,475]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:24:05,662]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:24:05,662]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:24:05,678]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:05,694]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : AT@S
+
+[2018-10-11 23:24:05,709]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@SCodeNumb:13103641
+
+> ;workTime:15 count:0
+[2018-10-11 23:24:05,709]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSP5
+
+[2018-10-11 23:24:05,725]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:05,725]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:24:05,741]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:05,756]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSW19
+
+[2018-10-11 23:24:05,756]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSW19OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:05,772]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSH8110F1
+
+[2018-10-11 23:24:05,772]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:05,787]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:24:06,287]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 
+
+> ;workTime:500 count:0
+[2018-10-11 23:24:06,287]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2018-10-11 23:24:06,303]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A94
+
+[2018-10-11 23:24:06,537]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 37 37 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:234 count:0
+[2018-10-11 23:24:06,553]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287770
+[2018-10-11 23:24:06,553]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210213
+
+[2018-10-11 23:24:06,959]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021367 61 02 13 20 17 02 09 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 43 45 36 31 31 42 2A 4C 30 30 30 20 20 56 30 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 33 30 35 38 33 39 20 20 20 20 20 
+
+> ;workTime:390 count:0
+[2018-10-11 23:24:06,975]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210214
+
+[2018-10-11 23:24:07,381]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021467 61 02 14 53 07 7B 99 5D 59 49 C4 92 F4 7A 45 76 05 B4 0D 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:406 count:0
+[2018-10-11 23:24:07,397]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210215
+
+[2018-10-11 23:24:07,788]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021567 61 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:391 count:0
+[2018-10-11 23:24:07,788]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210241
+
+[2018-10-11 23:24:08,053]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 46 32 43 43 45 36 31 31 42 2A 4C 20 20 20 20 20 
+
+> ;workTime:250 count:0
+[2018-10-11 23:24:08,069]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210240
+
+[2018-10-11 23:24:08,319]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:250 count:0
+[2018-10-11 23:24:08,319]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- F2CCE611B*L000
+[2018-10-11 23:24:08,334]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:24:08,334]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:24:08,334]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:24:08,350]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:24:08,350]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 20170209
+[2018-10-11 23:24:08,350]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:24:09,163]  1 -- INFO  -- Dcarengine.UIForm.MainF [ReadEcuIDF] -- Ecu Id  readding  start...
+[2018-10-11 23:24:09,647]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:24:09,694]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:09,709]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:24:09,709]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:24:09,725]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A86
+
+[2018-10-11 23:24:09,944]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A865A 86 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:09,944]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A87
+
+[2018-10-11 23:24:10,256]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A8742 5A 87 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:297 count:0
+[2018-10-11 23:24:10,272]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A89
+
+[2018-10-11 23:24:10,475]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A895A 89 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:10,475]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A8A
+
+[2018-10-11 23:24:10,850]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A8A66 5A 8A 35 31 2F 31 2F 45 44 43 31 37 43 56 34 34 5F 35 5F 39 31 2F 30 2F 50 5F 31 32 38 37 2F 2F 50 5F 31 32 38 37 5F 37 5F 37 5F 30 5F 42 41 53 49 43 2F 2F 2F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:359 count:0
+[2018-10-11 23:24:10,866]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A8C
+
+[2018-10-11 23:24:11,053]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A8C5A 8C 02 
+
+> ;workTime:187 count:0
+[2018-10-11 23:24:11,069]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A8E
+
+[2018-10-11 23:24:11,334]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A8E5A 8E 50 5F 31 32 38 37 5F 56 37 37 30 5F 42 41 53 49 43 2E 68 65 78 20 52 42 20 45 44 43 31 37 20 50 31 32 38 37 20 37 37 30 
+
+> ;workTime:265 count:0
+[2018-10-11 23:24:11,334]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A90
+
+[2018-10-11 23:24:11,553]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A905A 90 4C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:219 count:0
+[2018-10-11 23:24:11,569]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A91
+
+[2018-10-11 23:24:11,772]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A915A 91 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:11,788]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A92
+
+[2018-10-11 23:24:11,991]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A925A 92 45 44 43 31 37 43 56 34 34 2F 35 34 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:12,006]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A93
+
+[2018-10-11 23:24:12,209]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A935A 93 35 2E 30 31 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:12,209]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A94
+
+[2018-10-11 23:24:12,459]  24 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 37 37 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:250 count:0
+[2018-10-11 23:24:12,459]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A95
+
+[2018-10-11 23:24:12,694]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A955A 95 50 31 32 38 37 5F 37 37 30 5F 42 41 53 49 43 20 20 20 20 20 20 20 20 
+
+> ;workTime:235 count:0
+[2018-10-11 23:24:12,694]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A97
+
+[2018-10-11 23:24:12,913]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A975A 97 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:219 count:0
+[2018-10-11 23:24:12,913]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A98
+
+[2018-10-11 23:24:13,131]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A985A 98 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:13,147]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A99
+
+[2018-10-11 23:24:13,350]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A995A 99 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:13,350]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9A
+
+[2018-10-11 23:24:13,538]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9A5A 9A 00 00 00 
+
+> ;workTime:188 count:0
+[2018-10-11 23:24:13,553]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9B
+
+[2018-10-11 23:24:13,788]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9B5A 9B 4D 63 6D 74 67 63 30 36 2E 78 61 37 20 32 35 37 6B 57 20 45 35 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:235 count:0
+[2018-10-11 23:24:13,788]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9C
+
+[2018-10-11 23:24:14,006]  24 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9C5A 9C 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:14,006]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9D
+
+[2018-10-11 23:24:14,225]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9D5A 9D 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:14,225]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9E
+
+[2018-10-11 23:24:14,444]  24 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9E5A 9E 00 00 00 00 00 00 00 00 00 00 
+
+> ;workTime:203 count:0
+[2018-10-11 23:24:14,444]  16 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A9F
+
+[2018-10-11 23:24:14,663]  24 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A9F5A 9F 49 56 43 48 49 20 52 50 43 00 
+
+> ;workTime:204 count:0
+[2018-10-11 23:24:14,928]  16 -- INFO  -- Dcarengine.service.C13IdRead [WorkOutToDb] -- 13id 1a8a :51/1/EDC17CV44_5_91/0/P_1287//P_1287_7_7_0_BASIC///0000000000000000000000000000000000000000000000000
+[2018-10-11 23:24:39,165]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:32:21,863]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:32:22,050]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:32:22,050]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:32:22,066]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:32:22,082]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : AT@S
+
+[2018-10-11 23:32:22,097]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@SCodeNumb:13103641
+
+> ;workTime:15 count:0
+[2018-10-11 23:32:22,097]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSP5
+
+[2018-10-11 23:32:22,113]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:32:22,113]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:32:22,129]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:0 count:0
+[2018-10-11 23:32:22,144]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSW19
+
+[2018-10-11 23:32:22,144]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSW19OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:32:22,160]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSH8110F1
+
+[2018-10-11 23:32:22,175]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK
+
+> ;workTime:15 count:0
+[2018-10-11 23:32:22,175]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:32:22,675]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 
+
+> ;workTime:500 count:0
+[2018-10-11 23:32:22,691]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2018-10-11 23:32:22,691]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A94
+
+[2018-10-11 23:32:22,925]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 37 37 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:234 count:0
+[2018-10-11 23:32:22,941]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287770
+[2018-10-11 23:32:22,957]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210213
+
+[2018-10-11 23:32:23,363]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021367 61 02 13 20 17 02 09 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 43 45 36 31 31 42 2A 4C 30 30 30 20 20 56 30 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 33 30 35 38 33 39 20 20 20 20 20 
+
+> ;workTime:406 count:0
+[2018-10-11 23:32:23,379]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210214
+
+[2018-10-11 23:32:23,785]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021467 61 02 14 53 07 7B 99 5D 59 49 C4 92 F4 7A 45 76 05 B4 0D 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:406 count:0
+[2018-10-11 23:32:23,785]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210215
+
+[2018-10-11 23:32:24,191]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021567 61 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:391 count:0
+[2018-10-11 23:32:24,191]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210241
+
+[2018-10-11 23:32:24,457]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 46 32 43 43 45 36 31 31 42 2A 4C 20 20 20 20 20 
+
+> ;workTime:266 count:0
+[2018-10-11 23:32:24,457]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210240
+
+[2018-10-11 23:32:24,722]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:250 count:0
+[2018-10-11 23:32:24,722]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- F2CCE611B*L000
+[2018-10-11 23:32:24,722]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:32:24,738]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:32:24,738]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:32:24,738]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:32:24,754]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 20170209
+[2018-10-11 23:32:24,754]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:32:25,582]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2711
+
+[2018-10-11 23:32:25,800]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 271167 11 DE 6F B7 5B 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:25,816]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 27122a1984ce
+
+[2018-10-11 23:32:26,035]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 27122a1984ce67 12 34 
+
+> ;workTime:219 count:0
+[2018-10-11 23:32:26,363]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1090
+
+[2018-10-11 23:32:26,566]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 10907F 10 78 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:29,207]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 350211C000000004
+
+[2018-10-11 23:32:29,519]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 350211C000000004FF 
+
+> ;workTime:218 count:0
+[2018-10-11 23:32:29,738]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 36
+
+[2018-10-11 23:32:29,941]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3600 00 00 00 
+
+> ;workTime:187 count:0
+[2018-10-11 23:32:30,160]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:32:30,347]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 37
+
+> ;workTime:171 count:0
+[2018-10-11 23:32:30,566]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:30,801]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 01 77 78 00 00 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:219 count:0
+[2018-10-11 23:32:31,113]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF_37] -- eol atbd return :ATBD
+00 01 77 78 00 00 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:32:33,691]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 80 81 01 31 32 33 34 35 36 17 03 E2
+
+[2018-10-11 23:32:34,035]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 80 81 01 31 32 33 34 35 36 17 03 E280 78 
+
+> ;workTime:266 count:0
+[2018-10-11 23:32:34,254]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:34,472]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 03 7F 80 78 7A 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:39,816]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 340211C000000004
+
+[2018-10-11 23:32:40,051]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 340211C000000004FF 
+
+> ;workTime:219 count:0
+[2018-10-11 23:32:40,270]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 3601000000
+
+[2018-10-11 23:32:40,535]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3601000000
+
+> ;workTime:250 count:0
+[2018-10-11 23:32:40,754]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:40,973]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 01 76 77 75 7A 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:204 count:0
+[2018-10-11 23:32:41,301]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF] -- eol atbd return :ATBD
+00 01 76 77 75 7A 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:32:41,519]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:32:41,707]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 37
+
+> ;workTime:172 count:0
+[2018-10-11 23:32:41,926]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:42,144]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 01 77 78 75 7A 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:42,473]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF_37] -- eol atbd return :ATBD
+00 01 77 78 75 7A 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:32:42,598]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 3180
+
+[2018-10-11 23:32:42,801]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 318080 
+
+> ;workTime:188 count:0
+[2018-10-11 23:32:43,129]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 3380
+
+[2018-10-11 23:32:43,332]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 338033 23 
+
+> ;workTime:188 count:0
+[2018-10-11 23:32:43,332]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 350211C000000004
+
+[2018-10-11 23:32:43,566]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 350211C000000004FF 
+
+> ;workTime:218 count:0
+[2018-10-11 23:32:43,785]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 36
+
+[2018-10-11 23:32:43,988]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3600 00 00 00 
+
+> ;workTime:187 count:0
+[2018-10-11 23:32:44,207]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:32:44,394]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3737 10 
+
+> ;workTime:171 count:0
+[2018-10-11 23:32:44,613]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:44,832]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 03 7F 37 10 C9 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:45,160]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF_37] -- eol atbd return :ATBD
+00 03 7F 37 10 C9 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:32:45,176]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:32:45,363]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3737 22 
+
+> ;workTime:172 count:0
+[2018-10-11 23:32:45,582]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:32:45,801]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 03 7F 37 22 DB 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:203 count:0
+[2018-10-11 23:32:46,129]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF_37] -- eol atbd return :ATBD
+00 03 7F 37 22 DB 00 7B 5B 5E 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:32:57,926]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:32:58,129]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108110 12 
+
+> ;workTime:187 count:0
+[2018-10-11 23:32:58,129]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:32:58,145]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:01,364]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2018-10-11 23:33:11,912]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- 串口是否被被打开：False
+[2018-10-11 23:33:12,116]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2018-10-11 23:33:12,116]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATE1
+
+[2018-10-11 23:33:12,131]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:12,147]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : AT@S
+
+[2018-10-11 23:33:12,162]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@SCodeNumb:13103641
+
+> ;workTime:15 count:0
+[2018-10-11 23:33:12,162]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSP5
+
+[2018-10-11 23:33:12,178]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:12,178]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:33:12,194]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:12,209]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSW19
+
+[2018-10-11 23:33:12,209]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSW19OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:12,225]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATSH8110F1
+
+[2018-10-11 23:33:12,225]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK
+
+> ;workTime:0 count:0
+[2018-10-11 23:33:12,241]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:33:12,741]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 
+
+> ;workTime:500 count:0
+[2018-10-11 23:33:12,741]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2018-10-11 23:33:12,756]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1A94
+
+[2018-10-11 23:33:12,991]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 37 37 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:235 count:0
+[2018-10-11 23:33:13,006]  7 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287770
+[2018-10-11 23:33:13,006]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210213
+
+[2018-10-11 23:33:13,413]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021367 61 02 13 20 17 02 09 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 43 45 36 31 31 42 2A 4C 30 30 30 20 20 56 30 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 33 30 35 38 33 39 20 20 20 20 20 
+
+> ;workTime:391 count:0
+[2018-10-11 23:33:13,413]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210214
+
+[2018-10-11 23:33:13,819]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021467 61 02 14 53 07 7B 99 5D 59 49 C4 92 F4 7A 45 76 05 B4 0D 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:406 count:0
+[2018-10-11 23:33:13,834]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210215
+
+[2018-10-11 23:33:14,241]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021567 61 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+> ;workTime:407 count:0
+[2018-10-11 23:33:14,256]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210241
+
+[2018-10-11 23:33:14,522]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 46 32 43 43 45 36 31 31 42 2A 4C 20 20 20 20 20 
+
+> ;workTime:266 count:0
+[2018-10-11 23:33:14,522]  5 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 210240
+
+[2018-10-11 23:33:14,772]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 30 30 30 30 30 30 30 30 30 30 30 30 30 
+
+> ;workTime:250 count:0
+[2018-10-11 23:33:14,788]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- F2CCE611B*L000
+[2018-10-11 23:33:14,788]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:33:14,788]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:33:14,803]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] --                
+[2018-10-11 23:33:14,803]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:33:14,819]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 20170209
+[2018-10-11 23:33:14,819]  5 -- INFO  -- Dcarengine.UIForm.standindex [show] -- 4632434345363131422A4C2020202020
+[2018-10-11 23:33:17,897]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2711
+
+[2018-10-11 23:33:18,100]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 271167 11 EB 75 3A 9D 
+
+> ;workTime:203 count:0
+[2018-10-11 23:33:18,116]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 2712f261e87b
+
+[2018-10-11 23:33:18,334]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 2712f261e87b67 12 34 
+
+> ;workTime:218 count:0
+[2018-10-11 23:33:18,663]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1090
+
+[2018-10-11 23:33:18,866]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 10907F 10 78 
+
+> ;workTime:188 count:0
+[2018-10-11 23:33:20,803]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 350211C000000004
+
+[2018-10-11 23:33:21,131]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 350211C000000004FF 
+
+> ;workTime:218 count:0
+[2018-10-11 23:33:21,350]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 36
+
+[2018-10-11 23:33:21,553]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 3601 00 00 00 
+
+> ;workTime:187 count:0
+[2018-10-11 23:33:21,772]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 37
+
+[2018-10-11 23:33:21,959]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 37
+
+> ;workTime:171 count:0
+[2018-10-11 23:33:22,194]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATBD
+
+[2018-10-11 23:33:22,428]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATBD
+00 01 77 78 00 00 00 7C 9D 36 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+> ;workTime:218 count:0
+[2018-10-11 23:33:22,741]  1 -- INFO  -- Dcarengine.Function_Class.EolFunction [writeF_37] -- eol atbd return :ATBD
+00 01 77 78 00 00 00 7C 9D 36 30 30 30 
+30 30 30 30 30 30 30 30 30 30 DA 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 E0 FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+
+>
+[2018-10-11 23:33:27,335]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : 1081
+
+[2018-10-11 23:33:27,616]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108110 12 
+
+> ;workTime:172 count:0
+[2018-10-11 23:33:27,632]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- write  message  to buffer : ATST0F
+
+[2018-10-11 23:33:27,647]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK
+
+> ;workTime:15 count:0
+[2018-10-11 23:33:28,116]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  

@@ -193,5 +193,17 @@ namespace Dcarengine.UIForm
 
 
         }
+
+        private void ami_Button_29_Click(object sender, EventArgs e)
+        {
+            splitContainer1.Panel2.Controls.Clear();
+            VIN790 allTrip = new VIN790();
+            allTrip.TopLevel = false;
+            allTrip.Parent = this.splitContainer1.Panel2;
+            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+            allTrip.Dock = DockStyle.Fill;
+            allTrip.Show();
+
+        }
     }
 }
