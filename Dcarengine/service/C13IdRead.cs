@@ -282,13 +282,13 @@ namespace Dcarengine.service
             _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[13]);       //98
             MyMeans.InsertAccess("98", "维修站代码或诊断仪序列号", "ASCII/10", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[13]);
 
-            _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[14]);       //99
-          //  MyMeans.InsertAccess("99", "编程日期", "BCD/3", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[14]);
-            MyMeans.InsertAccess("99", "编程日期", "BCD/3", ECUstringtochangeASCII[14], ECUstringtochangeASCII[14]);
+            _13IdFDataWork.InsertAcessF_NO(ECUstringtochangeASCII[14]);       //99
+            MyMeans.InsertAccess("99", "编程日期", "BCD/3", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[14]);
+          //  MyMeans.InsertAccess("99", "编程日期", "BCD/3", ECUstringtochangeASCII[14], ECUstringtochangeASCII[14]);
 
-            _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[15]);       //9a
-            MyMeans.InsertAccess("9A", "发动机测试日期", "BCD/3", ECUstringtochangeASCII[15], ECUstringtochangeASCII[15]);
-           // MyMeans.InsertAccess("9A", "发动机测试日期", "BCD/3", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[15]);
+            _13IdFDataWork.InsertAcessF_NO(ECUstringtochangeASCII[15]);       //9a
+           // MyMeans.InsertAccess("9A", "发动机测试日期", "BCD/3", ECUstringtochangeASCII[15], ECUstringtochangeASCII[15]);
+            MyMeans.InsertAccess("9A", "发动机测试日期", "BCD/3", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[15]);
 
             _13IdFDataWork.InsertAcessF_7(ECUstringtochangeASCII[16]);       //9b
             MyMeans.InsertAccess("9B", "数据集识别", "ASCII/30", _13IdFDataWork.WorkOutData, ECUstringtochangeASCII[16]);

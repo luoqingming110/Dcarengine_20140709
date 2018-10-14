@@ -81,11 +81,11 @@ namespace Dcarengine.UIForm.EOL
                 String sta = status.Substring(30, 1);
                 if (sta.Equals("0"))
                 {
-                    this.emi_RichTextBox1.Text = "激活";
+                    this.emi_RichTextBox1.Text = "未激活";
                 }
                 else
                 {
-                    this.emi_RichTextBox1.Text = "未激活";
+                    this.emi_RichTextBox1.Text = "激活";
                 }
             }
             catch (Exception)

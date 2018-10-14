@@ -46,13 +46,13 @@ namespace Dcarengine.UIForm.EOL
                 String[] valueList = value.Split('\r');
                 //finalValue
                 String finalValue = valueList[1].Replace(" ", "");
-                String status = StringUtil.hexTo2(finalValue);
                 //高低位
                 String finalValueOne = finalValue.Substring(0, 2);
                 String finalValueTwo = finalValue.Substring(2, 2);
                 String finalValueThree = finalValue.Substring(4, 2);
                 String finalValueFour = finalValue.Substring(6, 2);
                 finalValue = finalValueFour + finalValueThree + finalValueTwo + finalValueOne;
+                String status = StringUtil.hexTo2(finalValue);
 
                 resultValue = finalValue;
                 if (StringUtil.IsStringEmpty(status))

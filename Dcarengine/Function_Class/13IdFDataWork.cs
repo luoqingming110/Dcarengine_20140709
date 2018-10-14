@@ -82,6 +82,32 @@ namespace Dcarengine.Function_Class
         }
 
         /// <summary>
+        /// 解析ECUID 数据高低位
+        /// </summary>
+        /// <param name="ID"></param>
+        public static void InsertAcessF_NO(string ID)
+        {
+
+            try
+            {
+                string changeStr = ID;
+                StringBuilder charTOstring = new StringBuilder();
+                string[] A = changeStr.Split('\r');
+                changeStr = A[1].Substring(6, A[1].Length - 7);
+                WorkOutData = changeStr;
+                
+                String workYu = workOutData.Replace("\0", "0");
+                WorkOutData = workYu.Trim();
+            }
+            catch (Exception e)
+            {
+
+                log.Info("this Id work is error,id is :" + ID + "\n" + e.Message);
+                return;
+            }
+        }
+
+        /// <summary>
         ///  1A8C 解析数据
         /// </summary>
         /// <param name="ID"></param>
