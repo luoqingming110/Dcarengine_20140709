@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dcarengine", "Dcarengine\Dc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{A8B5CD2A-00D6-4FB3-8B8F-0CC874B788EF}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "car", "car\car.vdproj", "{C42C1A24-3F8B-4464-9FB9-45FD52A8C26C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Car", "Car\Car.vdproj", "{0CB26B42-151E-49A8-AD66-00A7F4225A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{A8B5CD2A-00D6-4FB3-8B8F-0CC874B788EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A8B5CD2A-00D6-4FB3-8B8F-0CC874B788EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{A8B5CD2A-00D6-4FB3-8B8F-0CC874B788EF}.Release|x86.Build.0 = Release|Any CPU
-		{C42C1A24-3F8B-4464-9FB9-45FD52A8C26C}.Debug|Any CPU.ActiveCfg = Debug
-		{C42C1A24-3F8B-4464-9FB9-45FD52A8C26C}.Debug|x86.ActiveCfg = Debug
-		{C42C1A24-3F8B-4464-9FB9-45FD52A8C26C}.Release|Any CPU.ActiveCfg = Release
-		{C42C1A24-3F8B-4464-9FB9-45FD52A8C26C}.Release|x86.ActiveCfg = Release
+		{0CB26B42-151E-49A8-AD66-00A7F4225A2B}.Debug|Any CPU.ActiveCfg = Debug
+		{0CB26B42-151E-49A8-AD66-00A7F4225A2B}.Debug|x86.ActiveCfg = Debug
+		{0CB26B42-151E-49A8-AD66-00A7F4225A2B}.Release|Any CPU.ActiveCfg = Release
+		{0CB26B42-151E-49A8-AD66-00A7F4225A2B}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

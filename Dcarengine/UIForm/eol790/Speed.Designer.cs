@@ -48,9 +48,9 @@
             this.ami_Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
             this.ami_Label4.Location = new System.Drawing.Point(670, 480);
             this.ami_Label4.Name = "ami_Label4";
-            this.ami_Label4.Size = new System.Drawing.Size(55, 25);
+            this.ami_Label4.Size = new System.Drawing.Size(60, 25);
             this.ami_Label4.TabIndex = 20;
-            this.ami_Label4.Text = "KM/s";
+            this.ami_Label4.Text = "KM/H";
             // 
             // ami_Label3
             // 
@@ -60,9 +60,9 @@
             this.ami_Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
             this.ami_Label3.Location = new System.Drawing.Point(661, 285);
             this.ami_Label3.Name = "ami_Label3";
-            this.ami_Label3.Size = new System.Drawing.Size(55, 25);
+            this.ami_Label3.Size = new System.Drawing.Size(60, 25);
             this.ami_Label3.TabIndex = 19;
-            this.ami_Label3.Text = "KM/s";
+            this.ami_Label3.Text = "KM/H";
             // 
             // ami_Button_22
             // 

@@ -72,7 +72,6 @@ namespace Dcarengine.UIForm
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             EcuVeriosn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dEBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -87,8 +86,7 @@ namespace Dcarengine.UIForm
             this.信息检测ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.eEPROMToolStripMenuItem,
-            this.eOLWRITEToolStripMenuItem,
-            this.dEBUGToolStripMenuItem});
+            this.eOLWRITEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -214,19 +212,17 @@ namespace Dcarengine.UIForm
             // 
             // toolStripButton1
             // 
-           // this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(116, 42);
+            this.toolStripButton1.Size = new System.Drawing.Size(96, 42);
             this.toolStripButton1.Text = "通信连接";
             this.toolStripButton1.Click += new System.EventHandler(this.Connect_Click);
             // 
             // toolStripButton2
             // 
-           // this.toolStripButton2.Image = global::Dcarengine.Properties.Resources._6121;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(116, 42);
+            this.toolStripButton2.Size = new System.Drawing.Size(96, 42);
             this.toolStripButton2.Text = "断开连接";
             this.toolStripButton2.Click += new System.EventHandler(this.ColsePort_Click);
             // 
@@ -312,13 +308,6 @@ namespace Dcarengine.UIForm
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dEBUGToolStripMenuItem
-            // 
-            this.dEBUGToolStripMenuItem.Name = "dEBUGToolStripMenuItem";
-            this.dEBUGToolStripMenuItem.Size = new System.Drawing.Size(108, 35);
-            this.dEBUGToolStripMenuItem.Text = "DEBUG";
-            this.dEBUGToolStripMenuItem.Click += new System.EventHandler(this.dEBUGToolStripMenuItem_Click);
-            // 
             // MainF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -375,7 +364,6 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eOLWRITEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dEBUGToolStripMenuItem;
         public static System.Windows.Forms.Label EcuVeriosn;
         public static System.Windows.Forms.TextBox showBox1;
     } 
