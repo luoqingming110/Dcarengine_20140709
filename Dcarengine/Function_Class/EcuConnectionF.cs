@@ -159,17 +159,21 @@ namespace Dcarengine.Function_Class
             backEndString = GetSerialPortBackData();
             CommonConstant.TL718CODE = backEndString;
 
-            //foreach (string num in TL718NUM)
-            //{
-            //    if (backEndString.Contains(num))
-            //    {
-            //        GobalSerialPort.WriteByMessage(ATSP5, 0, ATSP5.Length);    ////////读取718芯片
-            //    }
-            //}
-
+            bool flag = false; 
+            foreach (string num in CommonConstant.TL718List)
+            {
+                if (backEndString.Contains(num))
+                {
+                    flag=true;
+                    break;                  
+                }
+            }
+            if (!flag) {
+                MainF.ShowBoxTex("设备不匹配!");
+                return;
+               // return;
+            }
             GobalSerialPort.WriteByMessage(ATSP5, 0, ATSP5.Length);             ////////读取718芯片
-
-
             backEndString = GetSerialPortBackData();
             if (backEndString.Contains("OK"))
             {

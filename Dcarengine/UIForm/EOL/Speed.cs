@@ -113,7 +113,7 @@ namespace Dcarengine.UIForm.EOL
                 speed = finalValueTwo + finalValueOne;
 
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
-                read();
+               // read();
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText;
             }
             catch (Exception) {

@@ -87,7 +87,7 @@ namespace Dcarengine.UIForm.EOL
                 String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
 
                 EolFunction.writeFunction(address, length, asciiToWrite, CommonCmd._808100);
-                read();
+               // read();
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }

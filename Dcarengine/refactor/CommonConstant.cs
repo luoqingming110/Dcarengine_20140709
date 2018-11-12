@@ -66,6 +66,11 @@ namespace Dcarengine.refactor
         public static byte[]  _1086Mode = { 244, 239, 116, 147};
         public static byte[]  _1087Mode = { 244, 239, 116, 147 };
 
+        public static List<String> TL718List = new List<string>();
+            
+
+       
+
 
         /// <summary>
         /// 初始化是否90模式
@@ -146,7 +151,32 @@ namespace Dcarengine.refactor
             //ARS_790.Formmat1 = "";
             //EolMap.Add("P1287790", ARS_790);
 
+            TL718List.Add("11080122");
+            TL718List.Add("12203119");
+            TL718List.Add("12203120");
+            TL718List.Add("12203122");
+            TL718List.Add("12183240");
+            TL718List.Add("13203647");
+            TL718List.Add("13203645");
+            TL718List.Add("12203125");
+            TL718List.Add("13103641");
+            TL718List.Add("12203123");
 
+            TL718List.Add("12203126");
+            TL718List.Add("12203124");
+            TL718List.Add("12203121");
+            TL718List.Add("13103711");
+            TL718List.Add("14366931");
+            TL718List.Add("14377597");
+            TL718List.Add("14367032");
+            TL718List.Add("14367145");
+            TL718List.Add("14366795");
+            TL718List.Add("14366937");
+
+            TL718List.Add("14367035");
+            TL718List.Add("14366932");
+            TL718List.Add("14366943");
+            TL718List.Add("14377552");
 
         }
 

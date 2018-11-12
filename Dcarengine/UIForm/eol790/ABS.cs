@@ -115,7 +115,7 @@ namespace Dcarengine.UIForm.eol790
 
                 //final
                 EolFunction.writeFunction(address, length, stafinal, CommonCmd._808102);             
-                read();
+               // read();
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText;
 
             }
