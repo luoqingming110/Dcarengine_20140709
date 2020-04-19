@@ -420,7 +420,11 @@ namespace Dcarengine.UIForm
             debugForm.Show();
         }
 
-
+        private void dEBUGToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DebugForm debugForm = new DebugForm();
+            debugForm.Show();
+        }
     }
 
 }

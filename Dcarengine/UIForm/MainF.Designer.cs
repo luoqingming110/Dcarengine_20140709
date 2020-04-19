@@ -72,6 +72,7 @@ namespace Dcarengine.UIForm
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             EcuVeriosn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dEBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -86,7 +87,8 @@ namespace Dcarengine.UIForm
             this.信息检测ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.eEPROMToolStripMenuItem,
-            this.eOLWRITEToolStripMenuItem});
+            this.eOLWRITEToolStripMenuItem,
+            this.dEBUGToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -308,6 +310,13 @@ namespace Dcarengine.UIForm
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // dEBUGToolStripMenuItem
+            // 
+            this.dEBUGToolStripMenuItem.Name = "dEBUGToolStripMenuItem";
+            this.dEBUGToolStripMenuItem.Size = new System.Drawing.Size(108, 35);
+            this.dEBUGToolStripMenuItem.Text = "DEBUG";
+            this.dEBUGToolStripMenuItem.Click += new System.EventHandler(this.dEBUGToolStripMenuItem_Click_1);
+            // 
             // MainF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -364,6 +373,7 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eOLWRITEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dEBUGToolStripMenuItem;
         public static System.Windows.Forms.Label EcuVeriosn;
         public static System.Windows.Forms.TextBox showBox1;
     } 
