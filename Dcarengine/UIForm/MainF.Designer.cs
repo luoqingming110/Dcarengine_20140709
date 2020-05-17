@@ -60,6 +60,7 @@ namespace Dcarengine.UIForm
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eEPROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eOLWRITEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dEBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -72,7 +73,6 @@ namespace Dcarengine.UIForm
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             EcuVeriosn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dEBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,7 +92,7 @@ namespace Dcarengine.UIForm
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1169, 39);
+            this.menuStrip1.Size = new System.Drawing.Size(1238, 39);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -182,16 +182,23 @@ namespace Dcarengine.UIForm
             // eEPROMToolStripMenuItem
             // 
             this.eEPROMToolStripMenuItem.Name = "eEPROMToolStripMenuItem";
-            this.eEPROMToolStripMenuItem.Size = new System.Drawing.Size(126, 35);
-            this.eEPROMToolStripMenuItem.Text = "EEPROM";
+            this.eEPROMToolStripMenuItem.Size = new System.Drawing.Size(98, 35);
+            this.eEPROMToolStripMenuItem.Text = "存储器";
             this.eEPROMToolStripMenuItem.Click += new System.EventHandler(this.eEPROMToolStripMenuItem_Click);
             // 
             // eOLWRITEToolStripMenuItem
             // 
             this.eOLWRITEToolStripMenuItem.Name = "eOLWRITEToolStripMenuItem";
-            this.eOLWRITEToolStripMenuItem.Size = new System.Drawing.Size(145, 35);
-            this.eOLWRITEToolStripMenuItem.Text = "EOLWRITE";
+            this.eOLWRITEToolStripMenuItem.Size = new System.Drawing.Size(119, 35);
+            this.eOLWRITEToolStripMenuItem.Text = "EOL刷写";
             this.eOLWRITEToolStripMenuItem.Click += new System.EventHandler(this.eOLWRITEToolStripMenuItem_Click);
+            // 
+            // dEBUGToolStripMenuItem
+            // 
+            this.dEBUGToolStripMenuItem.Name = "dEBUGToolStripMenuItem";
+            this.dEBUGToolStripMenuItem.Size = new System.Drawing.Size(108, 35);
+            this.dEBUGToolStripMenuItem.Text = "DEBUG";
+            this.dEBUGToolStripMenuItem.Click += new System.EventHandler(this.dEBUGToolStripMenuItem_Click_1);
             // 
             // toolStrip1
             // 
@@ -208,7 +215,7 @@ namespace Dcarengine.UIForm
             this.toolStripButton7});
             this.toolStrip1.Location = new System.Drawing.Point(4, 67);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1169, 45);
+            this.toolStrip1.Size = new System.Drawing.Size(1238, 45);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -272,11 +279,11 @@ namespace Dcarengine.UIForm
             // 
             showBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            showBox1.Location = new System.Drawing.Point(0, 416);
+            showBox1.Location = new System.Drawing.Point(0, 559);
             showBox1.Multiline = true;
             showBox1.Name = "showBox1";
-            showBox1.Size = new System.Drawing.Size(1177, 86);
-            showBox1.TabIndex = 4;
+            showBox1.Size = new System.Drawing.Size(1246, 86);
+             showBox1.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -284,15 +291,15 @@ namespace Dcarengine.UIForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(EcuVeriosn);
             this.groupBox1.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 496);
+            this.groupBox1.Location = new System.Drawing.Point(0, 639);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1177, 62);
+            this.groupBox1.Size = new System.Drawing.Size(1246, 62);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
             // EcuVeriosn
             // 
-            EcuVeriosn.AutoSize = true;
+             EcuVeriosn.AutoSize = true;
             EcuVeriosn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             EcuVeriosn.Location = new System.Drawing.Point(107, 22);
             EcuVeriosn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -306,33 +313,27 @@ namespace Dcarengine.UIForm
             this.panel1.Location = new System.Drawing.Point(0, 106);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 309);
+            this.panel1.Size = new System.Drawing.Size(1246, 457);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // dEBUGToolStripMenuItem
-            // 
-            this.dEBUGToolStripMenuItem.Name = "dEBUGToolStripMenuItem";
-            this.dEBUGToolStripMenuItem.Size = new System.Drawing.Size(108, 35);
-            this.dEBUGToolStripMenuItem.Text = "DEBUG";
-            this.dEBUGToolStripMenuItem.Click += new System.EventHandler(this.dEBUGToolStripMenuItem_Click_1);
             // 
             // MainF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Back = ((System.Drawing.Image)(resources.GetObject("$this.Back")));
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(193)))), ((int)(((byte)(165)))));
-            this.ClientSize = new System.Drawing.Size(1177, 555);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
+            this.ClientSize = new System.Drawing.Size(1246, 698);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(showBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainF";
-            this.Text = "RB Tech";
+            this.Text = "上菲红发动机";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainF_Load);
             this.menuStrip1.ResumeLayout(false);

@@ -77,12 +77,16 @@ namespace Dcarengine.UIForm
                 try
                 {
                     GobalSerialPort.initGobalSerialPort();
-                    log.Info("串口是否被被打开：" + GobalSerialPort.SerialPort.IsOpen);
-                    GobalSerialPort.SerialPort.Open();
+                    if (!GobalSerialPort.SerialPort.IsOpen) {
+                        GobalSerialPort.SerialPort.Open();
+                    }
+                    log.Info("com is ：" +GobalSerialPort.SerialPort.PortName +",port is open: "+ GobalSerialPort.SerialPort.IsOpen);
+             
                     ThreadEcuConnet();
                 }
-                catch
+                catch (Exception )
                 {
+                    
                     showBox1.Text = "串口连接失败！";
                 }
             }
@@ -293,7 +297,7 @@ namespace Dcarengine.UIForm
             //EcuIsLinked = EcuConnectionF.ECULINKStatus1;
        
 
-            standindex standindex = new standindex();
+            指标 standindex = new 指标();
             standindex.TopLevel = false;
             this.panel1.Controls.Add(standindex); //add the fs form to the panel2
             standindex.Show();
@@ -399,18 +403,13 @@ namespace Dcarengine.UIForm
          */
         private void eOLWRITEToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            //
-            if (!StringUtil.IsStringEmpty(EcuVersionF.EcuVsion) &&EcuVersionF.EcuVsion.Equals("P1287790"))
-            {
-                EOLFORMWRITE790 eolF = new EOLFORMWRITE790();
-                eolF.Show();
-            }
-            else {
 
-                EOLFORMWRITE eolF = new EOLFORMWRITE();
-                eolF.Show();
-            }
+
+            //EOLFORMWRITE790S oLFORMWRITE790S = new EOLFORMWRITE790S();
+            //oLFORMWRITE790S.Show();
+            eol790s.Setting setting = new eol790s.Setting();
+            setting.Show();
+
         }
 
 
@@ -422,8 +421,12 @@ namespace Dcarengine.UIForm
 
         private void dEBUGToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            DebugForm debugForm = new DebugForm();
-            debugForm.Show();
+            // DebugForm debugForm = new DebugForm();
+            // debugForm.Show();
+            //EOLFORMWRITE790 790_s = new EOLFORMWRITE790();
+            EOLFORMWRITE790 oLFORMWRITE790 = new EOLFORMWRITE790();
+            oLFORMWRITE790.Show();
+
         }
     }
 

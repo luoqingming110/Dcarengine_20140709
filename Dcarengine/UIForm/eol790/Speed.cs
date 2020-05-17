@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.eol790
 {
-    public partial class Speed : MaterialForm
+    public partial class Speed : EASkins.Controls.MaterialForm
     {
         private static String address = "028D6E";
         private static Int32 length = 2;
@@ -44,7 +44,7 @@ namespace Dcarengine.UIForm.eol790
 
         public void read() {
 
-            String value = EolFunction.readFunction(address, length, CommonCmd._808001);
+            String value = EolFunction.readFunction(address, length, CommonCmd._808002);
             //初始化数据
             try
             {
@@ -81,12 +81,6 @@ namespace Dcarengine.UIForm.eol790
                     return;
                 }
                 int value = Int32.Parse(text) * 100;
-                // String sta = resultValue.Substring(1, 1);
-                // MessageBox.Show(text);
-                //String staprefix = status.Substring(0, 3 - 0);
-                //String stasuffix = status.Substring(3 + 1, length - 4);
-                //String stafinal = "";
-                //final
                 String speed = StringUtil._10ToHex(value).PadLeft(4,'0');
                 if (speed.Length > 4) {
 
@@ -96,11 +90,27 @@ namespace Dcarengine.UIForm.eol790
                 String finalValueTwo = speed.Substring(2, 2);
                 speed = finalValueTwo + finalValueOne;
 
+                EolFunction.writeF_8081count(CommonCmd._808102);
+
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808102);
 
-               // read();
 
+                String testValue = "LZFF0000000000002";
+                if (StringUtil.IsStringEmpty(testValue) && testValue.Length != 17)
+                {
+                    return;
+                }
+                String asciiToWrite = StringUtil.AsciiToHexString(testValue.Trim());
+                EolFunction.writeFunction("029162", 17, asciiToWrite, CommonCmd._808103);
+
+
+                EolFunction.writeF_3180(CommonCmd._3180);
+
+                EolFunction.writeF_3380_ByTime(CommonCmd._3380);
+
+                // read();
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText;
+
 
             }
             catch (Exception)

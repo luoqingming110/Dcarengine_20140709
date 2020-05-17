@@ -67,6 +67,7 @@ namespace Dcarengine.UIForm
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.ami_Button_29 = new EASkins.Ami_Button_2();
             this.emi_Button_21 = new EASkins.Emi_Button_2();
             this.ami_Button_27 = new EASkins.Ami_Button_2();
             this.ami_Button_26 = new EASkins.Ami_Button_2();
@@ -76,7 +77,7 @@ namespace Dcarengine.UIForm
             this.ami_Button_23 = new EASkins.Ami_Button_2();
             this.ami_Button_22 = new EASkins.Ami_Button_2();
             this.ami_Button_21 = new EASkins.Ami_Button_2();
-            this.ami_Button_29 = new EASkins.Ami_Button_2();
+            this.calid_Button_28 = new EASkins.Ami_Button_2();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -92,6 +93,7 @@ namespace Dcarengine.UIForm
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer1.Panel1.Controls.Add(this.calid_Button_28);
             this.splitContainer1.Panel1.Controls.Add(this.ami_Button_29);
             this.splitContainer1.Panel1.Controls.Add(this.emi_Button_21);
             this.splitContainer1.Panel1.Controls.Add(this.ami_Button_27);
@@ -106,9 +108,23 @@ namespace Dcarengine.UIForm
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.splitContainer1.Size = new System.Drawing.Size(1356, 723);
+            this.splitContainer1.Size = new System.Drawing.Size(1356, 784);
             this.splitContainer1.SplitterDistance = 220;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // ami_Button_29
+            // 
+            this.ami_Button_29.BackColor = System.Drawing.Color.Transparent;
+            this.ami_Button_29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.ami_Button_29.Image = null;
+            this.ami_Button_29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ami_Button_29.Location = new System.Drawing.Point(38, 635);
+            this.ami_Button_29.Name = "ami_Button_29";
+            this.ami_Button_29.Size = new System.Drawing.Size(143, 50);
+            this.ami_Button_29.TabIndex = 12;
+            this.ami_Button_29.Text = "VIN";
+            this.ami_Button_29.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ami_Button_29.Click += new System.EventHandler(this.ami_Button_29_Click);
             // 
             // emi_Button_21
             // 
@@ -233,26 +249,26 @@ namespace Dcarengine.UIForm
             this.ami_Button_21.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ami_Button_21.Click += new System.EventHandler(this.ami_Button_21_Click);
             // 
-            // ami_Button_29
+            // calid_Button_28
             // 
-            this.ami_Button_29.BackColor = System.Drawing.Color.Transparent;
-            this.ami_Button_29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.ami_Button_29.Image = null;
-            this.ami_Button_29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ami_Button_29.Location = new System.Drawing.Point(38, 635);
-            this.ami_Button_29.Name = "ami_Button_29";
-            this.ami_Button_29.Size = new System.Drawing.Size(143, 50);
-            this.ami_Button_29.TabIndex = 12;
-            this.ami_Button_29.Text = "VIN";
-            this.ami_Button_29.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.ami_Button_29.Click += new System.EventHandler(this.ami_Button_29_Click);
+            this.calid_Button_28.BackColor = System.Drawing.Color.Transparent;
+            this.calid_Button_28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.calid_Button_28.Image = null;
+            this.calid_Button_28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.calid_Button_28.Location = new System.Drawing.Point(38, 707);
+            this.calid_Button_28.Name = "calid_Button_28";
+            this.calid_Button_28.Size = new System.Drawing.Size(143, 50);
+            this.calid_Button_28.TabIndex = 13;
+            this.calid_Button_28.Text = "CALID";
+            this.calid_Button_28.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.calid_Button_28.Click += new System.EventHandler(this.calid_Button_28_Click);
             // 
             // EOLFORMWRITE790
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1356, 723);
+            this.ClientSize = new System.Drawing.Size(1356, 784);
             this.Controls.Add(this.splitContainer1);
             this.Name = "EOLFORMWRITE790";
             this.Text = "EolWriteForm";
@@ -278,5 +294,6 @@ namespace Dcarengine.UIForm
         private EASkins.Ami_Button_2 ami_Button_26;
         private EASkins.Emi_Button_2 emi_Button_21;
         private EASkins.Ami_Button_2 ami_Button_29;
+        private EASkins.Ami_Button_2 calid_Button_28;
     }
 }

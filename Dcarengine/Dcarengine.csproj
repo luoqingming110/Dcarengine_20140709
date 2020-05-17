@@ -101,6 +101,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\FlashControlV71.dll</HintPath>
     </Reference>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.0.11\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.ACTIVEXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -155,7 +158,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcessData\CarDBAccessDataSet.Designer.cs">
@@ -174,6 +179,7 @@
     <Compile Include="Function_Class\EcuVersion.cs" />
     <Compile Include="Function_Class\EngineTestFunction.cs" />
     <Compile Include="Function_Class\EolFunction.cs" />
+    <Compile Include="Function_Class\JsonOp.cs" />
     <Compile Include="Function_Class\SingleDtcFunction.cs" />
     <Compile Include="Function_Class\standClass.cs" />
     <Compile Include="interfaces\DtcReadInterface.cs" />
@@ -322,6 +328,36 @@
     <Compile Include="UIForm\enginetest\RunupTest.Designer.cs">
       <DependentUpon>RunupTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\eol790s\processForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790s\processForm.Designer.cs">
+      <DependentUpon>processForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Retarder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Retarder.Designer.cs">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Speed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790s\Speed.Designer.cs">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790s\VIN790.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790s\VIN790.Designer.cs">
+      <DependentUpon>VIN790.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\eol790\ABS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +369,24 @@
     </Compile>
     <Compile Include="UIForm\eol790\ARS.Designer.cs">
       <DependentUpon>ARS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\calid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\calid.Designer.cs">
+      <DependentUpon>calid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\eol790\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\eol790\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="UIForm\eol790\Retarder.cs">
       <SubType>Form</SubType>
@@ -369,6 +423,12 @@
     </Compile>
     <Compile Include="UIForm\eol790\配置日期.Designer.cs">
       <DependentUpon>配置日期.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE790S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\EOLFORMWRITE790S.Designer.cs">
+      <DependentUpon>EOLFORMWRITE790S.cs</DependentUpon>
     </Compile>
     <Compile Include="UIForm\EOLFORMWRITE790.cs">
       <SubType>Form</SubType>
@@ -523,11 +583,35 @@
     <EmbeddedResource Include="UIForm\enginetest\RunupTest.resx">
       <DependentUpon>RunupTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790s\processForm.resx">
+      <DependentUpon>processForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790s\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790s\Retarder.resx">
+      <DependentUpon>Retarder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790s\Speed.resx">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790s\VIN790.resx">
+      <DependentUpon>VIN790.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForm\eol790\ABS.resx">
       <DependentUpon>ABS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\eol790\ARS.resx">
       <DependentUpon>ARS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\calid.resx">
+      <DependentUpon>calid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\eol790\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\eol790\Retarder.resx">
       <DependentUpon>Retarder.cs</DependentUpon>
@@ -546,6 +630,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\eol790\配置日期.resx">
       <DependentUpon>配置日期.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\EOLFORMWRITE790S.resx">
+      <DependentUpon>EOLFORMWRITE790S.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EOLFORMWRITE790.resx">
       <DependentUpon>EOLFORMWRITE790.cs</DependentUpon>
@@ -606,6 +693,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="calid.json" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -645,6 +733,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Icon1.ico" />
+    <Content Include="Resources\分享.jpg" />
+    <Content Include="Resources\刷新.jpg" />
+    <Content Include="Resources\发动机.ico" />
+    <Content Include="Resources\发动机.jpg" />
+    <Content Include="Resources\发动机2.jpg" />
+    <Content Include="Resources\发动机的.jpg" />
+    <Content Include="Resources\工具.jpg" />
+    <Content Include="Resources\连接.jpg" />
+    <Content Include="Resources\配置.jpg" />
     <Content Include="SQLData\Resource\11.png" />
     <Content Include="SQLData\Resource\12.png" />
     <Content Include="SQLData\Resource\16.png" />

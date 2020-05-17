@@ -1,15 +1,9 @@
-﻿using CCWin;
+﻿
 using Dcarengine.Function_Class;
 using Dcarengine.refactor;
 using Dcarengine.serialPort;
 using Dcarengine.UIForm.EEPROM;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Dcarengine.UIForm
@@ -46,6 +40,7 @@ namespace Dcarengine.UIForm
 
                         GobalSerialPort.WriteByMessage(CommonCmd.ATST00,0,CommonCmd.ATST00.Length);
                     }
+
                 }
                 catch {
                 }

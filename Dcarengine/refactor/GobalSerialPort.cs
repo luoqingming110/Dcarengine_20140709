@@ -26,25 +26,35 @@ namespace Dcarengine.serialPort
         /// </summary>
         private static SerialPort gobalserialPort;
 
-        private static String  resultBackString;
+        private static String resultBackString;
 
-   
+
         /// <summary>
         /// 串口属性
         /// </summary>
-        public static SerialPort SerialPort { get => gobalserialPort;
-            set => gobalserialPort = value; }
+        public static SerialPort SerialPort
+        {
+            get => gobalserialPort;
+            set => gobalserialPort = value;
+        }
 
 
-        public static string ResultBackString { get => resultBackString;
-            set => resultBackString = value; }
+        public static string ResultBackString
+        {
+            get => resultBackString;
+            set => resultBackString = value;
+        }
 
 
         /// <summary>
         /// 初始化静态串口数据
         /// </summary>
-         public static void initGobalSerialPort(){
-
+        public static void initGobalSerialPort()
+        {
+            if (gobalserialPort != null)
+            {
+                return;
+            }
             gobalserialPort = new SerialPort();
 
             FindPorts();
@@ -53,13 +63,14 @@ namespace Dcarengine.serialPort
 
             gobalserialPort.DataReceived += new SerialDataReceivedEventHandler(SerialportMessage_DataReceived);//DataReceived事件委托
 
-            
+
         }
 
         /// <summary>
         /// 事件绑定改变
         /// </summary>
-        public static void GobalSerialPortEnventChange() {
+        public static void GobalSerialPortEnventChange()
+        {
 
             gobalserialPort.DataReceived += new SerialDataReceivedEventHandler(SerialportMessage_DataReceived);//DataReceived事件委托
 
@@ -71,7 +82,7 @@ namespace Dcarengine.serialPort
         /// <summary>
         /// find Ports
         /// </summary>
-        public static void FindPorts()             
+        public static void FindPorts()
         {
             string[] ports = SerialPort.GetPortNames();
             foreach (string portName in ports)
@@ -83,7 +94,7 @@ namespace Dcarengine.serialPort
                 }
                 catch
                 {
-                   // MessageBox.Show("查找串口号失败！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // MessageBox.Show("查找串口号失败！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -105,7 +116,8 @@ namespace Dcarengine.serialPort
         /// <summary>
         /// 打开接口
         /// </summary>
-        public static void OpenSerialPort() {
+        public static void OpenSerialPort()
+        {
 
             try
             {
@@ -121,13 +133,15 @@ namespace Dcarengine.serialPort
         /// <summary>
         /// close prot
         /// </summary>
-        public static void CloseSerialPort() {
+        public static void CloseSerialPort()
+        {
 
             try
             {
                 gobalserialPort.Close();
             }
-            catch {
+            catch
+            {
             }
         }
 
@@ -152,7 +166,7 @@ namespace Dcarengine.serialPort
                 GolbalLock.EndData = backString;
                 //释放
                 GolbalLock.GobalLockOnce.ExitWriteLock();
-            }              
+            }
             catch (Exception ex)
             {
                 GolbalLock.EndData = null;
@@ -173,38 +187,47 @@ namespace Dcarengine.serialPort
 
                 //long startTime = System.DateTime.Now.Millisecond;
                 //事件有数据会 会锁住数据                      
-                string backString = "";
+                A: string backString = "";
                 while (!(backString.Contains("\r\n\r\n>")))
                 {
                     byte[] ReDatas = new byte[gobalserialPort.BytesToRead];//返回命令包
                     gobalserialPort.Read(ReDatas, 0, ReDatas.Length);//读取数据
-                    ResultBackString = (System.Text.Encoding.Default.GetString(ReDatas));
+                    ResultBackString = (Encoding.Default.GetString(ReDatas));
                     backString = backString + ResultBackString;
                     long workTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
-                    if (workTime - startTime > 5000) {
+                    if (workTime - startTime > 5000)
+                    {
                         backString = "";
                         ClearSendAndRecive();
                         log.Info("revice data from byffer " + ResultBackString + " ;breakTime:" + (workTime - startTime));
                         break;
                     }
                 }
+                if (backString.Contains("NO"))
+                {
+                    log.Info("NO DATA:" + backString);
+                    ResultBackString = "";
+                    goto A;
+                }
+
+
                 ResultBackString = backString;
                 long endTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
                 //long endTime = System.DateTime.Now.Millisecond;
                 log.Info("revice data from byffer " + ResultBackString + " ;workTime:" +
-                    (endTime-startTime) + " count:" + CommonAutoRest.AutoResetCount);
+                    (endTime - startTime) + " count:" + CommonAutoRest.AutoResetCount);
 
-              
+
                 CommonAutoRest.MEvent.Set();
                 Interlocked.Decrement(ref CommonAutoRest.AutoResetCount);
 
-                ClearSendAndRecive();             
+                ClearSendAndRecive();
             }
             catch (Exception ex)
             {
                 GolbalLock.EndData = null;
                 ClearSendAndRecive();
-                log.Info("读取串口数据异常"+ ex.Message);
+                log.Info("读取串口数据异常" + ex.Message);
             }
         }
 
@@ -213,11 +236,12 @@ namespace Dcarengine.serialPort
         /// <summary>
         /// 写入数据 Lock模式数据
         /// </summary>
-        public static void Write(byte[] buffer, int offset, int count) {
+        public static void Write(byte[] buffer, int offset, int count)
+        {
 
             log.Info("write  message  to buffer : " + StringToSendBytes.ByteToString(buffer));
-            gobalserialPort.Write(buffer,offset, count);
-           
+            gobalserialPort.Write(buffer, offset, count);
+
         }
 
         /// <summary>
@@ -226,7 +250,8 @@ namespace Dcarengine.serialPort
         public static void WriteByMessage(byte[] buffer, int offset, int count)
         {
             //直接返回数据格式
-            if (gobalserialPort.IsOpen == false) {
+            if (gobalserialPort.IsOpen == false)
+            {
                 return;
             }
             try
@@ -236,9 +261,10 @@ namespace Dcarengine.serialPort
                 //进入线程等待
                 CommonAutoRest.MEvent.WaitOne();
                 Interlocked.Increment(ref CommonAutoRest.AutoResetCount);
-               //++;
+                //++;
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
 
                 log.Info("write message is error : " + e.Message);
             }
@@ -287,9 +313,10 @@ namespace Dcarengine.serialPort
         /// <summary>
         /// 测试专用 
         /// </summary>
-        public static void InitTest() {
+        public static void InitTest()
+        {
 
-            
+
 
         }
 

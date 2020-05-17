@@ -18,15 +18,15 @@ namespace Dcarengine.refactor
 
         public static byte[] ClearCmd;
 
-        public static  byte[] _21f0;
+        public static byte[] _21f0;
 
-        public static  byte[]  ecuVersionCmd;
+        public static byte[] ecuVersionCmd;
 
         public static byte[] _1081;
 
         public static byte[] ClearDtcCmd;
 
-        public static byte[]  ATR;
+        public static byte[] ATR;
 
         /// <summary>
         /// 芯片溢出时间为200MS
@@ -43,7 +43,7 @@ namespace Dcarengine.refactor
         /// <summary>
         /// 返回78  数据
         /// </summary>
-        public static byte[] ATSTD6; 
+        public static byte[] ATSTD6;
 
         public static byte[] _830300D610140A;
 
@@ -73,6 +73,10 @@ namespace Dcarengine.refactor
 
 
         public static byte[] ATSH81_10_F1;
+
+
+        public static byte[] ATSP5 = StringToSendBytes.bytesToSend("ATSP5\n");
+
         /**
          * ATBD
          * 
@@ -89,7 +93,7 @@ namespace Dcarengine.refactor
 
         public static byte[] _3380;
 
-       
+
         //
         public static byte[] _1086;
 
@@ -98,26 +102,26 @@ namespace Dcarengine.refactor
         /**
          * eol区域
          */
-        public static String  EolDateperfix = "80 81 02 31 32 33 34 35 36 17 03 E2";
+        public static String EolDateperfix = "80 81 02 31 32 33 34 35 36 17 03 E2";
 
 
 
         /// <summary>
         /// 总油耗
         /// </summary>
-        public static byte[]  _allOilCost; 
+        public static byte[] _allOilCost;
         /// <summary>
         /// 总里程
         /// </summary>
-        public static byte[]  _allTrip;
+        public static byte[] _allTrip;
         /// <summary>
         /// 总时间
         /// </summary>
-        public static byte[]  _allEngineTime;
+        public static byte[] _allEngineTime;
         /// <summary>
         /// Ecu 总时间
         /// </summary>
-        public static byte[]  _ecuAllTime;
+        public static byte[] _ecuAllTime;
 
         /// <summary>
         /// 发动机总 转数
@@ -127,8 +131,8 @@ namespace Dcarengine.refactor
         /// <summary>
         ///高压轨泄压阀
         /// </summary>
-        public static byte[]  hiByte;
-        public static byte[]  hiOneByte;
+        public static byte[] hiByte;
+        public static byte[] hiOneByte;
 
 
         /// <summary>
@@ -158,7 +162,7 @@ namespace Dcarengine.refactor
         public static byte[] _3314;
 
         public static string _runUptestsuffix = "000005DC0640001817700BB8000002EE038E000002EE055501C7080000000000000000";
-        public static string _runUptestprefix= "3116";
+        public static string _runUptestprefix = "3116";
         public static byte[] _3316;
 
         //speed
@@ -178,7 +182,8 @@ namespace Dcarengine.refactor
         /// <summary>
         /// 静态变量
         /// </summary>
-        static CommonCmd(){
+        static CommonCmd()
+        {
 
 
             //1086
@@ -227,6 +232,7 @@ namespace Dcarengine.refactor
 
             _830300D610140A = StringToSendBytes.bytesToSend("830300D610140A\n");
 
+
             ATSW00 = StringToSendBytes.bytesToSend("ATSW00\n");
 
             ATSW19 = StringToSendBytes.bytesToSend("ATSW19\n");
@@ -261,7 +267,7 @@ namespace Dcarengine.refactor
 
             _1101 = StringToSendBytes.bytesToSend("1101\n");
 
-            _3180= StringToSendBytes.bytesToSend("3180\n");
+            _3180 = StringToSendBytes.bytesToSend("3180\n");
 
             _3380 = StringToSendBytes.bytesToSend("3380\n");
 
@@ -273,10 +279,10 @@ namespace Dcarengine.refactor
             _331bcf = StringToSendBytes.bytesToSend("311B00000000000000FE00" + "\n");
             _331b = StringToSendBytes.bytesToSend("331b\n");
 
-            _CompressionTest = StringToSendBytes.bytesToSend("31180000C8001401110222F667F334"+ "\n");
+            _CompressionTest = StringToSendBytes.bytesToSend("31180000C8001401110222F667F334" + "\n");
             _3318 = StringToSendBytes.bytesToSend("3318\n");
             //
-            _HighPressureTest = StringToSendBytes.bytesToSend("311400010030D40DAC11940DAC03E82CEC1F4006A407D00D480ED80AF0012C"+"\n");
+            _HighPressureTest = StringToSendBytes.bytesToSend("311400010030D40DAC11940DAC03E82CEC1F4006A407D00D480ED80AF0012C" + "\n");
             _3314 = StringToSendBytes.bytesToSend("3314\n");
 
             _3316 = StringToSendBytes.bytesToSend("3316\n");
@@ -291,7 +297,8 @@ namespace Dcarengine.refactor
         /// <summary>
         /// send ATE1  init 
         /// </summary>
-        public static void SendATE1() {
+        public static void SendATE1()
+        {
 
             GobalSerialPort.WriteByMessage(CommonCmd.ATE1, 0, CommonCmd.ATE1.Length);
 

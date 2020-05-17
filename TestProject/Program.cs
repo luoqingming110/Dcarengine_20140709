@@ -28,7 +28,18 @@ namespace TestProject
         static void Main(string[] args)
         {
 
-           
+             long  stat_time =  (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+
+            Thread.Sleep(1000);
+
+            long  end_time = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+
+            long ctime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
+
+            Console.Out.WriteLine("stime :"+ stat_time +"endTime:" + end_time + "ss:" + (end_time  -stat_time) );
+
+            Console.Out.WriteLine("ctime :" + ctime);
+
             string str2 = "SessionN";
             byte[] array = System.Text.Encoding.ASCII.GetBytes(str2);  //数组array为对应的ASCII数组    
             string ASCIIstr2 = null;

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.EOL
 {
-    public partial class Speed : MaterialForm
+    public partial class Speed : EASkins.Controls.MaterialForm
     {
 
         private static String address = "0238B2";
@@ -115,6 +115,8 @@ namespace Dcarengine.UIForm.EOL
                 EolFunction.writeFunction(address, length, speed, CommonCmd._808101);
                // read();
                 this.materialLabel2.Text = CommonConstant.EolWrireEndText;
+
+               // EolFunction.writeF_3180();
             }
             catch (Exception) {
             }

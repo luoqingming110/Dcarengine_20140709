@@ -44,7 +44,7 @@
             this.ami_Button_22.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.ami_Button_22.Image = null;
             this.ami_Button_22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ami_Button_22.Location = new System.Drawing.Point(801, 484);
+            this.ami_Button_22.Location = new System.Drawing.Point(792, 502);
             this.ami_Button_22.Name = "ami_Button_22";
             this.ami_Button_22.Size = new System.Drawing.Size(149, 51);
             this.ami_Button_22.TabIndex = 25;

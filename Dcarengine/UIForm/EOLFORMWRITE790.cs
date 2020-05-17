@@ -205,5 +205,17 @@ namespace Dcarengine.UIForm
             allTrip.Show();
 
         }
+
+        private void calid_Button_28_Click(object sender, EventArgs e)
+        {
+
+            splitContainer1.Panel2.Controls.Clear();
+            calid allTrip = new calid();
+            allTrip.TopLevel = false;
+            allTrip.Parent = this.splitContainer1.Panel2;
+            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+            allTrip.Dock = DockStyle.Fill;
+            allTrip.Show();
+        }
     }
 }

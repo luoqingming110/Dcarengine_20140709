@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.EOL
 {
-    public partial class Retarder : MaterialForm
+    public partial class Retarder : EASkins.Controls.MaterialForm
     {
 
         private static String address = "0211C0";

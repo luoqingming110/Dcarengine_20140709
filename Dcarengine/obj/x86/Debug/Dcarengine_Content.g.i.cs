@@ -9,16 +9,17 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("acessdata/cardbaccess.mdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/11.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/12.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/16.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/21.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/32.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/3942006.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/3942007.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/612.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/617.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/delete.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/tool_kit.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/11.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/12.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/16.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/21.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/3942006.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/3942007.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/612.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/617.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/delete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/main_1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sqldata/resource/tool_kit.png")]
 
 

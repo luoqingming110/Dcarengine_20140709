@@ -33,7 +33,7 @@ namespace Dcarengine.Function_Class
             MainF.EcuVersionLabelShow(EcuVsion);
 
             log.Info("ecu version is :" + EcuVsion);
-           //  CommonAutoRest.MainFTextThreadMessage1.Set();
+            // CommonAutoRest.MainFTextThreadMessage1.Set();
         }
 
 

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.eol790
 {
-    public partial class Retarder : MaterialForm
+    public partial class Retarder : EASkins.Controls.MaterialForm
     {
         private static String address = "024F80";
         private static Int32 length = 4;
@@ -122,6 +122,11 @@ namespace Dcarengine.UIForm.eol790
             }
             catch (Exception) { }
 
+
+        }
+
+        private void Retarder_Load_1(object sender, EventArgs e)
+        {
 
         }
     }

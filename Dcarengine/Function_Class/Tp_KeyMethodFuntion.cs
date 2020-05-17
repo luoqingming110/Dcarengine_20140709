@@ -14,10 +14,13 @@ namespace Dcarengine.Function_Class
     class Tp_KeyMethodFuntion
     {
 
+        private static log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+
         /// <summary>
         /// threadFlag  
         /// </summary>
-        private  int threadFlag=0;
+        private int threadFlag=0;
 
 
         private static readonly object obj = new object();
@@ -114,7 +117,7 @@ namespace Dcarengine.Function_Class
             }
             catch (Exception e)
             {
-
+                log.Info("计算错误 ：" + e.Message);   
             }
             finally
             { 

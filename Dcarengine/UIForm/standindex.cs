@@ -12,18 +12,29 @@ using Dcarengine.Function_Class;
 using Dcarengine.entity;
 using System.Threading;
 using Dcarengine.common;
+using EASkins.Controls;
+using EASkins;
 
 namespace Dcarengine.UIForm
 {
-    public partial class standindex : Form
+    public partial class 指标 : MaterialForm
     {
 
         private static log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+        private readonly MaterialSkinManager materialSkinManager;
 
-        public standindex()
+        public static String dis_code;
+
+
+        public 指标()
         {
             InitializeComponent();
+
+            //materialSkinManager = MaterialSkinManager.Instance;
+            //materialSkinManager.AddFormToManage(this);
+            //materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey200, Primary.BlueGrey200, Primary.BlueGrey200,
+            //    Accent.Blue200, TextShade.BLACK);
         }
 
         /// <summary>
@@ -34,12 +45,15 @@ namespace Dcarengine.UIForm
         private void standindex_Load(object sender, EventArgs e)
         {
             Thread tWorkingThread = null;
-            try {
+            try
+            {
 
-                tWorkingThread  = new Thread(isConnet);
+                tWorkingThread = new Thread(isConnet);
                 tWorkingThread.Start();
 
-            } catch(Exception ){
+            }
+            catch (Exception)
+            {
 
                 tWorkingThread.Abort();
             }
@@ -50,11 +64,13 @@ namespace Dcarengine.UIForm
         /// <summary>
         /// 
         /// </summary>
-        public void isConnet() {
+        public void isConnet()
+        {
 
-            while (true) {
+            while (true)
+            {
 
-                if (EcuConnectionF.ECULINKStatus == true)
+                if (EcuConnectionF.ECULINKStatus == true && EcuConnectionF.is_main_load)
                 {
                     break;
                 }
@@ -125,7 +141,7 @@ namespace Dcarengine.UIForm
 
 
             }
-            catch(IndexOutOfRangeException)
+            catch (IndexOutOfRangeException)
             {
 
                 byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
@@ -160,7 +176,8 @@ namespace Dcarengine.UIForm
 
                 show(result213, result214, result215, result210241, result210240);
             }
-            catch (Exception ) {
+            catch (Exception)
+            {
 
             }
             finally
@@ -178,12 +195,13 @@ namespace Dcarengine.UIForm
         /// <param name="result213"></param>
         /// <param name="result214"></param>
         /// <param name="result215"></param>
-        public  void show(String result213,String result214 ,String result215,String result02141,String result210240)
+        public void show(String result213, String result214, String result215, String result02141, String result210240)
         {
 
             try
             {
                 String xinhao = result213.Substring(8 + 35 * 2, 28);
+                //String xinhao = result213.Substring(86, 10);
                 String xinhaoTex = StringUtil.StringToASCII(xinhao);
                 log.Info(xinhaoTex);
                 this.Invoke((EventHandler)delegate { this.textBox1.Text = xinhaoTex; });
@@ -205,7 +223,8 @@ namespace Dcarengine.UIForm
                 String Dis号Tex = StringUtil.StringToASCII(Dis号);
                 this.Invoke((EventHandler)delegate { this.textBox4.Text = Dis号Tex; });
                 log.Info(lingjianhaoTex);
-
+                dis_code = Dis号Tex;
+                CommonConstant.dic_code = Dis号Tex;
 
                 ///CALID 标识
                 String calid号 = result02141.Substring(6 + 0 * 2, 32);
@@ -278,7 +297,8 @@ namespace Dcarengine.UIForm
                 this.Invoke((EventHandler)delegate { this.textBox16.Text = VINTEXT; });
                 log.Info(calid号);
             }
-            catch {
+            catch
+            {
 
             }
         }

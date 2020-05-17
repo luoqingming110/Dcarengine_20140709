@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.EOL
 {
-    public partial class 测试日期 : MaterialForm
+    public partial class 测试日期 : EASkins.Controls.MaterialForm
     {
 
         private static String address = "04E35F";

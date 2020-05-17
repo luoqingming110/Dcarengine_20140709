@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.eol790
 {
-    public partial class VIN790 : MaterialForm
+    public partial class VIN790 : EASkins.Controls.MaterialForm
     {
         private static String address = "029162";
         private static Int32 length = 17;

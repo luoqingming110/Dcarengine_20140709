@@ -66,6 +66,10 @@ namespace Dcarengine.refactor
         public static byte[]  _1086Mode = { 244, 239, 116, 147};
         public static byte[]  _1087Mode = { 244, 239, 116, 147 };
 
+
+        public static String dic_code; 
+
+
         public static List<String> TL718List = new List<string>();
             
 

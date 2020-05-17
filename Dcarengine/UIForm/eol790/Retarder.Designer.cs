@@ -148,7 +148,7 @@
             this.Controls.Add(this.emi_RichTextBox1);
             this.Name = "Retarder";
             this.Text = "Retarder790";
-            this.Load += new System.EventHandler(this.Retarder_Load);
+            this.Load += new System.EventHandler(this.Retarder_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
