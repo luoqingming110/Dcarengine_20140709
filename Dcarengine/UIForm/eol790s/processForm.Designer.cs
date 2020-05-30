@@ -1,6 +1,6 @@
 ﻿namespace Dcarengine.UIForm.eol790s
 {
-    partial class processForm
+    partial class 写入进度
     {
         /// <summary>
         /// Required designer variable.
@@ -63,13 +63,13 @@
             this.ami_Label2.BackColor = System.Drawing.Color.Transparent;
             this.ami_Label2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.ami_Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.ami_Label2.Location = new System.Drawing.Point(264, 157);
+            this.ami_Label2.Location = new System.Drawing.Point(284, 157);
             this.ami_Label2.Name = "ami_Label2";
             this.ami_Label2.Size = new System.Drawing.Size(28, 25);
             this.ami_Label2.TabIndex = 2;
             this.ami_Label2.Text = "%";
             // 
-            // processForm
+            // 写入进度
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +78,8 @@
             this.Controls.Add(this.ami_Label1);
             this.Controls.Add(this.progressBar1);
             this.MinimizeBox = false;
-            this.Name = "processForm";
-            this.Text = "processForm";
+            this.Name = "写入进度";
+            this.Text = "写入进度";
             this.ResumeLayout(false);
             this.PerformLayout();
 

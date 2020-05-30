@@ -332,7 +332,7 @@ namespace Dcarengine.service
 
             WorkOutToDb();
 
-            MainF.ShowBoxTex("读取ID完毕");
+           // MainF.ShowBoxTex("读取ID完毕");
 
             DbDataToExcel();
         }

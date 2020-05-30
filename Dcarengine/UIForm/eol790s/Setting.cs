@@ -33,7 +33,7 @@ namespace Dcarengine.UIForm.eol790s
         private static int prorcess_value = 0;
         private static String ars_write_value = "";
         private static String speed_write_value = "";
-        private static String vin_write_value = "";
+        //private static String vin_write_value = "";
         private static String ep_vin_write_value = "";
         private static String calid_write_value = "";
 
@@ -98,7 +98,9 @@ namespace Dcarengine.UIForm.eol790s
 
             if (EcuConnectionF.ECULINKStatus == true)
             {
+                this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(0, 255, 0) };
                 // read();
+
             }
         }
 
@@ -161,7 +163,6 @@ namespace Dcarengine.UIForm.eol790s
             }
             if (!ars_CheckBox1.Checked
                 && !retarder_CheckBox2.Checked
-                && !vin_CheckBox4.Checked
                 && !speed_CheckBox3.Checked
                 && !emvin_CheckBox3.Checked
                 && !calid_CheckBox4.Checked
@@ -221,27 +222,27 @@ namespace Dcarengine.UIForm.eol790s
                 speed_write_value = speed;
             }
             //vin
-            if (vin_CheckBox4.Checked)
-            {
-                try
-                {
-                    String text = this.vin_textBox1.Text;
-                    if (StringUtil.IsStringEmpty(text) && text.Length != 17)
-                    {
-                        MessageBox.Show("Vin 数值长度不为17,请输入!");
-                        this.vin_textBox1.Focus();
-                        return;
-                    }
-                    String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
-                    vin_write_value = asciiToWrite;
-                }
-                catch (Exception)
-                {
-                }
-            }
+            //if (vin_CheckBox4.Checked)
+            //{
+            //    try
+            //    {
+            //        String text = this.vin_textBox1.Text;
+            //        if (StringUtil.IsStringEmpty(text) && text.Length != 17)
+            //        {
+            //            MessageBox.Show("Vin 数值长度不为17,请输入!");
+            //            this.vin_textBox1.Focus();
+            //            return;
+            //        }
+            //        String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
+            //        vin_write_value = asciiToWrite;
+            //    }
+            //    catch (Exception)
+            //    {
+            //    }
+            //}
 
             backgroundWorker1.RunWorkerAsync();  //运行backgroundWorker组件
-            processForm form = new processForm(this.backgroundWorker1);  //显示进度条窗体
+            写入进度 form = new 写入进度(this.backgroundWorker1);  //显示进度条窗体
             form.ShowDialog(this);
         }
 
@@ -291,7 +292,7 @@ namespace Dcarengine.UIForm.eol790s
                 worker.ReportProgress(20);
             }
 
-            if (this.vin_CheckBox4.Checked || this.speed_CheckBox3.Checked
+            if ( this.speed_CheckBox3.Checked
                 || this.retarder_CheckBox2.Checked || this.ars_CheckBox1.Checked)
             {
 
@@ -379,13 +380,13 @@ namespace Dcarengine.UIForm.eol790s
             }
             worker.ReportProgress(50);
 
-            if (this.vin_CheckBox4.Checked)
+            if (this.emvin_CheckBox3.Checked)
             {
-                EolFunction.writeFunction(EolFunction.vin_address, EolFunction.vin_length, vin_write_value, CommonCmd._808102);
+                EolFunction.writeFunction(EolFunction.vin_address, EolFunction.vin_length, ep_vin_write_value, CommonCmd._808102);
                 worker.ReportProgress(60);
             }
 
-            if (this.vin_CheckBox4.Checked || this.speed_CheckBox3.Checked
+            if (this.emvin_CheckBox3.Checked || this.speed_CheckBox3.Checked
                || this.retarder_CheckBox2.Checked || this.ars_CheckBox1.Checked)
             {
                 EolFunction.writeF_3180(CommonCmd._3180);
@@ -394,10 +395,13 @@ namespace Dcarengine.UIForm.eol790s
                 EolFunction.writeF_3380_ByTime(CommonCmd._3380);
                 worker.ReportProgress(95);
             }
-            GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
             worker.ReportProgress(95);
+            GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length); 
             worker.ReportProgress(100);
-            this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(0, 255, 0) };
+            //
+            //
+            //255, 77, 59
+            this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(255, 77, 59) };
             EcuConnectionF.ECULINKStatus1 = false;
 
         }
@@ -419,22 +423,21 @@ namespace Dcarengine.UIForm.eol790s
         }
 
         //vin_rich
-        private void vin_text_changed(object sender, EventArgs e)
-        {
+        //private void vin_text_changed(object sender, EventArgs e)
+        //{
 
 
-            if (this.vin_textBox1.Text.Length > 0)
-            {
+        //    if (this.vin_textBox1.Text.Length > 0)
+        //    {
 
-                this.vin_CheckBox4.Checked = true;
-            }
-            else
-            {
+        //        this.vin_CheckBox4.Checked = true;
+        //    }
+        //    else
+        //    {
 
-                this.vin_CheckBox4.Checked = false;
-            }
-
-        }
+        //        this.vin_CheckBox4.Checked = false;
+        //    }
+        //}
 
         //emvin
         private void ep_vin_text_changed(object sender, EventArgs e)
@@ -644,7 +647,7 @@ namespace Dcarengine.UIForm.eol790s
             }
             if (!flag)
             {
-                MainF.ShowBoxTex("设备不匹配!");
+                MessageBox.Show("设备不匹配");
                 return;
             }
             GobalSerialPort.WriteByMessage(CommonCmd.ATSP5, 0, CommonCmd.ATSP5.Length);             ////////读取718芯片

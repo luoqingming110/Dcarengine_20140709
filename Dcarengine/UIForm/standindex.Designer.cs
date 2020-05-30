@@ -170,9 +170,9 @@
             this.label11.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.Location = new System.Drawing.Point(520, 151);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(239, 19);
+            this.label11.Size = new System.Drawing.Size(247, 19);
             this.label11.TabIndex = 7;
-            this.label11.Text = "SIH 售后诊断工具测试时间";
+            this.label11.Text = "客户 售后诊断工具测试时间";
             // 
             // label12
             // 
@@ -180,9 +180,9 @@
             this.label12.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.Location = new System.Drawing.Point(577, 111);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(182, 19);
+            this.label12.Size = new System.Drawing.Size(190, 19);
             this.label12.TabIndex = 6;
-            this.label12.Text = "SIH 售后诊断工具号";
+            this.label12.Text = "客户 售后诊断工具号";
             // 
             // label13
             // 
@@ -200,9 +200,9 @@
             this.label14.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(9, 393);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(239, 19);
+            this.label14.Size = new System.Drawing.Size(247, 19);
             this.label14.TabIndex = 13;
-            this.label14.Text = "SFH 售后诊断工具测试时间";
+            this.label14.Text = "客户 售后诊断工具测试时间";
             // 
             // label15
             // 
@@ -342,9 +342,9 @@
             this.label17.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label17.Location = new System.Drawing.Point(64, 434);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(155, 19);
+            this.label17.Size = new System.Drawing.Size(173, 19);
             this.label17.TabIndex = 31;
-            this.label17.Text = "SIH EOL刷写时间";
+            this.label17.Text = " 客户 EOL刷写时间";
             // 
             // textBox17
             // 

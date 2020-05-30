@@ -182,8 +182,8 @@ namespace Dcarengine.UIForm
             // eEPROMToolStripMenuItem
             // 
             this.eEPROMToolStripMenuItem.Name = "eEPROMToolStripMenuItem";
-            this.eEPROMToolStripMenuItem.Size = new System.Drawing.Size(98, 35);
-            this.eEPROMToolStripMenuItem.Text = "存储器";
+            this.eEPROMToolStripMenuItem.Size = new System.Drawing.Size(192, 35);
+            this.eEPROMToolStripMenuItem.Text = "EEPRom存储器";
             this.eEPROMToolStripMenuItem.Click += new System.EventHandler(this.eEPROMToolStripMenuItem_Click);
             // 
             // eOLWRITEToolStripMenuItem
@@ -283,7 +283,7 @@ namespace Dcarengine.UIForm
             showBox1.Multiline = true;
             showBox1.Name = "showBox1";
             showBox1.Size = new System.Drawing.Size(1246, 86);
-             showBox1.TabIndex = 4;
+            showBox1.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -299,7 +299,7 @@ namespace Dcarengine.UIForm
             // 
             // EcuVeriosn
             // 
-             EcuVeriosn.AutoSize = true;
+            EcuVeriosn.AutoSize = true;
             EcuVeriosn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             EcuVeriosn.Location = new System.Drawing.Point(107, 22);
             EcuVeriosn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -324,6 +324,8 @@ namespace Dcarengine.UIForm
             this.Back = ((System.Drawing.Image)(resources.GetObject("$this.Back")));
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1246, 698);
+            this.ControlBoxActive = System.Drawing.Color.Empty;
+            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(showBox1);
@@ -375,7 +377,7 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eOLWRITEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dEBUGToolStripMenuItem;
-        public static System.Windows.Forms.Label EcuVeriosn;
-        public static System.Windows.Forms.TextBox showBox1;
+        public static  System.Windows.Forms.Label EcuVeriosn;
+        public static  System.Windows.Forms.TextBox showBox1;
     } 
 }

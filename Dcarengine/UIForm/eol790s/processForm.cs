@@ -11,19 +11,19 @@ using System.Windows.Forms;
 
 namespace Dcarengine.UIForm.eol790s
 {
-    public partial class processForm : EASkins.Controls.MaterialForm
+    public partial class 写入进度 : EASkins.Controls.MaterialForm
     {
 
         private readonly MaterialSkinManager materialSkinManager;
 
-        public processForm(BackgroundWorker bgWork)
+        public 写入进度(BackgroundWorker bgWork)
         {
             InitializeComponent();
 
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey200, Primary.BlueGrey200, Primary.BlueGrey200,
-                Accent.LightBlue200, TextShade.WHITE);
+            Accent.Blue200, TextShade.BLACK);
 
             this.backgroundWorker1 = bgWork;
             //绑定进度条改变事件
