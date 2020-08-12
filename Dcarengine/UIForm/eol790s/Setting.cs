@@ -3,6 +3,7 @@ using Dcarengine.refactor;
 using Dcarengine.serialPort;
 using EASkins;
 using EASkins.Controls;
+using HZH_Controls.Forms;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -36,12 +37,21 @@ namespace Dcarengine.UIForm.eol790s
         //private static String vin_write_value = "";
         private static String ep_vin_write_value = "";
         private static String calid_write_value = "";
+        private static bool flashStatus = true;
+
 
         private readonly MaterialSkinManager materialSkinManager;
 
         delegate void update_textBox_Delegate(string obj);
 
         delegate void update_checkBox_Delegate(bool boll);
+
+        /// <summary>
+        /// mainf
+        /// </summary>
+        private MainF mainF;
+
+
         /// <summary>
         /// 更新状态栏的文字，多线程时被委托调用
         /// </summary>
@@ -71,7 +81,7 @@ namespace Dcarengine.UIForm.eol790s
             this.calid_CheckBox4.Invoke(d, text);
         }
 
-        public Setting()
+        public Setting(MainF mainF)
         {
             InitializeComponent();
             this.backgroundWorker1.WorkerReportsProgress = true;  //设置能报告进度更新
@@ -81,6 +91,12 @@ namespace Dcarengine.UIForm.eol790s
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey200, Primary.BlueGrey200, Primary.BlueGrey200,
                 Accent.LightBlue200, TextShade.WHITE);
+            this.mainF = mainF;
+
+        }
+
+        public Setting()
+        {
 
 
         }
@@ -92,15 +108,17 @@ namespace Dcarengine.UIForm.eol790s
             {
 
                 String caild = JsonOp.readJson(CommonConstant.dic_code);
-                this.calid_textBox1.Invoke(new EventHandler(delegate { this.calid_textBox1.Text = caild; }));
-                this.calid_CheckBox4.Invoke(new EventHandler(delegate { this.calid_CheckBox4.Checked = true; }));
+                if (!StringUtil.IsStringEmpty(caild))
+                {
+                    calid_textBox1.Invoke(new EventHandler(delegate { this.calid_textBox1.Text = caild; }));
+                    calid_CheckBox4.Invoke(new EventHandler(delegate { this.calid_CheckBox4.Checked = true; }));
+                }
             }
 
             if (EcuConnectionF.ECULINKStatus == true)
             {
                 this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(0, 255, 0) };
                 // read();
-
             }
         }
 
@@ -168,11 +186,8 @@ namespace Dcarengine.UIForm.eol790s
                 && !calid_CheckBox4.Checked
                 )
             {
-
                 return;
             }
-
-
             if (ars_CheckBox1.Checked || retarder_CheckBox2.Checked)
             {
 
@@ -181,13 +196,19 @@ namespace Dcarengine.UIForm.eol790s
             if (emvin_CheckBox3.Checked)
             {
                 String text = this.ep_vin_textBox1.Text;
-                if (StringUtil.IsStringEmpty(text) && text.Length != 17)
+                if (StringUtil.IsStringEmpty(text) )
                 {
-                    MessageBox.Show("Vin 数值长度不为17");
+                    MessageBox.Show("Vin  不能为空");
+                    return;
+                }
+                bool is_check =  VinUtil.isValidVin(text);
+                if (!is_check) {
+                    MessageBox.Show("Vin 校验不通过");
                     return;
                 }
                 String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
                 ep_vin_write_value = asciiToWrite;
+
             }
             //calid
             if (calid_CheckBox4.Checked)
@@ -201,50 +222,74 @@ namespace Dcarengine.UIForm.eol790s
             //speed
             if (this.speed_CheckBox3.Checked)
             {
-
-                String text = this.speed_textBox1.Text;
-                if (StringUtil.IsStringEmpty(text))
+                try
                 {
-                    MessageBox.Show("速度值不能为空");
+                    String text = this.speed_textBox1.Text;
+                    if (StringUtil.IsStringEmpty(text))
+                    {
+                        MessageBox.Show("速度值不能为空");
+                        return;
+                    }
+                    int value = Int32.Parse(text) * 100;
+                    String speed = StringUtil._10ToHex(value).PadLeft(4, '0');
+                    if (speed.Length > 4)
+                    {
+                        MessageBox.Show("速度值超过临界值");
+                        return;
+                    }
+                    String finalValueOne = speed.Substring(0, 2);
+                    String finalValueTwo = speed.Substring(2, 2);
+                    speed = finalValueTwo + finalValueOne;
+
+                    speed_write_value = speed;
+                }
+                catch {
+
+                    MessageBox.Show("请输入正常的值");
                     return;
                 }
-                int value = Int32.Parse(text) * 100;
-                String speed = StringUtil._10ToHex(value).PadLeft(4, '0');
-                if (speed.Length > 4)
-                {
-                    MessageBox.Show("速度值超过临界值");
-                    return;
-                }
-                String finalValueOne = speed.Substring(0, 2);
-                String finalValueTwo = speed.Substring(2, 2);
-                speed = finalValueTwo + finalValueOne;
-
-                speed_write_value = speed;
             }
-            //vin
-            //if (vin_CheckBox4.Checked)
-            //{
-            //    try
-            //    {
-            //        String text = this.vin_textBox1.Text;
-            //        if (StringUtil.IsStringEmpty(text) && text.Length != 17)
-            //        {
-            //            MessageBox.Show("Vin 数值长度不为17,请输入!");
-            //            this.vin_textBox1.Focus();
-            //            return;
-            //        }
-            //        String asciiToWrite = StringUtil.AsciiToHexString(text.Trim());
-            //        vin_write_value = asciiToWrite;
-            //    }
-            //    catch (Exception)
-            //    {
-            //    }
-            //}
 
-            backgroundWorker1.RunWorkerAsync();  //运行backgroundWorker组件
-            写入进度 form = new 写入进度(this.backgroundWorker1);  //显示进度条窗体
-            form.ShowDialog(this);
+            ///
+            try
+            {
+                backgroundWorker1.RunWorkerAsync();  //运行backgroundWorker组件
+                写入进度 form = new 写入进度(this.backgroundWorker1);  //显示进度条窗体
+                form.ShowDialog(this);
+                //flash
+                if (flashStatus)
+                {
+                    EcuConnectionF.ECULINKStatus1 = false;
+                    getLog();
+                    ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(255, 77, 59) };
+                    if (mainF.Standindex != null)
+                    {
+                        mainF.Standindex.CleanText();
+                    }
+                    MainF.showBox1.Text = "连接断开";
+                }
+                else {
+
+                    GobalSerialPort.WriteByMessage(CommonCmd._1081,0,CommonCmd._1081.Length);
+                    Thread.Sleep(100);
+                }
+            }
+            catch  { }
+
         }
+
+        private  void   getLog()
+        {
+            String calid = calid_textBox1.Text.Trim().PadRight(16, ' ');
+            String date = DateTime.Now.ToString("yyyy-MM-dd");        // 2008-09-04
+            String ep_vin_write_value_log = this.ep_vin_textBox1.Text.Trim().PadLeft(17, ' ');
+            String lid_log = CommonConstant.lid.PadLeft(17, ' ');
+
+            //log.Warn(" 	S.N.	 Date	     VIN	              Engine S.N.	   Calid	             EOL S.N.	");
+            log.Warn("    \t" + date + "    \t" + ep_vin_write_value_log + "	\t" + lid_log + "	\t" + calid + "		\t" + CommonConstant.TL718);
+
+        }
+
 
         //在另一个线程上开始运行(处理进度条)
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -292,8 +337,8 @@ namespace Dcarengine.UIForm.eol790s
                 worker.ReportProgress(20);
             }
 
-            if ( this.speed_CheckBox3.Checked
-                || this.retarder_CheckBox2.Checked || this.ars_CheckBox1.Checked)
+            if ( speed_CheckBox3.Checked || retarder_CheckBox2.Checked 
+                || ars_CheckBox1.Checked || emvin_CheckBox3.Checked)
             {
 
                 CommonConstant.mode = "1090";
@@ -305,10 +350,12 @@ namespace Dcarengine.UIForm.eol790s
 
                     Thread.Sleep(2000);
                 }
-                EolFunction.writeF_8081count(CommonCmd._808102);
+               //  EolFunction.writeF_8081count(CommonCmd._808102);
             }
             worker.ReportProgress(30);
 
+
+            Boolean  flag8081 =  false;
             if (this.ars_CheckBox1.Checked || this.retarder_CheckBox2.Checked)
             {
                 read();
@@ -369,12 +416,22 @@ namespace Dcarengine.UIForm.eol790s
                 }
                 catch { }
 
+                if (!flag8081)
+                {
+                    EolFunction.writeF_8081count(CommonCmd._808102);
+                    flag8081 = true;
+                }
+
                 EolFunction.writeFunction(EolFunction.ars_address, EolFunction.ars_length, ars_write_value, CommonCmd._808102);
                 worker.ReportProgress(40);
             }
 
             if (this.speed_CheckBox3.Checked)
             {
+                if (!flag8081) {
+                    EolFunction.writeF_8081count(CommonCmd._808102);
+                    flag8081 = true;
+                }
                 EolFunction.writeFunction(EolFunction.speed_address, EolFunction.speed_length, speed_write_value, CommonCmd._808102);
                 worker.ReportProgress(50);
             }
@@ -382,6 +439,11 @@ namespace Dcarengine.UIForm.eol790s
 
             if (this.emvin_CheckBox3.Checked)
             {
+                if (!flag8081)
+                {
+                    EolFunction.writeF_8081count(CommonCmd._808102);
+                    flag8081 = true;
+                }
                 EolFunction.writeFunction(EolFunction.vin_address, EolFunction.vin_length, ep_vin_write_value, CommonCmd._808102);
                 worker.ReportProgress(60);
             }
@@ -396,13 +458,10 @@ namespace Dcarengine.UIForm.eol790s
                 worker.ReportProgress(95);
             }
             worker.ReportProgress(95);
-            GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length); 
+
+            GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+            
             worker.ReportProgress(100);
-            //
-            //
-            //255, 77, 59
-            this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(255, 77, 59) };
-            EcuConnectionF.ECULINKStatus1 = false;
 
         }
 
@@ -410,15 +469,19 @@ namespace Dcarengine.UIForm.eol790s
         {
             if (e.Error != null)
             {
+                flashStatus = false; 
                 MessageBox.Show(e.Error.Message);
             }
             else if (e.Cancelled)
             {
-                MessageBox.Show("取消");
+                flashStatus = false;
+               
+                FrmDialog.ShowDialog(this, "   EOL刷写失败!", "EOL刷写结果", false);
+                return;
             }
             else
-            {
-                MessageBox.Show("完成");
+            {                
+                FrmDialog.ShowDialog(this, "   EOL刷写成功!", "EOL刷写结果", false);
             }
         }
 
@@ -503,6 +566,7 @@ namespace Dcarengine.UIForm.eol790s
             {
 
                 this.retarder_CheckBox2.Checked = false;
+                this.retarder_CheckBox2.Enabled = false;
             }
         }
 
@@ -519,6 +583,7 @@ namespace Dcarengine.UIForm.eol790s
             {
 
                 this.ars_CheckBox1.Checked = false;
+                this.ars_CheckBox1.Enabled = false;
             }
         }
 
@@ -566,10 +631,29 @@ namespace Dcarengine.UIForm.eol790s
             Thread tWorkingThread = new Thread(ConnectEucByWaitThread);
             tWorkingThread.Start();
 
-            //Thread read = new Thread((readDis));
-            //read.Start();
-            //read.Join();
-            // readDis();
+            tWorkingThread.Join();
+
+            if (EcuConnectionF.ECULINKStatus)
+            {
+                EcuVersionF.GetEcuVersion();
+
+                byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
+                GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
+                String result213 = GobalSerialPort.ResultBackString;
+                String[] resultA = result213.Split('\r');
+                result213 = resultA[1].Replace(" ", "");
+                ///dis
+                String Dis号 = result213.Substring(8 + 85 * 2, 20);
+                String Dis号Tex = StringUtil.StringToASCII(Dis号);
+                String caild = JsonOp.readJson(Dis号Tex);
+                this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(0, 255, 0) };
+                this.calid_textBox1.Invoke(new EventHandler(delegate { this.calid_textBox1.Text = caild; }));
+                this.calid_CheckBox4.Invoke(new EventHandler(delegate { this.calid_CheckBox4.Checked = true; }));
+                log.Info("dis code is ");
+                MainF.showBox1.Text = "已连接";
+            }
+            
+
         }
 
 
@@ -635,21 +719,8 @@ namespace Dcarengine.UIForm.eol790s
             GobalSerialPort.WriteByMessage(EcuConnectionF._AT2S, 0, EcuConnectionF._AT2S.Length);
             backEndString = GobalSerialPort.ResultBackString;
             CommonConstant.TL718CODE = backEndString;
+            
 
-            bool flag = false;
-            foreach (string num in CommonConstant.TL718List)
-            {
-                if (backEndString.Contains(num))
-                {
-                    flag = true;
-                    break;
-                }
-            }
-            if (!flag)
-            {
-                MessageBox.Show("设备不匹配");
-                return;
-            }
             GobalSerialPort.WriteByMessage(CommonCmd.ATSP5, 0, CommonCmd.ATSP5.Length);             ////////读取718芯片
             backEndString = GobalSerialPort.ResultBackString;
             if (backEndString.Contains("OK"))
@@ -684,30 +755,13 @@ namespace Dcarengine.UIForm.eol790s
             {
                 EcuConnectionF.ECULINKStatus = false;
             }
-            MainF.EcuIsLinked = EcuConnectionF.ECULINKStatus1;
+            MainF.EcuIsLinked = EcuConnectionF.ECULINKStatus;
 
-            if (EcuConnectionF.ECULINKStatus)
-            {
-                EcuVersionF.GetEcuVersion();
-
-                byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
-                GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
-                String result213 = GobalSerialPort.ResultBackString;
-                String[] resultA = result213.Split('\r');
-                result213 = resultA[1].Replace(" ", "");
-                ///dis
-                String Dis号 = result213.Substring(8 + 85 * 2, 20);
-                String Dis号Tex = StringUtil.StringToASCII(Dis号);
-                String caild = JsonOp.readJson(Dis号Tex);
-                this.ucSignalLamp1.LampColor = new Color[] { Color.FromArgb(0, 255, 0) };
-                this.calid_textBox1.Invoke(new EventHandler(delegate { this.calid_textBox1.Text = caild; }));
-                this.calid_CheckBox4.Invoke(new EventHandler(delegate { this.calid_CheckBox4.Checked = true; }));
-                log.Info("dis code is ");
-            }
+           
             // updateStatusWordInThread(caild);
-            //updateStatusThread(true);
-            //this.calid_CheckBox4.Checked = true;
-            //this.calid_textBox1.Text = caild;
+            // updateStatusThread(true);
+            // this.calid_CheckBox4.Checked = true;
+            // this.calid_textBox1.Text = caild;
         }
 
         private void ucSwitch1_CheckedChanged(object sender, EventArgs e)

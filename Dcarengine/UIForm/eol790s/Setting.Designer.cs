@@ -23,7 +23,7 @@ namespace Dcarengine.UIForm.eol790s
             }
             if (EcuConnectionF.ECULINKStatus == true)
             {               
-                GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
+                GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
             }
 
             base.Dispose(disposing);
@@ -216,6 +216,7 @@ namespace Dcarengine.UIForm.eol790s
             // 
             this.ars_CheckBox1.BackColor = System.Drawing.Color.Transparent;
             this.ars_CheckBox1.Checked = false;
+            this.ars_CheckBox1.Enabled = false;
             this.ars_CheckBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ars_CheckBox1.Location = new System.Drawing.Point(962, 31);
             this.ars_CheckBox1.Name = "ars_CheckBox1";
@@ -263,6 +264,7 @@ namespace Dcarengine.UIForm.eol790s
             // 
             this.retarder_CheckBox2.BackColor = System.Drawing.Color.Transparent;
             this.retarder_CheckBox2.Checked = false;
+            this.retarder_CheckBox2.Enabled = false;
             this.retarder_CheckBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.retarder_CheckBox2.Location = new System.Drawing.Point(962, 342);
             this.retarder_CheckBox2.Name = "retarder_CheckBox2";
@@ -340,7 +342,7 @@ namespace Dcarengine.UIForm.eol790s
             this.ami_Label11.Name = "ami_Label11";
             this.ami_Label11.Size = new System.Drawing.Size(52, 25);
             this.ami_Label11.TabIndex = 71;
-            this.ami_Label11.Text = "km/s";
+            this.ami_Label11.Text = "km/h";
             // 
             // ami_Label5
             // 
@@ -400,7 +402,7 @@ namespace Dcarengine.UIForm.eol790s
             this.ami_Label10.Name = "ami_Label10";
             this.ami_Label10.Size = new System.Drawing.Size(92, 27);
             this.ami_Label10.TabIndex = 76;
-            this.ami_Label10.Text = "状态选着";
+            this.ami_Label10.Text = "状态选择";
             // 
             // ami_Label13
             // 

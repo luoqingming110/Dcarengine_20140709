@@ -31,7 +31,6 @@ namespace Dcarengine.UIForm.eol790s
             //绑定后台操作完成，取消，异常时的事件
             this.backgroundWorker1.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundWorker1_RunWorkerCompleted);
 
-
         }
 
 
@@ -44,6 +43,13 @@ namespace Dcarengine.UIForm.eol790s
         void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.Close();  //执行完之后，直接关闭页面
+        }
+
+
+        private void ami_Button_21_Click(object sender, EventArgs e)
+        {
+            this.backgroundWorker1.CancelAsync(); //请求取消挂起的后台操作
+            this.Close();
         }
 
 

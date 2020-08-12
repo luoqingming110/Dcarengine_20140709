@@ -96,8 +96,8 @@ namespace Dcarengine.Function_Class
                _3180count = 2;
                _3380count = 5;
 
-               //日期模式
-              // writeF_8081count(eol);
+                //日期模式
+                // writeF_8081count(eol);
                 //34 模式
                 // address = "024E9E";
                 address = address.Replace(" ", "");
@@ -111,10 +111,6 @@ namespace Dcarengine.Function_Class
                 //commoncmd
                 writeF(byteValueWrite);
                 writeF_37(CommonCmd._37);
-
-                // 所有写完了在复位命令
-                //  writeF_3180(CommonCmd._3180);
-                //  writeF_3380(CommonCmd._3380);
 
                 return "OK";                
 
@@ -179,11 +175,10 @@ namespace Dcarengine.Function_Class
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
                 if (backString.Contains("FF")) {
-
                     break;
                 }
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                //Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
                 if (backString.Contains("75")   
                     || (backString.Contains("7F") && backString.Contains("35") && backString.Contains("78")))
@@ -210,8 +205,8 @@ namespace Dcarengine.Function_Class
                 _36count--;
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                 Thread.Sleep(200);
-                backString = GobalSerialPort.ResultBackString;
-                if (backString.Contains("36"))
+                backString = GobalSerialPort.ResultBackString;      
+                if (backString.Contains("36") || backString.IndexOf("36")>0)
                 {
                     result = backString;
                     break;
@@ -238,7 +233,7 @@ namespace Dcarengine.Function_Class
         /// </summary>
         private static int _8081count = 2;
         private static int _34count = 2;
-        private static int workCount = 4;
+        private static int workCount = 2;
         private static int _37count = 2;
         private static int _3180count= 2;
         private static int _3380count = 5;
@@ -252,12 +247,14 @@ namespace Dcarengine.Function_Class
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                 Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                //Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
-                if (  backString.Contains("C0")
+                if (backString.Contains("C0")
                     || (backString.Contains("7F") && backString.Contains("80") && backString.Contains("40"))
-                    || (backString.Contains("7F") && backString.Contains("80") && backString.Contains("78")))
+                    || (backString.Contains("7F") && backString.Contains("80") && backString.Contains("78"))
+                    || ( backString.Contains("80") && backString.Contains("78"))
+                    || ( backString.IndexOf("80")>0 && backString.IndexOf("78")>0 ))
                 {
                     Thread.Sleep(5000);
                     break;
@@ -286,15 +283,15 @@ namespace Dcarengine.Function_Class
 
                     break; 
                 }
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+               // GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+               // Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
                 log.Info("eol atbd return :" + backString);
                 if ( backString.Contains("74")
                     || (backString.Contains("7F") && backString.Contains("34") && backString.Contains("40"))
                     || (backString.Contains("7F") && backString.Contains("34") && backString.Contains("78")))
                 {                   
-                    Thread.Sleep(200);
+                   // Thread.Sleep(200);
                     break;        
                 }else
                 {
@@ -315,20 +312,20 @@ namespace Dcarengine.Function_Class
                 try
                 {
                     GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
-                    Thread.Sleep(200);
                     backString = GobalSerialPort.ResultBackString;
-                    if (backString.Contains("76") 
+                    if (   backString.Contains("76") 
                        || (backString.Contains("36") && backString.Contains("40"))
+                       || (backString.IndexOf("36")>0 && backString.IndexOf("40")>0)
                        || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("40"))
                        || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("78")))
                     {
-                        Thread.Sleep(200);
+                       // Thread.Sleep(200);
                          break;
                     }
-                    GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                    Thread.Sleep(300);
+                   // GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                   // Thread.Sleep(300);
                     backString = GobalSerialPort.ResultBackString;
-                    log.Info("eol atbd return :" + backString);
+                    //log.Info("eol atbd return :" + backString);
                     if (backString.Contains("76") 
                         ||(backString.Contains("7F")&&backString.Contains("36")&&backString.Contains("40"))
                         || (backString.Contains("7F") && backString.Contains("36") && backString.Contains("78")) )
@@ -356,15 +353,14 @@ namespace Dcarengine.Function_Class
             {
                 _37count--;
                 GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
-                Thread.Sleep(200);
                 backString = GobalSerialPort.ResultBackString;
-                if (backString.Contains("77")) {
+               
+                if (backString.Contains("77")|| backString.IndexOf("37") >0 ) {
 
-                    Thread.Sleep(100);
                     break;
                 }
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                //Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
                 // log.Info("eol atbd return :" + backString);
                 if ((backString.Contains("77"))
@@ -379,7 +375,6 @@ namespace Dcarengine.Function_Class
                     writeF_37(_write);
                 }
             }
-
         }
 
         /**
@@ -399,8 +394,8 @@ namespace Dcarengine.Function_Class
                     Thread.Sleep(100);
                     break; 
                 }
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                //Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
                 if ((backString.Contains("80"))
                     || (backString.Contains("7F") && backString.Contains("31") && backString.Contains("40"))
@@ -432,8 +427,8 @@ namespace Dcarengine.Function_Class
                 {
                     break;
                 }
-                GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
-                Thread.Sleep(300);
+                //GobalSerialPort.WriteByMessage(CommonCmd.ATBD, 0, CommonCmd.ATBD.Length);
+                //Thread.Sleep(300);
                 backString = GobalSerialPort.ResultBackString;
                 if (backString.Contains("80") ||
                     (backString.Contains("7F") && backString.Contains("33") && backString.Contains("23"))) 
@@ -453,10 +448,12 @@ namespace Dcarengine.Function_Class
          **/
         public static void writeF_3380_ByTime(byte[]  _write)
         {
-            long   startTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
-            GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
-            String[] subStr = GobalSerialPort.ResultBackString.Split('\r');
-            while (!subStr[1].Contains("80")  )
+            try
+            {
+                long startTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+                GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
+                String[] subStr = GobalSerialPort.ResultBackString.Split('\r');
+                while (!subStr[1].Contains("80"))
                 {
                     GobalSerialPort.WriteByMessage(_write, 0, _write.Length);
                     subStr = GobalSerialPort.ResultBackString.Split('\r');
@@ -466,14 +463,24 @@ namespace Dcarengine.Function_Class
                     }
                     //endTime
                     long endTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
-                    if (endTime - startTime > 35) {
+                    if (endTime - startTime > 35)
+                    {
+                        log.Info("3380 break time");
                         break;
-                    } else
+                    }
+                    else
                     {
                         break;
                     }
-             }           
+                }
+            }
+            catch (Exception e){
+
+                log.Info("3380 eror is :" + e.Message);
+            }
         }
+
+
 
     }
 }

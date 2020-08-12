@@ -32,30 +32,17 @@ namespace Dcarengine.UIForm
             }
             try
             {
-
-                GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
-
-                GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
-
-                //GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
-
-                //Thread.Sleep(1000);
-
-                //MainF.ShowBoxTex("串口已断开");
-
-                //EcuConnectionF.ECULINKStatus1 = false;
-
-                //EcuConnectionF connectecu = new EcuConnectionF();
-
-                //Thread tWorkingThread = new Thread((connectecu.ConnectEucByWait));
-
-                //tWorkingThread.Start();
-
+                if (is_write)
+                {
+                    GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                    if (GobalSerialPort.ResultBackString.IndexOf("NO") > 0)
+                    {
+                        return;
+                    }
+                }
             }
             catch
-            {
-
-            }
+            { }
         }
 
         #region Windows Form Designer generated code
@@ -67,6 +54,7 @@ namespace Dcarengine.UIForm
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.calid_Button_28 = new EASkins.Ami_Button_2();
             this.ami_Button_29 = new EASkins.Ami_Button_2();
             this.emi_Button_21 = new EASkins.Emi_Button_2();
             this.ami_Button_27 = new EASkins.Ami_Button_2();
@@ -77,7 +65,6 @@ namespace Dcarengine.UIForm
             this.ami_Button_23 = new EASkins.Ami_Button_2();
             this.ami_Button_22 = new EASkins.Ami_Button_2();
             this.ami_Button_21 = new EASkins.Ami_Button_2();
-            this.calid_Button_28 = new EASkins.Ami_Button_2();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -111,6 +98,20 @@ namespace Dcarengine.UIForm
             this.splitContainer1.Size = new System.Drawing.Size(1356, 784);
             this.splitContainer1.SplitterDistance = 220;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // calid_Button_28
+            // 
+            this.calid_Button_28.BackColor = System.Drawing.Color.Transparent;
+            this.calid_Button_28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.calid_Button_28.Image = null;
+            this.calid_Button_28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.calid_Button_28.Location = new System.Drawing.Point(38, 707);
+            this.calid_Button_28.Name = "calid_Button_28";
+            this.calid_Button_28.Size = new System.Drawing.Size(143, 50);
+            this.calid_Button_28.TabIndex = 13;
+            this.calid_Button_28.Text = "CALID";
+            this.calid_Button_28.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.calid_Button_28.Click += new System.EventHandler(this.calid_Button_28_Click);
             // 
             // ami_Button_29
             // 
@@ -249,20 +250,6 @@ namespace Dcarengine.UIForm
             this.ami_Button_21.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ami_Button_21.Click += new System.EventHandler(this.ami_Button_21_Click);
             // 
-            // calid_Button_28
-            // 
-            this.calid_Button_28.BackColor = System.Drawing.Color.Transparent;
-            this.calid_Button_28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.calid_Button_28.Image = null;
-            this.calid_Button_28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.calid_Button_28.Location = new System.Drawing.Point(38, 707);
-            this.calid_Button_28.Name = "calid_Button_28";
-            this.calid_Button_28.Size = new System.Drawing.Size(143, 50);
-            this.calid_Button_28.TabIndex = 13;
-            this.calid_Button_28.Text = "CALID";
-            this.calid_Button_28.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.calid_Button_28.Click += new System.EventHandler(this.calid_Button_28_Click);
-            // 
             // EOLFORMWRITE790
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -272,6 +259,7 @@ namespace Dcarengine.UIForm
             this.Controls.Add(this.splitContainer1);
             this.Name = "EOLFORMWRITE790";
             this.Text = "EolWriteForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EOLFORMWRITE790_FormClosing);
             this.Load += new System.EventHandler(this.EOLFORMWRITE_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

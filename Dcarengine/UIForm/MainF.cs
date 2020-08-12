@@ -45,10 +45,7 @@ namespace Dcarengine.UIForm
             //init event
             MaifTextEdit maifText = new MaifTextEdit(MainFTextShow);
             maifTextEdit += maifText;
-
-            //
-            this.IsMdiContainer = true;
-
+            IsMdiContainer = true;
         }
         
         public static bool EcuIsLinked = false;//判断是否连接成功
@@ -65,8 +62,15 @@ namespace Dcarengine.UIForm
         EcuConnectionF connectecu;     //持有ECU连接静态对象
         public static string EcuIDCodeToStrFin;
 
+        private  指标 standindex;
+
+        public 指标 Standindex { get => standindex; set => standindex = value; }
+
+
+
         private void Connect_Click(object sender, EventArgs e)
         {
+
             EcuIsLinked = EcuConnectionF.ECULINKStatus1;
             if (EcuIsLinked)
             {
@@ -81,8 +85,10 @@ namespace Dcarengine.UIForm
                         GobalSerialPort.SerialPort.Open();
                     }
                     log.Info("com is ：" +GobalSerialPort.SerialPort.PortName +",port is open: "+ GobalSerialPort.SerialPort.IsOpen);
-             
+
                     ThreadEcuConnet();
+
+                  
                 }
                 catch (Exception )
                 {
@@ -102,7 +108,10 @@ namespace Dcarengine.UIForm
             log.Info("thread name is " + Threadname + id);
             Thread tWorkingThread = new Thread((connectecu.ConnectEucByWait));
             tWorkingThread.Start();
+            Standindex.connetback();
+            tWorkingThread.Join(1000);         
         }
+
 
 
         private void ColsePort_Click(object sender, EventArgs e)
@@ -111,18 +120,20 @@ namespace Dcarengine.UIForm
             {
                 GobalSerialPort.SerialPort.Close();
                 showBox1.Text = "串口已断开";
-                //MainFTextShow("串口已断开");
                 this.Text = "MainF";
                 EcuVeriosn.Text = "";
                 EcuIsLinked = false;
                 EcuConnectionF.ECULINKStatus1 = EcuIsLinked;
+                if (Standindex != null) {
+                    Standindex.CleanText();
+                }               
             }
             else
             {
                 MessageBox.Show("串口已断开！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
 
         #region  功能模块
 
@@ -132,6 +143,8 @@ namespace Dcarengine.UIForm
                 MyMeans.DropAccess();
                 Thread thread = new Thread(C13IdRead.workRun );
                 thread.Start();
+                thread.Join(3000);
+                showBox1.Text = "读取id完毕";
         }
 
 
@@ -158,22 +171,15 @@ namespace Dcarengine.UIForm
         /// </summary>
         private void ReadECU13DTC()
         {
-            //_13dtcRead dtcRead = new _13dtcRead();
-            // dtcRead.ReadECU13DTC();
-            //多线程处理
             new Thread(_13dtcRead.ReadECU13DTC).Start();
         }
-
-      
+        
         private void measure_Click(object sender, EventArgs e)
         {
-
-            测量 Cmeaure = new 测量();
-            Cmeaure.Show();
-
-            //DebugForm debugForm = new DebugForm();
-            //debugForm.Show();
-
+            
+                测量 Cmeaure = new 测量();
+                Cmeaure.Show();
+           
         }
 
         private void 行程记录_Click(object sender, EventArgs e)
@@ -297,21 +303,20 @@ namespace Dcarengine.UIForm
             //EcuIsLinked = EcuConnectionF.ECULINKStatus1;
        
 
-            指标 standindex = new 指标();
-            standindex.TopLevel = false;
-            this.panel1.Controls.Add(standindex); //add the fs form to the panel2
-            standindex.Show();
+            Standindex = new 指标();
+            Standindex.TopLevel = false;
+            this.panel1.Controls.Add(Standindex); //add the fs form to the panel2
+            Standindex.Show();
         }
 
         /// <summary>
         /// 窗口显示
         /// </summary>
-        public static void ShowBoxTex(String  success)
+        public static  void ShowBoxTex(String  success)
         {
 
             showBox1.Invoke((EventHandler)delegate { showBox1.Text = success;  }  ); 
-            //showBox1.Invoke(ShowBoxTexDelege,"");
-            
+            //showBox1.Invoke(ShowBoxTexDelege,"");      
         }
 
         public static void ShowBoxTexDelege(String success)
@@ -324,13 +329,10 @@ namespace Dcarengine.UIForm
         /// 发动机版本号显示函数
         /// </summary>
         /// <param name="success"></param>
-        public static void EcuVersionLabelShow(String success)
+        public static  void EcuVersionLabelShow(String success)
         {
             EcuVeriosn.Invoke((EventHandler)delegate { EcuVeriosn.Text = success; });
-
             maifTextEdit(success);
-            // MainF.T
-            // MainFShow();
         }
 
         /// <summary>
@@ -373,13 +375,21 @@ namespace Dcarengine.UIForm
         private void eEPROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            EEPROMWrite eolWrite = new EEPROMWrite();
-            eolWrite.Show();
+            if (EcuIsLinked)
+            {
+                EEPROMWrite eolWrite = new EEPROMWrite(this);
+                eolWrite.Show();
 
+            }
+            else
+            {
+
+                MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             //EOL测试数据
-          
-
         }
+
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -391,9 +401,16 @@ namespace Dcarengine.UIForm
         //主动测试工具主界面
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            if (EcuIsLinked)
+            {
+                DiagnosticTest diagnostic = new DiagnosticTest();
+                diagnostic.Show();
+            }
+            else
+            {
 
-            DiagnosticTest diagnostic = new DiagnosticTest();
-            diagnostic.Show();
+                MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -403,13 +420,9 @@ namespace Dcarengine.UIForm
          */
         private void eOLWRITEToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-
-            //EOLFORMWRITE790S oLFORMWRITE790S = new EOLFORMWRITE790S();
-            //oLFORMWRITE790S.Show();
-            eol790s.Setting setting = new eol790s.Setting();
-            setting.Show();
-
+                Thread.Sleep(1000);
+                eol790s.Setting setting = new eol790s.Setting(this);
+                setting.Show();        
         }
 
 
@@ -421,13 +434,54 @@ namespace Dcarengine.UIForm
 
         private void dEBUGToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            // DebugForm debugForm = new DebugForm();
-            // debugForm.Show();
+            DebugForm debugForm = new DebugForm();
+            debugForm.Show();
             //EOLFORMWRITE790 790_s = new EOLFORMWRITE790();
-            EOLFORMWRITE790 oLFORMWRITE790 = new EOLFORMWRITE790();
-            oLFORMWRITE790.Show();
-
+            // EOLFORMWRITE790 oLFORMWRITE790 = new EOLFORMWRITE790();
+            // oLFORMWRITE790.Show();
         }
+
+
+        /// <summary>
+        /// standindex flush
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+
+            if ( EcuConnectionF.ECULINKStatus && Standindex !=null) {
+
+                Standindex.connetback();
+            }
+        }
+
+
+
+        /// <summary>
+        /// 获取ECUVersion 数据问题
+        /// </summary>
+        public  void GetEcuVersion()
+        {
+
+            log.Info("ecu version read ..");
+
+            GobalSerialPort.WriteByMessage(CommonCmd.ecuVersionCmd, 0, CommonCmd.ecuVersionCmd.Length);
+
+            String VersionString = GobalSerialPort.ResultBackString;
+
+            _13IdFDataWork.InsertAcessF_7(VersionString);
+
+            String EcuVsion = _13IdFDataWork.WorkOutData;
+
+            EcuVersionLabelShow(EcuVsion);
+
+            log.Info("ecu version is :" + EcuVsion);
+        }
+
+
+
+
     }
 
 }

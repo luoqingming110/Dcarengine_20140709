@@ -44,6 +44,7 @@ namespace Dcarengine.UIForm.EEPROM
         private void button1_Click(object sender, EventArgs e)
         {
 
+            EEPROMWrite.is_write = true;
             String _0165  =  preWriteValue(60);
             String cmd165 = "3b0165" + _0165;
             byte[] cmdSend165 = StringToSendBytes.bytesToSend(cmd165 + "\n");

@@ -151,76 +151,84 @@ namespace Dcarengine.Function_Class
         {
             if (GobalSerialPort.SerialPort.IsOpen == false)
             {
-
                 return;
             }
 
-            ClearSendAndRecive();
+            lock (CommonConstant.sign) {
 
-            String backEndString = null;
+                ClearSendAndRecive();
 
-            CommonCmd.SendATE1();
-            // GobalSerialPort.GobalSerialPortEnventChange();
-            // 718 code
-            GobalSerialPort.WriteByMessage(_AT2S, 0, _AT2S.Length);
-            backEndString = GetSerialPortBackData();
-            CommonConstant.TL718CODE = backEndString;
+                String backEndString = null;
 
-            bool flag = false;
-            foreach (string num in CommonConstant.TL718List)
-            {
-                if (backEndString.Contains(num))
-                {
-                    flag = true;
-                    break;
+                GobalSerialPort.WriteByMessage(CommonCmd.ATE1, 0, CommonCmd.ATE1.Length);
+               
+                try
+                {                    
+                    //718 code
+                    //GobalSerialPort.WriteByMessage(_AT2S, 0, _AT2S.Length);
+                    //backEndString = GetSerialPortBackData();
+                    //CommonConstant.TL718 = backEndString.Split('\r')[1];
+                    //bool flag = false;
+                    //foreach (string num in CommonConstant.TL718List)
+                    //{
+                    //    if (backEndString.Contains(num))
+                    //    {
+                    //        flag = true;
+                    //        break;
+                    //    }
+                    //}
+                    //if (!flag)
+                    //{
+                    //    MainF.ShowBoxTex("设备不匹配!");
+                    //    return;
+                    //    // return;
+                    //}
                 }
-            }
-            if (!flag)
-            {
-                MainF.ShowBoxTex("设备不匹配!");
-                return;
-                // return;
-            }
-            GobalSerialPort.WriteByMessage(ATSP5, 0, ATSP5.Length);             ////////读取718芯片
-            backEndString = GetSerialPortBackData();
-            if (backEndString.Contains("OK"))
-            {
-                GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length); //2
-            }
+                catch{}
 
-            backEndString = GetSerialPortBackData();
-            if (backEndString.Contains("OK"))
-            {
-                GobalSerialPort.WriteByMessage(ATSW19, 0, ATSW19.Length);      //22222/           ////333333
-            }
-            backEndString = GetSerialPortBackData();
-            if (backEndString.Contains("OK"))
-            {
-                GobalSerialPort.WriteByMessage(ATSH81_10_F1, 0, ATSH81_10_F1.Length);
-            }
-            backEndString = GetSerialPortBackData();
-            if (backEndString.Contains("OK"))
-            {
-                GobalSerialPort.WriteByMessage(_1081, 0, _1081.Length);                              ////////////5
-                //连接处可能需要特殊处理
-            }
 
-            backEndString = GetSerialPortBackData();
+                GobalSerialPort.WriteByMessage(ATSP5, 0, ATSP5.Length);             ////////读取718芯片
+                backEndString = GetSerialPortBackData();
+                if (backEndString.Contains("OK"))
+                {
+                    GobalSerialPort.WriteByMessage(CommonCmd.ATSTFF, 0, CommonCmd.ATSTFF.Length); //2
+                }
 
-            EcuVersionF.GetEcuVersion();
+                backEndString = GetSerialPortBackData();
+                //if (backEndString.Contains("OK"))
+                //{
+                //    GobalSerialPort.WriteByMessage(ATSW19, 0, ATSW19.Length);      //22222/           ////333333
+                //}
+                backEndString = GetSerialPortBackData();
+                if (backEndString.Contains("OK"))
+                {
+                    GobalSerialPort.WriteByMessage(ATSH81_10_F1, 0, ATSH81_10_F1.Length);
+                }
+                backEndString = GetSerialPortBackData();
+                if (backEndString.Contains("OK"))
+                {
+                    GobalSerialPort.WriteByMessage(_1081, 0, _1081.Length);                              ////////////5
+                                                                                                         //连接处可能需要特殊处理
+                }
 
-            if (backEndString.Contains("50") && backEndString.Contains("81"))
-            {
-                ECULINKStatus = true;
+                backEndString = GetSerialPortBackData();
 
-                MainF.ShowBoxTex("ECU连接成功！");
+                EcuVersionF.GetEcuVersion();
+
+                if (backEndString.Contains("50") && backEndString.Contains("81"))
+                {
+
+                    ECULINKStatus = true;
+                    MainF.ShowBoxTex("ECU连接成功！");
+                }
+                else
+                {
+                    ECULINKStatus = false;
+                    MainF.ShowBoxTex("ECU连接失败！");
+                }
+                MainF.EcuIsLinked = ECULINKStatus1;
+
             }
-            else
-            {
-                ECULINKStatus = false;
-                MainF.ShowBoxTex("ECU连接失败！");
-            }
-            MainF.EcuIsLinked = ECULINKStatus1;
 
         }
 

@@ -77,6 +77,7 @@ namespace Dcarengine.UIForm.eol790
             }
             catch (Exception)
             {
+                
             }
         }
 
@@ -89,6 +90,7 @@ namespace Dcarengine.UIForm.eol790
             }
             try
             {
+                EOLFORMWRITE790.is_write = true;
                 String text = this.ami_ComboBox1.Text;
                 String status = StringUtil.hexTo2(resultValue);
                 // String sta = resultValue.Substring(1, 1);
@@ -125,9 +127,6 @@ namespace Dcarengine.UIForm.eol790
 
         }
 
-        private void Retarder_Load_1(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

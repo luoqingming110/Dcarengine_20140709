@@ -32,24 +32,27 @@ namespace Dcarengine.UIForm
             }
             try
             {
+                if (is_write == true)
+                {
+                    GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                    Thread.Sleep(100);
+                    if (mainF.Standindex != null)
+                    {
+                        mainF.Standindex.CleanText();
+                    }
+                    EcuConnectionF.ECULINKStatus = false;
+                    MainF.showBox1.Text = "连接断开";
+                   
+                    if (GobalSerialPort.ResultBackString.IndexOf("NO") > 0)
+                    {
+                        return;
+                    }
+                }
+                else {
 
-                GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
-
-                GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
-
-                //GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
-
-                //Thread.Sleep(1000);
-
-                //MainF.ShowBoxTex("串口已断开");
-
-                //EcuConnectionF.ECULINKStatus1 = false;
-
-                //EcuConnectionF connectecu = new EcuConnectionF();
-
-                //Thread tWorkingThread = new Thread((connectecu.ConnectEucByWait));
-
-                //tWorkingThread.Start();
+                    GobalSerialPort.WriteByMessage(CommonCmd._1081, 0,CommonCmd._1081.Length);
+                    Thread.Sleep(100);
+                }
 
             }
             catch {
@@ -78,6 +81,7 @@ namespace Dcarengine.UIForm
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.mode = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -91,29 +95,29 @@ namespace Dcarengine.UIForm
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1335, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1335, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            //this.toolStripButton1.Image = global::Dcarengine.Properties.Resources._11;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 27);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 25);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.splitContainer1.Panel1.Controls.Add(this.mode);
             this.splitContainer1.Panel1.Controls.Add(this.button7);
             this.splitContainer1.Panel1.Controls.Add(this.button6);
             this.splitContainer1.Panel1.Controls.Add(this.button5);
@@ -122,14 +126,14 @@ namespace Dcarengine.UIForm
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Size = new System.Drawing.Size(1335, 654);
+            this.splitContainer1.Size = new System.Drawing.Size(1335, 656);
             this.splitContainer1.SplitterDistance = 216;
             this.splitContainer1.TabIndex = 4;
             // 
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(27, 504);
+            this.button7.Location = new System.Drawing.Point(27, 563);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(120, 36);
             this.button7.TabIndex = 7;
@@ -140,7 +144,7 @@ namespace Dcarengine.UIForm
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(27, 424);
+            this.button6.Location = new System.Drawing.Point(27, 496);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(120, 36);
             this.button6.TabIndex = 6;
@@ -151,7 +155,7 @@ namespace Dcarengine.UIForm
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(27, 349);
+            this.button5.Location = new System.Drawing.Point(27, 419);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(120, 36);
             this.button5.TabIndex = 5;
@@ -162,7 +166,7 @@ namespace Dcarengine.UIForm
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(27, 274);
+            this.button4.Location = new System.Drawing.Point(27, 350);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 36);
             this.button4.TabIndex = 4;
@@ -173,7 +177,7 @@ namespace Dcarengine.UIForm
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(27, 201);
+            this.button3.Location = new System.Drawing.Point(27, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 36);
             this.button3.TabIndex = 3;
@@ -184,7 +188,7 @@ namespace Dcarengine.UIForm
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(27, 134);
+            this.button2.Location = new System.Drawing.Point(27, 214);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 36);
             this.button2.TabIndex = 2;
@@ -195,7 +199,7 @@ namespace Dcarengine.UIForm
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(27, 68);
+            this.button1.Location = new System.Drawing.Point(27, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 36);
             this.button1.TabIndex = 1;
@@ -207,12 +211,23 @@ namespace Dcarengine.UIForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(23, 12);
+            this.label1.Location = new System.Drawing.Point(23, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "EEPROM 数据写入项";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // mode
+            // 
+            this.mode.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.mode.Location = new System.Drawing.Point(27, 62);
+            this.mode.Name = "mode";
+            this.mode.Size = new System.Drawing.Size(120, 36);
+            this.mode.TabIndex = 8;
+            this.mode.Text = "进入模式";
+            this.mode.UseVisualStyleBackColor = true;
+            this.mode.Click += new System.EventHandler(this.button8_Click);
             // 
             // EEPROMWrite
             // 
@@ -251,5 +266,6 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button mode;
     }
 }

@@ -77,7 +77,7 @@ namespace Dcarengine.Function_Class
 
 
 
-        private static   int i = 5;
+        private static   int i = 3;
 
         /// <summary>
         /// con

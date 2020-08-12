@@ -73,11 +73,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 208);
+            this.ClientSize = new System.Drawing.Size(592, 223);
             this.Controls.Add(this.ami_Label2);
             this.Controls.Add(this.ami_Label1);
             this.Controls.Add(this.progressBar1);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "写入进度";
             this.Text = "写入进度";
             this.ResumeLayout(false);

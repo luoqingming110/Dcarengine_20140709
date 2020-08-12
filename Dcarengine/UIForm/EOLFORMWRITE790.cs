@@ -12,11 +12,17 @@ using Dcarengine.Function_Class;
 using Dcarengine.UIForm.eol790;
 using Dcarengine.refactor;
 using Dcarengine.serialPort;
+using System.Threading;
 
 namespace Dcarengine.UIForm
 {
     public partial class EOLFORMWRITE790 : Form
     {
+
+
+        public static bool is_write  = false; 
+
+
         public EOLFORMWRITE790()
         {
             InitializeComponent();
@@ -41,18 +47,13 @@ namespace Dcarengine.UIForm
         private void button1_Click(object sender, EventArgs e)
         {
 
-           // EolFunction.writeFunction(null,10,"10");
-            
-         
-
+           // EolFunction.writeFunction(null,10,"10");           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
           //  EolFunction.readFunction(null, 10);
-
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -69,7 +70,6 @@ namespace Dcarengine.UIForm
             this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
             allTrip.Dock = DockStyle.Fill;
             allTrip.Show();
-
         }
 
 
@@ -169,30 +169,35 @@ namespace Dcarengine.UIForm
         private void emi_Button_21_Click(object sender, EventArgs e)
         {
             if (EcuConnectionF.ECULINKStatus == false)
-            {
+            {           
                 return;
             }
-            //
-            if (!CommonConstant.is90Mode)
+            try
             {
-                CommonConstant.mode = "1090";
-                Tp_KeyMethodFuntion.Con();
-                GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
-                String backString = GobalSerialPort.ResultBackString;
-                this.emi_Button_21.Text = "退出";
-                CommonConstant.is90Mode = true;
+                if (!CommonConstant.is90Mode)
+                {
+                    CommonConstant.mode = "1090";
+                    Tp_KeyMethodFuntion.Con();
+                    GobalSerialPort.WriteByMessage(CommonCmd._1090, 0, CommonCmd._1090.Length);
+                    String backString = GobalSerialPort.ResultBackString;
+                    this.emi_Button_21.Text = "退出";
+                    CommonConstant.is90Mode = true;
+                }
+                else
+                {
+                    GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                    EcuConnectionF.ECULINKStatus = false;                  
+                    CommonConstant.is90Mode = false;
+                    this.emi_Button_21.Text = "进入模式";
+                    if (GobalSerialPort.ResultBackString.IndexOf("NO") > 0)
+                    {
+                        return;
+                    }
+                }
             }
-            else
-            {
-                GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
-                EcuConnectionF.ECULINKStatus = false;
-                this.emi_Button_21.Text = "进入模式";
-                CommonConstant.is90Mode = false;
-
-            }
-
-
+            catch {}
         }
+
 
         private void ami_Button_29_Click(object sender, EventArgs e)
         {
@@ -217,5 +222,28 @@ namespace Dcarengine.UIForm
             allTrip.Dock = DockStyle.Fill;
             allTrip.Show();
         }
+
+
+
+        private void EOLFORMWRITE790_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出断电?", "操作提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result == DialogResult.OK )
+            {
+                if (EcuConnectionF.ECULINKStatus && CommonConstant.is90Mode && is_write ) { 
+                    GobalSerialPort.WriteByMessage(CommonCmd._1101, 0, CommonCmd._1101.Length);
+                    EcuConnectionF.ECULINKStatus = false;
+                    Thread.Sleep(500);
+                }
+                Dispose();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+
+
     }
 }

@@ -15,39 +15,16 @@ namespace Dcarengine.UIForm
 
         private static log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+        private MainF mainF;
+        public static bool is_write =false;
 
-        public EEPROMWrite()
+
+        public EEPROMWrite(MainF mainF)
         {
 
             InitializeComponent();
-            this.IsMdiContainer = true;
-            if (EcuConnectionF.ECULINKStatus == true)
-            {
-                try
-                {
-                    //mode
-                    log.Info("ECUMODE  1086 " + " ");
-                    CommonConstant.mode = "1086";
-                    Tp_KeyMethodFuntion.Con();
-                    GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                    String backString = GobalSerialPort.ResultBackString;
-                    if (!backString.Contains("86"))
-                    {
-                        GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                        backString = GobalSerialPort.ResultBackString;
-                    }
-                    else {
-
-                        GobalSerialPort.WriteByMessage(CommonCmd.ATST00,0,CommonCmd.ATST00.Length);
-                    }
-
-                }
-                catch {
-                }
-            }
-            else {
-
-            }
+            IsMdiContainer = true;
+            this.mainF = mainF;
         }
 
 
@@ -80,16 +57,18 @@ namespace Dcarengine.UIForm
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
-        {  
-            
-            splitContainer1.Panel2.Controls.Clear();
-            AllOil allTrip = new AllOil();
-            allTrip.TopLevel = false;
-            //allTrip.FormBorderStyle = FormBorderStyle.None;
-            allTrip.Parent = this.splitContainer1.Panel2;
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-            allTrip.Dock = DockStyle.Fill;
-            allTrip.Show();
+        {
+
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                AllOil allTrip = new AllOil();
+                allTrip.TopLevel = false;
+                allTrip.Parent = this.splitContainer1.Panel2;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
 
         }
 
@@ -101,20 +80,15 @@ namespace Dcarengine.UIForm
         private void button2_Click(object sender, EventArgs e)
         {
 
-            splitContainer1.Panel2.Controls.Clear();
-            AllTrip allTrip = new AllTrip();
-
-            allTrip.TopLevel = false;
-
-           // allTrip.FormBorderStyle = FormBorderStyle.None;
-           //  allTrip.Parent = this.splitContainer1.Panel2;
-
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-
-            allTrip.Dock = DockStyle.Fill;
-
-            allTrip.Show();
-
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                AllTrip allTrip = new AllTrip();
+                allTrip.TopLevel = false;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
 
         }
 
@@ -126,35 +100,32 @@ namespace Dcarengine.UIForm
         /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
-
-            splitContainer1.Panel2.Controls.Clear();
-            EngineAllTime allTrip = new EngineAllTime();
-
-            allTrip.TopLevel = false;
-
-            // allTrip.FormBorderStyle = FormBorderStyle.None;
-            //  allTrip.Parent = this.splitContainer1.Panel2;
-
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-
-            allTrip.Dock = DockStyle.Fill;
-
-            allTrip.Show();
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                EngineAllTime allTrip = new EngineAllTime();
+                allTrip.TopLevel = false;
+                splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
 
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                EcuTime allTrip = new EcuTime();
+                allTrip.TopLevel = false;
+                // allTrip.FormBorderStyle = FormBorderStyle.None;
+                //  allTrip.Parent = this.splitContainer1.Panel2;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
 
-            splitContainer1.Panel2.Controls.Clear();
-            EcuTime allTrip = new EcuTime();
-            allTrip.TopLevel = false;
-            // allTrip.FormBorderStyle = FormBorderStyle.None;
-            //  allTrip.Parent = this.splitContainer1.Panel2;
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-
-            allTrip.Dock = DockStyle.Fill;
-            allTrip.Show();
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
         }
 
         /// <summary>
@@ -164,14 +135,17 @@ namespace Dcarengine.UIForm
         /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
-            splitContainer1.Panel2.Controls.Clear();
-            EcuCount allTrip = new EcuCount();
-            allTrip.TopLevel = false;
-            // allTrip.FormBorderStyle = FormBorderStyle.None;
-            //  allTrip.Parent = this.splitContainer1.Panel2;
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-            allTrip.Dock = DockStyle.Fill;
-            allTrip.Show();
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                EcuCount allTrip = new EcuCount();
+                allTrip.TopLevel = false;
+                // allTrip.FormBorderStyle = FormBorderStyle.None;
+                //  allTrip.Parent = this.splitContainer1.Panel2;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
         }
 
         /// <summary>
@@ -181,14 +155,17 @@ namespace Dcarengine.UIForm
         /// <param name="e"></param>
         private void button6_Click(object sender, EventArgs e)
         {
-            splitContainer1.Panel2.Controls.Clear();
-            TripRecord allTrip = new TripRecord();
-            allTrip.TopLevel = false;
-            // allTrip.FormBorderStyle = FormBorderStyle.None;
-            //  allTrip.Parent = this.splitContainer1.Panel2;
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-            allTrip.Dock = DockStyle.Fill;
-            allTrip.Show();
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+                TripRecord allTrip = new TripRecord();
+                allTrip.TopLevel = false;
+                // allTrip.FormBorderStyle = FormBorderStyle.None;
+                //  allTrip.Parent = this.splitContainer1.Panel2;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
         }
 
 
@@ -200,19 +177,59 @@ namespace Dcarengine.UIForm
         /// <param name="e"></param>
         private void button7_Click(object sender, EventArgs e)
         {
+            if (EcuConnectionF.ECULINKStatus && CommonConstant.is86Mode) {
 
-            splitContainer1.Panel2.Controls.Clear();
-            HighCount allTrip = new HighCount();
-            allTrip.TopLevel = false;
-            // allTrip.FormBorderStyle = FormBorderStyle.None;
-            //  allTrip.Parent = this.splitContainer1.Panel2;
-            this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
-            allTrip.Dock = DockStyle.Fill;
-            allTrip.Show();
+                splitContainer1.Panel2.Controls.Clear();
+                HighCount allTrip = new HighCount();
+                allTrip.TopLevel = false;
+                this.splitContainer1.Panel2.Controls.Add(allTrip); //add the fs form to the panel2
+                allTrip.Dock = DockStyle.Fill;
+                allTrip.Show();
+            }
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (EcuConnectionF.ECULINKStatus == false)
+            {
+                MessageBox.Show("请连接!");
+                return;
+            }
+            if (!CommonConstant.is86Mode)
+            {
+                try
+                {
+                    log.Info("ECUMODE  1086 " + " ");
+                    CommonConstant.mode = "1086";
+                    Tp_KeyMethodFuntion.Con();
+                    GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
+                    String backString = GobalSerialPort.ResultBackString;
+                    if (!backString.Contains("86"))
+                    {
+                        GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
+                        backString = GobalSerialPort.ResultBackString;
+                    }
+                    else
+                    {
+                        GobalSerialPort.WriteByMessage(CommonCmd.ATST00, 0, CommonCmd.ATST00.Length);
+                    }
+                }
+                catch
+                {
+                }
+                mode.Text = "退出";
+                CommonConstant.is86Mode = true;
+            }
+            else
+            {
+                GobalSerialPort.WriteByMessage(CommonCmd._1081, 0, CommonCmd._1081.Length);
+                this.mode.Text = "进入模式";
+                CommonConstant.is86Mode = false;
+            }
 
 
+
+        }
     }
 }

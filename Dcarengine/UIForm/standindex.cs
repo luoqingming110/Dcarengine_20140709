@@ -44,148 +44,121 @@ namespace Dcarengine.UIForm
         /// <param name="e"></param>
         private void standindex_Load(object sender, EventArgs e)
         {
-            Thread tWorkingThread = null;
-            try
-            {
-
-                tWorkingThread = new Thread(isConnet);
-                tWorkingThread.Start();
-
-            }
-            catch (Exception)
-            {
-
-                tWorkingThread.Abort();
-            }
-
+            
         }
 
 
         /// <summary>
         /// 
         /// </summary>
-        public void isConnet()
-        {
+        public void connetback() {
 
-            while (true)
-            {
-
-                if (EcuConnectionF.ECULINKStatus == true && EcuConnectionF.is_main_load)
-                {
-                    break;
-                }
-            }
+            Thread tWorkingThread = null;
             try
             {
-                byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
-                GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
-                String result213 = GobalSerialPort.ResultBackString;
-                String[] resultA = result213.Split('\r');
-                result213 = resultA[1].Replace(" ", "");
-
-                byte[] _210214 = StringToSendBytes.bytesToSend("210214\n");
-                GobalSerialPort.WriteByMessage(_210214, 0, _210214.Length);
-                String result214 = GobalSerialPort.ResultBackString;
-                String[] result14A = result214.Split('\r');
-                result214 = result14A[1].Replace(" ", "");
-
-                byte[] _210215 = StringToSendBytes.bytesToSend("210215\n");
-                GobalSerialPort.WriteByMessage(_210215, 0, _210215.Length);
-                String result215 = GobalSerialPort.ResultBackString;
-                String[] result15A = result215.Split('\r');
-                result215 = result15A[1].Replace(" ", "");
-
-                byte[] _210241 = StringToSendBytes.bytesToSend("210241\n");
-                GobalSerialPort.WriteByMessage(_210241, 0, _210241.Length);
-                String result210241 = GobalSerialPort.ResultBackString;
-                String[] result210241A = result210241.Split('\r');
-                result210241 = result210241A[1].Replace(" ", "");
-
-                byte[] _210240 = StringToSendBytes.bytesToSend("210240\n");
-                GobalSerialPort.WriteByMessage(_210240, 0, _210240.Length);
-                String result210240 = GobalSerialPort.ResultBackString;
-                String[] result210240A = result210240.Split('\r');
-                result210240 = result210240A[1].Replace(" ", "");
-
-                //展示数据格式
-                show(result213, result214, result215, result210241, result210240);
-
-                //mode 1086
-                //log.Info("ECUMODE  1086 " + " ");
-                //CommonConstant.mode = "1086";
-                //Tp_KeyMethodFuntion.Con();
-                //GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                //String backString = GobalSerialPort.ResultBackString;
-                //if (!backString.Contains("86"))
-                //{
-                //    GobalSerialPort.WriteByMessage(CommonCmd._1086, 0, CommonCmd._1086.Length);
-                //    backString = GobalSerialPort.ResultBackString;
-                //}
-                //else
-                //{
-                //    GobalSerialPort.WriteByMessage(CommonCmd.ATST00, 0, CommonCmd.ATST00.Length);
-                //    //write 
-                //    String tl718code = result214.Substring(8 + 89 * 2, 12);
-                //    String time = result214.Substring(8 + 96 * 2, 8);
-                //    result214.Replace(tl718code, "0000" + CommonConstant.TL718CODE);
-                //    result214.Replace(time, DateUtil.getDate());
-                //    String address = "3b0214" + result214.Substring(8, 200);
-                //    byte[] cmdSend = StringToSendBytes.bytesToSend(address + "\n");
-                //    GobalSerialPort.WriteByMessage(cmdSend, 0, cmdSend.Length);
-                //    String result = GobalSerialPort.ResultBackString;
-                //    //if () {
-                //    //}
-                //    GobalSerialPort.WriteByMessage(CommonCmd.ATST0F, 0, CommonCmd.ATST0F.Length);
-                //    GobalSerialPort.WriteByMessage(CommonCmd._1081,0,CommonCmd._1081.Length);
-                //}
-
-
-            }
-            catch (IndexOutOfRangeException)
-            {
-
-                byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
-                GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
-                String result213 = GobalSerialPort.ResultBackString;
-                String[] resultA = result213.Split('\r');
-                result213 = resultA[1].Replace(" ", "");
-
-                byte[] _210214 = StringToSendBytes.bytesToSend("210214\n");
-                GobalSerialPort.WriteByMessage(_210214, 0, _210214.Length);
-                String result214 = GobalSerialPort.ResultBackString;
-                String[] result14A = result214.Split('\r');
-                result214 = result14A[1].Replace(" ", "");
-
-                byte[] _210215 = StringToSendBytes.bytesToSend("210215\n");
-                GobalSerialPort.WriteByMessage(_210215, 0, _210215.Length);
-                String result215 = GobalSerialPort.ResultBackString;
-                String[] result15A = result215.Split('\r');
-                result215 = result15A[1].Replace(" ", "");
-
-                byte[] _210241 = StringToSendBytes.bytesToSend("210241\n");
-                GobalSerialPort.WriteByMessage(_210241, 0, _210241.Length);
-                String result210241 = GobalSerialPort.ResultBackString;
-                String[] result210241A = result210241.Split('\r');
-                result210241 = result210241A[1].Replace(" ", "");
-
-                byte[] _210240 = StringToSendBytes.bytesToSend("210240\n");
-                GobalSerialPort.WriteByMessage(_210240, 0, _210240.Length);
-                String result210240 = GobalSerialPort.ResultBackString;
-                String[] result210240A = result210240.Split('\r');
-                result210240 = result210240A[1].Replace(" ", "");
-
-                show(result213, result214, result215, result210241, result210240);
+                tWorkingThread = new Thread(isConnet);
+                tWorkingThread.Start();
             }
             catch (Exception)
             {
-
+                tWorkingThread.Abort();
             }
-            finally
-            {
+        }
 
+        /// <summary>
+        /// 连接代码
+        /// </summary>
+        public void isConnet()
+        {
+                   
+                while (true)
+                {
 
-                // return null;
-            }
+                    if (EcuConnectionF.ECULINKStatus == true )
+                    {
+                        break;
+                    }
+                }
+                try
+                {
+                    byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
+                    GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
+                    String result213 = GobalSerialPort.ResultBackString;
+                    String[] resultA = result213.Split('\r');
+                    result213 = resultA[1].Replace(" ", "");
+
+                    byte[] _210214 = StringToSendBytes.bytesToSend("210214\n");
+                    GobalSerialPort.WriteByMessage(_210214, 0, _210214.Length);
+                    String result214 = GobalSerialPort.ResultBackString;
+                    String[] result14A = result214.Split('\r');
+                    result214 = result14A[1].Replace(" ", "");
+
+                    byte[] _210215 = StringToSendBytes.bytesToSend("210215\n");
+                    GobalSerialPort.WriteByMessage(_210215, 0, _210215.Length);
+                    String result215 = GobalSerialPort.ResultBackString;
+                    String[] result15A = result215.Split('\r');
+                    result215 = result15A[1].Replace(" ", "");
+
+                    byte[] _210241 = StringToSendBytes.bytesToSend("210241\n");
+                    GobalSerialPort.WriteByMessage(_210241, 0, _210241.Length);
+                    String result210241 = GobalSerialPort.ResultBackString;
+                    String[] result210241A = result210241.Split('\r');
+                    result210241 = result210241A[1].Replace(" ", "");
+
+                    byte[] _210240 = StringToSendBytes.bytesToSend("210240\n");
+                    GobalSerialPort.WriteByMessage(_210240, 0, _210240.Length);
+                    String result210240 = GobalSerialPort.ResultBackString;
+                    String[] result210240A = result210240.Split('\r');
+                    result210240 = result210240A[1].Replace(" ", "");
+                    //展示数据格式
+                    show(result213, result214, result215, result210241, result210240);
+
+                    MainF.EcuIsLinked = true;
+                     
+                }
+                catch (IndexOutOfRangeException)
+                {
+
+                    byte[] _210213 = StringToSendBytes.bytesToSend("210213\n");
+                    GobalSerialPort.WriteByMessage(_210213, 0, _210213.Length);
+                    String result213 = GobalSerialPort.ResultBackString;
+                    String[] resultA = result213.Split('\r');
+                    result213 = resultA[1].Replace(" ", "");
+
+                    byte[] _210214 = StringToSendBytes.bytesToSend("210214\n");
+                    GobalSerialPort.WriteByMessage(_210214, 0, _210214.Length);
+                    String result214 = GobalSerialPort.ResultBackString;
+                    String[] result14A = result214.Split('\r');
+                    result214 = result14A[1].Replace(" ", "");
+
+                    byte[] _210215 = StringToSendBytes.bytesToSend("210215\n");
+                    GobalSerialPort.WriteByMessage(_210215, 0, _210215.Length);
+                    String result215 = GobalSerialPort.ResultBackString;
+                    String[] result15A = result215.Split('\r');
+                    result215 = result15A[1].Replace(" ", "");
+
+                    byte[] _210241 = StringToSendBytes.bytesToSend("210241\n");
+                    GobalSerialPort.WriteByMessage(_210241, 0, _210241.Length);
+                    String result210241 = GobalSerialPort.ResultBackString;
+                    String[] result210241A = result210241.Split('\r');
+                    result210241 = result210241A[1].Replace(" ", "");
+
+                    byte[] _210240 = StringToSendBytes.bytesToSend("210240\n");
+                    GobalSerialPort.WriteByMessage(_210240, 0, _210240.Length);
+                    String result210240 = GobalSerialPort.ResultBackString;
+                    String[] result210240A = result210240.Split('\r');
+                    result210240 = result210240A[1].Replace(" ", "");
+
+                    show(result213, result214, result215, result210241, result210240);
+                }
+                catch (Exception)
+                {
+                }
+                finally
+                {
+                    // return null;
+                }
+            
         }
 
 
@@ -197,7 +170,6 @@ namespace Dcarengine.UIForm
         /// <param name="result215"></param>
         public void show(String result213, String result214, String result215, String result02141, String result210240)
         {
-
             try
             {
                 String xinhao = result213.Substring(8 + 35 * 2, 28);
@@ -217,6 +189,9 @@ namespace Dcarengine.UIForm
                 String lingjianhaoTex = StringUtil.StringToASCII(lingjianhao);
                 this.Invoke((EventHandler)delegate { this.textBox3.Text = lingjianhaoTex; });
                 log.Info(lingjianhaoTex);
+
+                String Lid = result214.Substring(8 + 21 * 2, 30);
+                CommonConstant.lid = StringUtil.StringToASCII(Lid);
 
                 ///dis
                 String Dis号 = result213.Substring(8 + 85 * 2, 20);
@@ -301,6 +276,30 @@ namespace Dcarengine.UIForm
             {
 
             }
+        }
+
+        /// <summary>
+        /// 清除
+        /// </summary>
+        public void CleanText()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox14.Text = "";
+            textBox15.Text = "";
+            textBox16.Text = "";
+            textBox17.Text = "";
         }
 
 

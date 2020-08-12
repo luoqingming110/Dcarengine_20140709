@@ -66,28 +66,32 @@ namespace Dcarengine.refactor
         public static byte[]  _1086Mode = { 244, 239, 116, 147};
         public static byte[]  _1087Mode = { 244, 239, 116, 147 };
 
+        public static String dic_code;
 
-        public static String dic_code; 
+        //lid文本
+        public static String lid;
 
+        //tl718
+        public static String TL718; 
 
+        //tl718
         public static List<String> TL718List = new List<string>();
-            
 
-       
-
+        /// <summary>
+        /// 加锁变量
+        /// </summary>
+        public static object sign = new object();
 
         /// <summary>
         /// 初始化是否90模式
         /// </summary>
         public static String  EolWrireEndText = "写完毕 请断电";
+
         public static Boolean is90Mode = false;
 
-
-
-
+        public static Boolean is86Mode = false;
 
         // public static 
-
         static CommonConstant(){
 
             EcuVersionMap.Add("P1287740", "ECU13AdRess740");
@@ -101,6 +105,8 @@ namespace Dcarengine.refactor
             EcuVersionMap.Add("P1287780", "ECU13AdRess780");
 
             EcuVersionMap.Add("P1287790", "ECU13AdRess790");
+
+            EcuVersionMap.Add("P1287800", "ECU13AdRess790");
 
             ///sendMapMode
             ///

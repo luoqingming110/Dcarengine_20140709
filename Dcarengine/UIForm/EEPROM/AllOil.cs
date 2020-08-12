@@ -106,6 +106,7 @@ namespace Dcarengine.UIForm.EEPROM
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            EEPROMWrite.is_write = true;
             String writeValue = this.textBox1.Text.Trim();
             int count = Convert.ToInt32(writeValue) * 2 ;
             String all = Convert.ToString(count, 16).PadLeft(8,'0');
@@ -118,6 +119,8 @@ namespace Dcarengine.UIForm.EEPROM
                 this.textBox1.Text = "ok";
                 readValue();
             }
+
+
         }
 
     }

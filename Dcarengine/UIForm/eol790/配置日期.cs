@@ -70,6 +70,7 @@ namespace Dcarengine.UIForm.eol790
 
             try
             {
+                EOLFORMWRITE790.is_write = true;
                 String text = this.emi_RichTextBox2.Text;
                 if (StringUtil.IsStringEmpty(text))
                 {

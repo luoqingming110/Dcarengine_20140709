@@ -182,6 +182,7 @@
     <Compile Include="Function_Class\JsonOp.cs" />
     <Compile Include="Function_Class\SingleDtcFunction.cs" />
     <Compile Include="Function_Class\standClass.cs" />
+    <Compile Include="Function_Class\VinUtil .cs" />
     <Compile Include="interfaces\DtcReadInterface.cs" />
     <Compile Include="interfaces\IdReadInterface.cs" />
     <Compile Include="interfaces\ITripInterface.cs" />

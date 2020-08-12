@@ -231,5 +231,20 @@ namespace Dcarengine.UIForm
             allTrip.Dock = DockStyle.Fill;
             allTrip.Show();
         }
+
+        private void EOLFORMWRITE_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("确认退出吗?", "操作提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result == DialogResult.OK)
+            {
+                Dispose();
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

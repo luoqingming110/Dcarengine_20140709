@@ -64,13 +64,14 @@ namespace Dcarengine.UIForm
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             showBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            groupBox1 = new System.Windows.Forms.GroupBox();
             EcuVeriosn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -208,6 +209,7 @@ namespace Dcarengine.UIForm
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
+            this.toolStripButton6,
             this.toolStripButton3,
             this.toolStripButton4,
             this.toolStripButton8,
@@ -234,6 +236,15 @@ namespace Dcarengine.UIForm
             this.toolStripButton2.Size = new System.Drawing.Size(96, 42);
             this.toolStripButton2.Text = "断开连接";
             this.toolStripButton2.Click += new System.EventHandler(this.ColsePort_Click);
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(56, 42);
+            this.toolStripButton6.Text = "刷新";
+            this.toolStripButton6.ToolTipText = "刷新";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripButton3
             // 
@@ -324,8 +335,6 @@ namespace Dcarengine.UIForm
             this.Back = ((System.Drawing.Image)(resources.GetObject("$this.Back")));
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1246, 698);
-            this.ControlBoxActive = System.Drawing.Color.Empty;
-            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(showBox1);
@@ -377,7 +386,8 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eOLWRITEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dEBUGToolStripMenuItem;
-        public static  System.Windows.Forms.Label EcuVeriosn;
-        public static  System.Windows.Forms.TextBox showBox1;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        public static System.Windows.Forms.Label EcuVeriosn;
+        public static System.Windows.Forms.TextBox showBox1;
     } 
 }

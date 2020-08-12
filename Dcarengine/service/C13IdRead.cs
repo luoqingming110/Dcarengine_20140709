@@ -321,20 +321,27 @@ namespace Dcarengine.service
         /// </summary>
         public static void workRun() {
 
+            try
+            {
 
-            CommonCmd.SendATE1();
+                CommonCmd.SendATE1();
 
-            //GobalSerialPort.GobalSerialPortEnventChange();
+                //GobalSerialPort.GobalSerialPortEnventChange();
 
-            ToSendEcu13IdF();
+                ToSendEcu13IdF();
 
-            CmdWrite();
+                CmdWrite();
 
-            WorkOutToDb();
+                WorkOutToDb();
 
-           // MainF.ShowBoxTex("读取ID完毕");
+                // MainF.ShowBoxTex("读取ID完毕");
 
-            DbDataToExcel();
+                DbDataToExcel();
+            }catch
+            {
+
+                log.Info("id");
+            }
         }
 
 

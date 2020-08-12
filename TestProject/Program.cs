@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dcarengine.Function_Class;
+using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
@@ -23,12 +24,26 @@ namespace TestProject
 
         static AutoResetEvent mThreadMessage = new AutoResetEvent(false);
 
-     //  private static String  backString="";
 
         static void Main(string[] args)
         {
+            int k = 2;
+            while ( k >0) {
 
-             long  stat_time =  (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
+                k--;
+                Thread.Sleep(100);
+                if (true) {
+                    Thread.Sleep(100);
+                    Console.WriteLine("-------ss");
+                    break;
+                }               
+            }
+
+           Console.WriteLine (  VinUtil.isValidVin("LZFF25P43HD561207") );
+
+
+
+            long  stat_time =  (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
 
             Thread.Sleep(1000);
 

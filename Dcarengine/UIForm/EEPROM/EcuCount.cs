@@ -76,6 +76,7 @@ namespace Dcarengine.UIForm.EEPROM
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            EEPROMWrite.is_write = true;
             String writeValue = this.textBox1.Text.Trim();
             int count = Convert.ToInt32(writeValue);
             String all = Convert.ToString(count, 16).PadLeft(8, '0');

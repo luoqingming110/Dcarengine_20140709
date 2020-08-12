@@ -67,6 +67,7 @@ namespace Dcarengine.UIForm
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.ami_Button_29 = new EASkins.Ami_Button_2();
             this.emi_Button_21 = new EASkins.Emi_Button_2();
             this.ami_Button_28 = new EASkins.Ami_Button_2();
             this.ami_Button_27 = new EASkins.Ami_Button_2();
@@ -77,7 +78,6 @@ namespace Dcarengine.UIForm
             this.ami_Button_23 = new EASkins.Ami_Button_2();
             this.ami_Button_22 = new EASkins.Ami_Button_2();
             this.ami_Button_21 = new EASkins.Ami_Button_2();
-            this.ami_Button_29 = new EASkins.Ami_Button_2();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -111,6 +111,20 @@ namespace Dcarengine.UIForm
             this.splitContainer1.Size = new System.Drawing.Size(1373, 773);
             this.splitContainer1.SplitterDistance = 222;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // ami_Button_29
+            // 
+            this.ami_Button_29.BackColor = System.Drawing.Color.Transparent;
+            this.ami_Button_29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.ami_Button_29.Image = null;
+            this.ami_Button_29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ami_Button_29.Location = new System.Drawing.Point(38, 687);
+            this.ami_Button_29.Name = "ami_Button_29";
+            this.ami_Button_29.Size = new System.Drawing.Size(143, 50);
+            this.ami_Button_29.TabIndex = 11;
+            this.ami_Button_29.Text = "VIN";
+            this.ami_Button_29.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.ami_Button_29.Click += new System.EventHandler(this.ami_Button_29_Click);
             // 
             // emi_Button_21
             // 
@@ -249,20 +263,6 @@ namespace Dcarengine.UIForm
             this.ami_Button_21.TextAlignment = System.Drawing.StringAlignment.Center;
             this.ami_Button_21.Click += new System.EventHandler(this.ami_Button_21_Click);
             // 
-            // ami_Button_29
-            // 
-            this.ami_Button_29.BackColor = System.Drawing.Color.Transparent;
-            this.ami_Button_29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.ami_Button_29.Image = null;
-            this.ami_Button_29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ami_Button_29.Location = new System.Drawing.Point(38, 687);
-            this.ami_Button_29.Name = "ami_Button_29";
-            this.ami_Button_29.Size = new System.Drawing.Size(143, 50);
-            this.ami_Button_29.TabIndex = 11;
-            this.ami_Button_29.Text = "VIN";
-            this.ami_Button_29.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.ami_Button_29.Click += new System.EventHandler(this.ami_Button_29_Click);
-            // 
             // EOLFORMWRITE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -272,6 +272,7 @@ namespace Dcarengine.UIForm
             this.Controls.Add(this.splitContainer1);
             this.Name = "EOLFORMWRITE";
             this.Text = "EolWriteForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EOLFORMWRITE_FormClosing);
             this.Load += new System.EventHandler(this.EOLFORMWRITE_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
