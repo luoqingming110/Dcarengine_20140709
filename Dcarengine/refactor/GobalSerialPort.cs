@@ -183,12 +183,12 @@ namespace Dcarengine.serialPort
         {
             try
             {
-                
+
 
                 //long startTime = System.DateTime.Now.Millisecond;
                 //事件有数据会 会锁住数据                      
                 A: string backString = "";
-                B:  ;
+                B:;
                 long startTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
 
                 String em327endStr = "\r\r>";
@@ -200,7 +200,7 @@ namespace Dcarengine.serialPort
                     ResultBackString = (Encoding.Default.GetString(ReDatas));
                     backString = backString + ResultBackString;
                     long workTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
-                    if (workTime - startTime > 5000)
+                    if (workTime - startTime > 10000)
                     {
                         //backString = "";
                         //ClearSendAndRecive();
@@ -208,23 +208,26 @@ namespace Dcarengine.serialPort
                         break;
                     }
                 }
-                if (backString.IndexOf("NO")>0 && !(backString.IndexOf("1101")>0))
+
+                long noDataStartTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
+                if (backString.IndexOf("NO") > 0 && !(backString.IndexOf("1101") > 0))
                 {
                     try
                     {
-                        log.Info("NO DATA:" + backString);
-                        ResultBackString = "";
-                        String[] lastedString = backString.Split('\r');
-                        if (lastedString[0].IndexOf("1101")>0) {
-                            return;
-                        }
-                        Thread.Sleep(2000);                   
-                        byte[] lastedStringByte = StringToSendBytes.bytesToSend( lastedString[0]+"\n");
-                        WriteByThreadWait(lastedStringByte,0,lastedStringByte.Length);
-                        return; 
-                        // goto A;
+                        //log.Info("NO DATA:" + backString);
+                        //ResultBackString = "";
+                        //String[] lastedString = backString.Split('\r');
+                        //if (lastedString[0].IndexOf("1101") > 0)
+                        //{
+                        //    return;
+                        //}
+                        //Thread.Sleep(2000);
+                        //long noDataWorkTime = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
+                        //byte[] lastedStringByte = StringToSendBytes.bytesToSend(lastedString[0] + "\n");
+                        //WriteByThreadWait(lastedStringByte, 0, lastedStringByte.Length);
+                        //return;
                     }
-                    catch (Exception ) { }
+                    catch (Exception) { }
                 }
 
 
@@ -236,7 +239,7 @@ namespace Dcarengine.serialPort
 
 
                 CommonAutoRest.MEvent.Set();
-               // Interlocked.Decrement(ref CommonAutoRest.AutoResetCount);
+                // Interlocked.Decrement(ref CommonAutoRest.AutoResetCount);
                 log.Info("freed  write  message  to buffer ");
                 ClearSendAndRecive();
 
@@ -278,8 +281,8 @@ namespace Dcarengine.serialPort
                 gobalserialPort.Write(buffer, offset, count);
                 //进入线程等待
                 CommonAutoRest.MEvent.WaitOne();
-               // log.Info("locked  write  message  to buffer");
-               // Interlocked.Increment(ref CommonAutoRest.AutoResetCount);                
+                // log.Info("locked  write  message  to buffer");
+                // Interlocked.Increment(ref CommonAutoRest.AutoResetCount);                
                 //++;
 
             }

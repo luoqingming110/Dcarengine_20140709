@@ -13,6 +13,14 @@ namespace Dcarengine.refactor
     /// </summary>
     class CommonConstant
     {
+
+
+        /// <summary>
+        /// 芯片选着
+        /// </summary>
+        public int xinpinSelect  = 0;
+
+
         /// <summary>
         /// 串口连接
         /// </summary>

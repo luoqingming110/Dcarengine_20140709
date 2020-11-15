@@ -30,6 +30,7 @@ E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UI
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.EngineAllTime.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.HighCount.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.EEPROM.TripRecord.resources
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.ELM327.测量.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.CompressionTest.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.CylinderShut.resources
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.UIForm.enginetest.DiagnosticSpeed.resources
@@ -72,3 +73,4 @@ E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.cs
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csproj.CoreCompileInputs.cache
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.exe
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.pdb
+E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csprojResolveAssemblyReference.cache

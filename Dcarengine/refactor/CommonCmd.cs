@@ -16,6 +16,10 @@ namespace Dcarengine.refactor
         /// </summary>
         public static byte[] ATE1;
 
+        public static byte[] ATAL;
+
+        public static byte[] ATL1;
+
         public static byte[] ClearCmd;
 
         public static byte[] _21f0;
@@ -209,6 +213,10 @@ namespace Dcarengine.refactor
             ATE0 = StringToSendBytes.bytesToSend("ATE0\n");
 
             ATE1 = StringToSendBytes.bytesToSend("ATE1\n");
+
+            ATAL = StringToSendBytes.bytesToSend("ATAL\n");
+
+            ATL1 = StringToSendBytes.bytesToSend("ATL1\n");
 
             ClearCmd = StringToSendBytes.bytesToSend("2CF004\n");
 

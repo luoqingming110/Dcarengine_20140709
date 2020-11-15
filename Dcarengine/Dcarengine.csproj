@@ -293,6 +293,12 @@
     <Compile Include="UIForm\EEPROM\TripRecord.Designer.cs">
       <DependentUpon>TripRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForm\ELM327\测量.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForm\ELM327\测量.designer.cs">
+      <DependentUpon>测量.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForm\enginetest\CompressionTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -565,6 +571,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\EEPROM\TripRecord.resx">
       <DependentUpon>TripRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForm\ELM327\测量.resx">
+      <DependentUpon>测量.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForm\enginetest\CompressionTest.resx">
       <DependentUpon>CompressionTest.cs</DependentUpon>

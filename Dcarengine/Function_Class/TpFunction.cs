@@ -587,10 +587,10 @@ namespace Dcarengine.Function_Class
                 #region  Trip数据表填充
 
                 MyMeans.DropTrip();//清除原先数据
-
                 MyMeans.InsertTrip("Trip Recorder Variable", "", "", "", "", "", "", "", "", "");
 
-                MyMeans.InsertTrip("General", "", "记录值[h][min][s]", "记录值[s]", "描述", "", "", "", "", "");
+
+                MyMeans.InsertTrip("General", "", "", "", "描述", "", "", "", "", "");
                 MyMeans.InsertTrip("", "VehDa_lSum  [m]", Genera2[0], Genera2[0], "发动机行驶总里程", "", "", "", "", "");
                 MyMeans.InsertTrip("", "VehDa_tiEngOn", VehDa_tiEngOn_COLCK + "h " + VehDa_tiEngOn_MIN + "min " + VehDa_tiEngOn_SECOND + "s", Genera2[1], "发动机累积运转时间", "", "", "", "", "");
                 MyMeans.InsertTrip("", "VehDa_tiECUOn", VehDa_tiECUOn_COLCK + "h " + VehDa_tiECUOn_MIN + "min " + VehDa_tiECUOn_SECOND + "s", Genera2[2], "发动机ECU运行时间", "", "", "", "", "");
