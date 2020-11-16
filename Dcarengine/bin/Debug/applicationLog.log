@@ -6692,3 +6692,4 @@ startIndex 不能大于字符串长度。
 [2020-08-30 19:23:48,263]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
 [2020-08-30 19:24:36,611]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
 [2020-11-15 17:58:13,407]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 22:18:17,971]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
