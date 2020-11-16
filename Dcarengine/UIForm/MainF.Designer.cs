@@ -58,9 +58,6 @@ namespace Dcarengine.UIForm
             this.行车记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.参数测量ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eEPROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eOLWRITEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dEBUGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -71,7 +68,7 @@ namespace Dcarengine.UIForm
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             showBox1 = new System.Windows.Forms.TextBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             EcuVeriosn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -86,10 +83,7 @@ namespace Dcarengine.UIForm
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.设备选定ToolStripMenuItem,
             this.信息检测ToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.eEPROMToolStripMenuItem,
-            this.eOLWRITEToolStripMenuItem,
-            this.dEBUGToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -179,27 +173,6 @@ namespace Dcarengine.UIForm
             this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 35);
             this.toolStripMenuItem1.Text = "主动诊断测试";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // eEPROMToolStripMenuItem
-            // 
-            this.eEPROMToolStripMenuItem.Name = "eEPROMToolStripMenuItem";
-            this.eEPROMToolStripMenuItem.Size = new System.Drawing.Size(192, 35);
-            this.eEPROMToolStripMenuItem.Text = "EEPRom存储器";
-            this.eEPROMToolStripMenuItem.Click += new System.EventHandler(this.eEPROMToolStripMenuItem_Click);
-            // 
-            // eOLWRITEToolStripMenuItem
-            // 
-            this.eOLWRITEToolStripMenuItem.Name = "eOLWRITEToolStripMenuItem";
-            this.eOLWRITEToolStripMenuItem.Size = new System.Drawing.Size(119, 35);
-            this.eOLWRITEToolStripMenuItem.Text = "EOL刷写";
-            this.eOLWRITEToolStripMenuItem.Click += new System.EventHandler(this.eOLWRITEToolStripMenuItem_Click);
-            // 
-            // dEBUGToolStripMenuItem
-            // 
-            this.dEBUGToolStripMenuItem.Name = "dEBUGToolStripMenuItem";
-            this.dEBUGToolStripMenuItem.Size = new System.Drawing.Size(108, 35);
-            this.dEBUGToolStripMenuItem.Text = "DEBUG";
-            this.dEBUGToolStripMenuItem.Click += new System.EventHandler(this.dEBUGToolStripMenuItem_Click_1);
             // 
             // toolStrip1
             // 
@@ -291,7 +264,7 @@ namespace Dcarengine.UIForm
             showBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             showBox1.Location = new System.Drawing.Point(0, 559);
-            showBox1.Multiline = true;
+             showBox1.Multiline = true;
             showBox1.Name = "showBox1";
             showBox1.Size = new System.Drawing.Size(1246, 86);
             showBox1.TabIndex = 4;
@@ -335,6 +308,8 @@ namespace Dcarengine.UIForm
             this.Back = ((System.Drawing.Image)(resources.GetObject("$this.Back")));
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(1246, 698);
+            this.ControlBoxActive = System.Drawing.Color.Empty;
+            this.ControlBoxDeactive = System.Drawing.Color.Empty;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(showBox1);
@@ -383,9 +358,6 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripMenuItem eEPROMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eOLWRITEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dEBUGToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         public static System.Windows.Forms.Label EcuVeriosn;
         public static System.Windows.Forms.TextBox showBox1;
