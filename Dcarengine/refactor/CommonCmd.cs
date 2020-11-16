@@ -44,6 +44,10 @@ namespace Dcarengine.refactor
 
         public static byte[] ATST0F;
 
+        public static byte[] AT_2;
+
+        public static byte[] ATRD;
+
         /// <summary>
         /// 返回78  数据
         /// </summary>
@@ -209,6 +213,10 @@ namespace Dcarengine.refactor
             trip169 = StringToSendBytes.bytesToSend("210169\n");
             trip16c = StringToSendBytes.bytesToSend("21016c\n");
             ///
+
+            AT_2 = StringToSendBytes.bytesToSend("AT@2\n");
+
+            ATRD = StringToSendBytes.bytesToSend("ATRD\n");
 
             ATE0 = StringToSendBytes.bytesToSend("ATE0\n");
 
