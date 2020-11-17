@@ -178,11 +178,11 @@ namespace Dcarengine.UIForm
         private void measure_Click(object sender, EventArgs e)
         {
 
-            //测量 Cmeaure = new 测量();
-            //Cmeaure.Show();
+            测量 Cmeaure = new 测量();
+            Cmeaure.Show();
 
-            ELM327.测量 C = new ELM327.测量();
-            C.Show();
+            //ELM327.测量 C = new ELM327.测量();
+            //C.Show();
         }
 
         private void 行程记录_Click(object sender, EventArgs e)

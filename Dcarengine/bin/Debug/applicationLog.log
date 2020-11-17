@@ -8570,3 +8570,104 @@ startIndex 不能大于字符串长度。
 [2020-11-16 23:04:38,746]  16 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
 [2020-11-16 23:04:38,760]  16 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
 [2020-11-16 23:04:39,308]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:42:07,439]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:42:24,256]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:42:50,702]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:51:44,800]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:51:44,879]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:51:44,910]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:51:48,113]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:51:48,144]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:51:48,144]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:51:53,172]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:51:53,186]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:51:53,203]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:51:54,939]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer  ;breakTime:10014
+[2020-11-16 23:51:54,939]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer  ATE1OK
+
+>ATE1OK
+
+>ATE1OK
+
+> ;workTime:10014 count:0
+[2020-11-16 23:51:54,955]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-16 23:51:54,955]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-16 23:51:55,455]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:52:01,799]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:52:01,830]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:52:01,846]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:52:02,846]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:52:02,861]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:52:02,877]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:52:06,112]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-16 23:57:31,272]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:31,304]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:31,319]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:32,960]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:32,975]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:32,991]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:33,991]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:34,007]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:34,022]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:35,038]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:35,069]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:35,116]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:38,960]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:38,976]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:39,022]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:40,163]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:40,179]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:40,554]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:57:44,991]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-16 23:57:45,085]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-16 23:57:45,101]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-16 23:58:57,959]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-17 00:01:05,407]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:01:05,438]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:01:05,454]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:01:07,891]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:01:07,891]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:01:07,907]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:01:08,907]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:01:08,922]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:01:08,938]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:01:11,922]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-17 00:06:54,712]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:06:54,744]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:06:54,759]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:07:00,228]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-17 00:09:02,089]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:09:02,136]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:09:02,152]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:09:03,589]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:09:03,620]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:09:03,620]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:09:04,636]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:09:04,652]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:09:04,667]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:09:05,683]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM3,port is open: True
+[2020-11-17 00:09:05,698]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-17 00:09:05,730]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-17 00:09:06,870]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-17 00:14:33,252]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
