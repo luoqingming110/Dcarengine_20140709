@@ -57,7 +57,6 @@ namespace Dcarengine.UIForm
             this.故障清除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.行车记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.参数测量ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -82,8 +81,7 @@ namespace Dcarengine.UIForm
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.设备选定ToolStripMenuItem,
-            this.信息检测ToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.信息检测ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(4, 28);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -166,13 +164,6 @@ namespace Dcarengine.UIForm
             this.参数测量ToolStripMenuItem.Size = new System.Drawing.Size(215, 36);
             this.参数测量ToolStripMenuItem.Text = "参数测量";
             this.参数测量ToolStripMenuItem.Click += new System.EventHandler(this.参数测量ToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 35);
-            this.toolStripMenuItem1.Text = "主动诊断测试";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStrip1
             // 
@@ -261,10 +252,10 @@ namespace Dcarengine.UIForm
             // 
             // showBox1
             // 
-            showBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+           showBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             showBox1.Location = new System.Drawing.Point(0, 559);
-             showBox1.Multiline = true;
+            showBox1.Multiline = true;
             showBox1.Name = "showBox1";
             showBox1.Size = new System.Drawing.Size(1246, 86);
             showBox1.TabIndex = 4;
@@ -319,7 +310,7 @@ namespace Dcarengine.UIForm
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainF";
-            this.Text = "上菲红发动机";
+            this.Text = "上菲红发动机诊断工具";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainF_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -346,7 +337,6 @@ namespace Dcarengine.UIForm
         private System.Windows.Forms.ToolStripMenuItem 故障清除ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 行车记录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 参数测量ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;

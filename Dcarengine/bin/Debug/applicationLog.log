@@ -8947,3 +8947,4 @@ startIndex 不能大于字符串长度。
 [2020-11-16 23:36:42,704]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
 [2020-11-16 23:36:42,720]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
 [2020-11-16 23:36:44,829]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-17 23:19:24,954]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
