@@ -253,14 +253,14 @@ namespace Dcarengine.Function_Class
             backEndString = GetSerialPortBackData();
             GobalSerialPort.WriteByMessage(CommonCmd.ATRD, 0, CommonCmd.ATRD.Length); //2
             backEndString = GetSerialPortBackData();
-            if (backEndString.Length != 12)
+            if (backEndString.Contains("12"))
             {
                 Thread.Sleep(2500);
                 GobalSerialPort.WriteByMessage(CommonCmd.AT_2, 0, CommonCmd.AT_2.Length);             ////////读取718芯片
                 backEndString = GetSerialPortBackData();
                 GobalSerialPort.WriteByMessage(CommonCmd.ATRD, 0, CommonCmd.ATRD.Length); //2
                 backEndString = GetSerialPortBackData();
-                if (backEndString.Length!=12) {
+                if (backEndString.Contains("12")) {
 
                     ECULINKStatus = false;
                     MainF.ShowBoxTex("ECU连接失败！");
