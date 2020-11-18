@@ -226,24 +226,24 @@ namespace Dcarengine.Function_Class
             try
             {
                 //718 code
-                //GobalSerialPort.WriteByMessage(_AT2S, 0, _AT2S.Length);
-                //backEndString = GetSerialPortBackData();
-                //CommonConstant.TL718 = backEndString.Split('\r')[1];
-                //bool flag = false;
-                //foreach (string num in CommonConstant.TL718List)
-                //{
-                //    if (backEndString.Contains(num))
-                //    {
-                //        flag = true;
-                //        break;
-                //    }
-                //}
-                //if (!flag)
-                //{
-                //    MainF.ShowBoxTex("设备不匹配!");
-                //    return;
-                //    // return;
-                //}
+                GobalSerialPort.WriteByMessage(_AT2S, 0, _AT2S.Length);
+                backEndString = GetSerialPortBackData();
+                CommonConstant.TL718 = backEndString.Split('\r')[1];
+                bool flag = false;
+                foreach (string num in CommonConstant.TL718List)
+                {
+                    if (backEndString.Contains(num))
+                    {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (!flag)
+                {
+                    MainF.ShowBoxTex("设备不匹配!");
+                    return;
+                    // return;
+                }
             }
             catch { }
 
@@ -265,10 +265,10 @@ namespace Dcarengine.Function_Class
             }
 
             backEndString = GetSerialPortBackData();
-            //if (backEndString.Contains("OK"))
-            //{
-            //    GobalSerialPort.WriteByMessage(ATSW19, 0, ATSW19.Length);      //22222/           ////333333
-            //}
+            if (backEndString.Contains("OK"))
+            {
+                GobalSerialPort.WriteByMessage(ATSW19, 0, ATSW19.Length);      //22222/           ////333333
+            }
             backEndString = GetSerialPortBackData();
             if (backEndString.Contains("OK"))
             {
