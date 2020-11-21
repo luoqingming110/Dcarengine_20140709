@@ -73,4 +73,3 @@ E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.cs
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csproj.CoreCompileInputs.cache
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.exe
 E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.pdb
-E:\vsproject\Dcarengine_20140709 - 副本\Dcarengine\obj\x86\Debug\Dcarengine.csprojResolveAssemblyReference.cache
