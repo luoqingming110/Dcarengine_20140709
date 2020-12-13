@@ -249,19 +249,29 @@ namespace Dcarengine.Function_Class
 
             // GobalSerialPort.WriteByMessage(ATZ, 0, ATZ.Length);             ////////读取718芯片
 
-            GobalSerialPort.WriteByMessage(CommonCmd.AT_2, 0, CommonCmd.AT_2.Length);             ////////读取718芯片
+            GobalSerialPort.WriteByMessage(CommonCmd.AT_2, 0, CommonCmd.AT_2.Length);             ////////读取
             backEndString = GetSerialPortBackData();
+            if (!backEndString.Contains("A_B_C_D_E_EF"))
+            {
+                Thread.Sleep(300);
+                GobalSerialPort.WriteByMessage(CommonCmd.AT_2, 0, CommonCmd.AT_2.Length);
+                backEndString = GetSerialPortBackData();
+                if (!backEndString.Contains("A_B_C_D_E_EF")) {
+
+                    ECULINKStatus = false;
+                    MainF.ShowBoxTex("ECU连接失败！");
+                    return;
+                }
+            }
+            //718芯片
             GobalSerialPort.WriteByMessage(CommonCmd.ATRD, 0, CommonCmd.ATRD.Length); //2
-            backEndString = GetSerialPortBackData();
+            backEndString = GetSerialPortBackData();          
             if (!backEndString.Contains("12"))
             {
-                Thread.Sleep(2500);
-                GobalSerialPort.WriteByMessage(CommonCmd.AT_2, 0, CommonCmd.AT_2.Length);             ////////读取718芯片
-                backEndString = GetSerialPortBackData();
+                Thread.Sleep(500);
                 GobalSerialPort.WriteByMessage(CommonCmd.ATRD, 0, CommonCmd.ATRD.Length); //2
                 backEndString = GetSerialPortBackData();
                 if (!backEndString.Contains("12")) {
-
                     ECULINKStatus = false;
                     MainF.ShowBoxTex("ECU连接失败！");
                     return;

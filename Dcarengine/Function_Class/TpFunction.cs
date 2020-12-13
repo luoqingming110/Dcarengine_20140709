@@ -123,6 +123,9 @@ namespace Dcarengine.Function_Class
                     MainF.ShowBoxTex("未能读取ECU版本号");
                     return;
                 }
+                if(EcuVersionF.EcuVsion == "P1287800") {
+                    EcuVersionF.EcuVsion = "P1287790";
+                }
                 GetCmdFormDb(EcuVersionF.EcuVsion);
                 SendData();
                 Work_OutoneStep();

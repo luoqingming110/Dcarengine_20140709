@@ -9103,3 +9103,726 @@ startIndex 不能大于字符串长度。
 [2020-11-21 21:17:48,826]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
 [2020-11-21 21:17:48,844]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
 [2020-11-21 21:17:52,832]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:13:03,223]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:20:50,122]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:20:50,172]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:20:50,191]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:20:50,219]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:0 count:0
+[2020-11-22 21:20:50,230]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,230]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:20:50,254]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:2 count:0
+[2020-11-22 21:20:50,264]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,264]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:20:50,296]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:20:50,307]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,307]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-22 21:20:50,331]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:2 count:0
+[2020-11-22 21:20:50,342]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,342]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-22 21:20:50,366]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK> ;workTime:2 count:0
+[2020-11-22 21:20:50,376]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,376]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-22 21:20:50,401]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:3 count:0
+[2020-11-22 21:20:50,410]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,410]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-22 21:20:50,435]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:2 count:0
+[2020-11-22 21:20:50,445]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:50,445]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-22 21:20:51,017]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1081BUS INIT: OK50 81 > ;workTime:553 count:0
+[2020-11-22 21:20:51,027]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:51,028]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-22 21:20:51,049]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-22 21:20:51,250]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:188 count:0
+[2020-11-22 21:20:51,260]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:51,275]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287800
+[2020-11-22 21:20:51,284]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210213
+
+[2020-11-22 21:20:51,582]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021361 02 13 20 16 08 08 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 45 33 36 38 31 47 2A 50 30 30 30 20 20 56 37 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 32 34 33 34 30 39 20 20 20 20 20 > ;workTime:284 count:0
+[2020-11-22 21:20:51,590]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:51,590]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210214
+
+[2020-11-22 21:20:51,905]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021461 02 14 47 99 D5 51 E6 B7 40 43 94 9A F4 EC BB A6 B7 60 20 20 20 20 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 35 38 30 31 34 37 39 33 31 34 30 30 30 30 30 30 30 30 30 30 30 30 2D 46 32 43 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:295 count:0
+[2020-11-22 21:20:51,914]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:51,914]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210215
+
+[2020-11-22 21:20:52,225]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021561 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:293 count:0
+[2020-11-22 21:20:52,237]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210241
+
+[2020-11-22 21:20:52,237]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:52,463]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 61 02 41 4D 63 6D 74 67 63 30 35 2E 78 61 36 20 20 20 20 > ;workTime:60 count:0
+[2020-11-22 21:20:52,473]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:52,473]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210240
+
+[2020-11-22 21:20:52,704]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 32 35 50 34 33 48 44 35 36 31 32 30 37 > ;workTime:209 count:0
+[2020-11-22 21:20:52,712]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:20:52,717]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 2CE3681G*P000 
+[2020-11-22 21:20:52,754]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:20:52,763]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:20:52,772]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:21:07,565]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:21:49,204]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:21:49,253]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:21:49,273]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:21:49,289]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:1 count:0
+[2020-11-22 21:21:49,299]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,299]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:21:49,331]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:2 count:0
+[2020-11-22 21:21:49,341]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,341]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:21:49,367]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:21:49,377]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,377]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-22 21:21:49,399]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:3 count:0
+[2020-11-22 21:21:49,408]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,408]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-22 21:21:49,431]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK> ;workTime:2 count:0
+[2020-11-22 21:21:49,441]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,441]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-22 21:21:49,465]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:2 count:0
+[2020-11-22 21:21:49,474]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,474]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-22 21:21:49,500]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:3 count:0
+[2020-11-22 21:21:49,511]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,511]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-22 21:21:49,697]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 > ;workTime:160 count:0
+[2020-11-22 21:21:49,707]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:49,708]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-22 21:21:49,728]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-22 21:21:49,930]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:189 count:0
+[2020-11-22 21:21:49,941]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:50,296]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287800
+[2020-11-22 21:21:50,307]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210213
+
+[2020-11-22 21:21:50,602]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021361 02 13 20 16 08 08 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 45 33 36 38 31 47 2A 50 30 30 30 20 20 56 37 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 32 34 33 34 30 39 20 20 20 20 20 > ;workTime:280 count:0
+[2020-11-22 21:21:50,612]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:50,612]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210214
+
+[2020-11-22 21:21:50,926]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021461 02 14 47 99 D5 51 E6 B7 40 43 94 9A F4 EC BB A6 B7 60 20 20 20 20 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 35 38 30 31 34 37 39 33 31 34 30 30 30 30 30 30 30 30 30 30 30 30 2D 46 32 43 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:294 count:0
+[2020-11-22 21:21:50,935]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:50,935]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210215
+
+[2020-11-22 21:21:51,245]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021561 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:291 count:0
+[2020-11-22 21:21:51,256]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:51,256]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210241
+
+[2020-11-22 21:21:51,483]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 4D 63 6D 74 67 63 30 35 2E 78 61 36 20 20 20 20 > ;workTime:207 count:0
+[2020-11-22 21:21:51,504]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:51,504]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210240
+
+[2020-11-22 21:21:51,744]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 32 35 50 34 33 48 44 35 36 31 32 30 37 > ;workTime:221 count:0
+[2020-11-22 21:21:51,755]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:51,759]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 2CE3681G*P000 
+[2020-11-22 21:21:51,773]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:21:51,783]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:21:51,793]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:21:51,802]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-22 21:21:51,811]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
+[2020-11-22 21:21:51,832]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-22 21:21:56,218]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:21:56,238]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:21:56,247]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:56,250]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:21:56,271]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:21:56,279]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:56,499]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09C828
+
+[2020-11-22 21:21:56,734]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09C82863 00 00 00 00 E8 37 00 00 B1 09 00 00 50 0D 00 00 1B 09 00 00 93 0E 00 00 00 00 00 00 65 27 00 00 1B 09 00 00 47 0D 00 00 > ;workTime:222 count:0
+[2020-11-22 21:21:56,744]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:56,747]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1004
+
+[2020-11-22 21:21:56,959]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A100463 D2 76 0F 02 > ;workTime:187 count:0
+[2020-11-22 21:21:56,969]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:56,969]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 235069E804
+
+[2020-11-22 21:21:57,168]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 235069E80463 00 00 00 00 > ;workTime:179 count:0
+[2020-11-22 21:21:57,177]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:57,177]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1404
+
+[2020-11-22 21:21:57,376]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A140463 06 F8 1F 00 > ;workTime:178 count:0
+[2020-11-22 21:21:57,392]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C1404
+
+[2020-11-22 21:21:57,392]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:57,590]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 63 17 00 00 00 > ;workTime:62 count:0
+[2020-11-22 21:21:57,600]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:57,600]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C3004
+
+[2020-11-22 21:21:57,807]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C300463 18 D8 CB 02 > ;workTime:180 count:0
+[2020-11-22 21:21:57,817]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:57,818]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09743c
+
+[2020-11-22 21:21:58,081]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09743c63 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 28 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 > ;workTime:235 count:0
+[2020-11-22 21:21:58,092]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:58,092]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C07F490
+
+[2020-11-22 21:21:58,446]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C07F49063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3F 0C 00 00 40 DA 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:329 count:0
+[2020-11-22 21:21:58,457]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:58,457]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C085490
+
+[2020-11-22 21:21:58,814]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08549063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 89 00 00 00 01 00 00 00 00 00 00 00 D8 08 00 00 F5 01 00 00 6B 00 00 00 06 00 00 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:332 count:0
+[2020-11-22 21:21:58,824]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:58,824]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C08E490
+
+[2020-11-22 21:21:59,175]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08E49063 5D 42 1B 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 0B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 0B 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 00 0E 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:332 count:0
+[2020-11-22 21:21:59,186]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:21:59,188]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [Work_OutoneStep] -- tp work once is error :startIndex 不能大于字符串长度。
+参数名: startIndex
+[2020-11-22 21:21:59,210]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [WorkOut_TimerAndCounter] -- counter and timer error :未将对象引用设置到对象的实例。
+[2020-11-22 21:21:59,220]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [_1Dimensional_Maps] -- 1Dimensional_Map  error 未能找到任何可识别的数字。
+[2020-11-22 21:21:59,231]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [_2Dimensional_Maps] -- 2Dimensional error is  :未能找到任何可识别的数字。
+[2020-11-22 21:21:59,515]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [ShowTripRecord] -- tp insert data to db is error: 输入字符串的格式不正确。
+[2020-11-22 21:22:38,809]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:22:38,821]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:22:38,829]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:38,839]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09C828
+
+[2020-11-22 21:22:39,075]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09C82863 00 00 00 00 E8 37 00 00 B1 09 00 00 50 0D 00 00 1B 09 00 00 93 0E 00 00 00 00 00 00 65 27 00 00 1B 09 00 00 47 0D 00 00 > ;workTime:223 count:0
+[2020-11-22 21:22:39,085]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:39,085]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1004
+
+[2020-11-22 21:22:39,288]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A100463 D2 76 0F 02 > ;workTime:184 count:0
+[2020-11-22 21:22:39,297]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 235069E804
+
+[2020-11-22 21:22:39,297]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:39,488]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 63 00 00 00 00 > ;workTime:60 count:0
+[2020-11-22 21:22:39,496]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:39,496]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1404
+
+[2020-11-22 21:22:39,709]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A140463 30 F8 1F 00 > ;workTime:189 count:0
+[2020-11-22 21:22:39,719]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:39,719]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C1404
+
+[2020-11-22 21:22:39,919]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C140463 17 00 00 00 > ;workTime:182 count:0
+[2020-11-22 21:22:39,926]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:39,926]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C3004
+
+[2020-11-22 21:22:40,128]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C300463 18 D8 CB 02 > ;workTime:184 count:0
+[2020-11-22 21:22:40,137]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:40,137]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09743c
+
+[2020-11-22 21:22:40,394]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09743c63 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 28 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 > ;workTime:239 count:0
+[2020-11-22 21:22:40,404]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:40,404]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C07F490
+
+[2020-11-22 21:22:40,754]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C07F49063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3F 0C 00 00 6A DA 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:330 count:0
+[2020-11-22 21:22:40,762]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:40,762]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C085490
+
+[2020-11-22 21:22:41,114]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08549063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 89 00 00 00 01 00 00 00 00 00 00 00 D8 08 00 00 F5 01 00 00 6B 00 00 00 06 00 00 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:333 count:0
+[2020-11-22 21:22:41,122]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:41,122]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C08E490
+
+[2020-11-22 21:22:41,475]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08E49063 88 42 1B 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 0B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 0B 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 00 0E 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:336 count:0
+[2020-11-22 21:22:41,484]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:22:41,484]  14 -- INFO  -- Dcarengine.Function_Class.TpRecord [Work_OutoneStep] -- tp work once is error :startIndex 不能大于字符串长度。
+参数名: startIndex
+[2020-11-22 21:22:41,499]  14 -- INFO  -- Dcarengine.Function_Class.TpRecord [WorkOut_TimerAndCounter] -- counter and timer error :未将对象引用设置到对象的实例。
+[2020-11-22 21:22:41,506]  14 -- INFO  -- Dcarengine.Function_Class.TpRecord [_1Dimensional_Maps] -- 1Dimensional_Map  error 未能找到任何可识别的数字。
+[2020-11-22 21:22:41,513]  14 -- INFO  -- Dcarengine.Function_Class.TpRecord [_2Dimensional_Maps] -- 2Dimensional error is  :未能找到任何可识别的数字。
+[2020-11-22 21:22:41,519]  14 -- INFO  -- Dcarengine.Function_Class.TpRecord [ShowTripRecord] -- tp insert data to db is error: 输入字符串的格式不正确。
+[2020-11-22 21:22:57,442]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:23:09,438]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:23:09,494]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:23:09,516]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:23:09,531]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:0 count:0
+[2020-11-22 21:23:09,541]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:09,541]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:23:09,584]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:0 count:0
+[2020-11-22 21:23:09,593]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:09,593]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:23:09,629]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:6 count:0
+[2020-11-22 21:23:09,640]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:09,640]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-22 21:23:09,677]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:3 count:0
+[2020-11-22 21:23:09,692]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-22 21:23:09,699]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,051]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:23:13,068]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:23:13,094]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:23:13,109]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:23:13,124]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,124]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-22 21:23:13,157]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:2 count:0
+[2020-11-22 21:23:13,171]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,171]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:23:13,207]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:0 count:0
+[2020-11-22 21:23:13,218]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,218]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-22 21:23:13,245]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:2 count:0
+[2020-11-22 21:23:13,258]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,258]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:23:13,291]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:23:13,302]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,303]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-22 21:23:13,326]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-22 21:23:13,531]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:190 count:0
+[2020-11-22 21:23:13,546]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,847]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:23:13,863]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:23:13,875]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:13,877]  6 -- INFO  -- Dcarengine.Function_Class._13IdFDataWork [InsertAcessF_7] -- this Id work is error,id is :AT@2A_B_C_D_E_EF>
+字符串的末尾有其他无法分析的字符。
+[2020-11-22 21:23:14,097]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :
+[2020-11-22 21:23:19,138]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:23:31,629]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:23:31,680]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:23:31,699]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:23:31,714]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:1 count:0
+[2020-11-22 21:23:31,724]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,724]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:23:31,756]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:2 count:0
+[2020-11-22 21:23:31,766]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,766]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:23:31,793]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:23:31,803]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,803]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-22 21:23:31,826]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:2 count:0
+[2020-11-22 21:23:31,835]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,835]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-22 21:23:31,928]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK> ;workTime:70 count:0
+[2020-11-22 21:23:31,939]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,939]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-22 21:23:31,967]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:2 count:0
+[2020-11-22 21:23:31,976]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:31,976]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-22 21:23:32,001]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:2 count:0
+[2020-11-22 21:23:32,011]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:32,011]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-22 21:23:32,197]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 > ;workTime:163 count:0
+[2020-11-22 21:23:32,207]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:32,207]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-22 21:23:32,229]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-22 21:23:32,430]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:188 count:0
+[2020-11-22 21:23:32,439]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:32,710]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287800
+[2020-11-22 21:23:32,720]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210213
+
+[2020-11-22 21:23:33,024]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021361 02 13 20 16 08 08 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 45 33 36 38 31 47 2A 50 30 30 30 20 20 56 37 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 32 34 33 34 30 39 20 20 20 20 20 > ;workTime:289 count:0
+[2020-11-22 21:23:33,034]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:33,034]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210214
+
+[2020-11-22 21:23:33,343]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021461 02 14 47 99 D5 51 E6 B7 40 43 94 9A F4 EC BB A6 B7 60 20 20 20 20 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 35 38 30 31 34 37 39 33 31 34 30 30 30 30 30 30 30 30 30 30 30 30 2D 46 32 43 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:290 count:0
+[2020-11-22 21:23:33,353]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210215
+
+[2020-11-22 21:23:33,353]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:33,663]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 61 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:59 count:0
+[2020-11-22 21:23:33,673]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:33,673]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210241
+
+[2020-11-22 21:23:33,900]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 4D 63 6D 74 67 63 30 35 2E 78 61 36 20 20 20 20 > ;workTime:204 count:0
+[2020-11-22 21:23:33,910]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:33,910]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210240
+
+[2020-11-22 21:23:34,142]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 32 35 50 34 33 48 44 35 36 31 32 30 37 > ;workTime:203 count:0
+[2020-11-22 21:23:34,153]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:34,157]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 2CE3681G*P000 
+[2020-11-22 21:23:34,179]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:23:34,192]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:23:34,204]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:23:34,219]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-22 21:23:34,229]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
+[2020-11-22 21:23:40,134]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:23:40,235]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:82 count:0
+[2020-11-22 21:23:40,245]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:40,246]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:23:40,269]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:23:40,279]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:40,481]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09C828
+
+[2020-11-22 21:23:40,712]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09C82863 00 00 00 00 E8 37 00 00 B1 09 00 00 50 0D 00 00 1B 09 00 00 93 0E 00 00 00 00 00 00 65 27 00 00 1B 09 00 00 47 0D 00 00 > ;workTime:217 count:0
+[2020-11-22 21:23:40,724]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:40,726]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1004
+
+[2020-11-22 21:23:40,937]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A100463 D2 76 0F 02 > ;workTime:187 count:0
+[2020-11-22 21:23:40,950]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 235069E804
+
+[2020-11-22 21:23:40,950]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:41,146]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 63 00 00 00 00 > ;workTime:58 count:0
+[2020-11-22 21:23:41,157]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:41,157]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1404
+
+[2020-11-22 21:23:41,367]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A140463 6E F8 1F 00 > ;workTime:181 count:0
+[2020-11-22 21:23:41,377]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:41,377]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C1404
+
+[2020-11-22 21:23:41,596]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C140463 17 00 00 00 > ;workTime:182 count:0
+[2020-11-22 21:23:41,605]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:41,605]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C3004
+
+[2020-11-22 21:23:41,809]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C300463 18 D8 CB 02 > ;workTime:182 count:0
+[2020-11-22 21:23:41,817]  14 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:41,818]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09743c
+
+[2020-11-22 21:23:42,080]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09743c63 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 28 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 > ;workTime:240 count:0
+[2020-11-22 21:23:42,089]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:42,089]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C07F490
+
+[2020-11-22 21:23:42,433]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C07F49063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3F 0C 00 00 A8 DA 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:325 count:0
+[2020-11-22 21:23:42,443]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:42,443]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C085490
+
+[2020-11-22 21:23:42,793]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08549063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 89 00 00 00 01 00 00 00 00 00 00 00 D8 08 00 00 F5 01 00 00 6B 00 00 00 06 00 00 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:326 count:0
+[2020-11-22 21:23:42,804]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:42,804]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C08E490
+
+[2020-11-22 21:23:43,153]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08E49063 C5 42 1B 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 0B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 0B 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 00 0E 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:326 count:0
+[2020-11-22 21:23:43,161]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:23:43,163]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [Work_OutoneStep] -- tp work once is error :startIndex 不能大于字符串长度。
+参数名: startIndex
+[2020-11-22 21:23:43,179]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [WorkOut_TimerAndCounter] -- counter and timer error :未将对象引用设置到对象的实例。
+[2020-11-22 21:23:43,190]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [_1Dimensional_Maps] -- 1Dimensional_Map  error 未能找到任何可识别的数字。
+[2020-11-22 21:23:43,201]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [_2Dimensional_Maps] -- 2Dimensional error is  :未能找到任何可识别的数字。
+[2020-11-22 21:23:43,213]  6 -- INFO  -- Dcarengine.Function_Class.TpRecord [ShowTripRecord] -- tp insert data to db is error: 输入字符串的格式不正确。
+[2020-11-22 21:24:04,047]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:24:04,060]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:24:04,069]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:04,071]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:24:04,088]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:24:04,098]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:04,098]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1800FF00
+
+[2020-11-22 21:24:04,325]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1800FF0058 0A 94 D0 E0 A2 F0 E0 9F 40 E0 83 C0 E0 9D 50 E0 94 B0 E0 86 30 E0 86 40 E0 86 90 E0 86 00 E0 > ;workTime:209 count:0
+[2020-11-22 21:24:04,335]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:04,421]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1714D0
+
+[2020-11-22 21:24:04,683]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1714D057 01 94 D0 E0 01 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 00 00 FF FF 4E 20 FF FF 00 00 FF FF FF 46 FF FF 00 02 FF FF 0C F1 FF FF 00 18 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 00 00 FF FF 4E 20 FF FF 00 00 FF FF FF 46 FF FF 00 02 FF FF 0C F1 FF FF 00 18 > ;workTime:250 count:0
+[2020-11-22 21:24:04,692]  3 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:05,080]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1722F0
+
+[2020-11-22 21:24:05,333]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1722F057 01 A2 F0 E0 01 FF FF 02 0F 76 D2 FF FF 01 FF FF 00 FF FF 01 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 01 FF FF 00 FF FF 02 0F 76 D2 FF FF 01 FF FF 00 FF FF 01 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 01 FF FF 00 > ;workTime:242 count:0
+[2020-11-22 21:24:05,342]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:05,404]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 171F40
+
+[2020-11-22 21:24:05,665]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 171F4057 01 9F 40 E0 01 FF FF 02 0F 76 D2 FF FF 0D AC FF FF 5E 19 FF FF 5E 19 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 4E 20 FF FF 02 0F 76 D2 FF FF 0D AC FF FF 5E 19 FF FF 5E 19 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 4E 20 > ;workTime:252 count:0
+[2020-11-22 21:24:05,674]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:05,719]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1703C0
+
+[2020-11-22 21:24:05,969]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1703C057 01 83 C0 E0 01 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 4E 20 FF FF 00 FF FF 00 FF FF 00 00 FF FF 0F A0 FF FF 09 1B FF FF 61 A7 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 4E 20 FF FF 00 FF FF 00 FF FF 00 00 FF FF 0F A0 FF FF 09 1B FF FF 61 A7 > ;workTime:240 count:0
+[2020-11-22 21:24:05,977]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:06,059]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 171D50
+
+[2020-11-22 21:24:06,312]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 171D5057 01 9D 50 E0 01 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 28 FF FF 0B D7 FF FF 61 A7 FF FF 0F A0 FF FF 61 A7 FF FF 03 C8 FF FF 4A A6 FF FF 02 0F 76 D2 FF FF 00 00 FF FF 28 FF FF 0B D7 FF FF 61 A7 FF FF 0F A0 FF FF 61 A7 FF FF 03 C8 FF FF 4A A6 > ;workTime:243 count:0
+[2020-11-22 21:24:06,321]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:06,377]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1714B0
+
+[2020-11-22 21:24:06,632]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1714B057 01 94 B0 E0 01 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 > ;workTime:240 count:0
+[2020-11-22 21:24:06,642]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:06,688]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 170630
+
+[2020-11-22 21:24:06,943]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 17063057 01 86 30 E0 01 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 > ;workTime:245 count:0
+[2020-11-22 21:24:06,951]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:06,987]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 170640
+
+[2020-11-22 21:24:07,243]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 17064057 01 86 40 E0 01 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 > ;workTime:247 count:0
+[2020-11-22 21:24:07,251]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:07,287]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 170690
+
+[2020-11-22 21:24:07,541]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 17069057 01 86 90 E0 01 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 > ;workTime:245 count:0
+[2020-11-22 21:24:07,549]  17 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:07,602]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 170600
+
+[2020-11-22 21:24:07,865]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 17060057 01 86 00 E0 01 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 FF FF 02 0F 76 D2 FF FF 09 B1 FF FF 00 00 FF FF 0F A0 FF FF 00 00 FF FF 00 00 FF FF 00 00 FF FF 1D 4C FF FF 00 00 > ;workTime:253 count:0
+[2020-11-22 21:24:07,873]  20 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:17,601]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-22 21:24:25,256]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-22 21:24:25,303]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-22 21:24:25,321]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:24:25,336]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:1 count:0
+[2020-11-22 21:24:25,346]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,346]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-22 21:24:25,378]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:2 count:0
+[2020-11-22 21:24:25,388]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,388]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-22 21:24:25,413]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:5 count:0
+[2020-11-22 21:24:25,423]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,424]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-22 21:24:25,446]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:2 count:0
+[2020-11-22 21:24:25,457]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,457]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-22 21:24:25,479]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK> ;workTime:2 count:0
+[2020-11-22 21:24:25,489]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,489]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-22 21:24:25,522]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:0 count:0
+[2020-11-22 21:24:25,533]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,533]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-22 21:24:25,579]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:1 count:0
+[2020-11-22 21:24:25,588]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,588]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-22 21:24:25,777]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 > ;workTime:161 count:0
+[2020-11-22 21:24:25,788]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:25,789]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-22 21:24:25,810]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-22 21:24:26,010]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:189 count:0
+[2020-11-22 21:24:26,021]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:26,350]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287800
+[2020-11-22 21:24:26,359]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210213
+
+[2020-11-22 21:24:26,662]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021361 02 13 20 16 08 08 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 45 33 36 38 31 47 2A 50 30 30 30 20 20 56 37 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 32 34 33 34 30 39 20 20 20 20 20 > ;workTime:288 count:0
+[2020-11-22 21:24:26,673]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:26,673]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210214
+
+[2020-11-22 21:24:26,986]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021461 02 14 47 99 D5 51 E6 B7 40 43 94 9A F4 EC BB A6 B7 60 20 20 20 20 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 35 38 30 31 34 37 39 33 31 34 30 30 30 30 30 30 30 30 30 30 30 30 2D 46 32 43 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:293 count:0
+[2020-11-22 21:24:26,997]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:26,997]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210215
+
+[2020-11-22 21:24:27,325]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021561 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:300 count:0
+[2020-11-22 21:24:27,334]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:27,334]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210241
+
+[2020-11-22 21:24:27,562]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 4D 63 6D 74 67 63 30 35 2E 78 61 36 20 20 20 20 > ;workTime:206 count:0
+[2020-11-22 21:24:27,572]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:27,572]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210240
+
+[2020-11-22 21:24:27,820]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 32 35 50 34 33 48 44 35 36 31 32 30 37 > ;workTime:216 count:0
+[2020-11-22 21:24:27,830]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:27,834]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 2CE3681G*P000 
+[2020-11-22 21:24:27,849]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:24:27,857]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:24:27,867]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-22 21:24:27,876]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-22 21:24:27,885]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
+[2020-11-22 21:24:27,903]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-22 21:24:30,589]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:24:30,605]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:24:30,613]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:30,616]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:24:30,639]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:24:30,649]  12 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:30,845]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09C828
+
+[2020-11-22 21:24:31,082]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09C82863 00 00 00 00 E8 37 00 00 B1 09 00 00 50 0D 00 00 1B 09 00 00 93 0E 00 00 00 00 00 00 65 27 00 00 1B 09 00 00 47 0D 00 00 > ;workTime:223 count:0
+[2020-11-22 21:24:31,091]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:31,094]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1004
+
+[2020-11-22 21:24:31,298]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A100463 D2 76 0F 02 > ;workTime:182 count:0
+[2020-11-22 21:24:31,309]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:31,309]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 235069E804
+
+[2020-11-22 21:24:31,519]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 235069E80463 00 00 00 00 > ;workTime:188 count:0
+[2020-11-22 21:24:31,531]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:31,531]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1404
+
+[2020-11-22 21:24:31,736]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A140463 A0 F8 1F 00 > ;workTime:179 count:0
+[2020-11-22 21:24:31,745]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:31,745]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C1404
+
+[2020-11-22 21:24:31,966]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C140463 17 00 00 00 > ;workTime:185 count:0
+[2020-11-22 21:24:31,975]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:31,975]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C3004
+
+[2020-11-22 21:24:32,188]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C300463 18 D8 CB 02 > ;workTime:190 count:0
+[2020-11-22 21:24:32,195]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:32,196]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09743c
+
+[2020-11-22 21:24:32,454]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09743c63 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 28 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 > ;workTime:238 count:0
+[2020-11-22 21:24:32,463]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:32,463]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C07F490
+
+[2020-11-22 21:24:32,814]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C07F49063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3F 0C 00 00 DA DA 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:329 count:0
+[2020-11-22 21:24:32,824]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:32,824]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C085490
+
+[2020-11-22 21:24:33,182]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08549063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 89 00 00 00 01 00 00 00 00 00 00 00 D8 08 00 00 F5 01 00 00 6B 00 00 00 06 00 00 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:332 count:0
+[2020-11-22 21:24:33,191]  15 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:24:33,191]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C08E490
+
+[2020-11-22 21:24:33,542]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08E49063 F8 42 1B 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 0B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 0B 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 00 0E 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:331 count:0
+[2020-11-22 21:24:33,551]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:31,349]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-22 21:25:31,362]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:2 count:0
+[2020-11-22 21:25:31,373]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:31,382]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09C828
+
+[2020-11-22 21:25:31,613]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09C82863 00 00 00 00 E8 37 00 00 B1 09 00 00 50 0D 00 00 1B 09 00 00 93 0E 00 00 00 00 00 00 65 27 00 00 1B 09 00 00 47 0D 00 00 > ;workTime:216 count:0
+[2020-11-22 21:25:31,623]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:31,623]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1004
+
+[2020-11-22 21:25:31,826]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A100463 D2 76 0F 02 > ;workTime:180 count:0
+[2020-11-22 21:25:31,834]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:31,834]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 235069E804
+
+[2020-11-22 21:25:32,039]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 235069E80463 00 00 00 00 > ;workTime:185 count:0
+[2020-11-22 21:25:32,046]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:32,046]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506A1404
+
+[2020-11-22 21:25:32,247]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506A140463 DD F8 1F 00 > ;workTime:183 count:0
+[2020-11-22 21:25:32,257]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:32,257]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C1404
+
+[2020-11-22 21:25:32,456]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C140463 17 00 00 00 > ;workTime:180 count:0
+[2020-11-22 21:25:32,463]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:32,463]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 23506C3004
+
+[2020-11-22 21:25:32,669]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 23506C300463 18 D8 CB 02 > ;workTime:185 count:0
+[2020-11-22 21:25:32,676]  8 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:32,676]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C09743c
+
+[2020-11-22 21:25:32,932]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C09743c63 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 28 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 > ;workTime:236 count:0
+[2020-11-22 21:25:32,939]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:32,939]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C07F490
+
+[2020-11-22 21:25:33,284]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C07F49063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3F 0C 00 00 16 DB 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:328 count:0
+[2020-11-22 21:25:33,291]  19 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:33,291]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C085490
+
+[2020-11-22 21:25:33,644]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08549063 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 89 00 00 00 01 00 00 00 00 00 00 00 D8 08 00 00 F5 01 00 00 6B 00 00 00 06 00 00 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:333 count:0
+[2020-11-22 21:25:33,651]  21 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:33,651]  4 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 234C08E490
+
+[2020-11-22 21:25:34,004]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 234C08E49063 34 43 1B 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 0B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 0B 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 00 00 0E 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 > ;workTime:335 count:0
+[2020-11-22 21:25:34,012]  18 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-22 21:25:41,498]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
+[2020-11-24 23:30:36,064]  1 -- INFO  -- Dcarengine.UIForm.MainF [Connect_Click] -- com is ：COM5,port is open: True
+[2020-11-24 23:30:36,205]  1 -- INFO  -- Dcarengine.UIForm.MainF [ThreadEcuConnet] -- thread name is 1
+[2020-11-24 23:30:36,221]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATE1
+
+[2020-11-24 23:30:36,252]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATE1OK> ;workTime:0 count:0
+[2020-11-24 23:30:36,268]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,268]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATAL
+
+[2020-11-24 23:30:36,283]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATALOK> ;workTime:0 count:0
+[2020-11-24 23:30:36,299]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,299]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : AT@2
+
+[2020-11-24 23:30:36,314]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer AT@2A_B_C_D_E_EF> ;workTime:0 count:0
+[2020-11-24 23:30:36,330]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,330]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATRD
+
+[2020-11-24 23:30:36,346]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATRD12 > ;workTime:0 count:0
+[2020-11-24 23:30:36,361]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,361]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSP5
+
+[2020-11-24 23:30:36,377]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSP5OK> ;workTime:0 count:0
+[2020-11-24 23:30:36,393]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,393]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST0F
+
+[2020-11-24 23:30:36,408]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST0FOK> ;workTime:0 count:0
+[2020-11-24 23:30:36,424]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,424]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATSH8110F1
+
+[2020-11-24 23:30:36,439]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATSH8110F1OK> ;workTime:0 count:0
+[2020-11-24 23:30:36,455]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:36,455]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-24 23:30:37,018]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1081BUS INIT: OK50 81 > ;workTime:547 count:0
+[2020-11-24 23:30:37,033]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:37,033]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version read ..
+[2020-11-24 23:30:37,049]  6 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1A94
+
+[2020-11-24 23:30:37,252]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 1A945A 94 50 31 32 38 37 38 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:188 count:0
+[2020-11-24 23:30:37,252]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:37,268]  6 -- INFO  -- Dcarengine.Function_Class.EcuVersionF [GetEcuVersion] -- ecu version is :P1287800
+[2020-11-24 23:30:37,283]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210213
+
+[2020-11-24 23:30:37,580]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021361 02 13 20 16 08 08 4F A6 20 20 20 20 34 39 20 20 20 53 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 46 32 43 45 33 36 38 31 47 2A 50 30 30 30 20 20 56 37 30 30 30 30 30 30 30 20 35 38 30 32 30 38 32 38 36 35 20 20 20 20 20 30 30 30 32 32 36 20 20 20 35 38 30 32 32 34 33 34 30 39 20 20 20 20 20 > ;workTime:297 count:0
+[2020-11-24 23:30:37,580]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:37,580]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210214
+
+[2020-11-24 23:30:37,893]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021461 02 14 47 99 D5 51 E6 B7 40 43 94 9A F4 EC BB A6 B7 60 20 20 20 20 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 35 38 30 31 34 37 39 33 31 34 30 30 30 30 30 30 30 30 30 30 30 30 2D 46 32 43 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:297 count:0
+[2020-11-24 23:30:37,893]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:37,893]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210215
+
+[2020-11-24 23:30:38,205]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21021561 02 15 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 > ;workTime:281 count:0
+[2020-11-24 23:30:38,221]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:38,221]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210241
+
+[2020-11-24 23:30:38,455]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024161 02 41 4D 63 6D 74 67 63 30 35 2E 78 61 36 20 20 20 20 > ;workTime:219 count:0
+[2020-11-24 23:30:38,455]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:38,455]  7 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210240
+
+[2020-11-24 23:30:38,689]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21024061 02 40 4C 5A 46 46 32 35 50 34 33 48 44 35 36 31 32 30 37 > ;workTime:218 count:0
+[2020-11-24 23:30:38,705]  10 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:38,705]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 2CE3681G*P000 
+[2020-11-24 23:30:38,705]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-24 23:30:38,721]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-24 23:30:38,721]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 00000000000000 
+[2020-11-24 23:30:38,736]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-24 23:30:38,736]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 1608084F
+[2020-11-24 23:30:38,752]  7 -- INFO  -- Dcarengine.UIForm.指标 [show] -- 4D636D74676330352E78613620202020
+[2020-11-24 23:30:43,518]  1 -- INFO  -- Dcarengine.UIForm.EEPROMWrite [button8_Click] -- ECUMODE  1086  
+[2020-11-24 23:30:43,533]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 2709
+
+[2020-11-24 23:30:43,736]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 270967 09 9B CD E6 73 > ;workTime:187 count:0
+[2020-11-24 23:30:43,736]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:43,736]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 270A9211c811
+
+[2020-11-24 23:30:43,940]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 270A9211c81167 0A 34 > ;workTime:188 count:0
+[2020-11-24 23:30:43,955]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:44,268]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1086
+
+[2020-11-24 23:30:44,440]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108650 86 > ;workTime:172 count:0
+[2020-11-24 23:30:44,440]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:44,440]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : ATST00
+
+[2020-11-24 23:30:44,471]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer ATST00OK> ;workTime:16 count:0
+[2020-11-24 23:30:44,471]  11 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:46,658]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 210171
+
+[2020-11-24 23:30:46,955]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21017161 01 71 18 D8 CB 02 > ;workTime:250 count:0
+[2020-11-24 23:30:46,955]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:49,143]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 21016D
+
+[2020-11-24 23:30:49,408]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 21016D61 01 6D D2 76 0F 02 > ;workTime:250 count:0
+[2020-11-24 23:30:49,408]  9 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:51,346]  1 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [WriteByMessage] -- locked write  message  to buffer : 1081
+
+[2020-11-24 23:30:51,596]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- revice data from byffer 108150 81 > ;workTime:234 count:0
+[2020-11-24 23:30:51,612]  13 -- INFO  -- Dcarengine.serialPort.GobalSerialPort [SerialportMessage_DataReceived] -- freed  write  message  to buffer 
+[2020-11-24 23:30:53,268]  1 -- INFO  -- Dcarengine.UIForm.MainF [MainForm_FormClosing] -- application is  exit  
