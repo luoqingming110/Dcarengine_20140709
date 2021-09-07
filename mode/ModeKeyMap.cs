@@ -59,7 +59,7 @@ namespace Dcarengine.refactor
         public static Hashtable GetHashtable(String  EcuVersion) {
 
 
-            if (EcuVersion.Equals("P1287790")|| EcuVersion.Equals("P1287800")) {
+            if (EcuVersion.Equals("790")|| EcuVersion.Equals("800")) {
 
                 return Ecu790ModeKeyMap;
 

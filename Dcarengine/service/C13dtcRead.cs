@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using Dcarengine.externs;
 using Dcarengine.Function_Class;
 using Dcarengine.interfaces;
 using Dcarengine.refactor;
 using Dcarengine.serialPort;
 using Dcarengine.SQLData;
 using Dcarengine.UIForm;
+using static Dcarengine.externs.HuanYuan;
 
 namespace Dcarengine.service
 {
@@ -55,6 +57,8 @@ namespace Dcarengine.service
             GobalSerialPort.ClearSendAndRecive();
             try
             {
+                byte[] stringToalldtccode = HuanYuan.getCmdByte("1800FF00");    
+
                 byte[] stringToalldtccodeA = StringToSendBytes.bytesToSend("1800FF00\n");       //发送命令的一个转化
                 GobalSerialPort.WriteByMessage(stringToalldtccodeA, 0, stringToalldtccodeA.Length);
                 StringOfGets = GobalSerialPort.ResultBackString;

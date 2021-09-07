@@ -9,4 +9,3 @@ E:\vsproject\Dcarengine_20140709 - 副本\mode\bin\Debug\EASkins.dll
 E:\vsproject\Dcarengine_20140709 - 副本\mode\bin\Debug\HZH_Controls.dll
 E:\vsproject\Dcarengine_20140709 - 副本\mode\obj\Debug\mode.exe
 E:\vsproject\Dcarengine_20140709 - 副本\mode\obj\Debug\mode.pdb
-E:\vsproject\Dcarengine_20140709 - 副本\mode\obj\Debug\mode.csprojResolveAssemblyReference.cache

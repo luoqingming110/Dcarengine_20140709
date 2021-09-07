@@ -36,12 +36,23 @@ namespace Dcarengine.service
         static byte[][] C13ecuIdstring6Tobyte = new byte[6][];
         static byte[][] C13ecuIdstring7Tobyte = new byte[9][];
 
-        ////用来存放转化的ECU13的字符串、、、、、、
         public static string[] ECUstringtochangeASCII = new string[23];
-        //这里是解析后的ECU数字码。。。。。。涉及地点;读取ID线程()
-        ///用来标记所转化的Ecu代码的个数啊。。。。。
-        static int ECUstringtochangeNum = 0;                                 
+        static int ECUstringtochangeNum = 0;
 
+
+
+        public byte[] _1A86 = { 0x1A, 0x86 };
+        public byte[] _1A87 = { 0x1A, 0x87 };
+        public byte[] _1A89 = { 0x1A, 0x89 };
+        public byte[] _1A8C = { 0x1A, 0x8C };
+        public byte[] _1A8E = { 0x1A, 0x8E };
+        public byte[] _1A90 = { 0x1A, 0x90 };
+        public byte[] _1A91 = { 0x1A, 0x91 };
+        public byte[] _1A92 = { 0x1A, 0x92 };
+        public byte[] _1A93 = { 0x1A, 0x93 };
+        public byte[] _1A95 = { 0x1A, 0x95 };
+        public byte[] _1A97 = { 0x1A, 0x97 };
+        public byte[] _1A98 = { 0x1A, 0x98 };
 
         /// <summary>
         /// readId
@@ -50,27 +61,6 @@ namespace Dcarengine.service
         {
 
             throw new NotImplementedException();
-
-        }
-
-
-        /// <summary>
-        /// 构造函数
-        /// </summary>
-        public  C13IdRead()
-        {
-
-            //初始化数据
-            ToSendEcu13IdF();
-
-        }
-
-        /// <summary>
-        /// 静态
-        /// </summary>
-         static C13IdRead() {
-
-            GobalSerialPort.WriteByMessage(CommonCmd.ATE1, 0, CommonCmd.ATE1.Length);
 
         }
 
@@ -96,7 +86,7 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd1[i] = "1A" + C13ecunum1.ToString("X");
                 C13ecunum1++;
-                C13ecuIdstring1Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd1[i] + "\n");
+                C13ecuIdstring1Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd1[i] );
             }
             //这里是ecu数据的第二段，两个循环的数据
 
@@ -108,7 +98,7 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd2[i] = "1A" + C13ecunum2.ToString("X");
                 C13ecunum2++;
-                C13ecuIdstring2Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd2[i] + "\n");
+                C13ecuIdstring2Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd2[i] );
 
             }
             //three
@@ -120,7 +110,7 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd3[i] = "1A" + C13ecunum3.ToString("X");
                 C13ecunum3++;
-                C13ecuIdstring3Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd3[i] + "\n");
+                C13ecuIdstring3Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd3[i]);
 
             }
             //这里是第四段程序
@@ -132,7 +122,7 @@ namespace Dcarengine.service
             {  // Ecustring1Tobyte[i]=new byte[6];
                 C13ecuIdstrCmd4[i] = "1A" + C13ecunum4.ToString("X");
                 C13ecunum4++;
-                C13ecuIdstring4Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd4[i] + "\n");
+                C13ecuIdstring4Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd4[i]);
 
             }
 
@@ -146,7 +136,7 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd5[i] = "1A" + C13ecunum5.ToString("X");
                 C13ecunum5++;
-                C13ecuIdstring5Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd5[i] + "\n");
+                C13ecuIdstring5Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd5[i]);
             }
 
             for (int i = 0; i < 6; i++)
@@ -157,7 +147,7 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd6[i] = "1A" + C13ecunum6.ToString("X");
                 C13ecunum6++;
-                C13ecuIdstring6Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd6[i] + "\n");
+                C13ecuIdstring6Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd6[i] );
 
             }
             for (int i = 0; i < 9; i++)
@@ -168,12 +158,12 @@ namespace Dcarengine.service
             {
                 C13ecuIdstrCmd7[i] = "1A" + C13ecunum7.ToString("X");
                 C13ecunum7++;
-                C13ecuIdstring7Tobyte[i] = StringToSendBytes.bytesToSend(C13ecuIdstrCmd7[i] + "\n");
+                C13ecuIdstring7Tobyte[i] = StringToSendBytes.bytesToSendNoEnd(C13ecuIdstrCmd7[i]);
             }
         }
 
 
-
+        
         /// <summary>
         /// 数据写入
         /// </summary>
@@ -324,17 +314,11 @@ namespace Dcarengine.service
             try
             {
 
-                CommonCmd.SendATE1();
-
-                //GobalSerialPort.GobalSerialPortEnventChange();
-
-                ToSendEcu13IdF();
-
+               // CommonCmd.SendATE1();
+               // ToSendEcu13IdF();
                 CmdWrite();
 
                 WorkOutToDb();
-
-                // MainF.ShowBoxTex("读取ID完毕");
 
                 DbDataToExcel();
             }catch

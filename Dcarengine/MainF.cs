@@ -22,6 +22,8 @@ using Dcarengine.refactor;
 using Dcarengine.service;
 using CCWin;
 using Dcarengine.UIForm.EOL;
+using Dcarengine.externs;
+using System.Runtime.InteropServices;
 
 namespace Dcarengine.UIForm
 {
@@ -68,9 +70,37 @@ namespace Dcarengine.UIForm
 
 
 
+        public struct Node {
+
+            [MarshalAs(UnmanagedType.ByValArray,SizeConst =32)]
+            public byte[,] v;
+
+        }
+
+
+
         private void Connect_Click(object sender, EventArgs e)
         {
-          
+
+         
+
+          //  int data = HuanYuan.SendAndRecvEcuData(cmdPtr, cmd.Length,ref recvdata);
+
+            // string res1 = Marshal.PtrToStringAnsi(ss);
+            //string res2 = Marshal.PtrToStringAnsi();
+            // Node node = (Node)Marshal.PtrToStructure(p, typeof(Node));
+            //Marshal.PtrToStringAnsi(stringBuilder.)));
+            // string am =  s;
+            string[] argv = new string[] { };
+            // bool res = HuanYuan.start(cmdPtr,cmd.Length,argv);
+
+            //byte[] cmd1 = new byte[] { 0x1A,0x94 };
+            //IntPtr _1A94p = HuanYuan.BytesToIntptr(cmd1);
+            //data = HuanYuan.SendAndRecvEcuData(_1A94p, cmd1.Length,ref HuanYuan.reveiceData);
+
+      
+
+            bool keeep = HuanYuan.StartKeepLinkK(0x11);
             EcuIsLinked = EcuConnectionF.ECULINKStatus1;
             if (EcuIsLinked)
             {
@@ -79,17 +109,28 @@ namespace Dcarengine.UIForm
             else
             {
                 try
-                {
-                    
-                    GobalSerialPort.initGobalSerialPort();
-                    if (!GobalSerialPort.SerialPort.IsOpen) {
-                        GobalSerialPort.SerialPort.Open();
+                {          
+                    int value = HuanYuan.InitVciK(0xf1, 0x10, 10400, 0x7788, 0x03, 0xC6C6, 0x05, 0x14, 0x14, 0x05, 0);
+                    if (value < 0)
+                    {
+                        value = HuanYuan.InitVciK(0xf1, 0x10, 10400, 0x7788, 0x03, 0xC6C6, 0x05, 0x14, 0x14, 0x05, 0);
                     }
-                    log.Info("com is ：" +GobalSerialPort.SerialPort.PortName +",port is open: "+ GobalSerialPort.SerialPort.IsOpen);
+                    byte[] cmd = new byte[] { 0x81 };
+                    IntPtr cmdPtr = HuanYuan.BytesToIntptr(cmd);
+                    int data = HuanYuan.SendAndRecvEcuData(cmdPtr, cmd.Length, ref HuanYuan.reveiceData);                   
+                    if (data < 0 ) {
+                        data = HuanYuan.SendAndRecvEcuData(cmdPtr, cmd.Length, ref HuanYuan.reveiceData);
+                    }
+                    if (data >0 ) {
 
-                    ThreadEcuConnet();
+                        byte[] keep = new byte[] { 0x11 };
+                        IntPtr keepPtr = HuanYuan.BytesToIntptr(keep);
+                        data = HuanYuan.SendAndRecvEcuData(keepPtr, keep.Length, ref HuanYuan.reveiceData);
+                    }
+                    if (data >0) {
 
-                  
+                        showBox1.Text = "连接成功";
+                    }                   
                 }
                 catch (Exception )
                 {
@@ -142,7 +183,7 @@ namespace Dcarengine.UIForm
         {
                 log.Info("Ecu Id  readding  start...");
                 MyMeans.DropAccess();
-                Thread thread = new Thread(C13IdRead.workRun );
+                Thread thread = new Thread(C13IdReadHuanYu.workRun );
                 thread.Start();
                 thread.Join(3000);
                 showBox1.Text = "读取id完毕";
@@ -202,15 +243,12 @@ namespace Dcarengine.UIForm
 
         private void ReadEcuId_Click(object sender, EventArgs e)
         {
-            if (EcuIsLinked)
-            {
+           
                 showBox1.Text = "正在读取ID...";
                 ReadEcuIDF();                
-            }
-            else
-            {
+           
                 MessageBox.Show("串口未连接！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void iD信息读取ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Dcarengine</RootNamespace>
     <AssemblyName>Dcarengine</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -132,8 +132,8 @@
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -171,6 +171,8 @@
     <Compile Include="common\DateUtil.cs" />
     <Compile Include="entity\EolAddress.cs" />
     <Compile Include="entity\TpCmdEntity.cs" />
+    <Compile Include="externs\HuanYuan.cs" />
+    <Compile Include="Function_Class\13IdFDataWorkHuanYu.cs" />
     <Compile Include="Function_Class\13IdFDataWork.cs" />
     <Compile Include="Function_Class\C9Dtc.cs" />
     <Compile Include="Function_Class\DebugMode.cs" />
@@ -209,6 +211,7 @@
     <Compile Include="common\StringUtil.cs" />
     <Compile Include="refactor\ModeKeyMap.cs" />
     <Compile Include="service\C13dtcRead.cs" />
+    <Compile Include="service\C13IdHuanYu.cs" />
     <Compile Include="service\C13IdRead.cs" />
     <Compile Include="SQLData\AccessDbClass.cs" />
     <Compile Include="SQLData\AsposeExcelTools.cs" />

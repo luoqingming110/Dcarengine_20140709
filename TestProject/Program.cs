@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace TestProject
         private static ReaderWriterLockSlim cacheLock = new ReaderWriterLockSlim();
 
         private static ReaderWriterLock cacheLock1 = new ReaderWriterLock();
-        
+
         delegate void MyDele(string str);　　//定义委托
 
         event MyDele MyEvent;　　//定义事件
@@ -25,8 +26,34 @@ namespace TestProject
         static AutoResetEvent mThreadMessage = new AutoResetEvent(false);
 
 
+
+        [DllImport("DiagInterface.dll", CharSet = CharSet.Ansi)] //引入dll，并设置字符集
+        //[DllImport("MyDLL.dll")] //可以替代上一句代码
+        public static extern int InitVciK();
+
+
+        public static byte[] getCmdByte(string cmd) {
+
+            byte[] res= new byte[cmd.Length/2];
+
+         
+            for (int i=0,j=0;i<cmd.Length;i=i+2,j++) {
+
+                string subStr= cmd.Substring(i,2);
+                res[j] = byte.Parse(subStr, System.Globalization.NumberStyles.HexNumber);
+            }
+            return res;
+        }
+
+
         static void Main(string[] args)
         {
+
+
+           Console.WriteLine( getCmdByte("1A94"));
+
+            InitVciK();
+
             int k = 2;
             while ( k >0) {
 
